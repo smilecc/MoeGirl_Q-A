@@ -69,19 +69,69 @@
       </div>
     </form>
 
-    <div class="am-topbar-right">
-      <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
-        <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle>其他 <span class="am-icon-caret-down"></span></button>
+  <?php if(is_login()): ?><div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-user">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          <?php echo $username;?> <span class="am-icon-caret-down"></span>
+        </a>
         <ul class="am-dropdown-content">
-          <li><a href="#">注册</a></li>
-          <li><a href="#">随便看看</a></li>
+          <li class="am-dropdown-header">用户操作</li>
+          <li><a href="#">1. 去月球</a></li>
+          <li class="am-active"><a href="#">2. 去火星</a></li>
+          <li><a href="#">3. 还是回地球</a></li>
+          <li class="am-disabled"><a href="#">4. 下地狱</a></li>
+          <li class="am-divider"></li>
+          <li><a href="#" onclick="logout()">登出</a></li>
         </ul>
+      </li>
+    </ul><?php endif; ?>
+
+    <?php if(!is_login()): ?><div class="am-topbar-right">
+      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-offcanvas="{target: '#oc-login'}">登录</button>
+    </div>
+
+
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="login-model">
+      <div class="am-modal-dialog">
+        <div class="am-modal-hd">正在登录</div>
+        <div class="am-modal-bd">
+          <i class="am-icon-spinner am-icon-spin"></i>
+        </div>
       </div>
     </div>
 
-    <div class="am-topbar-right">
-      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button>
-    </div>
+
+        <!-- 侧边栏内容 -->
+    <div id="oc-login" class="am-offcanvas">
+      <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+        <div class="am-offcanvas-content">
+          <div class="am-vertical-align" style="height: 200px;">
+            <div class="am-vertical-align-middle">
+            <h2>登录</h2>
+            <form method="post" class="am-form">
+            <label for="username">用户名:</label>
+            <input type="email" name="" id="username" value="">
+            <br>
+            <label for="password">密码:</label>
+            <input type="password" name="" id="password" value="">
+            <br>
+            <label for="remember-me">
+              <input id="remember-me" type="checkbox">
+              记住密码
+            </label>
+            <br />
+            <div class="am-cf">
+              <input type="button" name="" onclick="$('#login-model').modal('open');login();" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+              <a href="http://zh.moegirl.org/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&type=signup"><input type="button" name="" value="没有账号 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr"></a>
+            </div>
+          </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><?php endif; ?>
+
   </div>
   </div>
 </header>
@@ -98,13 +148,13 @@
 
   <p>Hello world</p>
 
+
+
 	</div>
 	<!-- /主体 -->
 	
 	<!-- 底部 -->
-	
-
-<footer data-am-widget="footer" class="am-footer am-footer-default qa-footer-grey" data-am-footer="{  }">
+	<footer data-am-widget="footer" class="am-footer am-footer-default qa-footer-grey" data-am-footer="{  }">
   <div class="am-footer-switch">
     <span>萌娘问答</span>
   </div>
@@ -122,6 +172,8 @@
 </script>
 -->
 	<!-- /底部 -->
+
+<script src="/Public/js/public.js"></script>
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="/Public/assets/js/jquery.min.js"></script>
 <script src="/Public/assets/js/amazeui.min.js"></script>

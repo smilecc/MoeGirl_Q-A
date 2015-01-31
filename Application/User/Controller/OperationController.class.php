@@ -37,23 +37,35 @@ Class OperationController extends Controller{
 		else return $xml;
  	}
 
- 	public function login($user, $pass){
-		$resultArray = $this->cUrlLogin($user,$pass);
-		$resultXML = $this->cUrlLogin($user,$pass,$resultArray['token'],$resultArray['cookie']);
-		//print_r($resultXML);
-		if('Success' == (string)$resultXML->login['result']){
-			// Set cookie value
-			cookie('token',login_en_code(D('UserLogin')->login_random($user).$resultXML->login['lgusername']));
-			cookie('username',$resultXML->login['lgusername']);
-			cookie('userid',$resultXML->login['lguserid']);
+ 	public function login($user, $pass, $remember_me){
+ 		if(IS_POST)
+ 		{
+			$resultArray = $this->cUrlLogin($user,$pass);
+			$resultXML = $this->cUrlLogin($user,$pass,$resultArray['token'],$resultArray['cookie']);
+			//print_r($resultXML);
+			if('Success' == (string)$resultXML->login['result'])
+			{
+				// Set cookie value
+				if($remember_me == 'on') cookie('token',login_en_code(D('UserLogin')->login_random($user).$resultXML->login['lgusername']));
+				cookie('username',$resultXML->login['lgusername']);
+				cookie('userid',$resultXML->login['lguserid']);
 
-			// Set session
-			/// user_status 是用户登录的标识
-			/// 0 is no Login
-			/// 1 is password Login
-			/// 2 is cookies Login
-			session('user_status',1);
-			echo '1';
+				// Set session
+				/// user_status 是用户登录的标识
+				/// 0 is no Login
+				/// 1 is password Login
+				/// 2 is cookies Login
+				session('user_status',1);
+			}
+			echo $resultXML->login['result'];
 		}
 	}
+
+	public function logout(){
+		$user_api = new \User\Api\UserApi();
+		$user_api->logout();
+		echo 1;
+	}
+
+
 }
