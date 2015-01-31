@@ -30,10 +30,10 @@ return  array(
     'APP_AUTOLOAD_PATH'     =>  '', // 自动加载的路径 关闭APP_USE_NAMESPACE后有效
 
     /* Cookie设置 */
-    'COOKIE_EXPIRE'         =>  0,    // Cookie有效期
+    'COOKIE_EXPIRE'         =>  2592000,    // Cookie有效期
     'COOKIE_DOMAIN'         =>  '',      // Cookie有效域名
     'COOKIE_PATH'           =>  '/',     // Cookie路径
-    'COOKIE_PREFIX'         =>  '',      // Cookie前缀 避免冲突
+    'COOKIE_PREFIX'         =>  'MoeGirlQA_',      // Cookie前缀 避免冲突
     'COOKIE_HTTPONLY'       =>  '',      // Cookie httponly设置
 
     /* 默认设定 */
@@ -52,13 +52,13 @@ return  array(
     'DEFAULT_FILTER'        =>  'htmlspecialchars', // 默认参数过滤方法 用于I函数...
 
     /* 数据库设置 */
-    'DB_TYPE'               =>  '',     // 数据库类型
-    'DB_HOST'               =>  '', // 服务器地址
-    'DB_NAME'               =>  '',          // 数据库名
-    'DB_USER'               =>  '',      // 用户名
-    'DB_PWD'                =>  '',          // 密码
-    'DB_PORT'               =>  '',        // 端口
-    'DB_PREFIX'             =>  '',    // 数据库表前缀
+    'DB_TYPE'               =>  'mysqli',     // 数据库类型
+    'DB_HOST'               =>  '127.0.0.1', // 服务器地址
+    'DB_NAME'               =>  'moegirlqa',          // 数据库名
+    'DB_USER'               =>  'root',      // 用户名
+    'DB_PWD'                =>  'root',          // 密码
+    'DB_PORT'               =>  '3306',        // 端口
+    'DB_PREFIX'             =>  'mgqa_',    // 数据库表前缀
     'DB_FIELDTYPE_CHECK'    =>  false,       // 是否进行字段类型检查
     'DB_FIELDS_CACHE'       =>  true,        // 启用字段缓存
     'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8

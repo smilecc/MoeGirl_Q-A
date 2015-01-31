@@ -46,7 +46,7 @@
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="am-active"><a href="#">首页</a></li>
-      <li><a href="#">项目</a></li>
+      <li><a href="#">发现</a></li>
       <li class="am-dropdown" data-am-dropdown>
         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
           下拉 <span class="am-icon-caret-down"></span>
@@ -110,7 +110,7 @@
   </div>
   <div class="am-footer-miscs ">
     <p>你正在浏览的是
-      <a href="http://www.yunshipei.com/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
+      <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
     <p>CopyRight©2014 AllMoeGirl Inc.</p>
   </div>
 </footer>
