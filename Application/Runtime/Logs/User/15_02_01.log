@@ -379,3 +379,24 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
 
+[ 2015-02-01T01:00:25+08:00 ] 127.0.0.1 /index.php/User/Operation/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.011207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2015-02-01T01:00:37+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.012438s ]
+SQL: SELECT * FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000267s ]
+DEBUG: test:2
+SQL: UPDATE `mgqa_user_login` SET `random`=6474 WHERE ( username="SmileC" ) [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+

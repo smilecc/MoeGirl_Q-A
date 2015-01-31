@@ -32,6 +32,8 @@
 
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
+
+  <link rel="stylesheet" href="/Public/css/public.css">
 </head>
 <body>
 	<!-- 头部 -->
@@ -47,20 +49,6 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="am-active"><a href="#">首页</a></li>
       <li><a href="#">发现</a></li>
-      <li class="am-dropdown" data-am-dropdown>
-        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          下拉 <span class="am-icon-caret-down"></span>
-        </a>
-        <ul class="am-dropdown-content">
-          <li class="am-dropdown-header">标题</li>
-          <li><a href="#">1. 去月球</a></li>
-          <li class="am-active"><a href="#">2. 去火星</a></li>
-          <li><a href="#">3. 还是回地球</a></li>
-          <li class="am-disabled"><a href="#">4. 下地狱</a></li>
-          <li class="am-divider"></li>
-          <li><a href="#">5. 桥头一回首</a></li>
-        </ul>
-      </li>
     </ul>
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
@@ -68,6 +56,7 @@
         <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
       </div>
     </form>
+    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">提问</button>
 
   <?php if(is_login()): ?><div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-user">
     <ul class="am-nav am-nav-pills am-topbar-nav">
@@ -77,12 +66,9 @@
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
-          <li><a href="#">1. 去月球</a></li>
-          <li class="am-active"><a href="#">2. 去火星</a></li>
-          <li><a href="#">3. 还是回地球</a></li>
-          <li class="am-disabled"><a href="#">4. 下地狱</a></li>
+          <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
-          <li><a href="#" onclick="logout()">登出</a></li>
+          <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
       </li>
     </ul><?php endif; ?>
@@ -90,7 +76,7 @@
     <?php if(!is_login()): ?><div class="am-topbar-right">
       <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-offcanvas="{target: '#oc-login'}">登录</button>
     </div>
-
+</div>
 
     <div class="am-modal am-modal-no-btn" tabindex="-1" id="login-model">
       <div class="am-modal-dialog">
@@ -143,7 +129,6 @@
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<link rel="stylesheet" href="/Public/css/index.css">
 <title>首页 - 萌娘问答</title>
 
   <p>Hello world</p>
