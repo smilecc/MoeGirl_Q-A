@@ -56,9 +56,41 @@
         <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
       </div>
     </form>
-    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">提问</button>
+    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-modal="{target: '#put-question-popup'}">提问</button>
 
-  <?php if(is_login()): ?><div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-user">
+  <?php if(is_login()): ?><!--提问窗口-->
+    <div class="am-popup" id="put-question-popup">
+      <div class="am-popup-inner">
+        <div class="am-popup-hd">
+          <h4 class="am-popup-title">提问</h4>
+          <span data-am-modal-close
+                class="am-close">&times;</span>
+        </div>
+        <form>
+          <div class="am-popup-bd">
+            <p>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。</p>
+            <p>例如标题为：请问这幅画是哪部作品中的？</p>
+            <p>系统会自动识别本答案的第一张图并给出识别答案。
+            如果问题不包含图片则不识别。
+            </p>
+            <hr />
+            <input type="text" class="am-form-field am-round" id="put-question-title" placeholder="输入问题的标题">
+            <hr />
+             <div class="am-form-group">
+              <label for="doc-ta-1">问题描述（选填）：</label>
+              <textarea class="am-form-field am-radius" rows="10" id="put-qustion-content"></textarea>
+            </div>
+            <label for="remember-me">
+              <input id="put-question-anonymous" type="checkbox">
+              匿名
+            </label>
+            <button type="button" class="am-btn am-btn-primary am-fr">提交</button>
+           </div>
+        </form>
+      </div>
+    </div>
+
+  <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-user">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="am-dropdown" data-am-dropdown>
         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
@@ -73,7 +105,20 @@
       </li>
     </ul><?php endif; ?>
 
-    <?php if(!is_login()): ?><div class="am-topbar-right">
+    <?php if(!is_login()): ?><!--提问未登录的alert-->
+    <div class="am-modal am-modal-alert" tabindex="-1" id="put-question-popup">
+      <div class="am-modal-dialog">
+        <div class="am-modal-hd">提示</div>
+        <div class="am-modal-bd">
+          不好意思，您还未登录！
+        </div>
+        <div class="am-modal-footer">
+          <span class="am-modal-btn">确定</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="am-topbar-right">
       <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-offcanvas="{target: '#oc-login'}">登录</button>
     </div>
 </div>
@@ -94,7 +139,8 @@
         <div class="am-offcanvas-content">
           <div class="am-vertical-align" style="height: 200px;">
             <div class="am-vertical-align-middle">
-            <h2>登录</h2>
+            <h2>登录<br /><small>请直接使用萌百账号登录</small></h2>
+
             <form method="post" class="am-form">
             <label for="username">用户名:</label>
             <input type="email" name="" id="username" value="">
@@ -104,7 +150,7 @@
             <br>
             <label for="remember-me">
               <input id="remember-me" type="checkbox">
-              记住密码
+              自动登录
             </label>
             <br />
             <div class="am-cf">
