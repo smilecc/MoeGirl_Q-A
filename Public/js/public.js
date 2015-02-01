@@ -46,7 +46,7 @@ $('#put-question-uploading').modal('open');
       }
       else{
         alert("成功");
-        $("#put-qustion-content").val($("#put-qustion-content").val() + "{:" + data + "}");
+        $("#put-qustion-content").val($("#put-qustion-content").val() + "{:" + data + "!}");
         $('#put-question-popup').modal('open');
         $("#put-qustion-content").focus().select();
       }

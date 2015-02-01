@@ -7,9 +7,12 @@ Class QuestionController extends Controller{
 		
 	}
 
-	public function put_question($title,$content,$anonymous){
+	public function put_question($title,$content,$anonymous='off'){
 		if(IS_POST){
-
+			if(preg_match('/是哪部作品/', $title) && preg_match('/\{:(.+)!\}/U', $content,$reg_img)){
+				$this->assign('imgurl','http://'.$_SERVER['SERVER_NAME'].'/Public/Uploads/'.$reg_img[1]);
+				$this->display();
+			}
 		}
 	}
 

@@ -211,13 +211,22 @@
 	<!-- 主体 -->
 	<div class="am-container">
 	
+<div class="am-modal am-modal-confirm" tabindex="-1" id="stu-confirm">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">萌娘问答</div>
+    <div class="am-modal-bd">
+      检测到识别关键词与图片存在，请问要识别吗？
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>继续提问</span>
+      <span class="am-modal-btn" onclick="window.open('/index.php/Home/Question/stu.html?imgurl=<?php echo $imgurl;?>');" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript">
-	$("#topbar-index").addClass("am-active");
+	$('#stu-confirm').modal('open');
 </script>
-<title>首页 - 萌娘问答</title>
-
-  <p href="">Hello world</p>
-
 
 
 	</div>
