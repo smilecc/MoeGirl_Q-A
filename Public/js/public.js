@@ -1,3 +1,19 @@
+function load_form_conf(){
+  $("#put-question-form").submit(function(e){
+    e.preventDefault();
+    var reg = /\{\:(.+?)\!\}/;
+    var result_content = reg.exec($("#put-question-content").val());
+    console.log(result_content);
+    var regg = /是哪部作品/;
+    var result_title = regg.exec($("#put-question-title").val());
+    if(result_title && result_content) $('#stu-confirm').modal('open');
+    else{
+      $("#put-question-form").submit(function(e) {event.preventDefault()}).off('submit').submit(function() {console.log("submit unlock")});
+      $("#put-question-form").submit();
+    }
+  });
+}
+
   function logout(){
   $.ajax({
             type:"GET",
@@ -46,9 +62,9 @@ $('#put-question-uploading').modal('open');
       }
       else{
         alert("成功");
-        $("#put-qustion-content").val($("#put-qustion-content").val() + "{:" + data + "!}");
+        $("#put-question-content").val($("#put-question-content").val() + "{:" + data + "!}");
         $('#put-question-popup').modal('open');
-        $("#put-qustion-content").focus().select();
+        $("#put-question-content").focus().select();
       }
     },
     error: function (data, status, e){
@@ -56,4 +72,8 @@ $('#put-question-uploading').modal('open');
     },
   });
     
+}
+function on_continue_put_question_btn_click(){
+  $("#put-question-form").submit(function(e) {event.preventDefault()}).off('submit').submit(function() {console.log("submit unlock")});
+  $("#put-question-form").submit();
 }

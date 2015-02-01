@@ -67,7 +67,7 @@
         <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
       </div>
     </form>
-    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-modal="{target: '#put-question-popup'}">提问</button>
+    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup'}">提问</button>
 
   <?php if(is_login()): ?><!--提问窗口-->
     <div class="am-popup" id="put-question-popup">
@@ -77,7 +77,7 @@
           <span data-am-modal-close
                 class="am-close">&times;</span>
         </div>
-        <form action="/index.php/Home/Question/put_question.html" method="post">
+        <form action="/index.php/Home/Question/put_question.html" method="post" id="put-question-form">
           <div class="am-popup-bd">
             <p>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。</p>
             <p>例如标题为：请问这幅画是哪部作品中的？</p>
@@ -88,7 +88,7 @@
              <div class="am-form-group">
               <label for="doc-ta-1">问题描述（选填）： </label>
               <a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="$('#put-question-popup').modal('close');"><span class="am-icon-image"></span> 图片上传</a>
-              <textarea class="am-form-field am-radius" rows="10" id="put-qustion-content" name="content"></textarea>
+              <textarea class="am-form-field am-radius" rows="10" id="put-question-content" name="content"></textarea>
             </div>
             <label for="remember-me">
               <input id="put-question-anonymous" name="anonymous" type="checkbox">
@@ -121,6 +121,19 @@
           <div class="am-modal-hd">正在上传图片</div>
           <div class="am-modal-bd">
             <i class="am-icon-spinner am-icon-spin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="am-modal am-modal-confirm" tabindex="-1" id="stu-confirm">
+        <div class="am-modal-dialog">
+          <div class="am-modal-hd">萌娘问答</div>
+          <div class="am-modal-bd">
+            检测到识别关键词与图片存在，请问要识别吗？
+          </div>
+          <div class="am-modal-footer">
+            <span class="am-modal-btn" onclick="on_continue_put_question_btn_click()" data-am-modal-cancel>继续提问</span>
+            <span class="am-modal-btn" onclick="on_stu_btn_click()" data-am-modal-confirm>确定</span>
           </div>
         </div>
       </div>
@@ -203,6 +216,15 @@
   </div>
   </div>
 </header>
+
+
+<script type="text/javascript">
+function on_stu_btn_click(){
+    var reg = /\{\:(.+?)\!\}/;
+    var result_content = reg.exec($("#put-question-content").val());
+    window.open('/index.php/Home/Question/stu.html?imgurl=http://<?php echo $_SERVER['HTTP_HOST'];?>/Public/Uploads/' + result_content[1]);
+}
+</script>
 
 
 
