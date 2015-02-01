@@ -29,24 +29,24 @@
           <span data-am-modal-close
                 class="am-close">&times;</span>
         </div>
-        <form>
+        <form action="/index.php/Home/Question/put_question.html" method="post">
           <div class="am-popup-bd">
             <p>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。</p>
             <p>例如标题为：请问这幅画是哪部作品中的？</p>
             <p>系统会自动识别本答案的第一张图并给出识别答案，如果问题不包含图片则不识别。</p>
             <hr />
-            <input type="text" class="am-form-field am-round" id="put-question-title" placeholder="输入问题的标题">
+            <input type="text" class="am-form-field am-round" id="put-question-title" name="title" placeholder="输入问题的标题" required="required">
             <hr />
              <div class="am-form-group">
               <label for="doc-ta-1">问题描述（选填）： </label>
               <a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="$('#put-question-popup').modal('close');"><span class="am-icon-image"></span> 图片上传</a>
-              <textarea class="am-form-field am-radius" rows="10" id="put-qustion-content"></textarea>
+              <textarea class="am-form-field am-radius" rows="10" id="put-qustion-content" name="content"></textarea>
             </div>
             <label for="remember-me">
-              <input id="put-question-anonymous" type="checkbox">
+              <input id="put-question-anonymous" name="anonymous" type="checkbox">
               匿名
             </label>
-            <button type="button" class="am-btn am-btn-primary am-fr">提交</button>
+            <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
            </div>
         </form>
       </div>

@@ -200,11 +200,9 @@
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<title>首页 - 萌娘问答</title>
-
-  <p>Hello world</p>
-
-
+	<div class="am-g doc-am-g">
+test
+	</div>
 
 	</div>
 	<!-- /主体 -->
