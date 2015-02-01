@@ -34,6 +34,17 @@
   <link rel="stylesheet" href="/Public/assets/css/app.css">
 
   <link rel="stylesheet" href="/Public/css/public.css">
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/Public/assets/js/jquery.min.js"></script>
+<script src="/Public/assets/js/amazeui.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+
+<script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/public.js"></script>
 </head>
 <body>
 	<!-- 头部 -->
@@ -42,13 +53,13 @@
 <header class="am-topbar">
 <div class="am-container">
   <h1 class="am-topbar-brand">
-    <a href="#">萌娘问答</a>
+    <a href="/">萌娘问答</a>
   </h1>
 
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="am-active"><a href="#">首页</a></li>
-      <li><a href="#">发现</a></li>
+      <li class="" id="topbar-index"><a href="/">首页</a></li>
+      <li id="topbar-find"><a href="#">发现</a></li>
     </ul>
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
@@ -119,7 +130,7 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="am-dropdown" data-am-dropdown>
         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          <?php echo $username;?> <span class="am-icon-caret-down"></span>
+          <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
@@ -196,10 +207,13 @@
 
 
 	<!-- /头部 -->
-
+<div id="space_height">
 	<!-- 主体 -->
 	<div class="am-container">
 	
+<script type="text/javascript">
+	$("#topbar-index").addClass("am-active");
+</script>
 <title>首页 - 萌娘问答</title>
 
   <p>Hello world</p>
@@ -208,7 +222,7 @@
 
 	</div>
 	<!-- /主体 -->
-	
+</div>
 	<!-- 底部 -->
 	<footer data-am-widget="footer" class="am-footer am-footer-default qa-footer-grey" data-am-footer="{  }">
   <div class="am-footer-switch">
@@ -220,25 +234,10 @@
     <p>CopyRight©2014 AllMoeGirl Inc.</p>
   </div>
 </footer>
-
-
-<!--
-<script type="text/javascript">
-  document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-160)+"px";
-</script>
--->
 	<!-- /底部 -->
 
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<![endif]-->
-
-<script src="/Public/js/ajaxfileupload.js"></script>
-<script src="/Public/js/public.js"></script>
-
+<script type="text/javascript">
+  document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-170)+"px";
+</script>
 </body>
 </html>

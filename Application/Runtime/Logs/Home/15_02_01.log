@@ -1260,3 +1260,3175 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
 
+[ 2015-02-01T21:11:02+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2015-02-01T21:14:29+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-02-01T21:14:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2015-02-01T21:14:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-02-01T21:15:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2015-02-01T21:15:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2015-02-01T21:16:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-02-01T21:16:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-02-01T21:16:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2015-02-01T21:16:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2015-02-01T21:16:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2015-02-01T21:16:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-02-01T21:22:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-02-01T21:27:24+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-02-01T21:39:38+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2015-02-01T21:40:06+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2015-02-01T21:40:33+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 61 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2015-02-01T21:40:39+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 61 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2015-02-01T21:40:40+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: content D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 61 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2015-02-01T21:47:50+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-02-01T21:48:23+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-02-01T21:50:35+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2015-02-01T21:51:12+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 62 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001529s ]
+
+[ 2015-02-01T21:51:24+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 62 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-02-01T21:51:43+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2015-02-01T21:52:35+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2015-02-01T21:54:32+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-02-01T21:57:05+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2015-02-01T21:59:07+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-02-01T21:59:53+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2015-02-01T22:01:24+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2015-02-01T22:03:12+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2015-02-01T22:03:16+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2015-02-01T22:03:19+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-02-01T22:03:31+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2015-02-01T22:03:39+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-02-01T22:04:02+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2015-02-01T22:04:04+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-02-01T22:04:10+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2015-02-01T22:04:34+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-02-01T22:04:39+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2015-02-01T22:05:04+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000648s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php:62) D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php:62) D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php:62) D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2015-02-01T22:06:12+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2015-02-01T22:06:50+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001675s ]
+
+[ 2015-02-01T22:07:53+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2015-02-01T22:08:08+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2015-02-01T22:08:25+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?&imgurl=http://qa.cuican.name/Public/Uploads/2015-02-01/54ce12349fc5b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: imgurl D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2015-02-01T22:10:59+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8] Undefined variable: user D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: pass D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: token D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\QuestionController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2015-02-01T22:13:25+08:00 ] 202.105.21.220 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2015-02-01T22:13:25+08:00 ] 202.105.21.220 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001512s ]
+
+[ 2015-02-01T22:17:20+08:00 ] 127.0.0.1 /index.php/Home/Stu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+
+[ 2015-02-01T22:17:31+08:00 ] 127.0.0.1 /index.php/Home/Stu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2015-02-01T22:24:55+08:00 ] 127.0.0.1 /index.php/Home/Stu?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2015-02-01T22:25:06+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-02-01T22:25:20+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2015-02-01T22:25:23+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2015-02-01T22:25:46+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2015-02-01T22:25:51+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2015-02-01T22:26:16+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2015-02-01T22:26:35+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2015-02-01T22:27:56+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2015-02-01T22:30:18+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2015-02-01T22:35:37+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2015-02-01T22:35:56+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-02-01T22:35:59+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2015-02-01T22:36:08+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2015-02-01T22:36:11+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2015-02-01T22:37:08+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-02-01T22:37:30+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2015-02-01T22:37:33+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2015-02-01T22:37:44+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2015-02-01T22:38:01+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2015-02-01T22:38:03+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2015-02-01T22:40:12+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002088s ]
+
+[ 2015-02-01T22:40:28+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2015-02-01T22:40:36+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2015-02-01T22:41:24+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2015-02-01T22:41:53+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2015-02-01T22:42:05+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2015-02-01T22:42:45+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2015-02-01T22:42:52+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-02-01T22:43:36+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2015-02-01T22:43:49+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2015-02-01T22:44:00+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-02-01T22:44:17+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-02-01T22:44:26+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2015-02-01T22:46:10+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 207 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 208 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2015-02-01T22:47:06+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2015-02-01T22:47:39+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2015-02-01T22:48:20+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2015-02-01T22:48:20+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl={:$imgurl}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2015-02-01T22:48:38+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl={:$imgurl}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2015-02-01T22:49:14+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2015-02-01T22:49:16+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2015-02-01T22:49:19+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-02-01T22:49:20+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2015-02-01T22:49:29+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2015-02-01T22:49:30+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2015-02-01T22:51:27+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: baike_title D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 218 行.
+NOTIC: [8] Undefined variable: keyword D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 219 行.
+NOTIC: [8] Undefined variable: baike_content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2015-02-01T22:51:29+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2015-02-01T22:54:33+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2015-02-01T22:54:35+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001884s ]
+
+[ 2015-02-01T22:54:44+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2015-02-01T22:54:47+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2015-02-01T22:55:23+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-02-01T22:55:25+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2015-02-01T22:55:33+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-02-01T22:55:34+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2015-02-01T22:56:43+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2015-02-01T22:56:45+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2015-02-01T22:56:57+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2015-02-01T22:56:58+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2015-02-01T23:00:09+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2015-02-01T23:00:15+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2015-02-01T23:00:25+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2015-02-01T23:00:29+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2015-02-01T23:00:46+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2015-02-01T23:00:47+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-02-01T23:00:58+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaa.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-02-01T23:01:04+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaa.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2015-02-01T23:01:14+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2015-02-01T23:02:26+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaa.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2015-02-01T23:02:33+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2015-02-01T23:02:36+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2015-02-01T23:02:38+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001578s ]
+
+[ 2015-02-01T23:03:40+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-02-01T23:03:42+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2015-02-01T23:04:11+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaa.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\Home\Controller\StuController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2015-02-01T23:04:20+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2015-02-01T23:04:24+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-02-01T23:04:26+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2015-02-01T23:04:34+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-02-01T23:04:35+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001287s ]
+
+[ 2015-02-01T23:06:05+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2015-02-01T23:06:07+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-02-01T23:06:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2015-02-01T23:06:17+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2015-02-01T23:06:51+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000712s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\d4d5132493aca634c38e6b3834902740.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003206s ]
+
+[ 2015-02-01T23:06:52+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2015-02-01T23:06:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-02-01T23:07:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2015-02-01T23:08:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-02-01T23:08:34+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-02-01T23:08:36+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002134s ]
+
+[ 2015-02-01T23:08:37+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-02-01T23:13:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2015-02-01T23:13:25+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2015-02-01T23:13:30+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002454s ]
+
+[ 2015-02-01T23:13:53+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002307s ]
+
+[ 2015-02-01T23:13:54+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2015-02-01T23:13:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2015-02-01T23:18:13+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005308s ]
+
+[ 2015-02-01T23:18:18+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2015-02-01T23:21:11+08:00 ] 115.159.67.124 http://www.ly.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2015-02-01T23:21:21+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001221s ]
+
+[ 2015-02-01T23:21:22+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2015-02-01T23:21:38+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2015-02-01T23:21:56+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002028s ]
+
+[ 2015-02-01T23:21:58+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2015-02-01T23:22:19+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001967s ]
+
+[ 2015-02-01T23:22:21+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2015-02-01T23:23:19+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001650s ]
+
+[ 2015-02-01T23:23:21+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2015-02-01T23:23:43+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002553s ]
+
+[ 2015-02-01T23:23:44+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2015-02-01T23:24:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2015-02-01T23:25:34+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2015-02-01T23:25:35+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2015-02-01T23:25:36+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2015-02-01T23:25:46+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2015-02-01T23:26:18+08:00 ] 127.0.0.1 /index.php/Home/Question/stu.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001221s ]
+
+[ 2015-02-01T23:26:20+08:00 ] 127.0.0.1 /index.php/Home/Stu/index.html?imgurl=http://studemo-img.stor.sinaapp.com/test.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+

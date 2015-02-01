@@ -1,7 +1,51 @@
 <extend name="Base/common"/>
 <block name="body">
-	<div class="am-g doc-am-g">
-	<title>识图结果 - 萌娘问答</title>
-test
+<link rel="stylesheet" href="/Public/css/stu.css">
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="stu-loading">
+	<div class="am-modal-dialog">
+	  <div class="am-modal-hd">正在识别图像</div>
+	  <div class="am-modal-bd">
+	    <i class="am-icon-spinner am-icon-spin"></i>
+	  </div>
 	</div>
+</div>
+<script type="text/javascript">
+	$('#stu-loading').modal('open');
+</script>
+
+	<div class="am-g" id="page-div">
+		<title>识图结果 - 萌娘问答</title>
+		<header class="am-g my-head">
+		  <div class="am-u-sm-12 am-article">
+		    <h1 class="am-article-title" id="baike_title"></h1>
+		    <p class="am-article-meta" id="baike_keyword"></p>
+		  </div>
+		</header>
+		<hr />
+		<div class="am-u-sm-8">
+			<p class="am-article-lead" id="baike_content"></p>
+			<hr />
+			<a id="moegirl-link"><button type="button" class="am-btn am-btn-success">萌娘百科词条</button></a>
+			<a id="bdbaike-link"><button type="button" class="am-btn am-btn-success">百度词条</button></a>
+		</div>
+		<div class="am-u-sm-4">
+			<img src="{:$imgurl}"/>
+		</div>
+	</div>
+<script type="text/javascript">
+	  $.ajax({
+            type:"GET",
+            url:"/index.php/Home/Stu/index.html?imgurl={:$imgurl}",
+            dataType:"json",
+            success:function(data){
+              $('#stu-loading').modal('close');
+              $("#baike_title").text(data.title);
+              $("#baike_keyword").text("Keywords: " + data.keyword);
+              $("#baike_content").text(data.content + "...");
+              $("#moegirl-link").attr('href',"http://zh.moegirl.org/" + data.title);
+              $("#bdbaike-link").attr('href',data.url);
+              $('#page-div').animate({ opacity: '1'}, 2000);
+            }
+});
+</script>
 </block>
