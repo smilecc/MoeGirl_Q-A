@@ -3,13 +3,29 @@ namespace Home\Controller;
 use Think\Controller;
 
 Class QuestionController extends Controller{
-	public function index(){
-		
+	public function index($qid,$aid=0){
+		$page_content = M('Question')->where('id=%d',$qid)->find();
+		$this->assign('page',$page_content);
+		$this->display();
 	}
 
-	public function put_question($title,$content,$anonymous='off'){
+
+	public function put_question($title,$content,$topic,$anonymous='off'){
 		if(IS_POST){
-			print_r($_POST);
+			//print_r(I('post.put-question-topic'));
+			//return;
+			$data = array(
+				'title' 	=> $title,
+				'content' 	=> $content,
+				'topic'		=> $topic,
+				'anonymous' => ($anonymous=='off') ? 0 : 1,
+				);
+			$result_id = D('Question')->add_question($data);
+			if($result_id){
+				header('Location: http://'.$_SERVER['HTTP_HOST'].'/');
+			}else{
+				$this->error('发布失败，未知错误');	
+			}
 		}
 	}
 

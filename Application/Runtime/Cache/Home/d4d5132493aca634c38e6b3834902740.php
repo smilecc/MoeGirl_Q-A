@@ -42,9 +42,6 @@
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <![endif]-->
-
-<script src="/Public/js/ajaxfileupload.js"></script>
-<script src="/Public/js/public.js"></script>
 </head>
 <body>
 	<!-- 头部 -->
@@ -256,6 +253,10 @@ function on_stu_btn_click(){
 		</header>
 		<hr />
 		<div class="am-u-sm-8">
+		<div class="am-alert" data-am-alert>
+		  <button type="button" class="am-close">&times;</button>
+		  <p>识别具有一定的不确定性，如果不是你想要的结果可以返回刚才的页面继续提问。</p>
+		</div>
 			<p class="am-article-lead" id="baike_content"></p>
 			<hr />
 			<a id="moegirl-link"><button type="button" class="am-btn am-btn-success">萌娘百科词条</button></a>
@@ -297,6 +298,9 @@ function on_stu_btn_click(){
   </div>
 </footer>
 	<!-- /底部 -->
+
+<script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/public.js"></script>
 
 <script type="text/javascript">
   document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-170)+"px";

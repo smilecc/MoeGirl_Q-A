@@ -15,6 +15,7 @@
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
 // 生成模块
+//define('BIND_MODULE','Question');
 //define('BIND_MODULE','Admin');
 //define('BIND_MODULE','User');
 

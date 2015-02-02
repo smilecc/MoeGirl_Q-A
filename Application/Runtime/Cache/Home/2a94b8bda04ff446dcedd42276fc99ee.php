@@ -42,9 +42,6 @@
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <![endif]-->
-
-<script src="/Public/js/ajaxfileupload.js"></script>
-<script src="/Public/js/public.js"></script>
 </head>
 <body>
 	<!-- 头部 -->
@@ -67,7 +64,7 @@
         <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
       </div>
     </form>
-    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup'}">提问</button>
+    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
   <?php if(is_login()): ?><!--提问窗口-->
     <div class="am-popup" id="put-question-popup">
@@ -79,22 +76,33 @@
         </div>
         <form action="/index.php/Home/Question/put_question.html" method="post" id="put-question-form">
           <div class="am-popup-bd">
-            <p>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。</p>
-            <p>例如标题为：请问这幅画是哪部作品中的？</p>
-            <p>系统会自动识别本答案的第一张图并给出识别答案，如果问题不包含图片则不识别。</p>
-            <hr />
+            <!--<p>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。例如标题为：请问这幅画是哪部作品中的？
+            系统会自动识别本答案的第一张图并给出识别答案，如果问题不包含图片则不识别。</p>
+            <hr />-->
             <input type="text" class="am-form-field am-round" id="put-question-title" name="title" placeholder="输入问题的标题" required="required">
+            <hr />
+             <!--话题框-->
+             <label for="doc-ta-1">话题： </label>
+            <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="5" name="topic[]">
+            <?php $topic_list = M("Topic")->select(); ?>
+            <?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+            </select>
             <hr />
              <div class="am-form-group">
               <label for="doc-ta-1">问题描述（选填）： </label>
               <a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="$('#put-question-popup').modal('close');"><span class="am-icon-image"></span> 图片上传</a>
-              <textarea class="am-form-field am-radius" rows="10" id="put-question-content" name="content"></textarea>
+              <textarea class="am-form-field am-radius" rows="9" id="put-question-content" name="content"></textarea>
             </div>
+
+
             <label for="remember-me">
               <input id="put-question-anonymous" name="anonymous" type="checkbox">
               匿名
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
+            <hr />
+            <small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
+            </small>
            </div>
         </form>
       </div>
@@ -242,6 +250,9 @@ function on_stu_btn_click(){
 
 
 
+
+</div>
+
 	</div>
 	<!-- /主体 -->
 </div>
@@ -257,6 +268,9 @@ function on_stu_btn_click(){
   </div>
 </footer>
 	<!-- /底部 -->
+
+<script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/public.js"></script>
 
 <script type="text/javascript">
   document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-170)+"px";
