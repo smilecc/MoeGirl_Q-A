@@ -9,7 +9,7 @@ body,html {
 #space_height {
  position: relative;
  min-height:100%;
- _height:100%; /* for ie6 因为ie6不支持min-height */
+ padding-bottom: 120px;  /* 不至被footer盖住 */
 }
 footer {
  position: absolute;
