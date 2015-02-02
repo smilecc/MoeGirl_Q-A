@@ -1,3 +1,18 @@
 .qa-footer-grey{
 	background: #eee;
 }
+body,html {
+ margin: 0;
+ padding: 0;
+ height:100%;
+}
+#space_height {
+ position: relative;
+ min-height:100%;
+ _height:100%; /* for ie6 因为ie6不支持min-height */
+}
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}

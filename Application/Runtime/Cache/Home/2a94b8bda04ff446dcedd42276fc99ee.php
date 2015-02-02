@@ -44,6 +44,7 @@
 <![endif]-->
 </head>
 <body>
+<div id="space_height">
 	<!-- 头部 -->
 	
 
@@ -237,7 +238,7 @@ function on_stu_btn_click(){
 
 
 	<!-- /头部 -->
-<div id="space_height">
+
 	<!-- 主体 -->
 	<div class="am-container">
 	
@@ -255,7 +256,7 @@ function on_stu_btn_click(){
 
 	</div>
 	<!-- /主体 -->
-</div>
+
 	<!-- 底部 -->
 	<footer data-am-widget="footer" class="am-footer am-footer-default qa-footer-grey" data-am-footer="{  }">
   <div class="am-footer-switch">
@@ -268,12 +269,13 @@ function on_stu_btn_click(){
   </div>
 </footer>
 	<!-- /底部 -->
-
+</div>
 <script src="/Public/js/ajaxfileupload.js"></script>
 <script src="/Public/js/public.js"></script>
 
 <script type="text/javascript">
-  document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-170)+"px";
+//if($(document.body).height() < document.body.scrollHeight)
+	//document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-170)+"px";
 </script>
 </body>
 </html>

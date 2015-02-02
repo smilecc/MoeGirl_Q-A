@@ -16,6 +16,16 @@ function is_login(){
 	else return false;
 }
 
+//  用于正则替换{:!}的图片标签
+function img_replace($string){
+    return preg_replace('/\{\:(.+)\!\}/U','<img src="/Public/Uploads/\1" />',$string);
+}
+
+function sub_question_content($string){
+    $string = preg_replace('/\{\:(.+)\!\}/U','[图片]',$string);
+    return mb_strcut($string,0,200,'utf8');
+}
+
 function curl_redir_exec($ch,$debug="") 
 {
     static $curl_loops = 0; 

@@ -2,9 +2,15 @@
 <block name="body">
 <title>{:$page['title']} - 萌娘问答</title>
 <div class="am-g">
-	<div class="am-u-sm-8">
-		
+	<div class="am-u-sm-8" >
+		<h1 class="am-article-title" id="question_title">{:$page['title']}</h1>
+		<small><div onclick="on_question_content_click({:$page['id']})" style="cursor:pointer" id="question-content-div">
+			<p id="question_content">{:$page['content']}<a href="javascript:;">[点击查看全部内容]</a></p>
+		</div></small>
+		<hr />
 	</div>
 	<div class="am-u-sm-4"></div>
 </div>
+
+<script src="/Public/js/question.js"></script>
 </block>

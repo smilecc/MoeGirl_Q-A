@@ -62,6 +62,7 @@ $('#put-question-uploading').modal('open');
       }
       else{
         alert("成功");
+        console.log($("#put-question-content").val());
         $("#put-question-content").val($("#put-question-content").val() + "{:" + data + "!}");
         $('#put-question-popup').modal('open');
         $("#put-question-content").focus().select();

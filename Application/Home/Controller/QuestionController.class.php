@@ -5,10 +5,16 @@ use Think\Controller;
 Class QuestionController extends Controller{
 	public function index($qid,$aid=0){
 		$page_content = M('Question')->where('id=%d',$qid)->find();
+		$page_content['content'] = sub_question_content($page_content['content']);
 		$this->assign('page',$page_content);
 		$this->display();
 	}
 
+	public function get_question_content($qid){
+		$page_content = M('Question')->where('id=%d',$qid)->getField('content');
+		$page_content = img_replace(nl2br($page_content));
+		echo $page_content;
+	}
 
 	public function put_question($title,$content,$topic,$anonymous='off'){
 		if(IS_POST){
@@ -22,7 +28,7 @@ Class QuestionController extends Controller{
 				);
 			$result_id = D('Question')->add_question($data);
 			if($result_id){
-				header('Location: http://'.$_SERVER['HTTP_HOST'].'/');
+				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$result_id);
 			}else{
 				$this->error('发布失败，未知错误');	
 			}
