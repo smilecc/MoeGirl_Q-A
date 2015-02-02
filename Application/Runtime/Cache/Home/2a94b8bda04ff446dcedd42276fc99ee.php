@@ -120,7 +120,7 @@
       <div class="am-modal-bd">
         <div class="am-form-group">
           <p><input type="file" id="put-question-upload-input" name="put-question-upload-input" class="am-center am-btn am-btn-success"></p>
-          <button type="button" class="am-btn am-btn-primary" onclick="upload()">提交</button>
+          <button type="button" class="am-btn am-btn-primary" onclick="upload('question')">提交</button>
         </div>
       </div>
     </div>

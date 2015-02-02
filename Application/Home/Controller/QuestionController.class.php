@@ -8,7 +8,8 @@ Class QuestionController extends Controller{
 		$page_content['content'] = sub_question_content($page_content['content']);
 
 
-		$page_user_status = M('QuestionUserStatus')->where('username="%s" AND question_id=%d',$qid)->find();
+		$page_user_status = M('QuestionUserStatus')->where('username="%s" AND question_id=%d',cookie('username'),$qid)->find();
+		trace($page_user_status);
 
 		$this->assign('page_user_status',$page_user_status);
 		$this->assign('page',$page_content);

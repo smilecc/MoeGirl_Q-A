@@ -44,8 +44,8 @@ function login(){
   });
 }
 
-function upload(){
-$('#put-question-upload').modal('close');
+function upload(mode){
+if(mode == "question") $('#put-question-upload').modal('close');
 $('#put-question-uploading').modal('open');
     $.ajaxFileUpload({
     url:"/index.php/Home/Question/upload.html",
@@ -58,14 +58,16 @@ $('#put-question-uploading').modal('open');
       var result = reg.exec(data);
       if(result){
         alert(result[1]);
-        $('#put-question-upload').modal('open');
+        if(mode == "question") $('#put-question-upload').modal('open');
       }
       else{
-        alert("成功");
-        console.log($("#put-question-content").val());
-        $("#put-question-content").val($("#put-question-content").val() + "{:" + data + "!}");
-        $('#put-question-popup').modal('open');
-        $("#put-question-content").focus().select();
+        if(mode == "question"){
+            $("#put-question-content").val($("#put-question-content").val() + "{:" + data + "!}");
+            $('#put-question-popup').modal('open');
+        }else if(mode == "answer"){
+            $("#put-answer-content").val($("#put-question-content").val() + "{:" + data + "!}");
+            $('#put-question-upload').modal('close');
+        }
       }
     },
     error: function (data, status, e){
