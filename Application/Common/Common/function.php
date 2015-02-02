@@ -26,6 +26,18 @@ function sub_question_content($string){
     return mb_strcut($string,0,200,'utf8');
 }
 
+// 获取用户名的地址
+function get_user_page($username){
+    return '#';
+}
+
+// 测试用户是否真实
+function test_user(){
+    $cookie_username_token = login_en_code(M('UserLogin')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
+    if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
+    else return true;
+}
+
 function curl_redir_exec($ch,$debug="") 
 {
     static $curl_loops = 0; 
@@ -69,7 +81,7 @@ function curl_redir_exec($ch,$debug="")
     } else { 
         $curl_loops=0; 
         return $debbbb; 
-    } 
+    }
 } 
 
 ?>

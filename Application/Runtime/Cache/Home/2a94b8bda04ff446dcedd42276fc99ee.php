@@ -1,4 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -272,9 +273,5 @@ function on_stu_btn_click(){
 </div>
 <script src="/Public/js/ajaxfileupload.js"></script>
 <script src="/Public/js/public.js"></script>
-
-<script type="text/javascript">
-
-</script>
 </body>
 </html>

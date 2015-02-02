@@ -6,6 +6,11 @@ Class QuestionController extends Controller{
 	public function index($qid,$aid=0){
 		$page_content = M('Question')->where('id=%d',$qid)->find();
 		$page_content['content'] = sub_question_content($page_content['content']);
+
+
+		$page_user_status = M('QuestionUserStatus')->where('username="%s" AND question_id=%d',$qid)->find();
+
+		$this->assign('page_user_status',$page_user_status);
 		$this->assign('page',$page_content);
 		$this->display();
 	}
@@ -30,7 +35,7 @@ Class QuestionController extends Controller{
 			if($result_id){
 				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$result_id);
 			}else{
-				$this->error('发布失败，未知错误');	
+				$this->error('发布失败，请退出后重新登录');	
 			}
 		}
 	}
@@ -53,5 +58,26 @@ Class QuestionController extends Controller{
 	public function stu($imgurl){
 		$this->assign('imgurl',$imgurl);
 		$this->display();
+	}
+
+	public function set_question_user_status($question_id,$follow,$anonymous){
+		if(!test_user()) echo '用户登录失效，请检查';
+
+		$data = array(
+			'username' 		=> cookie('username'),
+			'question_id'	=> $question_id,
+			'follow'		=> (($follow != 0) ? 1 : 0),
+			'anonymous'		=> (($anonymous != 0) ? 1 : 0)
+			);
+
+		$db = M('QuestionUserStatus');
+		$db_count = $db->where('username="%s" AND question_id=%d',cookie('username'),$question_id)->count();
+		$db->data($data);
+		if($db_count){
+			$db->save();
+		}else{
+			$db->add();
+		}
+
 	}
 }

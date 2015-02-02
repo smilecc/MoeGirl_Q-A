@@ -7,13 +7,20 @@
 		<small><div onclick="on_question_content_click({:$page['id']})" style="cursor:pointer" id="question-content-div">
 			<p id="question_content">{:$page['content']}<a href="javascript:;">[点击查看全部内容]</a></p>
 		</div></small>
+		<a href="javascript:;" class="am-article-meta"><span class="am-icon-user-plus"></span> 邀请回答（待实现）</a>
 		<hr />
 		<span>
 			<strong>共 {:$page['answer']} 个回答</strong>
-		</span>
+		</span><span class="am-fr"><span class="am-icon-clock-o" ></span> 提交于 {:$page['time']}</span>
+
 		<hr />
 	</div>
-	<div class="am-u-sm-4"></div>
+	<div class="am-u-sm-4">
+		<button type="button" id="follow_btn" onclick="on_user_status_btn_click({:$page['id']},0)" class="am-btn am-btn-primary am-radius {:($page_user_status['follow']?'am-active':'')}" data-am-button>{:($page_user_status['follow']?'已关注':'关注问题')}</button>
+		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click({:$page['id']},1)" class="am-btn am-btn-default am-radius {:($page_user_status['anonymous']?'am-active':'')}" data-am-button>{:($page_user_status['anonymous']?'已匿名':'使用匿名身份')}</button>
+		<hr />
+		<p>问题提交者： {:$page['anonymous']?'匿名用户':'<a href="'.'get_user_page($page["username"])'.'">'.$page["username"].'</a>'}</p>
+	</div>
 </div>
 
 <script src="/Public/js/question.js"></script>

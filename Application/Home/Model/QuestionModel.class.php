@@ -7,8 +7,9 @@ Class QuestionModel extends Model{
 	public function add_question($get_data){
 		trace("DEBUG",'degug');
 		// 验证username
-		$cookie_username_token = login_en_code(M('UserLogin')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
-		if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
+		//$cookie_username_token = login_en_code(M('UserLogin')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
+		//if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
+		if(!test_user()) return false;
 
 		$get_data['topic']['count'] = count($get_data['topic']);
 

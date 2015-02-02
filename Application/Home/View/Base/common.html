@@ -1,4 +1,8 @@
 <!DOCTYPE HTML>
+<php>
+	$auto_login = new \User\Api\UserApi;
+    $auto_login->autologin();
+</php>
 <html class="no-js">
 <head>
 	<include file="Public/head"/>
@@ -21,9 +25,5 @@
 </div>
 <script src="/Public/js/ajaxfileupload.js"></script>
 <script src="/Public/js/public.js"></script>
-
-<script type="text/javascript">
-
-</script>
 </body>
 </html>
