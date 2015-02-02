@@ -161,7 +161,8 @@
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
       </li>
-    </ul><?php endif; ?>
+    </ul>
+    </div><?php endif; ?>
 
     <?php if(!is_login()): ?><!--提问未登录的alert-->
     <div class="am-modal am-modal-alert" tabindex="-1" id="put-question-popup">
@@ -179,7 +180,6 @@
     <div class="am-topbar-right">
       <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-offcanvas="{target: '#oc-login'}">登录</button>
     </div>
-</div>
 
     <div class="am-modal am-modal-no-btn" tabindex="-1" id="login-model">
       <div class="am-modal-dialog">
@@ -274,8 +274,7 @@ function on_stu_btn_click(){
 <script src="/Public/js/public.js"></script>
 
 <script type="text/javascript">
-//if($(document.body).height() < document.body.scrollHeight)
-	//document.getElementById("space_height").style.cssText="height:"+(document.body.scrollHeight-170)+"px";
+
 </script>
 </body>
 </html>
