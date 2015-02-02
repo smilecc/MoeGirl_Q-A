@@ -65,7 +65,7 @@ $('#put-question-uploading').modal('open');
             $("#put-question-content").val($("#put-question-content").val() + "{:" + data + "!}");
             $('#put-question-popup').modal('open');
         }else if(mode == "answer"){
-            $("#put-answer-content").val($("#put-question-content").val() + "{:" + data + "!}");
+            $("#put-answer-content").val($("#put-answer-content").val() + "{:" + data + "!}");
             $('#put-question-upload').modal('close');
         }
       }

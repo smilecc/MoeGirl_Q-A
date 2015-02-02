@@ -6,11 +6,19 @@ Class QuestionController extends Controller{
 	public function index($qid,$aid=0){
 		$page_content = M('Question')->where('id=%d',$qid)->find();
 		$page_content['content'] = sub_question_content($page_content['content']);
-
+		$page_content['answer'] = M('Answer')->where('question_id=%d',$qid)->count();
 
 		$page_user_status = M('QuestionUserStatus')->where('username="%s" AND question_id=%d',cookie('username'),$qid)->find();
-		trace($page_user_status);
+		$page_content['my_answer'] = M('Answer')->where('username="%s" AND question_id=%d',cookie('username'),$qid)->find();
+		
+		$page_answer = array();
+		if($aid == 0){
+			$page_answer = M('Answer')->where('question_id=%d',$qid)->select();
+		}else{
+			$page_answer = M('Answer')->where('id=%d',$aid)->find();
+		}
 
+		$this->assign('answer',$page_answer);
 		$this->assign('page_user_status',$page_user_status);
 		$this->assign('page',$page_content);
 		$this->display();
@@ -35,6 +43,24 @@ Class QuestionController extends Controller{
 			$result_id = D('Question')->add_question($data);
 			if($result_id){
 				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$result_id);
+			}else{
+				$this->error('发布失败，请退出后重新登录');	
+			}
+		}
+	}
+
+
+	public function put_answer($question_id,$content){
+		if(IS_POST){
+			//print_r(I('post.put-question-topic'));
+			//return;
+			$data = array(
+				'question_id' 	=> $question_id,
+				'content' 	=> $content,
+				);
+			$result_id = D('Answer')->add_answer($data);
+			if($result_id){
+				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$question_id.'/answer/'.$result_id);
 			}else{
 				$this->error('发布失败，请退出后重新登录');	
 			}

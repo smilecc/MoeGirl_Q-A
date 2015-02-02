@@ -10,17 +10,48 @@
 		<a href="javascript:;" class="am-article-meta"><span class="am-icon-user-plus"></span> 邀请回答（待实现）</a>
 		<hr />
 		<span>
-			<strong>共 {:$page['answer']} 个回答</strong>
+			<strong><a href="/index.php/Home/Question/{:$page['id']}">共 {:$page['answer']} 个回答</a></strong>
 		</span><span class="am-fr"><span class="am-icon-clock-o" ></span> 提交于 {:$page['time']}</span>
 		<hr />
+		<ul class="am-comments-list">
+		  <foreach name="answer" item="vo" >
+			<article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar" width="48" height="48">
+				  <button type="button" class="am-btn am-btn-default am-icon-angle-up"><br />{:$vo['agree']}</button>
+				  <button type="button" class="am-btn am-btn-default am-icon-angle-down"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div class="am-comment-main">
+				    <header class="am-comment-hd">
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta">
+				        <a href="#link-to-user" class="am-comment-author">{:$vo['username']}</a>
+				        发布于 <time datetime="2013-07-27T04:54:29-07:00">{:$vo['time']}</time>
+				      </div>
+				    </header>
 
+				    <div class="am-comment-bd">
+				      {:img_replace(nl2br($vo['content']))}
+				    </div>
+				  </div>
+				</article>
+	       </foreach>
+		</ul>
 		<hr />
-		<form>
-			<p>{:cookie('username')}<a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="upload_mode='answer';"><span class="am-icon-image"></span> 图片上传</a></p>
-	        <textarea class="am-form-field am-radius" rows="8" id="put-answer-content" name="content"></textarea>
-	        <p><button type="button" class="am-btn am-btn-success am-radius am-fr" id="anonymous_btn">发布</button></p>
-        </form>
-
+		<IF condition="$page['my_answer']['id']">
+			<div class="am-alert am-alert-success" data-am-alert>
+			  <button type="button" class="am-close">&times;</button>
+			  <p>你已经提交过答案了，同一个问题只能回答一次。<a href="/index.php/Home/Question/{:$page['id']}/answer/{:$page[my_answer]['id']}">点击这儿查看你的答案</a></p>
+			</div>
+		<else />
+			<form action="/index.php/Home/Question/put_answer.html" method="post">
+				<p>{:cookie('username')}<a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="upload_mode='answer';"><span class="am-icon-image"></span> 图片上传</a></p>
+				<input type="hidden" value="{:$page['id']}" name="question_id" />
+		        <textarea class="am-form-field am-radius" rows="8" id="put-answer-content" name="content"></textarea>
+		        <p><button type="submit" class="am-btn am-btn-success am-radius am-fr" id="anonymous_btn">发布</button></p>
+	        </form>
+        </IF>
 	</div>
 	<div class="am-u-sm-4">
 		<button type="button" id="follow_btn" onclick="on_user_status_btn_click({:$page['id']},0)" class="am-btn am-btn-primary am-radius {:($page_user_status['follow']?'am-active':'')}" data-am-button>{:($page_user_status['follow']?'已关注':'关注问题')}</button>
