@@ -5,5 +5,6 @@ return array(
 	'URL_ROUTE_RULES'=>array(
 		'Question/:qid\d' => 'Question/index',
 		'Question/:qid\d/Answer/:aid\d' => 'Question/index',
+		'Inboxpage/:usname'	=> 'Inbox/inboxpage',//私信页
 		),
 );

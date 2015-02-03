@@ -1,0 +1,1 @@
+a:6:{i:0;s:8:"username";i:1;s:11:"question_id";i:2;s:6:"follow";i:3;s:9:"anonymous";s:3:"_pk";s:8:"username";s:5:"_type";a:4:{s:8:"username";s:11:"varchar(64)";s:11:"question_id";s:7:"int(11)";s:6:"follow";s:7:"int(11)";s:9:"anonymous";s:7:"int(11)";}}

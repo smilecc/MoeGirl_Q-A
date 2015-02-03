@@ -1,4 +1,56 @@
-<block name="header">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<html class="no-js">
+<head>
+	  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="/Public/assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="/Public/assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="/Public/assets/css/app.css">
+
+  <link rel="stylesheet" href="/Public/css/public.css">
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/Public/assets/js/jquery.min.js"></script>
+<script src="/Public/assets/js/amazeui.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+  var upload_mode = 'answer';
+</script>
+</head>
+<body>
+<div id="space_height">
+	<!-- 头部 -->
+	
 
 <header class="am-topbar">
 <div class="am-container">
@@ -19,9 +71,7 @@
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
-  <IF condition="is_login()">
-
-    <!--提问窗口-->
+  <?php if(is_login()): ?><!--提问窗口-->
     <div class="am-popup" id="put-question-popup">
       <div class="am-popup-inner">
         <div class="am-popup-hd">
@@ -39,10 +89,8 @@
              <!--话题框-->
              <label for="doc-ta-1">话题： </label>
             <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="5" name="topic[]">
-            <php>$topic_list = M("Topic")->select();</php>
-            <foreach name="topic_list" item="vo" >
-                <option value="{$vo.id}">{$vo.name}</option>
-            </foreach>
+            <?php $topic_list = M("Topic")->select(); ?>
+            <?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
             <hr />
              <div class="am-form-group">
@@ -108,23 +156,19 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="am-dropdown" data-am-dropdown>
         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          {:cookie('username')} <span class="am-icon-caret-down"></span>
+          <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
-          <li><a href="{:U('/Home/Inbox')}">私信</a></li>
           <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
       </li>
     </ul>
-    </div>
-    </IF>
+    </div><?php endif; ?>
 
-    <IF condition="!is_login()">
-
-    <!--提问未登录的alert-->
+    <?php if(!is_login()): ?><!--提问未登录的alert-->
     <div class="am-modal am-modal-alert" tabindex="-1" id="put-question-popup">
       <div class="am-modal-dialog">
         <div class="am-modal-hd">提示</div>
@@ -180,8 +224,7 @@
           </div>
         </div>
       </div>
-    </div>
-    </IF>
+    </div><?php endif; ?>
 
   </div>
   </div>
@@ -190,11 +233,95 @@
 
 <script type="text/javascript">
 function on_stu_btn_click(){
-    <literal>var reg = /\{\:(.+?)\!\}/;</literal>
+    var reg = /\{\:(.+?)\!\}/;
     var result_content = reg.exec($("#put-question-content").val());
-    window.open('/index.php/Home/Question/stu.html?imgurl=http://{:$_SERVER['HTTP_HOST']}/Public/Uploads/' + result_content[1]);
+    window.open('/index.php/Home/Question/stu.html?imgurl=http://<?php echo $_SERVER['HTTP_HOST'];?>/Public/Uploads/' + result_content[1]);
 }
 </script>
 
 
-</block>
+
+	<!-- /头部 -->
+
+	<!-- 主体 -->
+	<div class="am-container">
+	
+<title><?php echo $page['title'];?> - 萌娘问答</title>
+<div class="am-g">
+	<div class="am-u-sm-8" >
+		<h1 class="am-article-title" id="question_title"><?php echo $page['title'];?></h1>
+		<small><div onclick="on_question_content_click(<?php echo $page['id'];?>)" style="cursor:pointer" id="question-content-div">
+			<p id="question_content"><?php echo $page['content'];?><a href="javascript:;">[点击查看全部内容]</a></p>
+		</div></small>
+		<a href="javascript:;" class="am-article-meta"><span class="am-icon-user-plus"></span> 邀请回答（待实现）</a>
+		<hr />
+		<span>
+			<strong><a href="/index.php/Home/Question/<?php echo $page['id'];?>">共 <?php echo $page['answer'];?> 个回答</a></strong>
+		</span><span class="am-fr"><span class="am-icon-clock-o" ></span> 提交于 <?php echo $page['time'];?></span>
+		<hr />
+		<ul class="am-comments-list">
+		  <?php if(is_array($answer)): foreach($answer as $key=>$vo): ?><article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar" width="48" height="48">
+				  <button type="button" class="am-btn am-btn-default am-icon-angle-up"><br /><?php echo $vo['agree'];?></button>
+				  <button type="button" class="am-btn am-btn-default am-icon-angle-down"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div class="am-comment-main">
+				    <header class="am-comment-hd">
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta">
+				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        发布于 <time datetime="2013-07-27T04:54:29-07:00"><?php echo $vo['time'];?></time>
+				      </div>
+				    </header>
+
+				    <div class="am-comment-bd">
+				      <?php echo img_replace(nl2br($vo['content']));?>
+				    </div>
+				  </div>
+				</article><?php endforeach; endif; ?>
+		</ul>
+		<hr />
+		<?php if($page['my_answer']['id']): ?><div class="am-alert am-alert-success" data-am-alert>
+			  <button type="button" class="am-close">&times;</button>
+			  <p>你已经提交过答案了，同一个问题只能回答一次。<a href="/index.php/Home/Question/<?php echo $page['id'];?>/answer/<?php echo $page[my_answer]['id'];?>">点击这儿查看你的答案</a></p>
+			</div>
+		<?php else: ?>
+			<form action="/index.php/Home/Question/put_answer.html" method="post">
+				<p><?php echo cookie('username');?><a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="upload_mode='answer';"><span class="am-icon-image"></span> 图片上传</a></p>
+				<input type="hidden" value="<?php echo $page['id'];?>" name="question_id" />
+		        <textarea class="am-form-field am-radius" rows="8" id="put-answer-content" name="content"></textarea>
+		        <p><button type="submit" class="am-btn am-btn-success am-radius am-fr" id="anonymous_btn">发布</button></p>
+	        </form><?php endif; ?>
+	</div>
+	<div class="am-u-sm-4">
+		<button type="button" id="follow_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,0)" class="am-btn am-btn-primary am-radius <?php echo ($page_user_status['follow']?'am-active':'');?>" data-am-button><?php echo ($page_user_status['follow']?'已关注':'关注问题');?></button>
+		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,1)" class="am-btn am-btn-default am-radius <?php echo ($page_user_status['anonymous']?'am-active':'');?>" data-am-button><?php echo ($page_user_status['anonymous']?'已匿名':'使用匿名身份');?></button>
+		<hr />
+		<p>问题提交者： <?php echo $page['anonymous']?'匿名用户':'<a href="'.'get_user_page($page["username"])'.'">'.$page["username"].'</a>';?></p>
+	</div>
+</div>
+
+<script src="/Public/js/question.js"></script>
+
+	</div>
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	<footer data-am-widget="footer" class="am-footer am-footer-default qa-footer-grey" data-am-footer="{  }">
+  <div class="am-footer-switch">
+    <span>萌娘问答</span>
+  </div>
+  <div class="am-footer-miscs ">
+    <p>你正在浏览的是
+      <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
+    <p>CopyRight©2014 AllMoeGirl Inc.</p>
+  </div>
+</footer>
+	<!-- /底部 -->
+</div>
+<script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/public.js"></script>
+</body>
+</html>

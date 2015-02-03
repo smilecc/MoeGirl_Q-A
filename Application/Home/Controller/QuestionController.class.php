@@ -4,13 +4,19 @@ use Think\Controller;
 
 Class QuestionController extends Controller{
 	public function index($qid,$aid=0){
+		// 问题内容查询
 		$page_content = M('Question')->where('id=%d',$qid)->find();
+		// 截取问题的内容
 		$page_content['content'] = sub_question_content($page_content['content']);
+		// 获得答案的数量
 		$page_content['answer'] = M('Answer')->where('question_id=%d',$qid)->count();
 
+		// 获得当前用户的匿名、关注状态
 		$page_user_status = M('QuestionUserStatus')->where('username="%s" AND question_id=%d',cookie('username'),$qid)->find();
+		// 获得我的答案
 		$page_content['my_answer'] = M('Answer')->where('username="%s" AND question_id=%d',cookie('username'),$qid)->find();
-		
+
+		// 分发内容
 		$page_answer = array();
 		if($aid == 0){
 			$page_answer = M('Answer')->where('question_id=%d',$qid)->select();
@@ -24,12 +30,14 @@ Class QuestionController extends Controller{
 		$this->display();
 	}
 
+	// 获取问题内容
 	public function get_question_content($qid){
 		$page_content = M('Question')->where('id=%d',$qid)->getField('content');
 		$page_content = img_replace(nl2br($page_content));
 		echo $page_content;
 	}
 
+	// 提交问题
 	public function put_question($title,$content,$topic,$anonymous='off'){
 		if(IS_POST){
 			//print_r(I('post.put-question-topic'));
@@ -49,7 +57,7 @@ Class QuestionController extends Controller{
 		}
 	}
 
-
+	// 提交答案
 	public function put_answer($question_id,$content){
 		if(IS_POST){
 			//print_r(I('post.put-question-topic'));
@@ -67,6 +75,7 @@ Class QuestionController extends Controller{
 		}
 	}
 
+	// 图片的上传
 	public function upload(){
 		$upload = new \Think\Upload();// 实例化上传类
 		$upload->maxSize   =     3145728;// 设置附件上传大小
@@ -82,11 +91,13 @@ Class QuestionController extends Controller{
 	}
 
 
+	// 识图页面
 	public function stu($imgurl){
 		$this->assign('imgurl',$imgurl);
 		$this->display();
 	}
 
+	// 设置用户对答案的状态（关注、匿名）
 	public function set_question_user_status($question_id,$follow,$anonymous){
 		if(!test_user()) echo '用户登录失效，请检查';
 

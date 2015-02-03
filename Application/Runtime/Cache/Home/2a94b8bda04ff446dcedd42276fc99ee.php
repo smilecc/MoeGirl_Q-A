@@ -43,6 +43,9 @@
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <![endif]-->
+<script type="text/javascript">
+  var upload_mode = 'answer';
+</script>
 </head>
 <body>
 <div id="space_height">
@@ -92,7 +95,7 @@
             <hr />
              <div class="am-form-group">
               <label for="doc-ta-1">问题描述（选填）： </label>
-              <a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="$('#put-question-popup').modal('close');"><span class="am-icon-image"></span> 图片上传</a>
+              <a class="am-fr" href="javescript:;"  data-am-modal="{target: '#put-question-upload', closeViaDimmer: 0, width: 400, height: 225}" onclick="upload_mode='question';$('#put-question-popup').modal('close');"><span class="am-icon-image"></span> 图片上传</a>
               <textarea class="am-form-field am-radius" rows="9" id="put-question-content" name="content"></textarea>
             </div>
 
@@ -114,13 +117,13 @@
   <div class="am-modal am-modal-no-btn" tabindex="-1" id="put-question-upload">
     <div class="am-modal-dialog">
       <div class="am-modal-hd">图片上传
-        <a href="javascript:;"  onclick="$('#put-question-popup').modal('open');" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        <a href="javascript:;"  onclick="if(upload_mode == 'question') $('#put-question-popup').modal('open');" class="am-close am-close-spin" data-am-modal-close>&times;</a>
       </div>
       <hr />
       <div class="am-modal-bd">
         <div class="am-form-group">
           <p><input type="file" id="put-question-upload-input" name="put-question-upload-input" class="am-center am-btn am-btn-success"></p>
-          <button type="button" class="am-btn am-btn-primary" onclick="upload('question')">提交</button>
+          <button type="button" class="am-btn am-btn-primary" onclick="upload(upload_mode)">提交</button>
         </div>
       </div>
     </div>
@@ -157,6 +160,7 @@
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
+          <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
           <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>

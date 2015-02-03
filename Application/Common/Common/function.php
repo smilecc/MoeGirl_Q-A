@@ -38,6 +38,7 @@ function test_user(){
     else return true;
 }
 
+// 自动跳转的curl_exec
 function curl_redir_exec($ch,$debug="") 
 {
     static $curl_loops = 0; 

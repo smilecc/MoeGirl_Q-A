@@ -1,0 +1,68 @@
+<extend name="Base/common"/>
+<block name="body">
+
+<title>与 {:$toname} 的对话 - 私信 - 萌娘问答</title>
+
+<div class="am-g">
+<div class="am-u-sm-8">
+
+<p>发送私信给 <b>{:$toname}：</b></p>
+
+<script type="text/javascript">
+function send(){
+    $.ajax({
+            type:"POST",
+            url:"{:U('/Home/Inbox')}",
+            data:{
+                  type:'send',
+                  toname:'{:$toname}',
+                  content:$("#contenttext").val()
+                  },
+            cache:false, //不缓存此页面   
+            success:function(re){
+        alert(re);
+        if(re=="发送成功") location.replace(location);
+            }
+        });
+
+
+  }
+</script>
+
+<div class="am-form">
+  <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
+  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+</div>
+
+<hr>
+<volist name="inboxpage_con" id="vo">
+  <p><if condition="($vo['from'] eq 1)">
+
+  <if condition="($vo['usname1'] eq cookie('username'))">
+  <b>我</b>
+  <else />
+  <a href="/Home/User/people/{$vo.usname1}">{:$vo['usname1']}</a>
+  </if>
+
+  <else />
+
+  <if condition="($vo['usname1'] eq cookie('username'))">
+  <a href="/Home/User/people/{$vo.usname2}">{:$vo['usname2']}</a>
+  <else />
+  <b>我</b>
+  </if>
+  
+  </if>
+  ：{$vo['content']}</p>
+  <p><div class="text-right">{$vo['time']}</div></p>
+  <hr>
+</volist>
+
+
+</div><!--col-md-8-->
+
+<div class="am-u-sm-4"></div>
+
+</div><!--container-->
+
+</block>
