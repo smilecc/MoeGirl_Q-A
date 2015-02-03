@@ -1,4 +1,6 @@
 function on_question_content_click(qid){
+	if(question_content_is_load) return;
+	 question_content_is_load = true;
 	  $('#question-content-div').animate({ opacity: '0'}, 100);
 	  $("#question-content-div").load('/index.php/Home/Question/get_question_content.html?qid='+ qid);
 	  $("#question-content-div").css('cursor','auto');

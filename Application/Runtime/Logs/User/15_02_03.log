@@ -79,3 +79,60 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
 
+[ 2015-02-03T12:04:31+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 46 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2015-02-03T12:04:35+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 1 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 46 行.
+NOTIC: [8] Trying to get property of non-object D:\php\Code\MoeGirl_Q-A\Application\User\Controller\OperationController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2015-02-03T12:10:32+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002441s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009199s ]
+SQL: SELECT * FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000765s ]
+DEBUG: test:2
+SQL: UPDATE `mgqa_user_login` SET `random`=5262 WHERE ( username="SmileC" ) [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+

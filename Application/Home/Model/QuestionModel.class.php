@@ -10,17 +10,19 @@ Class QuestionModel extends Model{
 		//if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
 		if(!test_user()) return false;
 
-		$get_data['topic']['count'] = count($get_data['topic']);
-		if(!$get_data['title'] || !$get_data['topic']['count']) return false;
+		$get_data_topic_count = count($get_data['topic']);
+		if(!$get_data['title'] || !$get_data_topic_count) return false;
 
 		$data = array(
 			'username' 	=> cookie('username'),
 			'title'		=> $get_data['title'],
 			'content'	=> $get_data['content'],
-			'topic'		=> json_encode($get_data['topic']),
 			'anonymous' => $get_data['anonymous'],
 			);
-
+		
+		for($i = 1; $i <= $get_data_topic_count; $i++){
+			$data['topic'.$i] = $get_data['topic'][$i-1];
+		}
 
 		$this->create($data);
 		return($this->add());
