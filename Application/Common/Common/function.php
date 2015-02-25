@@ -38,6 +38,12 @@ function test_user(){
     else return true;
 }
 
+// 获得问题的标题
+function get_question_title($question_id){
+    $question_info = M('Question')->where('id=%d',$question_id)->find();
+    return $question_info['title'];
+}
+
 // 自动跳转的curl_exec
 function curl_redir_exec($ch,$debug="") 
 {

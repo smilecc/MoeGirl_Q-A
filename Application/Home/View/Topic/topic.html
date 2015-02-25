@@ -11,39 +11,95 @@
 		<p class="am-article-meta">{:$topic['introduce']}</p>
 		<hr />
 		<ul class="am-nav am-nav-pills">
-		  <li class="am-active"><a href="#">最近</a></li>
-		  <li><a href="#">精华</a></li>
-		  <li><a href="#">全部问题</a></li>
+		  <li class="{:$mode == 'near' ? 'am-active' : ''}"><a href="{:U('Home/Topic/'.$topic['id'].'/near')}">最近</a></li>
+		  <li class="{:$mode == 'hot' ? 'am-active' : ''}"><a href="{:U('Home/Topic/'.$topic['id'].'/hot')}">精华</a></li>
+		  <li class="{:$mode == 'all' ? 'am-active' : ''}"><a href="{:U('Home/Topic/'.$topic['id'].'/all')}">全部问题</a></li>
 		</ul>
 		<hr />
-		<article class="am-comment">
-		  	<div class="am-btn-group-stacked am-comment-avatar">
-			  <button type="button" class="am-btn am-btn-default am-icon-angle-up"><br /></button>
-			  <center>{:$vo['agree']}</center>
-			  <button type="button" class="am-btn am-btn-default am-icon-angle-down"></button>
-			</div>
-		    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
-		  
-			  <div>
-			    <header>
-			      <!--<h3 class="am-comment-title">评论标题</h3>-->
-			      <div class="am-comment-meta">
-			        <a href="#link-to-user" class="am-comment-author">{:$vo['username']}test</a>
-			        发布于 <time datetime="2013-07-27T04:54:29-07:00">{:$vo['time']}test</time>
-			      </div>
-			    </header>
+		<IF condition="$mode eq 'near'">
+			<foreach name="content" item="vo" key="i">
+			<notempty name="vo['answer_content']['id']">
+			<article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar">
+				  <button id="agree-answer-btn-{:$vo['answer_content']['id']}" type="button" onclick="agree_answer({:$vo['answer_content']['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['answer_content']['id'],1)}"><br /></button>
+				  <center id="answer-agree-numb-{:$vo['answer_content']['id']}">{:$vo['answer_content']['agree']}</center>
+				  <button id="unagree-answer-btn-{:$vo['answer_content']['id']}" type="button" onclick="agree_answer({:$vo['answer_content']['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['answer_content']['id'],2)}"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="#link-to-user" class="am-comment-author">{:$vo['answer_content']['username']}</a>
+				        发布于 <time>{:$vo['answer_content']['time']}</time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/{:$vo['id']}/Answer/{:$vo['answer_content']['id']}"><h2>{:$vo['title']}</h2></a>
+				      {:sub_question_content($vo['answer_content']['content'])}
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['answer_content']['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['answer_content']['id']}">
+					    <div class="am-panel-bd" id="div-comment-{:$vo['answer_content']['id']}">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article>
+			</notempty>
+			</foreach>
+		<elseif condition="$mode eq 'hot'"/>
+			<foreach name="content" item="vo" key="i">
+			<notempty name="vo['id']">
+			<article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar">
+				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
+				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
+				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="#link-to-user" class="am-comment-author">{:$vo['username']}</a>
+				        发布于 <time>{:$vo['time']}</time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['id']}"><h2>{:get_question_title($vo['question_id'])}</h2></a>
+				      {:sub_question_content($vo['content'])}
 
-			    <div class="am-comment-bd">
-			      {:img_replace(nl2br($vo['content']))}test
-			    </div>
-			  </div>
-			  <hr />
-		</article>
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['id']}">
+					    <div class="am-panel-bd" id="div-comment-{:$vo['id']}">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article>
+			</notempty>
+			</foreach>
+		<else />
+			<foreach name="content" item="vo" key="i">
+				<small><div class="am-link-muted">
+				    <a href="#link-to-user">{:$vo['username']}</a>
+					提交于 <time>{:$vo['time']}</time>
+				</div></small>
+				<a target="_blank" href="/index.php/Home/Question/{:$vo['id']}"><h2>{:$vo['title']}</h2></a>
+				<hr />
+			</foreach>
+		</IF>
 	</div><!--am-9-->
 	<div class="am-u-sm-3">
 		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click({:$topic['id']})" class="am-btn am-btn-primary am-radius {:($topic['is_follow']?'am-active':'')}" data-am-button>{:($topic['is_follow']?'已关注':'关注话题')}</button>
 		<p>{:$topic['follow_count']} 人关注了这个话题</p>
 		<p>该话题下共有 {:$topic['question_count']} 个问题</p>
+		<IF condition="$topic['father_topic']"><hr /><p>父话题：<a href="{:U('/Home/Topic/'.$topic['father_topic'])}" class="am-btn am-btn-primary am-round">{:getTopicname($topic['father_topic'])}</a></p></IF>
 	</div><!--am-3-->
 </div>
 

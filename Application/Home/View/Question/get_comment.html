@@ -1,0 +1,12 @@
+<foreach name="comment" item="vo" key="i">
+<p>{:$vo['username']}<span class="am-fr">{:$vo['time']}</span><br />{:$vo['content']}<hr /></p>
+</foreach>
+<IF condition="count($comment) eq 0">
+	<div class="am-alert">
+	  一条评论也木有
+	</div>
+</IF>
+<hr />
+<label>评论:</label>
+<textarea class="am-form-field am-radius" rows="3" id="put-comment-content-{:$project_id}" name="content"></textarea>
+<p class="am-text-right"><button type="button" class="am-btn am-btn-success am-radius" onclick="put_comment({:$project_id},'{:$mode}')">提交</button></p>

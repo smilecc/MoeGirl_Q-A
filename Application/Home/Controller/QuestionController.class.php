@@ -21,9 +21,11 @@ Class QuestionController extends Controller{
 		if($aid == 0){
 			$page_answer = M('Answer')->where('question_id=%d',$qid)->select();
 		}else{
-			$page_answer = M('Answer')->where('id=%d',$aid)->find();
+			$page_answer[0] = M('Answer')->where('id=%d',$aid)->find();
 		}
 
+		//print_r($page_answer);
+		//print_r($page_content);
 		$this->assign('answer',$page_answer);
 		$this->assign('page_user_status',$page_user_status);
 		$this->assign('page',$page_content);
@@ -35,6 +37,32 @@ Class QuestionController extends Controller{
 		$page_content = M('Question')->where('id=%d',$qid)->getField('content');
 		$page_content = img_replace(nl2br($page_content));
 		echo $page_content;
+	}
+
+	// 提交评论
+	public function put_comment($id,$content,$mode){
+		if(!test_user()) {echo '用户登录失效，请检查';return false;}
+		if(!IS_POST) {echo '非法提交方式';return false;}
+
+		$data = array(
+			'username'	=> cookie('username'),
+			'project_id'=> $id,
+			'content'	=> $content,
+			'mode'		=> (($mode == 'question')? 0 : 1),
+			);
+		$Comment_db = M('Comment');
+		$Comment_db->create($data);
+		if($Comment_db->add()) echo 1;
+		else echo 0;
+	}
+
+	// 获取评论
+	public function get_comment($id,$mode){
+		$comment = M('Comment')->where('project_id=%d AND mode=%d',$id,(($mode == 'question')? 0 : 1))->order('id')->select();
+		$this->assign('mode',$mode);
+		$this->assign('project_id',$id);
+		$this->assign('comment',$comment);
+		$this->display();	
 	}
 
 	// 提交问题
@@ -97,9 +125,22 @@ Class QuestionController extends Controller{
 		$this->display();
 	}
 
+	// 赞同、不赞同接口
+	public function agree($answer_id,$agree){
+		if(true){ // IS_POST
+			if ($agree != 1 && $agree != 2) {
+				echo -1;
+				return;
+			}else{
+				echo D('Answer')->agree($answer_id,$agree);
+			}
+		}
+	}
+
+
 	// 设置用户对答案的状态（关注、匿名）
 	public function set_question_user_status($question_id,$follow,$anonymous){
-		if(!test_user()) echo '用户登录失效，请检查';
+		if(!test_user()) {echo '用户登录失效，请检查';return false;}
 
 		$data = array(
 			'username' 		=> cookie('username'),

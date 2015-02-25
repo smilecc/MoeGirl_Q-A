@@ -80,3 +80,58 @@ function on_continue_put_question_btn_click(){
   $("#put-question-form").submit(function(e) {event.preventDefault()}).off('submit').submit(function() {console.log("submit unlock")});
   $("#put-question-form").submit();
 }
+function comment_toggle(data,mode){
+  $("#comment-" + $(data).attr('value')).toggle();
+  $("#div-comment-" + $(data).attr('value')).load('/index.php/Home/Question/get_comment.html?id='+$(data).attr('value')+'&mode='+mode);
+  console.log('/index.php/Home/Question/get_comment.html?id='+$(data).attr('value')+'&mode='+mode);
+}
+function put_comment(project_id,mode){
+  $.ajax({
+            type:"POST",
+            url:"/index.php/Home/Question/put_comment.html",
+            data:{
+                  id:project_id,
+                  content:$("#put-comment-content-" + project_id).val(),
+                  mode:mode
+                  },
+            success:function(re){
+                if(re=="1"){
+                  $("#div-comment-" + project_id).load('/index.php/Home/Question/get_comment.html?id='+project_id+'&mode='+mode);
+                }else{
+                  alert('评论失败');
+                }
+            }
+  });
+}
+function agree_answer(answer_id,agree){
+  $.ajax({
+            type:"POST",
+            url:"/index.php/Home/Question/agree.html",
+            data:{
+                  answer_id:answer_id,
+                  agree:agree
+                  },
+            success:function(re){
+                if(re == "-1"){
+                    alert('失败，发生错误');
+                }else{
+                    $("#answer-agree-numb-" + answer_id).text(re);
+                    var btn_id = "";
+                    var o_btn_id = "";
+                    if (agree == 1) {
+                      btn_id = "#agree-answer-btn-" + answer_id;
+                      o_btn_id = "#unagree-answer-btn-" + answer_id;
+                    }
+                    else {
+                      btn_id = "#unagree-answer-btn-" + answer_id;
+                      o_btn_id = "#agree-answer-btn-" + answer_id;
+                    }
+                    if($(btn_id).hasClass("am-btn-primary")) $(btn_id).removeClass("am-btn-primary");
+                    else {
+                      $(btn_id).addClass("am-btn-primary");
+                      $(o_btn_id).removeClass("am-btn-primary");
+                    }
+                }
+            }
+  });
+}

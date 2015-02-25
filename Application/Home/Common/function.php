@@ -14,3 +14,15 @@ function gtuid(&$usname1,&$usname2){
         return true;
     }else return false;
 }
+
+function getTopicname($topic_id){
+	return M('Topic')->where('id=%d',$topic_id)->getField('name');
+}
+
+function getAnsweraction($answer_id,$agree){
+	$is_agree = M('AnswerAgree')->where('answer_id=%d AND username="%s"',$answer_id,cookie("username"))->getField('is_agree');
+	if($is_agree != NULL){
+		if($agree == 1 AND $is_agree == 1) return 'am-btn-primary';
+		else if($agree == 2 AND $is_agree == 2) return 'am-btn-primary';
+	}
+}
