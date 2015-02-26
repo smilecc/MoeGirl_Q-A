@@ -1,0 +1,19 @@
+<extend name="Base/common"/>
+<block name="body">
+<title>话题广场 - 萌娘问答</title>
+<div class="am-g">
+<h1 class="am-article-title">话题广场（初版简单Demo）</h1>
+		<hr />
+	<div class="am-u-sm-8">
+		<foreach name="topic" item="vo">
+			<p><a href="{:U('/Home/Topic/'.$vo['id'])}" target="_blank">{:$vo['name']}</a>
+			<php>$is_follow = getIsfollowtopic($vo['id']);</php>
+			<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click({:$vo['id']})" class="am-btn am-fr am-btn-success am-radius {:($is_follow?'am-active':'')}" data-am-button>{:($is_follow?'已关注':'关注话题')}</button><br />
+			<small>{:$vo['introduce']}</small></p>
+			<hr />
+		</foreach>
+	</div>
+</div>
+
+</div>
+</block>

@@ -80,4 +80,12 @@ Class AnswerModel extends Model{
 		}
 		return $this->where('id=%d',$answer_id)->getField('agree');
 	}
+
+	public function getFind($type = 24){ // type = 24 or 30
+		$search_time = 86400;
+		if($type == 30){
+			$search_time = 2592000;
+		}
+		return $this->where('%d < unix_timestamp(time)',(time() - $search_time))->order('agree - unagree desc')->limit(30)->select();
+	}
 }

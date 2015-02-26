@@ -23,6 +23,9 @@ function getTopicinfo($topic_id){
 	return M('Topic')->where('id=%d',$topic_id)->find();
 }
 
+function getIsfollowtopic($topic_id){
+	return M('TopicFollow')->where('username="%s" AND topic_id=%d',cookie('username'),$topic_id)->count();
+}
 
 function getAnsweraction($answer_id,$agree){
 	$is_agree = M('AnswerAgree')->where('answer_id=%d AND username="%s"',$answer_id,cookie("username"))->getField('is_agree');

@@ -25,6 +25,12 @@ class TopicController extends Controller {
 		$this->display();
 	}
 
+	public function tlist(){
+		$topic_list = M('Topic')->order('id')->select();
+		$this->assign('topic',$topic_list);
+		$this->display();
+	}
+
 	public function set_follow_topic($topic_id){
 		if(!test_user()) echo '用户登录失效，请检查';
 
