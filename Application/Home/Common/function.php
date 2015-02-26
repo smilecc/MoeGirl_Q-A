@@ -19,6 +19,11 @@ function getTopicname($topic_id){
 	return M('Topic')->where('id=%d',$topic_id)->getField('name');
 }
 
+function getTopicinfo($topic_id){
+	return M('Topic')->where('id=%d',$topic_id)->find();
+}
+
+
 function getAnsweraction($answer_id,$agree){
 	$is_agree = M('AnswerAgree')->where('answer_id=%d AND username="%s"',$answer_id,cookie("username"))->getField('is_agree');
 	if($is_agree != NULL){

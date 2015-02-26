@@ -4,6 +4,8 @@ use Think\Controller;
 
 class TopicController extends Controller {
 	public function index(){
+		$topic_arr = M('TopicFollow')->where('username="%s"',cookie('username'))->select();
+		$this->assign('topic',$topic_arr);
 		$this->display();
 	}
 

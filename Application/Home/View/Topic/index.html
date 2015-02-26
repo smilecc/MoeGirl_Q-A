@@ -3,18 +3,20 @@
 <script type="text/javascript">
 	$("#topbar-topic").addClass("am-active");
 </script>
-<title>话题 - 萌娘问答</title>
-<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
-  <ul class="am-tabs-nav am-nav am-nav-tabs">
-    <li class="am-active"><a href="#tab2-1">我关注的话题</a></li>
-    <li><a href="#tab2-2">话题最新动态</a></li>
-  </ul>
-
-  <div class="am-tabs-bd">
-    ...
-  </div>
+<title>我的话题 - 萌娘问答</title>
+<div class="am-g">
+<h1 class="am-article-title">我关注的话题</h1>
+		<hr />
+	<div class="am-u-sm-8">
+		<foreach name="topic" item="vo">
+			<PHP>$topic_info = getTopicinfo($vo['topic_id']);</PHP>
+			<p><a href="{:U('/Home/Topic/'.$topic_info['id'])}" target="_blank">{:$topic_info['name']}</a>
+			<button class="am-btn am-fr am-btn-success" onclick="on_follow_topic_btn_click({:$topic_info['id']})" data-am-button>取消关注</button><br />
+			<small>{:$topic_info['introduce']}</small></p>
+			<hr />
+		</foreach>
+	</div>
 </div>
-
 
 </div>
 </block>
