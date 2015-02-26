@@ -131,6 +131,9 @@ Class QuestionController extends Controller{
 			if ($agree != 1 && $agree != 2) {
 				echo -1;
 				return;
+			}else if(cookie('username') == M('Answer')->where('id=%d',$answer_id)->getField('username')){
+				echo -2;
+				return;
 			}else{
 				echo D('Answer')->agree($answer_id,$agree);
 			}

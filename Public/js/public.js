@@ -104,6 +104,7 @@ function put_comment(project_id,mode){
   });
 }
 function agree_answer(answer_id,agree){
+  if(getCookie('mgqa_username') == "")
   $.ajax({
             type:"POST",
             url:"/index.php/Home/Question/agree.html",
@@ -114,6 +115,8 @@ function agree_answer(answer_id,agree){
             success:function(re){
                 if(re == "-1"){
                     alert('失败，发生错误');
+                }else if(re == "-2"){
+                    alert('不要赞自己噢~');
                 }else{
                     $("#answer-agree-numb-" + answer_id).text(re);
                     var btn_id = "";
@@ -143,4 +146,16 @@ function on_follow_topic_btn_click(tid){
                if(re) alert(re);
             }
   });
+}
+
+function getCookie(cookieName) {
+    var strCookie = document.cookie;
+    var arrCookie = strCookie.split("; ");
+    for(var i = 0; i < arrCookie.length; i++){
+        var arr = arrCookie[i].split("=");
+        if(cookieName == arr[0]){
+            return arr[1];
+        }
+    }
+    return "";
 }
