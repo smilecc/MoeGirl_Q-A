@@ -1,0 +1,21 @@
+[ 2015-02-12T15:54:05+08:00 ] 127.0.0.1 /.ini?user_guid=1453C183-0FB1-4682-00A5-58DEA7572B44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.035336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.085660s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.673574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.673708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011476s ]
+

@@ -159,3 +159,37 @@ function getCookie(cookieName) {
     }
     return "";
 }
+
+function follow_user(from_name,to_user){
+    $.ajax({
+            type:"POST",
+            url:"/Home/User/follow.html",
+            dataType:"json",
+            data:{
+                  toname:to_user
+                  },
+            success:function(re){
+                console.log(re);
+                if(re.error) alert(re.error);
+                else{
+                  if(re.relation == 0){
+                    $('#follow-btn-' + to_user).addClass('am-btn-success');
+                    $('#follow-btn-' + to_user).removeClass('am-icon-retweet');
+                    $('#follow-btn-' + to_user).text("关注TA");
+                  }else if (re.relation == 1){
+                    $('#follow-btn-' + to_user).removeClass('am-icon-retweet');
+                    if(from_name > to_user) {$('#follow-btn-' + to_user).removeClass('am-btn-success');$('#follow-btn-' + to_user).text("取消关注");}
+                    else {$('#follow-btn-' + to_user).addClass('am-btn-success');$('#follow-btn-' + to_user).text("关注TA");}
+                  }else if (re.relation == 2){
+                    $('#follow-btn-' + to_user).removeClass('am-icon-retweet');
+                    if(from_name > to_user) {$('#follow-btn-' + to_user).addClass('am-btn-success');$('#follow-btn-' + to_user).text("关注TA");}
+                    else {$('#follow-btn-' + to_user).removeClass('am-btn-success');$('#follow-btn-' + to_user).text("取消关注");}
+                  }else{
+                    $('#follow-btn-' + to_user).removeClass('am-btn-success');
+                    $('#follow-btn-' + to_user).addClass('am-icon-retweet');
+                    $('#follow-btn-' + to_user).text(' 取消关注');
+                  }
+                }
+            }
+  });
+}

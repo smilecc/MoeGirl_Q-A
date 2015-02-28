@@ -1,0 +1,2456 @@
+[ 2015-02-25T00:39:52+08:00 ] 127.0.0.1 /index.php/Home/Question/10/Answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.196874s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.002644s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.065055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.076334s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.022255s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006982s ]
+SQL: SELECT * FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.032956s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000373s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.345452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.345584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019648s ]
+
+[ 2015-02-25T00:40:08+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2015-02-25T00:41:32+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+DEBUG: Agree Error
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2015-02-25T00:42:11+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+DEBUG: Agree Error
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-02-25T00:43:26+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+DEBUG: Agree Error
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2015-02-25T00:44:08+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+
+[ 2015-02-25T00:44:36+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.025535s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008351s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.027654s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000308s ]
+DEBUG: 
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.139765s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2015-02-25T00:44:40+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013399s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008691s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010611s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000298s ]
+DEBUG: Array
+(
+    [id] => 1
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.001855s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=1 ) [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2015-02-25T00:46:09+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015772s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009990s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011750s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000341s ]
+DEBUG: 
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000390s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2015-02-25T00:46:12+08:00 ] 127.0.0.1 /index.php/Home/Question/10/Answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.030193s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011350s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.007729s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006683s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017218s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000325s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2015-02-25T00:46:15+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016987s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008127s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011081s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000348s ]
+DEBUG: Array
+(
+    [id] => 2
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000488s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=2 ) [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2015-02-25T00:46:17+08:00 ] 127.0.0.1 /index.php/Home/Question/10/Answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.023827s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.032707s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.015251s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.023041s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.032861s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000328s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2015-02-25T15:08:51+08:00 ] 127.0.0.1 /index.php/Home/Question/10/answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007210s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.109440s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.002270s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.042865s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.034413s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.026693s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.033314s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000398s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.389490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.389621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006657s ]
+
+[ 2015-02-25T15:09:22+08:00 ] 127.0.0.1 /index.php/Home/Question/10/answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.019635s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011493s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.006775s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006434s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016534s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000295s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2015-02-25T15:09:24+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014161s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009051s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.021987s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000280s ]
+DEBUG: 
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.037513s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.010349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-02-25T15:09:25+08:00 ] 127.0.0.1 /index.php/Home/Question/10/answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.019751s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012857s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.006819s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008521s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017644s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000206s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2015-02-25T15:15:58+08:00 ] 127.0.0.1 /index.php/Home/Question/get_question_content.html?qid=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.042085s ]
+SQL: SELECT `content` FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2015-02-25T17:45:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005957s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.042538s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.120171s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.499575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.499691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009532s ]
+
+[ 2015-02-25T17:47:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.014852s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.026200s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2015-02-25T17:47:41+08:00 ] 127.0.0.1 /Home/Topic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.012763s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.024184s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2015-02-25T18:18:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008815s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016835s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2015-02-25T20:53:45+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+
+[ 2015-02-25T20:54:02+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.126680s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.016040s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.043752s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000578s ]
+DEBUG: Array
+(
+    [id] => 3
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.003323s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=3 ) [ RunTime:0.000458s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010057s ]
+
+[ 2015-02-25T20:54:04+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017074s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007635s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011085s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000341s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.015658s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000274s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2015-02-25T20:54:34+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014071s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006293s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009332s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000346s ]
+DEBUG: Array
+(
+    [id] => 4
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+NOTIC: [8] Undefined variable: set D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+SQL: UPDATE `mgqa_answer` SET  WHERE ( id=4 ) [ RunTime:0.000461s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=4 )' at line 1
+ [ SQL语句 ] : UPDATE `mgqa_answer` SET  WHERE ( id=4 )
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 4 [ RunTime:0.000256s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2015-02-25T20:54:38+08:00 ] 127.0.0.1 /index.php/Home/Question/10/answer/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.061999s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.007453s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011888s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( question_id=10 ) LIMIT 1   [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.041809s ]
+SQL: SELECT * FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="SmileC" AND question_id=10 ) LIMIT 1   [ RunTime:0.000370s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010052s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.030124s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000236s ]
+NOTIC: [8] Use of undefined constant my_answer - assumed 'my_answer' D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\93ef6f4e0883454498eb7273983f50b5.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.190258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2015-02-25T20:58:10+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013898s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006806s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009771s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000280s ]
+DEBUG: Array
+(
+    [id] => 4
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+NOTIC: [8] Undefined variable: set D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+SQL: UPDATE `mgqa_answer` SET  WHERE ( id=4 ) [ RunTime:0.000131s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=4 )' at line 1
+ [ SQL语句 ] : UPDATE `mgqa_answer` SET  WHERE ( id=4 )
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=4 ) [ RunTime:0.000215s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001443s ]
+
+[ 2015-02-25T20:58:22+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013524s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.005995s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.008973s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000274s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000186s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000223s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2015-02-25T20:58:30+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018120s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006954s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010402s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000321s ]
+DEBUG: Array
+(
+    [id] => 5
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000268s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=5 ) [ RunTime:0.000226s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001465s ]
+
+[ 2015-02-25T21:02:10+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014421s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007344s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011794s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000265s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000201s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000259s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2015-02-25T21:02:16+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015083s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006998s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.008946s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000251s ]
+DEBUG: Array
+(
+    [id] => 6
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000240s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 6 [ RunTime:0.000189s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2015-02-25T21:02:31+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014566s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006417s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011188s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000380s ]
+DEBUG: Array
+(
+    [id] => 6
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+NOTIC: [8] Undefined variable: set D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+SQL: UPDATE `mgqa_answer` SET  WHERE ( id=4 ) [ RunTime:0.000155s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=4 )' at line 1
+ [ SQL语句 ] : UPDATE `mgqa_answer` SET  WHERE ( id=4 )
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=6 ) [ RunTime:0.000212s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001951s ]
+
+[ 2015-02-25T21:02:45+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012514s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006693s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009445s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000280s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',2) [ RunTime:0.000195s ]
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+NOTIC: [8] Undefined variable: set D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+SQL: UPDATE `mgqa_answer` SET  WHERE ( id=4 ) [ RunTime:0.000139s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=4 )' at line 1
+ [ SQL语句 ] : UPDATE `mgqa_answer` SET  WHERE ( id=4 )
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2015-02-25T21:03:47+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014829s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007837s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010443s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000305s ]
+DEBUG: Array
+(
+    [id] => 7
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+NOTIC: [8] Undefined variable: set D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 293 行.
+SQL: UPDATE `mgqa_answer` SET  WHERE ( id=4 ) [ RunTime:0.000137s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=4 )' at line 1
+ [ SQL语句 ] : UPDATE `mgqa_answer` SET  WHERE ( id=4 )
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=7 ) [ RunTime:0.000191s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2015-02-25T21:03:53+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015837s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008668s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000317s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',2) [ RunTime:0.000231s ]
+SQL: UPDATE `mgqa_answer` SET `unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000426s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2015-02-25T21:04:06+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012674s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006363s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009331s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000277s ]
+DEBUG: Array
+(
+    [id] => 8
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+NOTIC: [8] Undefined offset: 0 D:\php\Code\MoeGirl_Q-A\ThinkPHP\Library\Think\Db.class.php 第 281 行.
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000334s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 8 [ RunTime:0.000173s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2015-02-25T21:04:16+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018368s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008760s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012794s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000298s ]
+DEBUG: Array
+(
+    [id] => 8
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000264s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=8 ) [ RunTime:0.000180s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2015-02-25T21:06:13+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017709s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008574s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.013029s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000375s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000217s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000255s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2015-02-25T21:06:26+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012805s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008825s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012296s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000292s ]
+DEBUG: Array
+(
+    [id] => 9
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000267s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 9 [ RunTime:0.000147s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2015-02-25T21:06:37+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013402s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006104s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.008764s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000252s ]
+DEBUG: Array
+(
+    [id] => 9
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1,`unagree`=unagree-1 WHERE ( id=4 ) [ RunTime:0.000202s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 9 [ RunTime:0.000146s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-02-25T21:06:45+08:00 ] 127.0.0.1 /Home/question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014292s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008146s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009734s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000281s ]
+DEBUG: Array
+(
+    [id] => 9
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000279s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=9 ) [ RunTime:0.000196s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2015-02-25T21:55:27+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.154032s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.001450s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.022858s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422280527 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.013026s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013950s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016116s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001564s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009567s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000921s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008852s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2015-02-25T21:56:32+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020181s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000252s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.019491s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422280592 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011903s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000458s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016174s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007092s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001575s ]
+
+[ 2015-02-25T22:05:36+08:00 ] 127.0.0.1 /Home/Question/agree?answer_id=4&agree=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017014s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006974s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.030687s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011834s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000305s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.043602s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.054793s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2015-02-25T22:05:43+08:00 ] 127.0.0.1 /Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+ERR: 参数错误或者未定义:answer_id
+
+[ 2015-02-25T22:06:52+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.025283s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000327s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.019177s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281212 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012389s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020662s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.011329s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007413s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2015-02-25T22:06:55+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020396s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.011474s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.014157s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000287s ]
+DEBUG: Array
+(
+    [id] => 10
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.012426s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=10 ) [ RunTime:0.003987s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2015-02-25T22:06:58+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.019998s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000303s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.020220s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281218 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012372s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017450s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.012092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007919s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2015-02-25T22:06:59+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015604s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008211s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011965s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000329s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000230s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000214s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2015-02-25T22:07:01+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012812s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006733s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000550s ]
+DEBUG: Array
+(
+    [id] => 11
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000217s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=11 ) [ RunTime:0.000160s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2015-02-25T22:07:09+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.019137s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009084s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000275s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000210s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000213s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2015-02-25T22:07:11+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016538s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006667s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009361s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000283s ]
+DEBUG: Array
+(
+    [id] => 12
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000259s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=12 ) [ RunTime:0.000187s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2015-02-25T22:07:57+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014941s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007435s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010088s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000298s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',2) [ RunTime:0.000210s ]
+SQL: UPDATE `mgqa_answer` SET `unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000315s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2015-02-25T22:07:59+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.034664s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.014126s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.018429s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000364s ]
+DEBUG: Array
+(
+    [id] => 13
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+SQL: UPDATE `mgqa_answer` SET `unagree`=unagree-1 WHERE ( id=4 ) [ RunTime:0.000324s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=13 ) [ RunTime:0.000219s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2015-02-25T22:08:01+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017435s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008279s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011708s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000276s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000236s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000384s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001717s ]
+
+[ 2015-02-25T22:08:04+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014225s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006723s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011128s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000317s ]
+DEBUG: Array
+(
+    [id] => 14
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000235s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 14 [ RunTime:0.000193s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2015-02-25T22:08:12+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018852s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000239s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.018360s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281292 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014069s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020661s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000189s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.011044s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2015-02-25T22:13:11+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.022386s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000343s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.020156s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281591 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015896s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018302s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.012299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.012275s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2015-02-25T22:13:14+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012266s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006856s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009047s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000348s ]
+DEBUG: Array
+(
+    [id] => 14
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1,`unagree`=unagree-1 WHERE ( id=4 ) [ RunTime:0.000303s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 14 [ RunTime:0.000190s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2015-02-25T22:13:15+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014244s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007400s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.013629s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000357s ]
+DEBUG: Array
+(
+    [id] => 14
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000304s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 14 [ RunTime:0.000203s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2015-02-25T22:13:16+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014256s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007862s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010228s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000300s ]
+DEBUG: Array
+(
+    [id] => 14
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 2
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1,`unagree`=unagree-1 WHERE ( id=4 ) [ RunTime:0.000270s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 14 [ RunTime:0.000211s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2015-02-25T22:13:22+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016395s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010354s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010648s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000390s ]
+DEBUG: Array
+(
+    [id] => 14
+    [answer_id] => 4
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000413s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=14 ) [ RunTime:0.000387s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2015-02-25T22:18:17+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.021981s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000254s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.020408s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281897 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014278s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017606s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008182s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000340s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001473s ]
+
+[ 2015-02-25T22:18:18+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020055s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008656s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.013502s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000263s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (5,'SmileC',1) [ RunTime:0.000234s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=5 ) [ RunTime:0.000394s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2015-02-25T22:18:21+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018468s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000276s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.017852s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281901 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013145s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018338s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009729s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007902s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2015-02-25T22:18:23+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013618s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007262s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.014369s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000292s ]
+DEBUG: Array
+(
+    [id] => 15
+    [answer_id] => 5
+    [username] => SmileC
+    [is_agree] => 1
+)
+
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=5 ) [ RunTime:0.000241s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=15 ) [ RunTime:0.000182s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2015-02-25T22:18:24+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.022772s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000254s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.025923s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422281904 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015817s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.025323s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010572s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008963s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002031s ]
+
+[ 2015-02-25T22:33:48+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.021794s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000282s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.020572s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422282827 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014999s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.021895s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010949s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008899s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2015-02-25T22:33:49+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015050s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008214s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010794s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000353s ]
+DEBUG: 
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000239s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000258s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2015-02-25T22:33:50+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.025666s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000271s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.025686s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422282830 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017125s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.023864s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.013968s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006870s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2015-02-25T22:34:13+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017461s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000251s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.018104s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422282853 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011441s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016807s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009451s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010287s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001590s ]
+
+[ 2015-02-25T22:35:18+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018529s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000239s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.018550s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422282917 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012345s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017546s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.012892s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008741s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010721s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001604s ]
+
+[ 2015-02-25T22:35:54+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.019279s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000244s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.019354s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422282954 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012770s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016978s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009676s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008259s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012350s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000231s ]
+DEBUG: 
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000189s ]
+DEBUG: 
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2015-02-25T22:37:32+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018787s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000322s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.019442s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422283052 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014031s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000352s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018111s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010465s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007980s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012898s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000260s ]
+DEBUG: 
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000187s ]
+DEBUG: 
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2015-02-25T22:38:22+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.023227s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000372s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.020784s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422283102 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012402s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016281s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008281s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2015-02-25T22:38:23+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018087s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000288s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.016921s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422283103 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011078s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000208s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.014530s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006739s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-02-25T22:39:16+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018175s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000299s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.018509s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422283156 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011887s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000415s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017364s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.011424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010102s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2015-02-25T22:40:29+08:00 ] 127.0.0.1 /Home/Topic/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018341s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000318s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.017510s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1422283229 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012288s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=10 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=11 ) ORDER BY agree desc LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016181s ]
+SQL: SELECT * FROM `mgqa_topic` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=2 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( topic_id=2 ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( topic1=2 OR topic2=2 OR topic3=2 ) LIMIT 1   [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009963s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2015-02-25T22:44:50+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.012804s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006139s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.008809s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000351s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 16 [ RunTime:0.000230s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2015-02-25T22:44:55+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013569s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006996s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011082s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1,`unagree`=unagree-1 WHERE ( id=4 ) [ RunTime:0.000213s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 16 [ RunTime:0.000176s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-02-25T22:44:57+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017552s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006535s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009423s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (5,'SmileC',1) [ RunTime:0.027857s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=5 ) [ RunTime:0.000311s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2015-02-25T22:44:59+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015266s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006464s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009819s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=5 ) [ RunTime:0.000273s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 17 [ RunTime:0.000240s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2015-02-25T22:45:02+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014059s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007310s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009582s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: UPDATE `mgqa_answer` SET `unagree`=unagree-1 WHERE ( id=5 ) [ RunTime:0.000238s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=17 ) [ RunTime:0.000195s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2015-02-25T22:45:04+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015998s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008576s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011822s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000248s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=16 ) [ RunTime:0.000203s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2015-02-25T22:58:32+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.014809s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009007s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009717s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000286s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000264s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2015-02-25T22:58:36+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015366s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006808s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012811s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=4 ) [ RunTime:0.000246s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 18 [ RunTime:0.000169s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2015-02-25T22:58:38+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015245s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007353s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012593s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1,`unagree`=unagree-1 WHERE ( id=4 ) [ RunTime:0.000247s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 18 [ RunTime:0.000177s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2015-02-25T22:58:39+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015040s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.008309s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012122s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (5,'SmileC',2) [ RunTime:0.000211s ]
+SQL: UPDATE `mgqa_answer` SET `unagree`=unagree+1 WHERE ( id=5 ) [ RunTime:0.000207s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2015-02-25T23:11:18+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=4&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001625s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.014246s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=4 AND mode=1 ) ORDER BY id  [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-02-25T23:11:18+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=4&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.010705s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=4 AND mode=1 ) ORDER BY id  [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2015-02-25T23:22:15+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016171s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.006288s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010703s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1 WHERE ( id=4 ) [ RunTime:0.000443s ]
+SQL: DELETE FROM `mgqa_answer_agree` WHERE ( id=18 ) [ RunTime:0.000285s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2015-02-25T23:22:17+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013850s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009596s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009177s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: INSERT INTO `mgqa_answer_agree` (`answer_id`,`username`,`is_agree`) VALUES (4,'SmileC',1) [ RunTime:0.000169s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1 WHERE ( id=4 ) [ RunTime:0.000194s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2015-02-25T23:22:20+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=4&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001413s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.015193s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=4 AND mode=1 ) ORDER BY id  [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2015-02-25T23:22:21+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=4&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.013259s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=4 AND mode=1 ) ORDER BY id  [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+

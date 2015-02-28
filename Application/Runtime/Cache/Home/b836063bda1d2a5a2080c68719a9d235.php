@@ -162,11 +162,9 @@
           <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
-          <li class="am-dropdown-header">我的页面</li>
-          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置</a></li>
+          <li><a href="#">设置(待开发)</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -252,61 +250,20 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-
-<title>与 <?php echo $toname;?> 的对话 - 私信 - 萌娘问答</title>
-
+<title>话题广场 - 萌娘问答</title>
 <div class="am-g">
-<div class="am-u-sm-8">
-
-<p>发送私信给 <b><?php echo $toname;?>：</b></p>
-
-<script type="text/javascript">
-function send(){
-    $.ajax({
-            type:"POST",
-            url:"<?php echo U('/Home/Inbox');?>",
-            data:{
-                  type:'send',
-                  toname:'<?php echo $toname;?>',
-                  content:$("#contenttext").val()
-                  },
-            cache:false, //不缓存此页面   
-            success:function(re){
-        alert(re);
-        if(re=="发送成功") location.replace(location);
-            }
-        });
-
-
-  }
-</script>
-
-<div class="am-form">
-  <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
-  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+<h1 class="am-article-title">话题广场（初版简单Demo）</h1>
+		<hr />
+	<div class="am-u-sm-8">
+		<?php if(is_array($topic)): foreach($topic as $key=>$vo): ?><p><a href="<?php echo U('/Home/Topic/'.$vo['id']);?>" target="_blank"><?php echo $vo['name'];?></a>
+			<?php $is_follow = getIsfollowtopic($vo['id']); ?>
+			<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $vo['id'];?>)" class="am-btn am-fr am-btn-success am-radius <?php echo ($is_follow?'am-active':'');?>" data-am-button><?php echo ($is_follow?'已关注':'关注话题');?></button><br />
+			<small><?php echo $vo['introduce'];?></small></p>
+			<hr /><?php endforeach; endif; ?>
+	</div>
 </div>
 
-<hr>
-<?php if(is_array($inboxpage_con)): $i = 0; $__LIST__ = $inboxpage_con;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?><b>我</b>
-  <?php else: ?>
-  <a href="/Home/User/people/<?php echo ($vo["usname1"]); ?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
-
-  <?php else: ?>
-
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="/Home/User/people/<?php echo ($vo["usname2"]); ?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <b>我</b><?php endif; endif; ?>
-  ：<?php echo ($vo['content']); ?></p>
-  <p><div class="text-right"><?php echo ($vo['time']); ?></div></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
-
+</div>
 
 	</div>
 	<!-- /主体 -->

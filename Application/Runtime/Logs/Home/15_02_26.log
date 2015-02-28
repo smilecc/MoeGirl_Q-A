@@ -1,0 +1,178 @@
+[ 2015-02-26T22:01:35+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010199s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.024821s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.015939s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=3 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: INSERT INTO `mgqa_topic_follow` (`username`,`topic_id`) VALUES ('SmileC',3) [ RunTime:0.012579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2015-02-26T22:07:09+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.014282s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.013324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=3 ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: DELETE FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=3 ) [ RunTime:0.038838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2015-02-26T22:07:15+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007907s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.011036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=3 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: INSERT INTO `mgqa_topic_follow` (`username`,`topic_id`) VALUES ('SmileC',3) [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2015-02-26T22:19:07+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016634s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.011774s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012802s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree+1,`unagree`=unagree-1 WHERE ( id=5 ) [ RunTime:0.014866s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=1 WHERE `id` = 19 [ RunTime:0.000285s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2015-02-26T22:19:09+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.026421s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010859s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.019767s ]
+SQL: SELECT * FROM `mgqa_answer_agree` WHERE ( answer_id=5 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: UPDATE `mgqa_answer` SET `agree`=agree-1,`unagree`=unagree+1 WHERE ( id=5 ) [ RunTime:0.000273s ]
+SQL: UPDATE `mgqa_answer_agree` SET `is_agree`=2 WHERE `id` = 19 [ RunTime:0.000232s ]
+SQL: SELECT `agree` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2015-02-26T22:48:34+08:00 ] 127.0.0.1 /Home/list
+ERR: 无法加载控制器:List
+
+[ 2015-02-26T22:56:13+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.013689s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: INSERT INTO `mgqa_topic_follow` (`username`,`topic_id`) VALUES ('SmileC',1) [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-02-26T22:56:14+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009135s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009970s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: DELETE FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2015-02-26T22:56:16+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007950s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.008639s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: INSERT INTO `mgqa_topic_follow` (`username`,`topic_id`) VALUES ('SmileC',1) [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-02-26T22:56:19+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009652s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.011658s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: DELETE FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2015-02-26T22:56:21+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.009342s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.014384s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: INSERT INTO `mgqa_topic_follow` (`username`,`topic_id`) VALUES ('SmileC',1) [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2015-02-26T22:56:25+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010649s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.009463s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: DELETE FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2015-02-26T23:02:57+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.007558s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.011131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: INSERT INTO `mgqa_topic_follow` (`username`,`topic_id`) VALUES ('SmileC',1) [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-02-26T23:04:15+08:00 ] 127.0.0.1 /index.php/Home/Topic/set_follow_topic.html?topic_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `mgqa_user_login` [ RunTime:0.010989s ]
+SQL: SELECT `random` FROM `mgqa_user_login` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic_follow` [ RunTime:0.010543s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) LIMIT 1   [ RunTime:0.000961s ]
+SQL: DELETE FROM `mgqa_topic_follow` WHERE ( username="SmileC" AND topic_id=1 ) [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+

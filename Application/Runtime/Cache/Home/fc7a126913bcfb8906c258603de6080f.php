@@ -252,60 +252,103 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-
-<title>与 <?php echo $toname;?> 的对话 - 私信 - 萌娘问答</title>
-
-<div class="am-g">
-<div class="am-u-sm-8">
-
-<p>发送私信给 <b><?php echo $toname;?>：</b></p>
+<title><?php echo $user['username'];?> - 萌娘问答</title>
 
 <script type="text/javascript">
-function send(){
+function send_msg(){
     $.ajax({
             type:"POST",
             url:"<?php echo U('/Home/Inbox');?>",
             data:{
                   type:'send',
-                  toname:'<?php echo $toname;?>',
-                  content:$("#contenttext").val()
+                  toname:'<?php echo $user['username'];?>',
+                  content:$("#comenttext").val()
                   },
             cache:false, //不缓存此页面   
             success:function(re){
-        alert(re);
-        if(re=="发送成功") location.replace(location);
+              alert(re);
+               if(re=="发送成功") {
+                $('#new-msg-modal').modal('close');
+                $("#comenttext").val('');
+               }
             }
         });
-
-
   }
 </script>
 
-<div class="am-form">
-  <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
-  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="new-msg-modal">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">发送私信给：<strong><?php echo $user['username'];?></strong>
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd am-form">
+    <hr />
+      <div class="am-alert am-alert-info">长度限1000字</div>
+      <textarea name="content" onKeyDown='if (this.value.length>=1000){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="7" id="comenttext"></textarea>
+      <hr>
+      <span class="am-fr">
+        <button type="button" class="am-btn am-btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="am-btn am-btn-primary" onclick="send_msg()" data-dismiss="modal">提交</button>
+      </span>
+    </div>
+  </div>
 </div>
 
-<hr>
-<?php if(is_array($inboxpage_con)): $i = 0; $__LIST__ = $inboxpage_con;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?><b>我</b>
-  <?php else: ?>
-  <a href="/Home/User/people/<?php echo ($vo["usname1"]); ?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
+<div class="am-g">
+	<div class="am-u-md-9">
+		<div class="am-panel am-panel-default">
+		  <div class="am-panel-bd">
+		    <strong><?php echo $user['username'];?></strong>，<?php echo $user['introduce_short'];?>
+		    <hr />
+		    <p><?php echo $user['introduce_long']?nl2br($user['introduce_long']):"这货有点懒，什么都没写";?></p>
+        <div class="am-text-right">
+          <button type="button" class="am-btn <?php echo $user['is_follow']?'':'am-btn-success';?> am-radius <?php echo $user['is_follow'] == 3?'am-icon-retweet':'';?>" id="follow-btn-<?php echo $user['username'];?>" onclick="follow_user('<?php echo cookie('username');?>','<?php echo $user['username'];?>')"><?php echo $user['is_follow'] == 3?' ':''; echo $user['is_follow']?'取消关注':'关注TA';?></button>
+          <button class="am-btn am-btn-success am-radius <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':'';?>" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 380}"><span class="am-icon-envelope-o"> <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'我自己':'发送私信';?></span></button>
+        </div>
+		  </div>
+		  <div class="am-panel-hd am-avg-md-6 am-avg-sm-3">
+		  	<li><a href="<?php echo U('/Home/People/'.cookie('username'));?>"><span class="am-icon-home am-icon-md"></span></a></li>
+		  		<li><span class="am-text-middle"><span class="am-icon-question-circle"></span> 问题 <?php echo $user['question'];?></span></li>
+		  		<li><span class="am-text-middle"><span class="am-icon-edit"></span> 回答 <?php echo $user['answer'];?></span></li>
+		  		<li><span class="am-text-middle"><span class="am-icon-thumbs-up"> 获得赞 <?php echo $user['agree'];?></span></span></li>
+		  </div>
+		</div>
 
-  <?php else: ?>
+<?php if(!empty($answer)): ?><section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title">回答</h3>
+  </header>
+  <div class="am-panel-bd">
+  <?php if(is_array($answer)): foreach($answer as $key=>$vo): ?><div class="am-g">
+      <div class="am-u-sm-2">
+        <div class="am-alert am-text-center am-alert-secondary">
+          <?php echo $vo['agree'];?><br />赞同
+        </div>
+      </div>
+      <div class="am-u-sm-10 ">
+        <div class="am-text-truncate"><a target="_blank" href="<?php echo U('/Home/Question/'.$vo['question_id'].'/Answer/'.$vo['id']);?>"><?php echo get_question_title($vo['question_id']);?></a><br /></div>
+        <?php echo sub_question_content($vo['content']);?>
+      </div>
+    </div><?php endforeach; endif; ?>
+  </div>
+</section><?php endif; ?>
 
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="/Home/User/people/<?php echo ($vo["usname2"]); ?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <b>我</b><?php endif; endif; ?>
-  ：<?php echo ($vo['content']); ?></p>
-  <p><div class="text-right"><?php echo ($vo['time']); ?></div></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
+<?php if(!empty($question)): ?><section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title">问题</h3>
+  </header>
+  <div class="am-panel-bd">
+  <table class="am-table"><thead><tr><th>标题</th></tr></thead><tbody>
+  <?php if(is_array($question)): foreach($question as $key=>$vo): ?><tr><td><a class="am-text-break" target="_blank" href="<?php echo U('/Home/Question/'.$vo['question_id'].'/Answer/'.$vo['id']);?>"><?php echo $vo['title'];?></a><br /></td></tr><?php endforeach; endif; ?>
+    </tbody></table>
+  </div>
+</section><?php endif; ?>
 
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
+	</div><!--md-9-->
+<div class="am-u-md-3">
+  
+</div>
+</div>
 
 
 	</div>

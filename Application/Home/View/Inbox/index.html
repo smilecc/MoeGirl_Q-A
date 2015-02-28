@@ -7,7 +7,7 @@ function postmsg(){
   console.log($("#toname").val());
     $.ajax({
             type:"POST",
-            url:"__SELF__",
+            url:"{:U('/Home/Inbox')}",
             data:{
                   type:'send',
                   toname:$("#toname").val(),
@@ -16,7 +16,7 @@ function postmsg(){
             cache:false, //不缓存此页面   
             success:function(re){
         alert(re);
-        location.replace(location);
+         if(re=="发送成功")  location.replace(location);
             }
         });
 
@@ -46,7 +46,7 @@ function postmsg(){
 
 <div class="am-g">
 
-<div class="am-u-sm-8">
+<div class="am-u-md-8">
 <div class="page-header">
   <h2>我的私信 <small><button class="am-btn am-btn-success" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 450}">写私信</button></small></h2>
 </div>

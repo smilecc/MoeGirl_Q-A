@@ -31,7 +31,7 @@ class InboxAlertModel extends Model{
 				'numb'		=> 0
 				);
 		if($find_usname){
-			$this->where('usname=%d',$usname)->create($data);
+			$this->data($data);
 			if($this->save()) return true;
 			else return false;
 		}else{

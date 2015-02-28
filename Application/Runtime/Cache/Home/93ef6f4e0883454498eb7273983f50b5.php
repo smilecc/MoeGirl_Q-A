@@ -162,9 +162,11 @@
           <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">我的页面</li>
+          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置(待开发)</a></li>
+          <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -255,7 +257,7 @@ function on_stu_btn_click(){
 	var question_content_is_load = false;
 </script>
 <div class="am-g">
-	<div class="am-u-sm-9" >
+	<div class="am-u-md-9" >
 		<h1 class="am-article-title" id="question_title"><?php echo $page['title'];?></h1>
 		<small><div onclick="on_question_content_click(<?php echo $page['id'];?>)" style="cursor:pointer" id="question-content-div">
 			<p id="question_content"><?php echo $page['content'];?><a href="javascript:;">[点击查看全部内容]</a></p>

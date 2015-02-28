@@ -4,7 +4,7 @@
 <div class="am-g">
 <h1 class="am-article-title">话题广场（初版简单Demo）</h1>
 		<hr />
-	<div class="am-u-sm-8">
+	<div class="am-u-md-8">
 		<foreach name="topic" item="vo">
 			<p><a href="{:U('/Home/Topic/'.$vo['id'])}" target="_blank">{:$vo['name']}</a>
 			<php>$is_follow = getIsfollowtopic($vo['id']);</php>

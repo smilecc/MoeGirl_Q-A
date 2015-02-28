@@ -252,60 +252,96 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
+<script type="text/javascript">
+	$("#topbar-find").addClass("am-active");
 
-<title>与 <?php echo $toname;?> 的对话 - 私信 - 萌娘问答</title>
+	var arr_24 = new Array();
+	var arr_30 = new Array();
+
+	<?php if(is_array($find_24)): foreach($find_24 as $key=>$vo): ?>arr_24[<?php echo $vo['id'];?>] = false;<?php endforeach; endif; ?>
+	<?php if(is_array($find_30)): foreach($find_30 as $key=>$vo): ?>arr_30[<?php echo $vo['id'];?>] = false;<?php endforeach; endif; ?>
+</script>
+<title>发现 - 萌娘问答</title>
 
 <div class="am-g">
-<div class="am-u-sm-8">
+	<div class="am-u-sm-9">
+		<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
+		  <ul class="am-tabs-nav am-nav am-nav-tabs">
+		    <li class="am-active"><a href="#tab24h">24小时</a></li>
+		    <li><a href="#tab30d">30天</a></li>
+		  </ul>
 
-<p>发送私信给 <b><?php echo $toname;?>：</b></p>
+		  <div class="am-tabs-bd">
+		    <div class="am-tab-panel am-active" id="tab24h">
+		    <?php if(is_array($find_24)): foreach($find_24 as $key=>$vo): ?><article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar">
+				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        发布于 <time><?php echo $vo['time'];?></time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
+				      <?php echo sub_question_content($vo['content']);?>
 
-<script type="text/javascript">
-function send(){
-    $.ajax({
-            type:"POST",
-            url:"<?php echo U('/Home/Inbox');?>",
-            data:{
-                  type:'send',
-                  toname:'<?php echo $toname;?>',
-                  content:$("#contenttext").val()
-                  },
-            cache:false, //不缓存此页面   
-            success:function(re){
-        alert(re);
-        if(re=="发送成功") location.replace(location);
-            }
-        });
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article><?php endforeach; endif; ?>
+		    </div>
 
 
-  }
-</script>
+		    <div class="am-tab-panel" id="tab30d">
+		    <?php if(is_array($find_30)): foreach($find_30 as $key=>$vo): ?><article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar">
+				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        发布于 <time><?php echo $vo['time'];?></time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
+				      <?php echo sub_question_content($vo['content']);?>
 
-<div class="am-form">
-  <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
-  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article><?php endforeach; endif; ?>
+		    </div>
+		  </div>
+		</div>
+	</div>
 </div>
-
-<hr>
-<?php if(is_array($inboxpage_con)): $i = 0; $__LIST__ = $inboxpage_con;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?><b>我</b>
-  <?php else: ?>
-  <a href="/Home/User/people/<?php echo ($vo["usname1"]); ?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
-
-  <?php else: ?>
-
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="/Home/User/people/<?php echo ($vo["usname2"]); ?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <b>我</b><?php endif; endif; ?>
-  ：<?php echo ($vo['content']); ?></p>
-  <p><div class="text-right"><?php echo ($vo['time']); ?></div></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
 
 
 	</div>

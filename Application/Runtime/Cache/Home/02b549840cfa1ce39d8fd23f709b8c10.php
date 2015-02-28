@@ -162,9 +162,11 @@
           <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">我的页面</li>
+          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置(待开发)</a></li>
+          <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -257,7 +259,7 @@ function postmsg(){
   console.log($("#toname").val());
     $.ajax({
             type:"POST",
-            url:"/Home/Inbox.html",
+            url:"<?php echo U('/Home/Inbox');?>",
             data:{
                   type:'send',
                   toname:$("#toname").val(),
@@ -266,7 +268,7 @@ function postmsg(){
             cache:false, //不缓存此页面   
             success:function(re){
         alert(re);
-        location.replace(location);
+         if(re=="发送成功")  location.replace(location);
             }
         });
 

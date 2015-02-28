@@ -252,60 +252,93 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-
-<title>与 <?php echo $toname;?> 的对话 - 私信 - 萌娘问答</title>
+<title><?php echo $topic['name'];?> - 话题 - 萌娘问答</title>
 
 <div class="am-g">
-<div class="am-u-sm-8">
+	<div class="am-u-md-9">
+		<h1 class="am-article-title" id="question_title"><?php echo $topic['name'];?></h1>
+		<p class="am-article-meta"><?php echo $topic['introduce'];?></p>
+		<hr />
+		<ul class="am-nav am-nav-pills">
+		  <li class="<?php echo $mode == 'near' ? 'am-active' : '';?>"><a href="<?php echo U('Home/Topic/'.$topic['id'].'/near');?>">最近</a></li>
+		  <li class="<?php echo $mode == 'hot' ? 'am-active' : '';?>"><a href="<?php echo U('Home/Topic/'.$topic['id'].'/hot');?>">精华</a></li>
+		  <li class="<?php echo $mode == 'all' ? 'am-active' : '';?>"><a href="<?php echo U('Home/Topic/'.$topic['id'].'/all');?>">全部问题</a></li>
+		</ul>
+		<hr />
+		<?php if($mode == 'near'): if(is_array($content)): foreach($content as $i=>$vo): if(!empty($vo['answer_content']['id'])): ?><article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar">
+				  <button id="agree-answer-btn-<?php echo $vo['answer_content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_content']['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['answer_content']['id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['answer_content']['id'];?>"><?php echo $vo['answer_content']['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['answer_content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_content']['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['answer_content']['id'],2);?>"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['answer_content']['username'];?></a>
+				        发布于 <time><?php echo $vo['answer_content']['time'];?></time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>/Answer/<?php echo $vo['answer_content']['id'];?>"><h2><?php echo $vo['title'];?></h2></a>
+				      <?php echo sub_question_content($vo['answer_content']['content']);?>
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['answer_content']['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['answer_content']['id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['answer_content']['id'];?>">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article><?php endif; endforeach; endif; ?>
+		<?php elseif($mode == 'hot'): ?>
+			<?php if(is_array($content)): foreach($content as $i=>$vo): if(!empty($vo['id'])): ?><article class="am-comment">
+			  	<div class="am-btn-group-stacked am-comment-avatar">
+				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        发布于 <time><?php echo $vo['time'];?></time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
+				      <?php echo sub_question_content($vo['content']);?>
 
-<p>发送私信给 <b><?php echo $toname;?>：</b></p>
-
-<script type="text/javascript">
-function send(){
-    $.ajax({
-            type:"POST",
-            url:"<?php echo U('/Home/Inbox');?>",
-            data:{
-                  type:'send',
-                  toname:'<?php echo $toname;?>',
-                  content:$("#contenttext").val()
-                  },
-            cache:false, //不缓存此页面   
-            success:function(re){
-        alert(re);
-        if(re=="发送成功") location.replace(location);
-            }
-        });
-
-
-  }
-</script>
-
-<div class="am-form">
-  <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
-  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article><?php endif; endforeach; endif; ?>
+		<?php else: ?>
+			<?php if(is_array($content)): foreach($content as $i=>$vo): ?><small><div class="am-link-muted">
+				    <?php echo $vo['anonymous']?'匿名用户 ':'<a href="#link-to-user">'.$vo['username'].' </a>';?>
+					提交于 <time><?php echo $vo['time'];?></time>
+				</div></small>
+				<a target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>"><h2><?php echo $vo['title'];?></h2></a>
+				<hr /><?php endforeach; endif; endif; ?>
+	</div><!--am-9-->
+	<div class="am-u-md-3">
+		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>)" class="am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-active':'');?>" data-am-button><?php echo ($topic['is_follow']?'已关注':'关注话题');?></button>
+		<p><?php echo $topic['follow_count'];?> 人关注了这个话题</p>
+		<p>该话题下共有 <?php echo $topic['question_count'];?> 个问题</p>
+		<?php if($topic['father_topic']): ?><hr /><p>父话题：<a href="<?php echo U('/Home/Topic/'.$topic['father_topic']);?>" class="am-btn am-btn-primary am-round"><?php echo getTopicname($topic['father_topic']);?></a></p><?php endif; ?>
+	</div><!--am-3-->
 </div>
-
-<hr>
-<?php if(is_array($inboxpage_con)): $i = 0; $__LIST__ = $inboxpage_con;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?><b>我</b>
-  <?php else: ?>
-  <a href="/Home/User/people/<?php echo ($vo["usname1"]); ?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
-
-  <?php else: ?>
-
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="/Home/User/people/<?php echo ($vo["usname2"]); ?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <b>我</b><?php endif; endif; ?>
-  ：<?php echo ($vo['content']); ?></p>
-  <p><div class="text-right"><?php echo ($vo['time']); ?></div></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
 
 
 	</div>

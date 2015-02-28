@@ -32,8 +32,8 @@ class InboxController extends Controller {
 
       $usname1 = cookie('username');
       $usname2 = $usname;
-      gtuid($uid1,$usname2);
-      $inboxpage_con = M('Inbox')->where('usname2="%s" AND usname2="%s"',$usname2,$usname2)->order('id desc')->select();
+      gtusname($usname1,$usname2);
+      $inboxpage_con = M('Inbox')->where('usname1="%s" AND usname2="%s"',$usname1,$usname2)->order('id desc')->select();
 
       $this->assign('toname',$usname);
       $this->assign('inboxpage_con',$inboxpage_con);

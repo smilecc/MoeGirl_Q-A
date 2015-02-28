@@ -252,61 +252,24 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-
-<title>与 <?php echo $toname;?> 的对话 - 私信 - 萌娘问答</title>
-
-<div class="am-g">
-<div class="am-u-sm-8">
-
-<p>发送私信给 <b><?php echo $toname;?>：</b></p>
-
 <script type="text/javascript">
-function send(){
-    $.ajax({
-            type:"POST",
-            url:"<?php echo U('/Home/Inbox');?>",
-            data:{
-                  type:'send',
-                  toname:'<?php echo $toname;?>',
-                  content:$("#contenttext").val()
-                  },
-            cache:false, //不缓存此页面   
-            success:function(re){
-        alert(re);
-        if(re=="发送成功") location.replace(location);
-            }
-        });
-
-
-  }
+	$("#topbar-topic").addClass("am-active");
 </script>
-
-<div class="am-form">
-  <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
-  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+<title>我的话题 - 萌娘问答</title>
+<div class="am-g">
+<h1 class="am-article-title">我关注的话题</h1>
+		<hr />
+	<a class="am-link-muted am-fr am-icon-th-large" href="<?php echo U('/Home/Topic/tlist');?>"> 话题广场</a>
+	<div class="am-u-md-8">
+		<?php if(is_array($topic)): foreach($topic as $key=>$vo): $topic_info = getTopicinfo($vo['topic_id']); ?>
+			<p><a href="<?php echo U('/Home/Topic/'.$topic_info['id']);?>" target="_blank"><?php echo $topic_info['name'];?></a>
+			<button class="am-btn am-fr am-btn-success" onclick="on_follow_topic_btn_click(<?php echo $topic_info['id'];?>)" data-am-button>取消关注</button><br />
+			<small><?php echo $topic_info['introduce'];?></small></p>
+			<hr /><?php endforeach; endif; ?>
+	</div>
 </div>
 
-<hr>
-<?php if(is_array($inboxpage_con)): $i = 0; $__LIST__ = $inboxpage_con;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?><b>我</b>
-  <?php else: ?>
-  <a href="/Home/User/people/<?php echo ($vo["usname1"]); ?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
-
-  <?php else: ?>
-
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="/Home/User/people/<?php echo ($vo["usname2"]); ?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <b>我</b><?php endif; endif; ?>
-  ：<?php echo ($vo['content']); ?></p>
-  <p><div class="text-right"><?php echo ($vo['time']); ?></div></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
-
+</div>
 
 	</div>
 	<!-- /主体 -->
