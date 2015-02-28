@@ -61,7 +61,8 @@
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
-      <li id="topbar-find"><a href="#">发现</a></li>
+      <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
+      <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
     </ul>
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
@@ -88,7 +89,7 @@
             <hr />
              <!--话题框-->
              <label for="doc-ta-1">话题： </label>
-            <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="5" name="topic[]">
+            <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
             <?php $topic_list = M("Topic")->select(); ?>
             <?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
@@ -161,7 +162,7 @@
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置</a></li>
+          <li><a href="#">设置(待开发)</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>

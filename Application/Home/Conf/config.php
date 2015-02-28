@@ -8,5 +8,6 @@ return array(
 		'Inboxpage/:usname'				=> 'Inbox/inboxpage',//私信页
 		'Topic/:tid\d$'					=> array('Topic/topic', 'mode=near'),//话题页
 		'Topic/:tid\d/:mode'			=> 'Topic/topic',//话题页
+		'People/:usname'				=> 'User/people',//个人页
 		),
 );

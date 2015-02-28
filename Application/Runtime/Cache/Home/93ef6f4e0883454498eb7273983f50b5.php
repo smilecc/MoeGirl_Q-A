@@ -58,10 +58,12 @@
     <a href="/">萌娘问答</a>
   </h1>
 
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
-      <li id="topbar-find"><a href="#">发现</a></li>
+      <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
     </ul>
 
@@ -162,7 +164,7 @@
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置</a></li>
+          <li><a href="#">设置(待开发)</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -253,7 +255,7 @@ function on_stu_btn_click(){
 	var question_content_is_load = false;
 </script>
 <div class="am-g">
-	<div class="am-u-sm-8" >
+	<div class="am-u-sm-9" >
 		<h1 class="am-article-title" id="question_title"><?php echo $page['title'];?></h1>
 		<small><div onclick="on_question_content_click(<?php echo $page['id'];?>)" style="cursor:pointer" id="question-content-div">
 			<p id="question_content"><?php echo $page['content'];?><a href="javascript:;">[点击查看全部内容]</a></p>
@@ -267,8 +269,9 @@ function on_stu_btn_click(){
 		<ul class="am-comments-list">
 		  <?php if(is_array($answer)): foreach($answer as $key=>$vo): ?><article class="am-comment">
 			  	<div class="am-btn-group-stacked am-comment-avatar" width="48" height="48">
-				  <button type="button" class="am-btn am-btn-default am-icon-angle-up"><br /><?php echo $vo['agree'];?></button>
-				  <button type="button" class="am-btn am-btn-default am-icon-angle-down"></button>
+				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
 				</div>
 			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
 			  
@@ -283,13 +286,18 @@ function on_stu_btn_click(){
 
 				    <div class="am-comment-bd">
 				      <?php echo img_replace(nl2br($vo['content']));?>
+				      <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				    </div>
+				    <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
 				  </div>
 				</article><?php endforeach; endif; ?>
 		</ul>
 		<hr />
 		<?php if($page['my_answer']['id']): ?><div class="am-alert am-alert-success" data-am-alert>
-			  <button type="button" class="am-close">&times;</button>
 			  <p>你已经提交过答案了，同一个问题只能回答一次。<a href="/index.php/Home/Question/<?php echo $page['id'];?>/answer/<?php echo $page[my_answer]['id'];?>">点击这儿查看你的答案</a></p>
 			</div>
 		<?php else: ?>
@@ -300,9 +308,9 @@ function on_stu_btn_click(){
 		        <p><button type="submit" class="am-btn am-btn-success am-radius am-fr" id="anonymous_btn">发布</button></p>
 	        </form><?php endif; ?>
 	</div>
-	<div class="am-u-sm-4">
+	<div class="am-u-sm-3">
 		<button type="button" id="follow_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,0)" class="am-btn am-btn-primary am-radius <?php echo ($page_user_status['follow']?'am-active':'');?>" data-am-button><?php echo ($page_user_status['follow']?'已关注':'关注问题');?></button>
-		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,1)" class="am-btn am-btn-default am-radius <?php echo ($page_user_status['anonymous']?'am-active':'');?>" data-am-button><?php echo ($page_user_status['anonymous']?'已匿名':'使用匿名身份');?></button>
+		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,1)" class="am-btn am-btn-default am-radius <?php echo ($page_user_status['anonymous']?'am-active':'');?>" style="display: none;" data-am-button><?php echo ($page_user_status['anonymous']?'已匿名':'使用匿名身份');?></button>
 		<hr />
 		<p>问题提交者： <?php echo $page['anonymous']?'匿名用户':'<a href="'.'get_user_page($page["username"])'.'">'.$page["username"].'</a>';?></p>
 	</div>

@@ -46,7 +46,7 @@ Class OperationController extends Controller{
 			if('Success' == (string)$resultXML->login['result'])
 			{
 				// Set cookie value
-				if($remember_me == 'on') cookie('token',login_en_code(D('UserLogin')->login_random($user).$resultXML->login['lgusername']));
+				if($remember_me == 'on') cookie('token',login_en_code(D('User')->login_random($user).$resultXML->login['lgusername']));
 				cookie('username',$resultXML->login['lgusername']);
 				cookie('userid',$resultXML->login['lguserid']);
 

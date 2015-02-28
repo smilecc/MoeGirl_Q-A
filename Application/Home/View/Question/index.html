@@ -5,7 +5,7 @@
 	var question_content_is_load = false;
 </script>
 <div class="am-g">
-	<div class="am-u-sm-8" >
+	<div class="am-u-sm-9" >
 		<h1 class="am-article-title" id="question_title">{:$page['title']}</h1>
 		<small><div onclick="on_question_content_click({:$page['id']})" style="cursor:pointer" id="question-content-div">
 			<p id="question_content">{:$page['content']}<a href="javascript:;">[点击查看全部内容]</a></p>
@@ -37,7 +37,13 @@
 
 				    <div class="am-comment-bd">
 				      {:img_replace(nl2br($vo['content']))}
+				      <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				    </div>
+				    <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['id']}">
+					    <div class="am-panel-bd" id="div-comment-{:$vo['id']}">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
 				  </div>
 				</article>
 	       </foreach>
@@ -45,7 +51,6 @@
 		<hr />
 		<IF condition="$page['my_answer']['id']">
 			<div class="am-alert am-alert-success" data-am-alert>
-			  <button type="button" class="am-close">&times;</button>
 			  <p>你已经提交过答案了，同一个问题只能回答一次。<a href="/index.php/Home/Question/{:$page['id']}/answer/{:$page[my_answer]['id']}">点击这儿查看你的答案</a></p>
 			</div>
 		<else />
@@ -57,9 +62,9 @@
 	        </form>
         </IF>
 	</div>
-	<div class="am-u-sm-4">
+	<div class="am-u-sm-3">
 		<button type="button" id="follow_btn" onclick="on_user_status_btn_click({:$page['id']},0)" class="am-btn am-btn-primary am-radius {:($page_user_status['follow']?'am-active':'')}" data-am-button>{:($page_user_status['follow']?'已关注':'关注问题')}</button>
-		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click({:$page['id']},1)" class="am-btn am-btn-default am-radius {:($page_user_status['anonymous']?'am-active':'')}" data-am-button>{:($page_user_status['anonymous']?'已匿名':'使用匿名身份')}</button>
+		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click({:$page['id']},1)" class="am-btn am-btn-default am-radius {:($page_user_status['anonymous']?'am-active':'')}" style="display: none;" data-am-button>{:($page_user_status['anonymous']?'已匿名':'使用匿名身份')}</button>
 		<hr />
 		<p>问题提交者： {:$page['anonymous']?'匿名用户':'<a href="'.'get_user_page($page["username"])'.'">'.$page["username"].'</a>'}</p>
 	</div>

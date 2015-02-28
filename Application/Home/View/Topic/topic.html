@@ -84,7 +84,7 @@
 		<else />
 			<foreach name="content" item="vo" key="i">
 				<small><div class="am-link-muted">
-				    <a href="#link-to-user">{:$vo['username']}</a>
+				    {:$vo['anonymous']?'匿名用户 ':'<a href="#link-to-user">'.$vo['username'].' </a>'}
 					提交于 <time>{:$vo['time']}</time>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/{:$vo['id']}"><h2>{:$vo['title']}</h2></a>

@@ -33,7 +33,7 @@ function get_user_page($username){
 
 // 测试用户是否真实
 function test_user(){
-    $cookie_username_token = login_en_code(M('UserLogin')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
+    $cookie_username_token = login_en_code(M('User')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
     if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
     else return true;
 }

@@ -6,8 +6,6 @@ Class AnswerModel extends Model{
 	// 创建新答案
 	public function add_answer($get_data){
 		// 验证username
-		//$cookie_username_token = login_en_code(M('UserLogin')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
-		//if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
 		if(!test_user()) return false;
 		if(!$get_data['content'] || !$get_data['question_id']) return false;
 		
@@ -33,11 +31,13 @@ Class AnswerModel extends Model{
 		// 查询记录集数据是否存在
 		$answer_info = $answer_agree_db->where('answer_id=%d AND username="%s"',$answer_id,cookie('username'))->find();
 		$data_answer_agree = array();
+		$data_user = array();
 
 		// 若 不存在 与 存在
 		if (count($answer_info) == 0) {
 			if($agree == 1){
 				$data_answer_agree['agree'] = array('exp','agree+1');
+				$data_user['agree'] = array('exp','agree+1');
 			}else if($agree == 2){
 				$data_answer_agree['unagree'] = array('exp','unagree+1');
 			}
@@ -56,6 +56,7 @@ Class AnswerModel extends Model{
 			if ($answer_info['is_agree'] == $agree) {
 				if($agree == 1){
 					$data_answer_agree['agree'] = array('exp','agree-1');
+					$data_user['agree'] = array('exp','agree-1');
 				}else if($agree == 2){
 					$data_answer_agree['unagree'] = array('exp','unagree-1');
 				}
@@ -66,9 +67,11 @@ Class AnswerModel extends Model{
 				if($agree == 1){
 					$data_answer_agree['agree'] = array('exp','agree+1');
 					$data_answer_agree['unagree'] = array('exp','unagree-1');
+					$data_user['agree'] = array('exp','agree+1');
 				}else if($agree == 2){
 					$data_answer_agree['agree'] = array('exp','agree-1');
 					$data_answer_agree['unagree'] = array('exp','unagree+1');
+					$data_user['agree'] = array('exp','agree-1');
 				}
 				$this->where('id=%d',$answer_id)->save($data_answer_agree);
 				$data = array(
@@ -78,6 +81,9 @@ Class AnswerModel extends Model{
 				$answer_agree_db->save($data);
 			}
 		}
+		// 登记用户的agree数据
+		$answer_username = M('Answer')->where('id=%d',$answer_id)->getField('username');
+		M('User')->where('username="%s"',$answer_username)->save($data_user);
 		return $this->where('id=%d',$answer_id)->getField('agree');
 	}
 

@@ -58,10 +58,12 @@
     <a href="/">萌娘问答</a>
   </h1>
 
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
-      <li id="topbar-find"><a href="#">发现</a></li>
+      <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
     </ul>
 
@@ -161,8 +163,9 @@
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">用户操作</li>
+          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置</a></li>
+          <li><a href="#">设置(待开发)</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -253,12 +256,9 @@ function on_stu_btn_click(){
 </script>
 <title>首页 - 萌娘问答</title>
 
-  <p href="">Hello world</p>
-
-
-
-
-</div>
+  <p href="">Hello world!</p>
+  <p>如同知乎一样，首页用于推送关注信息，由于系统整体机制策划，推送最后写</p>
+  
 
 	</div>
 	<!-- /主体 -->

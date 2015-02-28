@@ -1,6 +1,6 @@
 <?php
 namespace User\Api;
-use User\Model\UserLoginModel;
+use User\Model\UserModel;
 
 class UserApi{
     /*
@@ -8,7 +8,7 @@ class UserApi{
     */
     protected $model;
     public function __construct(){
-        $this->model = new UserLoginModel();
+        $this->model = new UserModel();
     }
 
     //自动登录
@@ -18,7 +18,7 @@ class UserApi{
         }else{
             session('user_status',0);
             if(cookie('token') != NULL){
-                $userinfo = M('UserLogin')->where('username="%s"',cookie('username'))->find();
+                $userinfo = M('User')->where('username="%s"',cookie('username'))->find();
                 if(cookie('token') == login_en_code($userinfo['random'].$userinfo['username'])){
                     session('user_status',2);
                 }
