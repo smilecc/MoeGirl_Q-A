@@ -13,3 +13,18 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
 
+[ 2015-03-01T01:48:59+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014348s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="testc" ) LIMIT 1   [ RunTime:0.000283s ]
+DEBUG: test:7
+SQL: UPDATE `mgqa_user` SET `random`=19190 WHERE ( username="testc" ) [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+

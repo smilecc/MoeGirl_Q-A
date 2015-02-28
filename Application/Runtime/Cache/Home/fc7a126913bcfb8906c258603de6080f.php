@@ -347,6 +347,11 @@ function send_msg(){
 	</div><!--md-9-->
 <div class="am-u-md-3">
   
+<ul class="am-avg-sm-2 am-thumbnails">
+  <li>关注了<br /><strong><?php echo $user['follow'];?></strong> 人</li>
+  <li>关注者<br /><strong><?php echo $user['fans'];?></strong> 人</li>
+</ul>
+<hr />
 </div>
 </div>
 
