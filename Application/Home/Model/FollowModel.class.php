@@ -11,10 +11,7 @@ Class FollowModel extends Model{
 		$us_1 = $from_user;
 		$us_2 = $to_user;
 		// 初始化姓名顺序
-		if($from_user < $to_user){
-			$us_1 = $to_user;
-			$us_2 = $from_user;
-		}
+		itusname($us_1,$us_2);
 		$data = array(
 					'us1' 		=> $us_1,
 					'us2' 		=> $us_2

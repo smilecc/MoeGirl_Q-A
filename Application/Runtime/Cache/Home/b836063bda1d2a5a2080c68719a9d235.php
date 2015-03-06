@@ -162,9 +162,11 @@
           <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">我的页面</li>
+          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
-          <li><a href="#">设置(待开发)</a></li>
+          <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -254,7 +256,7 @@ function on_stu_btn_click(){
 <div class="am-g">
 <h1 class="am-article-title">话题广场（初版简单Demo）</h1>
 		<hr />
-	<div class="am-u-sm-8">
+	<div class="am-u-md-8">
 		<?php if(is_array($topic)): foreach($topic as $key=>$vo): ?><p><a href="<?php echo U('/Home/Topic/'.$vo['id']);?>" target="_blank"><?php echo $vo['name'];?></a>
 			<?php $is_follow = getIsfollowtopic($vo['id']); ?>
 			<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $vo['id'];?>)" class="am-btn am-fr am-btn-success am-radius <?php echo ($is_follow?'am-active':'');?>" data-am-button><?php echo ($is_follow?'已关注':'关注话题');?></button><br />
@@ -263,7 +265,6 @@ function on_stu_btn_click(){
 	</div>
 </div>
 
-</div>
 
 	</div>
 	<!-- /主体 -->

@@ -302,7 +302,7 @@ function send_msg(){
 		    <hr />
 		    <p><?php echo $user['introduce_long']?nl2br($user['introduce_long']):"这货有点懒，什么都没写";?></p>
         <div class="am-text-right">
-          <button type="button" class="am-btn <?php echo $user['is_follow']?'':'am-btn-success';?> am-radius <?php echo $user['is_follow'] == 3?'am-icon-retweet':'';?>" id="follow-btn-<?php echo $user['username'];?>" onclick="follow_user('<?php echo cookie('username');?>','<?php echo $user['username'];?>')"><?php echo $user['is_follow'] == 3?' ':''; echo $user['is_follow']?'取消关注':'关注TA';?></button>
+          <button type="button" class="<?php echo strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':'';?> am-btn <?php echo $user['is_follow']?'':'am-btn-success';?> am-radius <?php echo $user['is_follow'] == 3?'am-icon-retweet':'';?>" id="follow-btn-<?php echo $user['username'];?>" onclick="follow_user('<?php echo cookie('username');?>','<?php echo $user['username'];?>')"><?php echo $user['is_follow'] == 3?' ':''; echo $user['is_follow']?'取消关注':'关注TA';?></button>
           <button class="am-btn am-btn-success am-radius <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':'';?>" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 380}"><span class="am-icon-envelope-o"> <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'我自己':'发送私信';?></span></button>
         </div>
 		  </div>
@@ -352,6 +352,7 @@ function send_msg(){
   <li>关注者<br /><strong><?php echo $user['fans'];?></strong> 人</li>
 </ul>
 <hr />
+
 </div>
 </div>
 

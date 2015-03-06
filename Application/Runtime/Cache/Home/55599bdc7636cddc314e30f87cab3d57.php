@@ -276,12 +276,12 @@ function on_stu_btn_click(){
 				    <header>
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta qustion-title-content">
-				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['answer_content']['username'];?></a>
+				        <a target="_blank" href="<?php echo U('/Home/People/'.$vo['answer_content']['username']);?>" class="am-comment-author"><?php echo $vo['answer_content']['username'];?></a>
 				        发布于 <time><?php echo $vo['answer_content']['time'];?></time>
 				      </div>
 				    </header>
 				    <div class="am-comment-bd">
-				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>/Answer/<?php echo $vo['answer_content']['id'];?>"><h2><?php echo $vo['title'];?></h2></a>
+				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>/Answer/<?php echo $vo['answer_content']['id'];?>"><h2><?php echo $vo['title'];?></h2></a>
 				      <?php echo sub_question_content($vo['answer_content']['content']);?>
 				    </div>
 				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['answer_content']['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>

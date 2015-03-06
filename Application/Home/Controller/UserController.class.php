@@ -7,6 +7,7 @@ class UserController extends Controller {
     	// 获取用户信息
     	$user_info = M('User')->where('username="%s"',$usname)->find();
     	$user_info['is_follow'] = is_follow(cookie('username'),$usname);
+        trace($user_info);
     	// 计数
     	$user_info['question'] = M('Question')->where('username="%s"',$usname)->count();
     	$user_info['answer'] = M('Answer')->where('username="%s"',$usname)->count();

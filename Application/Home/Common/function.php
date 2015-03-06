@@ -7,7 +7,7 @@ function getInboxcontent($inbox_id){
 
 //gtusname gt为大于的意思 比较两username大小，usname1比usname2大时 颠倒两变量值，usname1比usname2小时 则不变
 function gtusname(&$usname1,&$usname2){
-    if($usname1>$usname2){
+    if(strtolower($usname1)>=strtolower($usname2)){
         $i = $usname2;
         $usname2 = $usname1;
         $usname1 = $i;
@@ -17,7 +17,7 @@ function gtusname(&$usname1,&$usname2){
 
 //itusname it为小于的意思 比较两username大小，usname2比usname1大时 颠倒两变量值，usname2比usname1小时 则不变
 function itusname(&$usname1,&$usname2){
-    if($usname1<$usname2){
+    if(strtolower($usname1)<=strtolower($usname2)){
         $i = $usname2;
         $usname2 = $usname1;
         $usname1 = $i;
@@ -47,7 +47,9 @@ function getAnsweraction($answer_id,$agree){
 
 // 1表示true 3表示互相关注
 function is_follow($us_1,$us_2){
+	trace($us_1.$us_2);
 	$is_change = itusname($us_1,$us_2);
+	trace($us_1.$us_2);
 	$info = M('Follow')->where('us1 = "%s" AND us2="%s"',$us_1,$us_2)->find();
 	if(count($info) == 0 || $info['relation'] == 0) return false;
 	if($is_change){

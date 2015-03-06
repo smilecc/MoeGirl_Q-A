@@ -264,7 +264,7 @@ function on_stu_btn_click(){
 <title>发现 - 萌娘问答</title>
 
 <div class="am-g">
-	<div class="am-u-sm-9">
+	<div class="am-u-md-9">
 		<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
 		  <ul class="am-tabs-nav am-nav am-nav-tabs">
 		    <li class="am-active"><a href="#tab24h">24小时</a></li>
