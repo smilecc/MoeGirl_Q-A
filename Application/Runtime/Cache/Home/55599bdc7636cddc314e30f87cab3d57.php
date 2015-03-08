@@ -311,7 +311,7 @@ function on_stu_btn_click(){
 				      </div>
 				    </header>
 				    <div class="am-comment-bd">
-				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
+				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
 				      <?php echo sub_question_content($vo['content']);?>
 
 				    </div>

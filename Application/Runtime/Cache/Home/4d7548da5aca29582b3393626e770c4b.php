@@ -256,7 +256,7 @@ function on_stu_btn_click(){
 <title>与 <?php echo $toname;?> 的对话 - 私信 - 萌娘问答</title>
 
 <div class="am-g">
-<div class="am-u-sm-8">
+<div class="am-u-md-8">
 
 <p>发送私信给 <b><?php echo $toname;?>：</b></p>
 
@@ -303,7 +303,7 @@ function send(){
 
 </div><!--col-md-8-->
 
-<div class="am-u-sm-4"></div>
+<div class="am-u-md-4"></div>
 
 </div><!--container-->
 

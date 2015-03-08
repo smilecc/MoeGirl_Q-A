@@ -1,0 +1,15 @@
+[ 2015-03-02T11:41:36+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.022940s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="testc" ) LIMIT 1   [ RunTime:0.000393s ]
+DEBUG: test:7
+SQL: UPDATE `mgqa_user` SET `random`=23247 WHERE ( username="testc" ) [ RunTime:0.050169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+

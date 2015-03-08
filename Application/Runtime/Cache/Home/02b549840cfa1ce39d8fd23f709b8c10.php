@@ -298,7 +298,7 @@ function postmsg(){
 
 <div class="am-g">
 
-<div class="am-u-sm-8">
+<div class="am-u-md-8">
 <div class="page-header">
   <h2>我的私信 <small><button class="am-btn am-btn-success" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 450}">写私信</button></small></h2>
 </div>

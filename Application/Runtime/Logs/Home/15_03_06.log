@@ -1,0 +1,635 @@
+[ 2015-03-06T00:00:28+08:00 ] 127.0.0.1 /index.php/Home/Question/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013498s ]
+SQL: SELECT `username` FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2015-03-06T11:20:58+08:00 ] 127.0.0.1 /Home/User/follow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028796s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.018776s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013868s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1 = "testc" AND us2="SmileC" ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: UPDATE `mgqa_user` SET `follow`=follow-1 WHERE ( username="SmileC" ) [ RunTime:0.060520s ]
+SQL: UPDATE `mgqa_user` SET `fans`=fans-1 WHERE ( username="testc" ) [ RunTime:0.000629s ]
+SQL: UPDATE `mgqa_follow` SET `us1`='testc',`us2`='SmileC',`relation`=1 WHERE ( id=8 ) [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2015-03-06T11:20:59+08:00 ] 127.0.0.1 /Home/User/follow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.018539s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.015835s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1 = "testc" AND us2="SmileC" ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: UPDATE `mgqa_user` SET `follow`=follow+1 WHERE ( username="SmileC" ) [ RunTime:0.011871s ]
+SQL: UPDATE `mgqa_user` SET `fans`=fans+1 WHERE ( username="testc" ) [ RunTime:0.000357s ]
+SQL: UPDATE `mgqa_follow` SET `us1`='testc',`us2`='SmileC',`relation`=3 WHERE ( id=8 ) [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2015-03-06T11:21:01+08:00 ] 127.0.0.1 /Home/User/follow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.029518s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.023623s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000901s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1 = "testc" AND us2="SmileC" ) LIMIT 1   [ RunTime:0.001595s ]
+SQL: UPDATE `mgqa_user` SET `follow`=follow-1 WHERE ( username="SmileC" ) [ RunTime:0.001986s ]
+SQL: UPDATE `mgqa_user` SET `fans`=fans-1 WHERE ( username="testc" ) [ RunTime:0.000348s ]
+SQL: UPDATE `mgqa_follow` SET `us1`='testc',`us2`='SmileC',`relation`=1 WHERE ( id=8 ) [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001717s ]
+
+[ 2015-03-06T11:21:02+08:00 ] 127.0.0.1 /Home/User/follow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.021443s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016309s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1 = "testc" AND us2="SmileC" ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: UPDATE `mgqa_user` SET `follow`=follow+1 WHERE ( username="SmileC" ) [ RunTime:0.000320s ]
+SQL: UPDATE `mgqa_user` SET `fans`=fans+1 WHERE ( username="testc" ) [ RunTime:0.000259s ]
+SQL: UPDATE `mgqa_follow` SET `us1`='testc',`us2`='SmileC',`relation`=3 WHERE ( id=8 ) [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2015-03-06T11:27:08+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=6&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.031263s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=6 AND mode=1 ) ORDER BY id  [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2015-03-06T14:53:25+08:00 ] 127.0.0.1 /index.php/Home/Question/get_question_content.html?qid=10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.028057s ]
+SQL: SELECT `content` FROM `mgqa_question` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2015-03-06T14:53:34+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=4&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.059980s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=4 AND mode=1 ) ORDER BY id  [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2015-03-06T14:53:37+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=4&mode=answer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.019422s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=4 AND mode=1 ) ORDER BY id  [ RunTime:0.000583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2015-03-06T23:35:44+08:00 ] 127.0.0.1 /Home/Inboxpage/testc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013718s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.014337s ]
+SQL: SELECT * FROM `mgqa_inbox` WHERE ( usname1="SmileC" AND usname2="testc" ) ORDER BY id desc  [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009573s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.021507s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2015-03-06T23:35:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2015-03-06T23:36:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013535s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018371s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2015-03-06T23:36:07+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.010273s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008959s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="Testc" ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `numb`=0 WHERE `usname` = 'Testc' [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.012972s ]
+SQL: SELECT * FROM `mgqa_inbox_index` WHERE ( usname1="Testc" or usname2="Testc" ) ORDER BY unix_timestamp(time) desc  [ RunTime:0.000417s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [inbox_id] => 20
+            [usname1] => SmileC
+            [usname2] => testc
+            [from] => 1
+            [time] => 2015-02-28 21:17:08
+            [numb] => 1
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008045s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.022292s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.012765s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2015-03-06T23:36:08+08:00 ] 127.0.0.1 /Home/Inboxpage/SmileC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.019200s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.018322s ]
+SQL: SELECT * FROM `mgqa_inbox` WHERE ( usname1="SmileC" AND usname2="Testc" ) ORDER BY id desc  [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010810s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.023658s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2015-03-06T23:36:14+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+DEBUG: post_data:Array
+(
+    [type] => send
+    [toname] => SmileC
+    [content] => 发信测试
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.015783s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012439s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: INSERT INTO `mgqa_inbox` (`usname1`,`usname2`,`from`,`content`) VALUES ('SmileC','Testc',2,'发信测试') [ RunTime:0.020093s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.009365s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="SmileC" ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `usname`='SmileC',`numb`=numb+1 WHERE ( usname="SmileC" ) [ RunTime:0.009935s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.014949s ]
+SQL: SELECT `id` FROM `mgqa_inbox_index` WHERE ( usname1="SmileC" AND usname2="Testc" ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: UPDATE `mgqa_inbox_index` SET `usname1`='SmileC',`usname2`='Testc',`from`=2,`inbox_id`=21,`numb`=numb+1 WHERE ( id=4 ) [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2015-03-06T23:36:15+08:00 ] 127.0.0.1 /Home/Inboxpage/SmileC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010320s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.012432s ]
+SQL: SELECT * FROM `mgqa_inbox` WHERE ( usname1="SmileC" AND usname2="Testc" ) ORDER BY id desc  [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.007050s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016284s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2015-03-06T23:36:20+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.008985s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008784s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="Testc" ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `numb`=0 WHERE `usname` = 'Testc' [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.015408s ]
+SQL: SELECT * FROM `mgqa_inbox_index` WHERE ( usname1="Testc" or usname2="Testc" ) ORDER BY unix_timestamp(time) desc  [ RunTime:0.000360s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [inbox_id] => 21
+            [usname1] => SmileC
+            [usname2] => Testc
+            [from] => 2
+            [time] => 2015-03-06 23:36:14
+            [numb] => 2
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009366s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020787s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.013366s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2015-03-06T23:36:31+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.010914s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008341s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="Testc" ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `numb`=0 WHERE `usname` = 'Testc' [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.014208s ]
+SQL: SELECT * FROM `mgqa_inbox_index` WHERE ( usname1="Testc" or usname2="Testc" ) ORDER BY unix_timestamp(time) desc  [ RunTime:0.000389s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [inbox_id] => 21
+            [usname1] => SmileC
+            [usname2] => Testc
+            [from] => 2
+            [time] => 2015-03-06 23:36:14
+            [numb] => 2
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010279s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020554s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.018985s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2015-03-06T23:41:28+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.009041s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008491s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="Testc" ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `numb`=0 WHERE `usname` = 'Testc' [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.012590s ]
+SQL: SELECT * FROM `mgqa_inbox_index` WHERE ( usname1="Testc" or usname2="Testc" ) ORDER BY unix_timestamp(time) desc  [ RunTime:0.000360s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [inbox_id] => 21
+            [usname1] => SmileC
+            [usname2] => Testc
+            [from] => 2
+            [time] => 2015-03-06 23:36:14
+            [numb] => 2
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011212s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.019204s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.012854s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001486s ]
+
+[ 2015-03-06T23:41:32+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.010636s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009791s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="SmileC" ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `numb`=0 WHERE `usname` = 'SmileC' [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.014612s ]
+SQL: SELECT * FROM `mgqa_inbox_index` WHERE ( usname1="SmileC" or usname2="SmileC" ) ORDER BY unix_timestamp(time) desc  [ RunTime:0.000370s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [inbox_id] => 21
+            [usname1] => SmileC
+            [usname2] => Testc
+            [from] => 2
+            [time] => 2015-03-06 23:36:14
+            [numb] => 2
+        )
+
+    [1] => Array
+        (
+            [id] => 3
+            [inbox_id] => 19
+            [usname1] => SmileC
+            [usname2] => Smilec test
+            [from] => 2
+            [time] => 2015-02-28 21:02:13
+            [numb] => 3
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [inbox_id] => 16
+            [usname1] => SmileC
+            [usname2] => SmileC
+            [from] => 1
+            [time] => 2015-02-28 15:29:35
+            [numb] => 6
+        )
+
+    [3] => Array
+        (
+            [id] => 1
+            [inbox_id] => 11
+            [usname1] => SmileC
+            [usname2] => test
+            [from] => 1
+            [time] => 2015-02-03 11:18:48
+            [numb] => 4
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009974s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.012618s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2015-03-06T23:41:36+08:00 ] 127.0.0.1 /Home/Inboxpage/Testc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009630s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.011458s ]
+SQL: SELECT * FROM `mgqa_inbox` WHERE ( usname1="SmileC" AND usname2="Testc" ) ORDER BY id desc  [ RunTime:0.000344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008717s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016979s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2015-03-06T23:45:55+08:00 ] 127.0.0.1 /Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.009346s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.008556s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT `usname` FROM `mgqa_inbox_alert` WHERE ( usname="Testc" ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: UPDATE `mgqa_inbox_alert` SET `numb`=0 WHERE `usname` = 'Testc' [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_index` [ RunTime:0.012190s ]
+SQL: SELECT * FROM `mgqa_inbox_index` WHERE ( usname1="Testc" or usname2="Testc" ) ORDER BY unix_timestamp(time) desc  [ RunTime:0.000412s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [inbox_id] => 21
+            [usname1] => SmileC
+            [usname2] => Testc
+            [from] => 2
+            [time] => 2015-03-06 23:36:14
+            [numb] => 2
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.007086s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016217s ]
+SQL: SELECT * FROM `mgqa_topic`  [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox` [ RunTime:0.012364s ]
+SQL: SELECT `content` FROM `mgqa_inbox` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+

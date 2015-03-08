@@ -23,6 +23,8 @@ Class QuestionModel extends Model{
 		}
 
 		$this->create($data);
-		return($this->add());
+		$result_id = $this->add();
+		if($result_id) D('Timeline')->push(1,$result_id,1);
+		return($result_id);
 	}
 }
