@@ -15,6 +15,6 @@ define('TIMELINE_ANSWER_PUSH', 3);
 
 return array(
 	//'配置项'=>'配置值'
-	//'SHOW_PAGE_TRACE' =>true,
+	'SHOW_PAGE_TRACE' =>true,
 	'URL_MODEL' => 2,
 );

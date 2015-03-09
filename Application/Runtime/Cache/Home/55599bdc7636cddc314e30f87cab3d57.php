@@ -335,7 +335,7 @@ function on_stu_btn_click(){
 	<div class="am-u-md-3">
 		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>)" class="am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-active':'');?>" data-am-button><?php echo ($topic['is_follow']?'已关注':'关注话题');?></button>
 		<p><?php echo $topic['follow_count'];?> 人关注了这个话题</p>
-		<p>该话题下共有 <?php echo $topic['question_count'];?> 个问题</p>
+		<p>该话题下共有 <?php echo $topic['question_count'];?> 个问题<br />(不包含子话题)</p>
 		<?php if($topic['father_topic']): ?><hr /><p>父话题：<a href="<?php echo U('/Home/Topic/'.$topic['father_topic']);?>" class="am-btn am-btn-primary am-round"><?php echo getTopicname($topic['father_topic']);?></a></p><?php endif; ?>
 	</div><!--am-3-->
 </div>

@@ -21,4 +21,13 @@ Class TimelineModel extends Model{
 			$this->add();
 		}
 	}
+
+	public function get_index($page = 1){
+		$follow_array = D('Follow')->get_follow();
+
+		$search_data['username'] = array('in',$follow_array);
+		$timeline_array = M('Timeline')->where($search_data)->order('id desc')->page($page,30)->select();
+		//trace($timeline_array);
+		return $timeline_array;
+	}
 }

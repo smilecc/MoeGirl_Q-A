@@ -46,11 +46,13 @@ function getAnsweraction($answer_id,$agree){
 }
 
 // 1表示true 3表示互相关注
-function is_follow($us_1,$us_2){
-	trace($us_1.$us_2);
+function is_follow($us_1,$us_2,$relation=-1){
 	$is_change = itusname($us_1,$us_2);
-	trace($us_1.$us_2);
-	$info = M('Follow')->where('us1 = "%s" AND us2="%s"',$us_1,$us_2)->find();
+	$info = array();
+	
+	if($relation == -1) $info = M('Follow')->where('us1 = "%s" AND us2="%s"',$us_1,$us_2)->find();
+	else $info['relation'] = $relation;
+
 	if(count($info) == 0 || $info['relation'] == 0) return false;
 	if($is_change){
 		if($info['relation'] == 1) return false;

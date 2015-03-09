@@ -4,8 +4,7 @@ use Think\Controller;
 
 class IndexController extends Controller {
     public function index(){
-    	//echo session('user_status');
-    	$this->assign('username',cookie('username'));
+    	D('Timeline')->get_index();
         $this->display();
     }
 }

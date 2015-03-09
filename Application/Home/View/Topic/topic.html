@@ -95,7 +95,7 @@
 	<div class="am-u-md-3">
 		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click({:$topic['id']})" class="am-btn am-btn-primary am-radius {:($topic['is_follow']?'am-active':'')}" data-am-button>{:($topic['is_follow']?'已关注':'关注话题')}</button>
 		<p>{:$topic['follow_count']} 人关注了这个话题</p>
-		<p>该话题下共有 {:$topic['question_count']} 个问题</p>
+		<p>该话题下共有 {:$topic['question_count']} 个问题<br />(不包含子话题)</p>
 		<IF condition="$topic['father_topic']"><hr /><p>父话题：<a href="{:U('/Home/Topic/'.$topic['father_topic'])}" class="am-btn am-btn-primary am-round">{:getTopicname($topic['father_topic'])}</a></p></IF>
 	</div><!--am-3-->
 </div>

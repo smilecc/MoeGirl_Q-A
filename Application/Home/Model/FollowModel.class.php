@@ -76,4 +76,17 @@ Class FollowModel extends Model{
 		$User->where('username="%s"',$us_1)->setDec('follow');
 		$User->where('username="%s"',$us_2)->setDec('fans');
 	}
+
+	public function get_follow($username = NULL){
+		if($username == NULL) $username = cookie('username');
+		$relation_list = $this->where('us1="%s" OR us2="%s"',$username,$username)->select();
+		$follow_array = array();
+		foreach ($relation_list as $value) {
+			$o_user = ($username == $value['us1'] ? $value['us2'] : $value['us1']);
+			if (is_follow($username,$o_user,$value['relation'])) {
+				array_push($follow_array, $o_user);
+			}
+		}
+		return $follow_array;
+	}
 }

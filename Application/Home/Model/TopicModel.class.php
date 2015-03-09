@@ -18,7 +18,6 @@ Class TopicModel extends Model{
 		if($mode == 'near'){
 			// 最近30天
 			$question_array = M('Question')->where($search_data)->where('%d < unix_timestamp(time)',(time() - 2592000))->order('id')->page($page,20)->select();
-			$question_array;
 			foreach ($question_array as &$value) {
 				$value['answer_content'] = M('Answer')->where('question_id=%d',$value['id'])->order('agree desc')->find();
 			}
@@ -26,7 +25,6 @@ Class TopicModel extends Model{
 		}else if($mode == 'hot'){
 			// 精华
 			$question_array = M('Question')->where($search_data)->order('id desc')->getField('id',true);
-			trace($question_array);
 			$search_condition['question_id'] = array('in',$question_array);
 			return M('Answer')->where($search_condition)->order('agree desc')->page($page,20)->select();
 		}else if($mode == 'all'){
