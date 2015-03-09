@@ -160,6 +160,6 @@ Class QuestionController extends Controller{
 		}else{
 			$db->add();
 		}
-		D('Timeline')->push(1,$question_id,2);
+		D('Timeline')->push(TIMELINE_QUESTION,$question_id,TIMELINE_QUESTION_FOLLOW);
 	}
 }

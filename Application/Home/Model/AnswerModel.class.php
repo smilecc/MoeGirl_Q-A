@@ -19,7 +19,9 @@ Class AnswerModel extends Model{
 
 
 		$this->create($data);
-		return($this->add());
+		$result_id = $this->add();
+		if($result_id) D('Timeline')->push(TIMELINE_ANSWER,$result_id,TIMELINE_ANSWER_SUBMIT);
+		return($result_id);
 	}
 
 	// 用户赞同、不赞同问题的接口
@@ -83,7 +85,11 @@ Class AnswerModel extends Model{
 		}
 		// 登记用户的agree数据
 		$answer_username = M('Answer')->where('id=%d',$answer_id)->getField('username');
-		M('User')->where('username="%s"',$answer_username)->save($data_user);
+		// 保存数据
+		if(M('User')->where('username="%s"',$answer_username)->save($data_user)){
+			// 推送到timeline
+			D('Timeline')->push(TIMELINE_ANSWER,$result_id,TIMELINE_ANSWER_AGREE);
+		}
 		return $this->where('id=%d',$answer_id)->getField('agree');
 	}
 
