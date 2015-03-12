@@ -14,7 +14,7 @@ Class TimelineModel extends Model{
 			'status'	=>	$status
 			);
 		$timeline_id = $this->where($data)->getField('id');
-		if($timeline_id != NULL){
+		if($timeline_id != NULL AND $status != 3){
 			$this->where('id=%d',$timeline_id)->delete();
 		}else{
 			$this->create($data);

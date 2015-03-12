@@ -162,4 +162,13 @@ Class QuestionController extends Controller{
 		}
 		D('Timeline')->push(TIMELINE_QUESTION,$question_id,TIMELINE_QUESTION_FOLLOW);
 	}
+
+	// 推送给关注我的人
+	public function push2timeline($mode,$project_id){
+		if($mode == 1){
+			D('Timeline')->push(TIMELINE_QUESTION,$project_id,TIMELINE_QUESTION_PUSH);
+		}else{
+			D('Timeline')->push(TIMELINE_ANSWER,$project_id,TIMELINE_ANSWER_PUSH);
+		}
+	}
 }

@@ -263,6 +263,8 @@ function on_stu_btn_click(){
 			<p id="question_content"><?php echo $page['content'];?><a href="javascript:;">[点击查看全部内容]</a></p>
 		</div></small>
 		<a href="javascript:;" class="am-article-meta"><span class="am-icon-user-plus"></span> 邀请回答（待实现）</a>
+		<a href="javascript:;" class="am-article-meta" onclick="push2timeline(1,<?php echo $page['id'];?>,this)"><i class="am-icon-reply"></i> 推送给关注我的人</a>
+		
 		<hr />
 		<span>
 			<strong><a href="/index.php/Home/Question/<?php echo $page['id'];?>">共 <?php echo $page['answer'];?> 个回答</a></strong>
@@ -288,7 +290,10 @@ function on_stu_btn_click(){
 
 				    <div class="am-comment-bd">
 				      <?php echo img_replace(nl2br($vo['content']));?>
-				      <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+
+				      <p class="am-text-right">
+				      <a href="javascript:;" class="am-article-meta" onclick="push2timeline(2,<?php echo $vo['id'];?>,this)"><i class="am-icon-reply"></i> 推送给关注我的人 </a>
+				      <a class="am-link-muted am-article-meta" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				    </div>
 				    <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
 					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
