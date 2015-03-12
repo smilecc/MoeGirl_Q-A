@@ -46,9 +46,9 @@ Class OperationController extends Controller{
 			if('Success' == (string)$resultXML->login['result'])
 			{
 				// Set cookie value
-				if($remember_me == 'on') cookie('token',login_en_code(D('User')->login_random($user).$resultXML->login['lgusername']));
+				if($remember_me == 'on') cookie('token',login_en_code(D('User')->login_random((string)$resultXML->login['lgusername']).(string)$resultXML->login['lgusername']));
 				cookie('username',$resultXML->login['lgusername']);
-				cookie('userid',$resultXML->login['lguserid']);
+				//cookie('userid',$resultXML->login['lguserid']);
 
 				// Set session
 				/// user_status 是用户登录的标识

@@ -8,13 +8,14 @@
 					  <div>
 					    <header>
 					      <!--<h3 class="am-comment-title">评论标题</h3>-->
+					      <small><div class="am-link-muted"><span class="am-fr"><time><?php echo $vo['content']['time'];?></time></span></div></small>
 					      <div class="am-comment-meta qustion-title-content">
 					        <a target="_blank" href="<?php echo U('/Home/People/'.$vo['content']['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
-					        <?php if($vo['status'] == 1): ?>提交了<?php elseif($vo['status'] == 2): ?>赞同了<?php else: ?>推送了<?php endif; ?>回答 <span class="am-fr"><time><?php echo $vo['content']['time'];?></time></span>
+					        <?php if($vo['status'] == 1): ?>提交了<?php elseif($vo['status'] == 2): ?>赞同了<?php else: ?>推送了<?php endif; ?>回答
 					      </div>
 					    </header>
 					    <div class="am-comment-bd">
-					    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>/Answer/<?php echo $vo['content']['id'];?>"><h2><?php echo $vo['content']['question_title'];?></h2></a>
+					    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['content']['question_id'];?>/Answer/<?php echo $vo['content']['id'];?>"><h2><?php echo $vo['content']['question_title'];?></h2></a>
 					    <?php if($vo['status'] != 1): echo $vo['content']['username'];?><br /><?php endif; ?>
 					      <?php echo sub_question_content($vo['content']['content']);?>
 					    </div>

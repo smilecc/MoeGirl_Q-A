@@ -23,7 +23,7 @@ Class TimelineModel extends Model{
 	}
 
 	public function get_index($page = 1){
-		$follow_array = D('Follow')->get_follow('testc');
+		$follow_array = D('Follow')->get_follow();
 
 		$search_data['username'] = array('in',$follow_array);
 		$timeline_array = M('Timeline')->where($search_data)->order('id desc')->page($page,30)->select();

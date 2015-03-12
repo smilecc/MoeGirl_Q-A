@@ -19,7 +19,7 @@ Class QuestionController extends Controller{
 		// 分发内容
 		$page_answer = array();
 		if($aid == 0){
-			$page_answer = M('Answer')->where('question_id=%d',$qid)->select();
+			$page_answer = M('Answer')->where('question_id=%d',$qid)->order('agree - unagree desc')->select();
 		}else{
 			$page_answer[0] = M('Answer')->where('id=%d',$aid)->find();
 		}
