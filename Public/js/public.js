@@ -36,9 +36,10 @@ function login(){
                   },
             success:function(re){
             	$('#login-model').modal('close');
-            	alert(re);
                 if(re=="Success"){
                   location.reload();
+                }else{
+                  alert(re);
                 }
             }
   });
@@ -192,4 +193,15 @@ function follow_user(from_name,to_user){
                 }
             }
   });
+}
+
+function push2timeline(mode,project_id,btn){
+    $.ajax({
+              type:"GET",
+              url:"/index.php/Home/Question/push2timeline.html?mode=" + mode + "&project_id=" + project_id,
+              success:function(re){
+                 $(btn).text("已推送");
+                 $(btn).addClass("am-disabled");
+              }
+    });
 }
