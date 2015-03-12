@@ -23,11 +23,22 @@ Class TimelineModel extends Model{
 	}
 
 	public function get_index($page = 1){
-		$follow_array = D('Follow')->get_follow();
+		$follow_array = D('Follow')->get_follow('testc');
 
 		$search_data['username'] = array('in',$follow_array);
 		$timeline_array = M('Timeline')->where($search_data)->order('id desc')->page($page,30)->select();
-		//trace($timeline_array);
+		
+		foreach ($timeline_array as &$value) {
+			if($value['mode'] == 1){
+				$content = M('Question')->where('id=%d',$value['project_id'])->find();
+				$value['content'] = $content;
+			}else{
+				$content = M('Answer')->where('id=%d',$value['project_id'])->find();
+				$content['question_title'] = get_question_title($content['question_id']);
+				$value['content'] = $content;
+			}
+		}
+		trace($timeline_array);
 		return $timeline_array;
 	}
 }
