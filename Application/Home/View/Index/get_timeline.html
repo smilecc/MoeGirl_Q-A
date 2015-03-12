@@ -10,7 +10,7 @@
 					  <div>
 					    <header>
 					      <!--<h3 class="am-comment-title">评论标题</h3>-->
-					      <small><div class="am-link-muted"><span class="am-fr"><time>{:$vo['content']['time']}</time></span></div></small>
+					      <small><div class="am-link-muted"><span class="am-fr"><time>{:$vo['time']}</time></span></div></small>
 					      <div class="am-comment-meta qustion-title-content">
 					        <a target="_blank" href="{:U('/Home/People/'.$vo['content']['username'])}" class="am-comment-author">{:$vo['username']}</a>
 					        <IF condition="$vo['status'] eq 1">提交了<elseif condition="$vo['status'] eq 2" />赞同了<else />推送了</IF>回答
@@ -33,7 +33,7 @@
 			<else />
 				<small><div class="am-link-muted">
 				    <a href="#link-to-user">{:$vo['content']['username']}</a>
-					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['content']['time']}</time></span>
+					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['time']}</time></span>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/{:$vo['content']['id']}"><h2>{:$vo['content']['title']}</h2></a>
 				<hr />
