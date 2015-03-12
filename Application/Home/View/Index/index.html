@@ -4,51 +4,13 @@
 	$("#topbar-index").addClass("am-active");
 </script>
 <title>首页 - 萌娘问答</title>
-
+<script src="/Public/js/index.js"></script>
 
 <div class="am-g">
-	<div class="am-u-md-9">
-	<foreach name="timeline" item="vo" key="i">
-			<IF condition="$vo['mode'] eq 2">
-					<article class="am-comment">
-				  	<div class="am-btn-group-stacked am-comment-avatar">
-					  <button id="agree-answer-btn-{:$vo['content']['id']}" type="button" onclick="agree_answer({:$vo['content']['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['content']['id'],1)}"><br /></button>
-					  <center id="answer-agree-numb-{:$vo['content']['id']}">{:$vo['content']['agree']}</center>
-					  <button id="unagree-answer-btn-{:$vo['content']['id']}" type="button" onclick="agree_answer({:$vo['content']['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['content']['id'],2)}"></button>
-					</div>
-				    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
-					  <div>
-					    <header>
-					      <!--<h3 class="am-comment-title">评论标题</h3>-->
-					      <div class="am-comment-meta qustion-title-content">
-					        <a target="_blank" href="{:U('/Home/People/'.$vo['content']['username'])}" class="am-comment-author">{:$vo['username']}</a>
-					        <IF condition="$vo['status'] eq 1">提交了<elseif condition="$vo['status'] eq 2" />赞同了<else />推送了</IF>回答 <span class="am-fr"><time>{:$vo['content']['time']}</time></span>
-					      </div>
-					    </header>
-					    <div class="am-comment-bd">
-					    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/{:$vo['id']}/Answer/{:$vo['content']['id']}"><h2>{:$vo['content']['question_title']}</h2></a>
-					    <IF condition="$vo['status'] neq 2">{:$vo['content']['username']}<br /></IF>
-					      {:sub_question_content($vo['content']['content'])}
-					    </div>
-					    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['content']['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
-					  </div>
-					  <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['content']['id']}">
-						    <div class="am-panel-bd" id="div-comment-{:$vo['content']['id']}">
-						    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
-						    </div>
-						</div>
-					  <hr />
-				</article>
-			<else />
-				<small><div class="am-link-muted">
-				    <a href="#link-to-user">{:$vo['content']['username']}</a>
-					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['content']['time']}</time></span>
-				</div></small>
-				<a target="_blank" href="/index.php/Home/Question/{:$vo['content']['id']}"><h2>{:$vo['content']['title']}</h2></a>
-				<hr />
-			</IF>
-		</foreach>
+	<div class="am-u-md-9" id="index_load">
+	<button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+	<script type="text/javascript">get_timeline(1);</script>
 	</div>
 </div>
-  
+
 </block>
