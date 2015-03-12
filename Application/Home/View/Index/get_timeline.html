@@ -32,7 +32,7 @@
 				</article>
 			<else />
 				<small><div class="am-link-muted">
-				    <a href="#link-to-user">{:$vo['content']['username']}</a>
+				    <a href="#link-to-user">{:$vo['username']}</a>
 					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['time']}</time></span>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/{:$vo['content']['id']}"><h2>{:$vo['content']['title']}</h2></a>
