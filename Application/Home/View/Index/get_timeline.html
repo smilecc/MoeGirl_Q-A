@@ -10,9 +10,16 @@
 					  <div>
 					    <header>
 					      <!--<h3 class="am-comment-title">评论标题</h3>-->
-					      <small><div class="am-link-muted"><span class="am-fr"><time>{:$vo['time']}</time></span></div></small>
+					      <small><div class="am-link-muted"><span class="am-fr"><time>{:$vo['pushtime']}</time></span></div></small>
 					      <div class="am-comment-meta qustion-title-content">
-					        <a target="_blank" href="{:U('/Home/People/'.$vo['content']['username'])}" class="am-comment-author">{:$vo['username']}</a>
+					      <IF condition="count($vo['us_array']) eq 1">
+					      	<a target="_blank" href="{:U('/Home/People/'.$vo['content']['username'])}" class="am-comment-author">{:$vo['username']}</a>
+					      <else />
+					      	<volist name="vo['us_array']" id="usname" key="j" >
+					      		<a target="_blank" href="{:U('/Home/People/'.$us)}" class="am-comment-author">{:$us}</a>
+					      		<if condition="j eq 3">等人<php>break;</php></if>、
+					      	</volist>
+					      </IF>
 					        <IF condition="$vo['status'] eq 1">提交了<elseif condition="$vo['status'] eq 2" />赞同了<else />推送了</IF>回答
 					      </div>
 					    </header>
@@ -33,7 +40,7 @@
 			<else />
 				<small><div class="am-link-muted">
 				    <a href="#link-to-user">{:$vo['username']}</a>
-					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['time']}</time></span>
+					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['pushtime']}</time></span>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/{:$vo['content']['id']}"><h2>{:$vo['content']['title']}</h2></a>
 				<hr />

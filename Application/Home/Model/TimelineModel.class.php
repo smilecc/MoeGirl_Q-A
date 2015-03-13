@@ -38,14 +38,16 @@ Class TimelineModel extends Model{
 				$value['content'] = $content;
 			}
 		}
-		
-		for($i = 0; $i < count($timeline_array); $i++){
-			if($timeline_array[$i] == NULL) continue;
+		// 过滤、分类重复
+
+		$arr_count = count($timeline_array);
+		for($i = 0; $i < $arr_count; $i++){
+			if(!array_key_exists($i,$timeline_array)) continue;
 			$timeline_array[$i]['us_array'] = array($timeline_array[$i]['username']);
 			// 如果是提交就跳过当前循环，因为Answer的提交和Question的提交常量是相同的
 			if($timeline_array[$i]['status'] == TIMELINE_ANSWER_SUBMIT) continue;
 			for($j = $i + 1; $j < count($timeline_array); $j++){
-				if($timeline_array[$j] == NULL) continue;
+				if(!array_key_exists($j,$timeline_array)) continue;
 				// 判断状态、模式是否一致
 				if($timeline_array[$i]['status'] == $timeline_array[$j]['status'] && $timeline_array[$i]['mode'] == $timeline_array[$j]['mode'])
 				{
@@ -59,10 +61,7 @@ Class TimelineModel extends Model{
 				}
 			}
 		}
-
-		trace($timeline_array);
-		// 重新整理序号
-		ksort($timeline_array,SORT_NUMERIC);
-		return $timeline_array;
+		// 重新整理序号 并返回
+		return array_merge($timeline_array);
 	}
 }

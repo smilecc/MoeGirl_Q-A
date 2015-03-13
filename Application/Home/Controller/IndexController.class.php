@@ -8,8 +8,11 @@ class IndexController extends Controller {
     }
 
     public function get_timeline($page = 1){
+    	$test = D('Timeline')->get_index($page);
+    	trace($test);
     	$this->assign('next_page',$page + 1);
-    	$this->assign('timeline',D('Timeline')->get_index($page));
+    	$this->assign('timeline',$test);
+    	//$this->assign('timeline',D('Timeline')->get_index($page));
         $this->display();
     }
 }
