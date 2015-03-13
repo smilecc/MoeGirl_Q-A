@@ -48,9 +48,25 @@
 </script>
 </head>
 <body>
+ <script type="text/javascript" src="/Public/js/sender.js"></script>
 <div id="space_height">
 	<!-- 头部 -->
 	
+
+  <script type="text/javascript">
+    // 展示推送的信息，这里只是简单alert出来，开发者可以做想要的效果展示。
+    // 将js/sender.js引入想要的接受推送的页面，然后实现show_msg函数即可
+     var usname = "<?php echo cookie('username');?>";
+    function show_msg(data) {
+      console.log(data);
+      alert('from_client_id:'+data['from_client_id'] + ' to_client_id:' + data['to_client_id'] + '消息:' +data['content'] + '时间:' + data['time']);
+    }
+
+    function msg_login(){
+      ws.send(JSON.stringify({"type":"login","name":usname}));
+    }
+  </script>
+
 
 <header class="am-topbar">
 <div class="am-container">

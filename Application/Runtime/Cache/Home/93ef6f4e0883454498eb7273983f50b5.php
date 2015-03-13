@@ -48,6 +48,7 @@
 </script>
 </head>
 <body>
+ <script type="text/javascript" src="/Public/jjs/sender.js"></script>
 <div id="space_height">
 	<!-- 头部 -->
 	

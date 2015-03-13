@@ -1,10 +1,14 @@
 <?php
 namespace Home\Model;
 use Think\Model;
+use Home\Tcp;
 
 class InboxAlertModel extends Model{
 	public function new_send($usname){
-		$find_usname = $this->where('usname="%s"',$usname)->getField('usname');
+		$find_usname = $this->where('usname="%s"',$usname)->find();
+
+		tcp_new_msg($usname,$find_usname['numb']+1);
+
 		$data = array(
 				'usname'	=> $usname,
 				'numb'		=> array('exp','numb+1')

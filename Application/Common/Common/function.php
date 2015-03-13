@@ -38,6 +38,19 @@ function test_user(){
     else return true;
 }
 
+function get_inbox_alert(){
+    $info = M('InboxAlert')->where('usname="%s"',cookie('username'))->find();
+    if($info) return $info['numb'];
+    return 0;
+}
+
+// use tcp send to user brower
+function tcp_new_msg($usname,$numb){
+    $client = stream_socket_client('tcp://127.0.0.1:7273');
+    if(!$client)exit("can not connect");
+    fwrite($client, '{"type":"new-msg","tousname":"'.$usname.'","numb":"'.$numb.'", "user":"admin", "pass":"send-msg"}'."\n");
+}
+
 // 获得问题的标题
 function get_question_title($question_id){
     $question_info = M('Question')->where('id=%d',$question_id)->find();
