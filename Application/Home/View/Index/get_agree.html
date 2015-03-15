@@ -1,0 +1,17 @@
+	<foreach name="timeline" item="vo" key="i">
+		<IF condition="count($vo['us_array']) eq 1">
+      		<a target="_blank" href="{:U('/Home/People/'.$vo['fromusername'])}" class="am-comment-author">{:$vo['fromusername']}</a>
+      <else />
+      	<volist name="vo['us_array']" id="usname" key="j" >
+      		<a target="_blank" href="{:U('/Home/People/'.$us)}" class="am-comment-author">{:$us}</a>
+      		<if condition="j eq 3">等人<php>break;</php></if>、
+      	</volist>
+      </IF>
+      <span> 赞同了你在问题 </span>
+      <a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['answer_id']}">{:get_question_title($vo['question_id'])}</a><span> 下的回答</span>
+      <hr />
+	</foreach>
+		
+	<div class="am-alert am-alert-success" data-am-alert>
+		  <p class="am-text-center">没有更多的内容了</p>
+	</div>

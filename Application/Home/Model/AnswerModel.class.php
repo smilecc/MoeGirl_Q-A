@@ -88,7 +88,7 @@ Class AnswerModel extends Model{
 		// 保存数据
 		if(M('User')->where('username="%s"',$answer_username)->save($data_user)){
 			// 推送到timeline
-			D('Timeline')->push(TIMELINE_ANSWER,$result_id,TIMELINE_ANSWER_AGREE);
+			if($agree == 1) D('Timeline')->push(TIMELINE_ANSWER,$answer_id,TIMELINE_ANSWER_AGREE);
 		}
 		return $this->where('id=%d',$answer_id)->getField('agree');
 	}

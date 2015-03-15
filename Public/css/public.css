@@ -19,3 +19,10 @@ footer {
 .qustion-title-content{
 	LINE-HEIGHT:0px;
 }
+.info-tab{
+	height:350px;
+}
+.info{
+	min-width: 380px;
+	padding: 0px;
+}

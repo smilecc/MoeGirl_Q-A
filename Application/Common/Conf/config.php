@@ -13,6 +13,11 @@ define('TIMELINE_ANSWER_SUBMIT', 1);
 define('TIMELINE_ANSWER_AGREE', 2);
 define('TIMELINE_ANSWER_PUSH', 3);
 
+
+// Timeline_Question
+define('TIMELINE_QUESTION_ADD_ANSWER', 1);
+define('TIMELINE_QUESTION_ADD_COMMENT', 2);
+
 return array(
 	//'配置项'=>'配置值'
 	//'SHOW_PAGE_TRACE' =>true,

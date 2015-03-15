@@ -50,7 +50,7 @@ function send_msg(){
 		    <hr />
 		    <p>{:$user['introduce_long']?nl2br($user['introduce_long']):"这货有点懒，什么都没写"}</p>
         <div class="am-text-right">
-          <button type="button" class="{:strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':''} am-btn {:$user['is_follow']?'':'am-btn-success'} am-radius {:$user['is_follow'] == 3?'am-icon-retweet':''}" id="follow-btn-{:$user['username']}" onclick="follow_user('{:cookie('username')}','{:$user['username']}')">{:$user['is_follow'] == 3?' ':''}{:$user['is_follow']?'取消关注':'关注TA'}</button>
+          <button type="button" class="follow-btn-{:$user['username']} {:strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':''} am-btn {:$user['is_follow']?'':'am-btn-success'} am-radius {:$user['is_follow'] == 3?'am-icon-retweet':''}" onclick="follow_user('{:cookie('username')}','{:$user['username']}')">{:$user['is_follow'] == 3?' ':''}{:$user['is_follow']?'取消关注':'关注TA'}</button>
           <button class="am-btn am-btn-success am-radius {:strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':''}" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 380}"><span class="am-icon-envelope-o"> {:strtolower(cookie('username')) == strtolower($user['username'])?'我自己':'发送私信'}</span></button>
         </div>
 		  </div>

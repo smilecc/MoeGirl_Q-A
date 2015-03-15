@@ -25,7 +25,10 @@ class UserController extends Controller {
     	$result_temp = D('Follow')->follow($toname);
     	$result = array();
     	if($result_temp == -1) $result['error'] = '登录失效';
-    	else $result['relation'] = $result_temp;
+    	else {
+            $result['relation'] = $result_temp;
+            if(is_follow(cookie('username'),$toname,$result['relation'])) D('Timeline')->follow($toname);
+        }
     	echo json_encode($result);
     }
 }

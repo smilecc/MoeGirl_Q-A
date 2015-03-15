@@ -40,7 +40,7 @@ Class QuestionController extends Controller{
 	}
 
 	// 提交评论
-	public function put_comment($id,$content,$mode){
+	public function put_comment($id,$content,$mode,$touser = ''){
 		if(!test_user()) {echo '用户登录失效，请检查';return false;}
 		if(!IS_POST) {echo '非法提交方式';return false;}
 
@@ -49,10 +49,14 @@ Class QuestionController extends Controller{
 			'project_id'=> $id,
 			'content'	=> $content,
 			'mode'		=> (($mode == 'question')? 0 : 1),
+			'tousername'=> $touser
 			);
 		$Comment_db = M('Comment');
 		$Comment_db->create($data);
-		if($Comment_db->add()) echo 1;
+		if($Comment_db->add()) {
+			echo 1;
+			//if($mode != 'question' AND ) D('Timeline')->agree($answer_id);
+		}
 		else echo 0;
 	}
 
@@ -96,6 +100,7 @@ Class QuestionController extends Controller{
 				);
 			$result_id = D('Answer')->add_answer($data);
 			if($result_id){
+				D('Timeline')->question_add_answer($question_id,$result_id);
 				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$question_id.'/answer/'.$result_id);
 			}else{
 				$this->error('发布失败，请退出后重新登录');	
@@ -136,6 +141,8 @@ Class QuestionController extends Controller{
 				return;
 			}else{
 				echo D('Answer')->agree($answer_id,$agree);
+				if($agree == 1)
+					D('Timeline')->agree($answer_id);
 			}
 		}
 	}

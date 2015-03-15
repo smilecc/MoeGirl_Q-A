@@ -82,7 +82,40 @@
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
+<li id="topbar-info" data-am-dropdown>
+<a href="javascript:;" class="am-dropdown-toggle">消息</a>
+
+<!--消息页面-->
+<div data-am-widget="tabs" class="am-tabs am-tabs-d2 am-dropdown-content info" data-am-tabs-noswipe="1">
+  <ul class="am-tabs-nav am-cf">
+    <li class="am-active">
+      <a href="[data-tab-panel-0]"><i class="am-icon-th-list"></i> 问答</a>
+    </li>
+    <li class="">
+      <a href="[data-tab-panel-1]"><i class="am-icon-users"></i> 用户</a>
+    </li>
+    <li class="">
+      <a href="[data-tab-panel-2]"><i class="am-icon-heart"></i> 赞同</a>
+    </li>
+  </ul>
+  <div class="am-tabs-bd">
+    <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab">【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。</div>
+    <div
+    data-tab-panel-1 class="am-tab-panel am-scrollable-vertical info-tab">【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。</div>
+  <div
+  data-tab-panel-2 class="am-tab-panel am-scrollable-vertical info-tab">【歌唱】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。</div>
+</div>
+</div>
+
+
+</li>
+
+      
+      
+
+
     </ul>
+
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">

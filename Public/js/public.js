@@ -174,21 +174,21 @@ function follow_user(from_name,to_user){
                 if(re.error) alert(re.error);
                 else{
                   if(re.relation == 0){
-                    $('#follow-btn-' + to_user).addClass('am-btn-success');
-                    $('#follow-btn-' + to_user).removeClass('am-icon-retweet');
-                    $('#follow-btn-' + to_user).text("关注TA");
+                    $('.follow-btn-' + to_user).addClass('am-btn-success');
+                    $('.follow-btn-' + to_user).removeClass('am-icon-retweet');
+                    $('.follow-btn-' + to_user).text("关注TA");
                   }else if (re.relation == 1){
-                    $('#follow-btn-' + to_user).removeClass('am-icon-retweet');
-                    if(from_name > to_user) {$('#follow-btn-' + to_user).removeClass('am-btn-success');$('#follow-btn-' + to_user).text("取消关注");}
-                    else {$('#follow-btn-' + to_user).addClass('am-btn-success');$('#follow-btn-' + to_user).text("关注TA");}
+                    $('.follow-btn-' + to_user).removeClass('am-icon-retweet');
+                    if(from_name > to_user) {$('.follow-btn-' + to_user).removeClass('am-btn-success');$('.follow-btn-' + to_user).text("取消关注");}
+                    else {$('.follow-btn-' + to_user).addClass('am-btn-success');$('.follow-btn-' + to_user).text("关注TA");}
                   }else if (re.relation == 2){
-                    $('#follow-btn-' + to_user).removeClass('am-icon-retweet');
-                    if(from_name > to_user) {$('#follow-btn-' + to_user).addClass('am-btn-success');$('#follow-btn-' + to_user).text("关注TA");}
-                    else {$('#follow-btn-' + to_user).removeClass('am-btn-success');$('#follow-btn-' + to_user).text("取消关注");}
+                    $('.follow-btn-' + to_user).removeClass('am-icon-retweet');
+                    if(from_name > to_user) {$('.follow-btn-' + to_user).addClass('am-btn-success');$('.follow-btn-' + to_user).text("关注TA");}
+                    else {$('.follow-btn-' + to_user).removeClass('am-btn-success');$('.follow-btn-' + to_user).text("取消关注");}
                   }else{
-                    $('#follow-btn-' + to_user).removeClass('am-btn-success');
-                    $('#follow-btn-' + to_user).addClass('am-icon-retweet');
-                    $('#follow-btn-' + to_user).text(' 取消关注');
+                    $('.follow-btn-' + to_user).removeClass('am-btn-success');
+                    $('.follow-btn-' + to_user).addClass('am-icon-retweet');
+                    $('.follow-btn-' + to_user).text(' 取消关注');
                   }
                 }
             }
@@ -204,4 +204,11 @@ function push2timeline(mode,project_id,btn){
                  $(btn).addClass("am-disabled");
               }
     });
+}
+
+function get_question(){
+  if(!$('#topbar-info').hasClass('am-active')) return;
+    $('#info_question').load('/index.php/Home/index/get_question.html');
+    $('#info_follow').load('/index.php/Home/index/get_follow.html');
+    $('#info_agree').load('/index.php/Home/index/get_agree.html');
 }

@@ -48,9 +48,26 @@
 </script>
 </head>
 <body>
+ <script type="text/javascript" src="/Public/js/sender.js"></script>
 <div id="space_height">
 	<!-- 头部 -->
 	
+
+  <script type="text/javascript">
+    // 展示推送的信息
+     var usname = "<?php echo cookie('username')?cookie('username'):'guest';?>";
+    function show_msg(data) {
+      if(data['type'] == "new-msg"){
+        $('.msg-badge').text(data['numb']);
+        $('.msg-badge').css("display",""); 
+      }
+    }
+
+    function msg_login(){
+      ws.send(JSON.stringify({"type":"login","name":usname}));
+    }
+  </script>
+
 
 <header class="am-topbar">
 <div class="am-container">
@@ -65,7 +82,25 @@
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
+<li id="topbar-info" data-am-dropdown>
+<a href="javascript:;" class="am-dropdown-toggle">消息</a>
+  <div class="am-dropdown-content" style="min-width: 300px;">
+    <h2>I am what I am</h2>
+    <p>
+      多么高兴 在琉璃屋中快乐生活
+      对世界说 甚么是光明和磊落
+      我就是我 是颜色不一样的烟火
+    </p>
+  </div>
+
+</li>
+
+      
+      
+
+
     </ul>
+
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
@@ -158,14 +193,14 @@
   <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-user">
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="am-dropdown" data-am-dropdown>
-        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;"><span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span>
           <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
-          <li><a href="<?php echo U('/Home/Inbox');?>">私信</a></li>
+          <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
           <li><a href="#">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
@@ -173,7 +208,9 @@
       </li>
     </ul>
     </div><?php endif; ?>
-
+<script type="text/javascript">
+  if(<?php echo get_inbox_alert();?> == 0) $('.msg-badge').css("display","none"); 
+</script>
     <?php if(!is_login()): ?><!--提问未登录的alert-->
     <div class="am-modal am-modal-alert" tabindex="-1" id="put-question-popup">
       <div class="am-modal-dialog">

@@ -82,7 +82,47 @@
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
+<li id="topbar-info" onclick="get_question()" data-am-dropdown>
+<a href="javascript:;" class="am-dropdown-toggle">消息</a>
+
+<!--消息页面-->
+<div data-am-widget="tabs" class="am-tabs am-tabs-d2 am-dropdown-content info" data-am-tabs-noswipe="1">
+  <ul class="am-tabs-nav am-cf">
+    <li class="am-active">
+      <a href="[data-tab-panel-0]"><i class="am-icon-th-list"></i> 问答</a>
+    </li>
+    <li class="">
+      <a href="[data-tab-panel-1]"><i class="am-icon-users"></i> 用户</a>
+    </li>
+    <li class="">
+      <a href="[data-tab-panel-2]"><i class="am-icon-heart"></i> 赞同</a>
+    </li>
+  </ul>
+  <div class="am-tabs-bd">
+    <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab" id="info_question">
+    <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+    <hr />
+    </div>
+    <div
+    data-tab-panel-1 class="am-tab-panel am-scrollable-vertical info-tab" id="info_follow">
+    <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+    </div>
+  <div
+  data-tab-panel-2 class="am-tab-panel am-scrollable-vertical info-tab" id="info_agree">
+  <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+  </div>
+</div>
+</div>
+
+
+</li>
+
+      
+      
+
+
     </ul>
+
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
@@ -321,7 +361,7 @@ function send_msg(){
 		    <hr />
 		    <p><?php echo $user['introduce_long']?nl2br($user['introduce_long']):"这货有点懒，什么都没写";?></p>
         <div class="am-text-right">
-          <button type="button" class="<?php echo strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':'';?> am-btn <?php echo $user['is_follow']?'':'am-btn-success';?> am-radius <?php echo $user['is_follow'] == 3?'am-icon-retweet':'';?>" id="follow-btn-<?php echo $user['username'];?>" onclick="follow_user('<?php echo cookie('username');?>','<?php echo $user['username'];?>')"><?php echo $user['is_follow'] == 3?' ':''; echo $user['is_follow']?'取消关注':'关注TA';?></button>
+          <button type="button" class="follow-btn-<?php echo $user['username'];?> <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':'';?> am-btn <?php echo $user['is_follow']?'':'am-btn-success';?> am-radius <?php echo $user['is_follow'] == 3?'am-icon-retweet':'';?>" onclick="follow_user('<?php echo cookie('username');?>','<?php echo $user['username'];?>')"><?php echo $user['is_follow'] == 3?' ':''; echo $user['is_follow']?'取消关注':'关注TA';?></button>
           <button class="am-btn am-btn-success am-radius <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'am-disabled':'';?>" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 380}"><span class="am-icon-envelope-o"> <?php echo strtolower(cookie('username')) == strtolower($user['username'])?'我自己':'发送私信';?></span></button>
         </div>
 		  </div>
