@@ -46,9 +46,17 @@ function get_inbox_alert(){
 
 // use tcp send to user brower
 function tcp_new_msg($usname,$numb){
-    $client = stream_socket_client('tcp://127.0.0.1:7273');
+    $client = stream_socket_client('tcp://wen.moegirl.org:7273');
     if(!$client)exit("can not connect");
-    fwrite($client, '{"type":"new-msg","tousname":"'.$usname.'","numb":"'.$numb.'", "user":"admin", "pass":"send-msg"}'."\n");
+    fwrite($client, '{"type":"new-msg","tousname":"'.$usname.'","numb":"'.$numb.'"}'."\n");
+}
+
+// use tcp send to user brower
+function tcp_new_info($usname){
+    $client = stream_socket_client('tcp://wen.moegirl.org:7273');
+    if(!$client)exit("can not connect");
+    $info_arr = D('TimelineTime')->get_unread();
+    fwrite($client, '{"type":"new-msg","tousname":"'.$usname.'","sum":"'.$info_arr['sum'].'", "question":"'.$info_arr['question'].'", "follow":"'.$info_arr['follow'].'", "agree":"'.$info_arr['agree'].'"}'."\n");
 }
 
 // 获得问题的标题

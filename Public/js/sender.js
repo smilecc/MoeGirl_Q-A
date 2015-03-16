@@ -6,7 +6,7 @@ WEB_SOCKET_SUPPRESS_CROSS_DOMAIN_SWF_ERROR = true
 window.onload = function()
 {
 	// =====================================================
-	ws = new WebSocket("ws://"+document.domain+":3232/");
+	ws = new WebSocket("ws://wen.moegirl.org:3232/");
 	ws.onopen = function() {
 		// 发送数据
 		msg_login();
