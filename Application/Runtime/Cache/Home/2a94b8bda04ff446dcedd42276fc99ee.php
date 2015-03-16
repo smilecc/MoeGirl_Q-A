@@ -63,7 +63,11 @@
       }
       if(data['type'] == "new-info"){
         if(data['sum']){
-          $('#info-question-badge').removeClass('info-nodisplay-badge');
+          info_sum = data['sum'];
+          info_question = data['question'];
+          info_follow = data['follow'];
+          info_agree = data['agree'];
+          load_info_badge();
         }
     }
 
