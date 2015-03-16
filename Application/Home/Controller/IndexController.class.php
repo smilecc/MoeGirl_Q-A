@@ -38,4 +38,8 @@ class IndexController extends Controller {
         $this->assign('timeline',$agree_array);
         $this->display();
     }
+
+    public function update_time(){
+        D('TimelineTime')->update_time();
+    }
 }

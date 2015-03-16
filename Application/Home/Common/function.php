@@ -64,3 +64,7 @@ function is_follow($us_1,$us_2,$relation=-1){
 		else return 3;
 	}
 }
+
+function get_unread(){
+	return D('TimelineTime')->get_unread();
+}

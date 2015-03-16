@@ -61,6 +61,10 @@
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      if(data['type'] == "new-info"){
+        if(data['sum']){
+          $('#info-question-badge').removeClass('info-nodisplay-badge');
+        }
     }
 
     function msg_login(){
@@ -82,22 +86,30 @@
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
-<li id="topbar-info" onclick="get_question()" data-am-dropdown>
-<a href="javascript:;" class="am-dropdown-toggle">消息</a>
+<li id="topbar-info" onclick="get_info()" data-am-dropdown>
+<?php $unread_arr = get_unread(); ?>
+<a href="javascript:;" class="am-dropdown-toggle">消息 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-badge"><?php echo $unread_arr['sum'];?></span></a>
 
 <!--消息页面-->
 <div data-am-widget="tabs" class="am-tabs am-tabs-d2 am-dropdown-content info" data-am-tabs-noswipe="1">
   <ul class="am-tabs-nav am-cf">
     <li class="am-active">
-      <a href="[data-tab-panel-0]"><i class="am-icon-th-list"></i> 问答</a>
+      <a href="[data-tab-panel-0]"><i class="am-icon-th-list"></i> 问答 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-question-badge"><?php echo $unread_arr['question'];?></span></a>
     </li>
     <li class="">
-      <a href="[data-tab-panel-1]"><i class="am-icon-users"></i> 用户</a>
+      <a href="[data-tab-panel-1]"><i class="am-icon-users"></i> 用户 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-follow-badge"><?php echo $unread_arr['follow'];?></span></a>
     </li>
     <li class="">
-      <a href="[data-tab-panel-2]"><i class="am-icon-heart"></i> 赞同</a>
+      <a href="[data-tab-panel-2]"><i class="am-icon-heart"></i> 赞同 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-agree-badge"><?php echo $unread_arr['agree'];?></span></a>
     </li>
   </ul>
+  <script type="text/javascript">
+    var info_sum = <?php echo $unread_arr['sum'];?>;
+    var info_question = <?php echo $unread_arr['question'];?>;
+    var info_follow = <?php echo $unread_arr['follow'];?>;
+    var info_agree = <?php echo $unread_arr['agree'];?>;
+    load_info_badge();
+  </script>
   <div class="am-tabs-bd">
     <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab" id="info_question">
     <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>

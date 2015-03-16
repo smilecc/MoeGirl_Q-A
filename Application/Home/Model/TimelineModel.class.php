@@ -93,7 +93,7 @@ Class TimelineModel extends Model{
 		$db->add();
 	}
 
-	public function get_question(){
+	public function get_question($search_time = NULL){
 		$follow_question_array = M('QuestionUserStatus')->where('username="%s" AND follow=1',cookie('username'))->getField('question_id',true);
 		// 防止空查
 		array_push($follow_question_array, 0);
@@ -101,7 +101,15 @@ Class TimelineModel extends Model{
 		$search_data['question_id&type'] = array(array('in',$follow_question_array),TIMELINE_QUESTION_ADD_ANSWER,'_multi'=>true);
 		$search_data['tousername'] = cookie('username');
 		$search_data['_logic'] = 'or';
-		$get_arr = M('TimelineQuestion')->where($search_data)->select();
+
+		$get_arr = array();
+		if($search_time == NULL) $get_arr = M('TimelineQuestion')->where($search_data)->order('id desc')->limit(200)->select();
+		else{
+			$new_search_data['_complex'] = $search_data;
+			$get_arr = M('TimelineQuestion')->where($new_search_data)->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
+		}
+
+		trace($search_time);
 
 		// 过滤、分类重复
 		$arr_count = count($get_arr);
@@ -121,7 +129,7 @@ Class TimelineModel extends Model{
 						continue;
 					}
 					array_push($get_arr[$i]['us_array'],$get_arr[$j]['fromusername']);
-				}
+				}else break;
 			}
 		}
 		// 重新整理序号 并返回
@@ -144,8 +152,10 @@ Class TimelineModel extends Model{
 		}
 	}
 
-	public function get_follow(){
-		$result_arr = M('TimelineFollow')->where('tousername="%s"',cookie('username'))->select();
+	public function get_follow($search_time = NULL){
+		$result_arr = array();
+		if($search_time == NULL) $result_arr = M('TimelineFollow')->where('tousername="%s"',cookie('username'))->order('id desc')->limit(30)->select();
+		else $result_arr = M('TimelineFollow')->where('tousername="%s"',cookie('username'))->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
 		return $result_arr;
 	}
 
@@ -166,8 +176,10 @@ Class TimelineModel extends Model{
 		}
 	}
 
-	public function get_agree(){
-		$get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->select();
+	public function get_agree($search_time = NULL){
+		$get_arr = array();
+		if($search_time == NULL) $get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->order('id desc')->limit(200)->select();
+		else $get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
 
 		// 过滤、分类重复
 		$arr_count = count($get_arr);
@@ -187,7 +199,7 @@ Class TimelineModel extends Model{
 						continue;
 					}
 					array_push($get_arr[$i]['us_array'],$get_arr[$j]['fromusername']);
-				}
+				}else break;
 			}
 		}
 		// 重新整理序号 并返回

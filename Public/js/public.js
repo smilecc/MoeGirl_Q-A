@@ -206,9 +206,39 @@ function push2timeline(mode,project_id,btn){
     });
 }
 
-function get_question(){
+function get_info(){
   if(!$('#topbar-info').hasClass('am-active')) return;
+  $.ajax({
+              type:"GET",
+              url:"/index.php/Home/index/update_time.html"
+    });
+
     $('#info_question').load('/index.php/Home/index/get_question.html');
     $('#info_follow').load('/index.php/Home/index/get_follow.html');
     $('#info_agree').load('/index.php/Home/index/get_agree.html');
 }
+
+function load_info_badge(){
+    if(info_sum == 0){
+      $('#info-question-badge').addClass('info-nodisplay-badge');
+      $('#info-follow-badge').addClass('info-nodisplay-badge');
+      $('#info-agree-badge').addClass('info-nodisplay-badge');
+      $('#info-badge').addClass('info-nodisplay-badge');
+    }else{
+      $('#info-badge').removeClass('info-nodisplay-badge');
+      $('#info-badge').text(info_sum);
+
+      if(info_question) {
+        $('#info-question-badge').removeClass('info-nodisplay-badge');
+        $('#info-question-badge').text(info_question);
+      }
+      if(info_follow) {
+        $('#info-follow-badge').removeClass('info-nodisplay-badge');
+        $('#info-follow-badge').text(info_follow);
+      }
+      if(info_agree) {
+        $('#info-agree-badge').removeClass('info-nodisplay-badge');
+        $('#info-agree-badge').text(info_agree);
+      }
+    }
+  }

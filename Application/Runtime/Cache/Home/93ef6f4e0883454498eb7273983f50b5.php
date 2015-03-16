@@ -83,7 +83,8 @@
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
 <li id="topbar-info" onclick="get_question()" data-am-dropdown>
-<a href="javascript:;" class="am-dropdown-toggle">消息</a>
+<?php $unread_arr = get_unread(); ?>
+<a href="javascript:;" class="am-dropdown-toggle">消息 <span class="am-badge am-badge-danger am-round"><?php echo $unread_arr['sum'];?></span></a>
 
 <!--消息页面-->
 <div data-am-widget="tabs" class="am-tabs am-tabs-d2 am-dropdown-content info" data-am-tabs-noswipe="1">
