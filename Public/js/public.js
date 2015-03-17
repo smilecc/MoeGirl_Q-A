@@ -107,12 +107,8 @@ function put_comment(project_id,mode){
 function agree_answer(answer_id,agree){
   if(getCookie('mgqa_username') == "")
   $.ajax({
-            type:"POST",
-            url:"/index.php/Home/Question/agree.html",
-            data:{
-                  answer_id:answer_id,
-                  agree:agree
-                  },
+            type:"GET",
+            url:"/index.php/Home/Question/agree?answer_id=" + answer_id + "&agree=" + agree,
             success:function(re){
                 if(re == "-1"){
                     alert('失败，发生错误');

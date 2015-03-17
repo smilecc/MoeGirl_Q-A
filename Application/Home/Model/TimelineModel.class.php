@@ -160,7 +160,7 @@ Class TimelineModel extends Model{
 	public function get_follow($search_time = NULL){
 		$result_arr = array();
 		if($search_time == NULL) $result_arr = M('TimelineFollow')->where('tousername="%s"',cookie('username'))->order('id desc')->limit(30)->select();
-		else $result_arr = M('TimelineFollow')->where('tousername="%s"',cookie('username'))->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
+		else $result_arr = M('TimelineFollow')->where('tousername="%s" AND %d < unix_timestamp(time)',cookie('username'),$search_time)->order('id desc')->select();
 		return $result_arr;
 	}
 
@@ -185,11 +185,15 @@ Class TimelineModel extends Model{
 
 	public function get_agree($search_time = NULL){
 		$get_arr = array();
+
+		trace('debug');
 		if($search_time == NULL) $get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->order('id desc')->limit(200)->select();
 		else {
-			$get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
+			$get_arr = M('TimelineAgree')->where('tousername="%s" AND %d < unix_timestamp(time)',cookie('username'),$search_time)->order('id desc')->select();
 			if(count($get_arr) == 0) $get_arr = array();
+			
 		}
+		trace($get_arr);
 		// 过滤、分类重复
 		$arr_count = count($get_arr);
 		for($i = 0; $i < $arr_count; $i++){

@@ -27,7 +27,7 @@ class TimelineTimeModel extends Model{
 		$question_arr = $timeline_db->get_question($time);
 		$follow_arr = $timeline_db->get_follow($time);
 		$agree_arr = $timeline_db->get_agree($time);
-
+		
 		$result_arr['question'] = count($question_arr);
 		$result_arr['follow'] = count($follow_arr);
 		$result_arr['agree'] = count($agree_arr);

@@ -47,4 +47,5 @@ class IndexController extends Controller {
         $info_arr = D('TimelineTime')->get_unread();
         echo json_encode($info_arr);
     }
+
 }

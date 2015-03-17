@@ -72,7 +72,7 @@ function tcp_new_info($us_arr){
     $redis->exec();
     $client = stream_socket_client('tcp://127.0.0.1:7273');
     if(!$client)exit("can not connect");
-    fwrite($client, '{"type":"new-msg","lock":"'.$unlock.'"}'."\n");
+    fwrite($client, '{"type":"new-info","lock":"'.$unlock.'"}'."\n");
 }
 
 // 获得问题的标题
