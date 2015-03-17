@@ -20,6 +20,6 @@ define('TIMELINE_QUESTION_ADD_COMMENT', '2');
 
 return array(
 	//'配置项'=>'配置值'
-	//'SHOW_PAGE_TRACE' =>true,
+	'SHOW_PAGE_TRACE' =>true,
 	'URL_MODEL' => 1,
 );

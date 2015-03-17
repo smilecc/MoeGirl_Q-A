@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">

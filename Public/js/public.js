@@ -24,7 +24,7 @@ function load_form_conf(){
   });
 }
 
-function login(){
+function login(from){
   //$('#login-model').modal('open');
   $.ajax({
             type:"POST",
@@ -37,7 +37,8 @@ function login(){
             success:function(re){
             	$('#login-model').modal('close');
                 if(re=="Success"){
-                  location.reload();
+                  if(from == 'NULL') window.location.href='/';
+                  else window.location.href=from;
                 }else{
                   alert(re);
                 }
