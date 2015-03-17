@@ -77,6 +77,8 @@ Class TimelineModel extends Model{
 		$db = M('TimelineQuestion');
 		$db->create($data);
 		$db->add();
+		// 将提示发送给用户
+		tcp_new_info(M('QuestionUserStatus')->where('follow=1')->getField('username',true));
 	}
 
 	// 增加评论时
@@ -150,6 +152,8 @@ Class TimelineModel extends Model{
 			$db->create($data);
 			$db->add();
 		}
+		// 将提示发送给用户
+		tcp_new_info(array($tousername));
 	}
 
 	public function get_follow($search_time = NULL){
@@ -161,9 +165,10 @@ Class TimelineModel extends Model{
 
 	// 当赞同问题时
 	public function agree($answer_id){
+		$tousername = M('Answer')->where('id=%d',$answer_id)->getField('username');
 		$data = array(
 			'fromusername'	=>	cookie('username'),
-			'tousername'	=>	M('Answer')->where('id=%d',$answer_id)->getField('username'),
+			'tousername'	=>	$tousername,
 			'answer_id'		=>	$answer_id
 			);
 		$db = M('TimelineAgree');
@@ -174,6 +179,7 @@ Class TimelineModel extends Model{
 			$db->create($data);
 			$db->add();
 		}
+		tcp_new_info(array($tousername));
 	}
 
 	public function get_agree($search_time = NULL){

@@ -1,0 +1,665 @@
+[ 2015-03-17T08:33:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006651s ]
+
+[ 2015-03-17T08:33:19+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.015979s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.028658s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.013818s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.031598s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.063846s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000454s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.047787s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2015-03-17T08:33:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2015-03-17T08:33:52+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.018912s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.015470s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.024143s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.022097s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.024850s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000169s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010679s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000210s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2015-03-17T08:34:08+08:00 ] 127.0.0.1 /Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2015-03-17T08:38:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-03-17T08:38:23+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.014703s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.010465s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.012458s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.011172s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.021705s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000215s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.009511s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-03-17T08:38:35+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.009496s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.011127s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.012077s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.019527s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000470s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.009279s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.007295s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000239s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2015-03-17T08:39:22+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.009838s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.012678s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.007381s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.009721s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000310s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.009104s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.007034s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000240s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-03-17T08:39:33+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.011341s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.013655s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.007361s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.010323s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000330s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.009807s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.006793s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000268s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2015-03-17T08:39:55+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.008962s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.011668s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.007851s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.012015s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000353s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.010287s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.007250s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000718s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-03-17T08:40:34+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.011391s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.013806s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.008951s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.010944s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000808s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.009375s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.009649s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000273s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2015-03-17T08:40:51+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.011128s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.013009s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.007739s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.011140s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000342s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.011655s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.009190s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000266s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2015-03-17T08:40:58+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.009090s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.011035s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.008226s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.013520s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000359s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.009835s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.007024s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000268s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-03-17T08:41:59+08:00 ] 127.0.0.1 /index.php/Home/index/getinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.009859s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.012430s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.010857s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="SmileC" AND follow=1 )  [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.012423s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('2',0)) AND (`type` = 1) ) OR `tousername` = 'SmileC' ) AND ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000303s ]
+DEBUG: 1426499812
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 136 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.009529s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.007430s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( 1426499812 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000262s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 206 行.
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+

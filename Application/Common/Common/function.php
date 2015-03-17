@@ -52,11 +52,27 @@ function tcp_new_msg($usname,$numb){
 }
 
 // use tcp send to user brower
-function tcp_new_info($usname){
+function tcp_new_info($us_arr){
+    $redis = new Redis();
+    $redis->connect("localhost","6379");
+    // 查询可用锁
+    $unlock = 0;
+    for ($unlock=0;; $unlock++) { 
+        if(!$redis->get('info-lock-'.$unlock)) {
+            // 加锁
+            $redis->set('info-lock-'.$unlock,1);
+            break;
+        }
+    }
+    $redis->multi();
+    // 保存发送用户集合
+    foreach ($us_arr as $value) {
+        $redis->sAdd('info-'.$unlock , $value);
+    }
+    $redis->exec();
     $client = stream_socket_client('tcp://wen.moegirl.org:7273');
     if(!$client)exit("can not connect");
-    $info_arr = D('TimelineTime')->get_unread();
-    fwrite($client, '{"type":"new-msg","tousname":"'.$usname.'","sum":"'.$info_arr['sum'].'", "question":"'.$info_arr['question'].'", "follow":"'.$info_arr['follow'].'", "agree":"'.$info_arr['agree'].'"}'."\n");
+    fwrite($client, '{"type":"new-msg","lock":"'.$unlock.'"}'."\n");
 }
 
 // 获得问题的标题

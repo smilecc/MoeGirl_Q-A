@@ -9,13 +9,14 @@
         $('.msg-badge').css("display",""); 
       }
       if(data['type'] == "new-info"){
-        if(data['sum']){
-          info_sum = data['sum'];
-          info_question = data['question'];
-          info_follow = data['follow'];
-          info_agree = data['agree'];
-          load_info_badge();
-        }
+        $.ajax({
+            type:"GET",
+            dataType:"json",
+            url:"/index.php/Home/index/getinfo",
+            complete:function(re){
+              load_info_badge(re.responseJSON.sum,re.responseJSON.question,re.responseJSON.follow,re.responseJSON.agree);
+            }
+        });
     }
 
     function msg_login(){
@@ -55,11 +56,7 @@
     </li>
   </ul>
   <script type="text/javascript">
-    var info_sum = {:$unread_arr['sum']};
-    var info_question = {:$unread_arr['question']};
-    var info_follow = {:$unread_arr['follow']};
-    var info_agree = {:$unread_arr['agree']};
-    load_info_badge();
+    load_info_badge({:$unread_arr['sum']},{:$unread_arr['question']},{:$unread_arr['follow']},{:$unread_arr['agree']});
   </script>
   <div class="am-tabs-bd">
     <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab" id="info_question">
