@@ -1,7 +1,31 @@
 <block name="header">
 
-  <script type="text/javascript">
-    // 展示推送的信息
+<script type="text/javascript">
+function load_info_badge(sum,question,follow,agree){
+    if(sum == 0){
+      $('#info-question-badge').addClass('info-nodisplay-badge');
+      $('#info-follow-badge').addClass('info-nodisplay-badge');
+      $('#info-agree-badge').addClass('info-nodisplay-badge');
+      $('#info-badge').addClass('info-nodisplay-badge');
+    }else{
+      $('#info-badge').removeClass('info-nodisplay-badge');
+      $('#info-badge').text(sum);
+
+      if(question) {
+        $('#info-question-badge').removeClass('info-nodisplay-badge');
+        $('#info-question-badge').text(question);
+      }
+      if(follow) {
+        $('#info-follow-badge').removeClass('info-nodisplay-badge');
+        $('#info-follow-badge').text(follow);
+      }
+      if(agree) {
+        $('#info-agree-badge').removeClass('info-nodisplay-badge');
+        $('#info-agree-badge').text(agree);
+      }
+    }
+  }
+  // 展示推送的信息
      var usname = "{:cookie('username')?cookie('username'):'guest'}";
     function show_msg(data) {
       if(data['type'] == "new-msg"){
@@ -18,11 +42,11 @@
             }
         });
     }
-
+}
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
-  </script>
+</script>
 <script type="text/javascript" src="/Public/js/sender.js"></script>
 
 <header class="am-topbar">

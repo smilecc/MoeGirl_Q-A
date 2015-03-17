@@ -663,3 +663,1059 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
 
+[ 2015-03-17T09:41:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2015-03-17T09:41:22+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.014304s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.012893s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.012144s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021186s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.037039s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000653s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000426s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.015356s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000422s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2015-03-17T09:43:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-03-17T09:43:42+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.017595s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.012623s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.012534s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.029507s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.033599s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000163s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.008253s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2015-03-17T09:44:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+
+[ 2015-03-17T09:44:06+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.022066s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.010692s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.014815s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013648s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.061968s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000354s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012787s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2015-03-17T09:46:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2015-03-17T09:46:20+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.018522s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.017319s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.019369s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015417s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.039693s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000343s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012360s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2015-03-17T09:46:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2015-03-17T09:46:57+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.019842s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.012820s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.013179s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016942s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.027371s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000425s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.017477s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-03-17T09:49:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2015-03-17T09:49:53+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.030362s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.010963s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.017971s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.028251s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.071043s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000489s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000326s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.027344s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000448s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2015-03-17T09:50:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2015-03-17T09:50:14+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.021206s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.013452s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.014929s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018469s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.047784s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000404s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000367s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.011582s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2015-03-17T09:51:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2015-03-17T09:51:23+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.022180s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.017454s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.020055s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.031779s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.037975s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001104s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 25
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 3
+            [status] => 2
+            [pushtime] => 2015-03-16 02:23:50
+            [content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                    [question_title] => 123
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.012116s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000824s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
