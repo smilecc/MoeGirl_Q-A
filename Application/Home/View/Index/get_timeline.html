@@ -15,9 +15,10 @@
 					      <IF condition="count($vo['us_array']) eq 1">
 					      	<a target="_blank" href="{:U('/Home/People/'.$vo['content']['username'])}" class="am-comment-author">{:$vo['username']}</a>
 					      <else />
-					      	<volist name="vo['us_array']" id="usname" key="j" >
-					      		<a target="_blank" href="{:U('/Home/People/'.$us)}" class="am-comment-author">{:$us}</a>
-					      		<if condition="j eq 3">等人<php>break;</php></if>、
+					      	<volist name="vo['us_array']" id="usname" key="j" offset="0" length='3'>
+					      		<a target="_blank" href="{:get_user_page($usname)}" class="am-comment-author">{:$usname}</a>
+		                        <if condition="$j lt count($vo['us_array'])">、</if>
+		            			<if condition="$j eq 3">等{:count($vo['us_array'])}人</if>
 					      	</volist>
 					      </IF>
 					        <IF condition="$vo['status'] eq 1">提交了<elseif condition="$vo['status'] eq 2" />赞同了<else />推送了</IF>回答

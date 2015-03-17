@@ -17,7 +17,9 @@ class IndexController extends Controller {
     }
 
     public function get_question(){
-        $this->assign('timeline',D('Timeline')->get_question());
+        $test = D('Timeline')->get_question();
+        trace($test);
+        $this->assign('timeline',$test);
         $this->display();
     }
 

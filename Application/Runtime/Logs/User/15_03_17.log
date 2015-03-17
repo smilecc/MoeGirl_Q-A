@@ -803,3 +803,27 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
 
+[ 2015-03-17T21:38:58+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.021815s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="Testc" ) LIMIT 1   [ RunTime:0.000283s ]
+DEBUG: test:7
+SQL: UPDATE `mgqa_user` SET `random`=20069 WHERE ( username="Testc" ) [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2015-03-17T21:51:18+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014816s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="Angela" ) LIMIT 1   [ RunTime:0.000333s ]
+DEBUG: test:0
+SQL: INSERT INTO `mgqa_user` (`random`,`username`) VALUES (373,'Angela') [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+

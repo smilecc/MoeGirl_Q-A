@@ -47,7 +47,7 @@ Class TimelineModel extends Model{
 			$timeline_array[$i]['us_array'] = array($timeline_array[$i]['username']);
 			// 如果是提交就跳过当前循环，因为Answer的提交和Question的提交常量是相同的
 			if($timeline_array[$i]['status'] == TIMELINE_ANSWER_SUBMIT) continue;
-			for($j = $i + 1; $j < count($timeline_array); $j++){
+			for($j = $i + 1; $j < $arr_count; $j++){
 				if(!array_key_exists($j,$timeline_array)) continue;
 				// 判断状态、模式是否一致
 				if($timeline_array[$i]['status'] == $timeline_array[$j]['status'] && $timeline_array[$i]['mode'] == $timeline_array[$j]['mode'])
@@ -59,6 +59,7 @@ Class TimelineModel extends Model{
 						continue;
 					}
 					array_push($timeline_array[$i]['us_array'],$timeline_array[$j]['username']);
+					unset($timeline_array[$j]);
 				}
 			}
 		}
@@ -119,9 +120,10 @@ Class TimelineModel extends Model{
 			if(!array_key_exists($i,$get_arr)) continue;
 			$get_arr[$i]['us_array'] = array($get_arr[$i]['fromusername']);
 			// 如果是提交就跳过当前循环，因为Answer的提交和Question的提交常量是相同的
-			for($j = $i + 1; $j < count($get_arr); $j++){
+			for($j = $i + 1; $j < $arr_count; $j++){
 				if(!array_key_exists($j,$get_arr)) continue;
 				// 判断状态、模式是否一致
+				//trace($get_arr[$i]['question_id'] ."-". $get_arr[$j]['question_id'] ."-". $get_arr[$i]['type'] ."-". $get_arr[$j]['type']);
 				if($get_arr[$i]['question_id'] == $get_arr[$j]['question_id'] && $get_arr[$i]['type'] == $get_arr[$j]['type'])
 				{
 					// 过滤同一时间段重复push
@@ -131,7 +133,10 @@ Class TimelineModel extends Model{
 						continue;
 					}
 					array_push($get_arr[$i]['us_array'],$get_arr[$j]['fromusername']);
-				}else break;
+					unset($get_arr[$j]);
+				}else {
+					//trace($get_arr[$i]['question_id'] ."-". $get_arr[$j]['question_id'] ."-". $get_arr[$i]['type'] ."-". $get_arr[$j]['type']);
+					break;}
 			}
 		}
 		if(count($get_arr) == 0) $get_arr = array();
@@ -200,7 +205,7 @@ Class TimelineModel extends Model{
 			if(!array_key_exists($i,$get_arr)) continue;
 			$get_arr[$i]['us_array'] = array($get_arr[$i]['fromusername']);
 			// 如果是提交就跳过当前循环，因为Answer的提交和Question的提交常量是相同的
-			for($j = $i + 1; $j < count($get_arr); $j++){
+			for($j = $i + 1; $j < $arr_count; $j++){
 				if(!array_key_exists($j,$get_arr)) continue;
 				// 判断状态、模式是否一致
 				if($get_arr[$i]['answer_id'] == $get_arr[$j]['answer_id'])
@@ -212,6 +217,7 @@ Class TimelineModel extends Model{
 						continue;
 					}
 					array_push($get_arr[$i]['us_array'],$get_arr[$j]['fromusername']);
+					unset($get_arr[$j]);
 				}else break;
 			}
 		}

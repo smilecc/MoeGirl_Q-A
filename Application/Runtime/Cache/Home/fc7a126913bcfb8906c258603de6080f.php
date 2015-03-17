@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -168,7 +168,8 @@ function load_info_badge(sum,question,follow,agree){
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
-  <?php if(is_login()): ?><!--提问窗口-->
+
+    <!--提问窗口-->
     <div class="am-popup" id="put-question-popup">
       <div class="am-popup-inner">
         <div class="am-popup-hd">
@@ -266,67 +267,12 @@ function load_info_badge(sum,question,follow,agree){
         </ul>
       </li>
     </ul>
-    </div><?php endif; ?>
+    </div>
+
 <script type="text/javascript">
   if(<?php echo get_inbox_alert();?> == 0) $('.msg-badge').css("display","none"); 
 </script>
-    <?php if(!is_login()): ?><!--提问未登录的alert-->
-    <div class="am-modal am-modal-alert" tabindex="-1" id="put-question-popup">
-      <div class="am-modal-dialog">
-        <div class="am-modal-hd">提示</div>
-        <div class="am-modal-bd">
-          不好意思，您还未登录！
-        </div>
-        <div class="am-modal-footer">
-          <span class="am-modal-btn">确定</span>
-        </div>
-      </div>
-    </div>
 
-    <div class="am-topbar-right">
-      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-offcanvas="{target: '#oc-login'}">登录</button>
-    </div>
-
-    <div class="am-modal am-modal-no-btn" tabindex="-1" id="login-model">
-      <div class="am-modal-dialog">
-        <div class="am-modal-hd">正在登录</div>
-        <div class="am-modal-bd">
-          <i class="am-icon-spinner am-icon-spin"></i>
-        </div>
-      </div>
-    </div>
-
-
-        <!-- 侧边栏内容 -->
-    <div id="oc-login" class="am-offcanvas">
-      <div class="am-offcanvas-bar am-offcanvas-bar-flip">
-        <div class="am-offcanvas-content">
-          <div class="am-vertical-align" style="height: 200px;">
-            <div class="am-vertical-align-middle">
-            <h2>登录<br /><small>请直接使用萌百账号登录</small></h2>
-
-            <form method="post" class="am-form">
-            <label for="username">用户名:</label>
-            <input type="email" name="" id="username" value="">
-            <br>
-            <label for="password">密码:</label>
-            <input type="password" name="" id="password" value="">
-            <br>
-            <label for="remember-me">
-              <input id="remember-me" type="checkbox">
-              自动登录
-            </label>
-            <br />
-            <div class="am-cf">
-              <input type="button" name="" onclick="$('#login-model').modal('open');login();" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
-              <a href="http://zh.moegirl.org/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&type=signup"><input type="button" name="" value="没有账号 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr"></a>
-            </div>
-          </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><?php endif; ?>
 
   </div>
   </div>
@@ -435,7 +381,7 @@ function send_msg(){
   </header>
   <div class="am-panel-bd">
   <table class="am-table"><thead><tr><th>标题</th></tr></thead><tbody>
-  <?php if(is_array($question)): foreach($question as $key=>$vo): ?><tr><td><a class="am-text-break" target="_blank" href="<?php echo U('/Home/Question/'.$vo['question_id'].'/Answer/'.$vo['id']);?>"><?php echo $vo['title'];?></a><br /></td></tr><?php endforeach; endif; ?>
+  <?php if(is_array($question)): foreach($question as $key=>$vo): ?><tr><td><a class="am-text-break" target="_blank" href="<?php echo U('/Home/Question/'.$vo['id']);?>"><?php echo $vo['title'];?></a><br /></td></tr><?php endforeach; endif; ?>
     </tbody></table>
   </div>
 </section><?php endif; ?>

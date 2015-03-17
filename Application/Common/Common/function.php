@@ -28,7 +28,7 @@ function sub_question_content($string){
 
 // 获取用户名的地址
 function get_user_page($username){
-    return '#';
+    return U('/Home/People/'.$username);
 }
 
 // 测试用户是否真实

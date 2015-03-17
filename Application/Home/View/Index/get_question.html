@@ -1,14 +1,15 @@
 	<foreach name="timeline" item="vo" key="i">
 		<IF condition="count($vo['us_array']) eq 1">
       		<a target="_blank" href="{:U('/Home/People/'.$vo['fromusername'])}" class="am-comment-author">{:$vo['fromusername']}</a>
-      <else />
-      	<volist name="vo['us_array']" id="usname" key="j" >
-      		<a target="_blank" href="{:U('/Home/People/'.$us)}" class="am-comment-author">{:$us}</a>
-      		<if condition="j eq 3">等人<php>break;</php></if>、
-      	</volist>
-      </IF>
+            <else />
+            	<volist name="vo['us_array']" id="usname" key="j" offset="0" length='3'>
+            		<a target="_blank" href="{:get_user_page($usname)}" class="am-comment-author">{:$usname}</a>
+                        <if condition="$j lt count($vo['us_array'])">、</if>
+            		<if condition="$j eq 3">等{:count($vo['us_array'])}人</if>
+            	</volist>
+            </IF>
       <IF condition="$vo['type'] eq 1"> 回答了问题 <elseif condition="$vo['type'] eq 2" /> 评论了你在问题 </IF>
-      <a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['answer_id']}">{:get_question_title($vo['question_id'])}</a><IF condition="$vo['type'] eq 2"> 下的回答</IF>
+      <strong><a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['answer_id']}">{:get_question_title($vo['question_id'])}</a></strong><IF condition="$vo['type'] eq 2"> 下的回答</IF>
       <hr />
 	</foreach>
 		
