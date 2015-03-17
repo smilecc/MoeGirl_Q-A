@@ -160,10 +160,10 @@ Class QuestionController extends Controller{
 			);
 
 		$db = M('QuestionUserStatus');
-		$db_count = $db->where('username="%s" AND question_id=%d',cookie('username'),$question_id)->count();
+		$db_id = $db->where('username="%s" AND question_id=%d',cookie('username'),$question_id)->getField('id');
 		$db->data($data);
-		if($db_count){
-			$db->save();
+		if($db_id){
+			$db->where('id=%d',$db_id)->save();
 		}else{
 			$db->add();
 		}
