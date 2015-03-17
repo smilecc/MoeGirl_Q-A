@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -168,7 +168,8 @@ function load_info_badge(sum,question,follow,agree){
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
-  <?php if(is_login()): ?><!--提问窗口-->
+
+    <!--提问窗口-->
     <div class="am-popup" id="put-question-popup">
       <div class="am-popup-inner">
         <div class="am-popup-hd">
@@ -266,67 +267,12 @@ function load_info_badge(sum,question,follow,agree){
         </ul>
       </li>
     </ul>
-    </div><?php endif; ?>
+    </div>
+
 <script type="text/javascript">
   if(<?php echo get_inbox_alert();?> == 0) $('.msg-badge').css("display","none"); 
 </script>
-    <?php if(!is_login()): ?><!--提问未登录的alert-->
-    <div class="am-modal am-modal-alert" tabindex="-1" id="put-question-popup">
-      <div class="am-modal-dialog">
-        <div class="am-modal-hd">提示</div>
-        <div class="am-modal-bd">
-          不好意思，您还未登录！
-        </div>
-        <div class="am-modal-footer">
-          <span class="am-modal-btn">确定</span>
-        </div>
-      </div>
-    </div>
 
-    <div class="am-topbar-right">
-      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-offcanvas="{target: '#oc-login'}">登录</button>
-    </div>
-
-    <div class="am-modal am-modal-no-btn" tabindex="-1" id="login-model">
-      <div class="am-modal-dialog">
-        <div class="am-modal-hd">正在登录</div>
-        <div class="am-modal-bd">
-          <i class="am-icon-spinner am-icon-spin"></i>
-        </div>
-      </div>
-    </div>
-
-
-        <!-- 侧边栏内容 -->
-    <div id="oc-login" class="am-offcanvas">
-      <div class="am-offcanvas-bar am-offcanvas-bar-flip">
-        <div class="am-offcanvas-content">
-          <div class="am-vertical-align" style="height: 200px;">
-            <div class="am-vertical-align-middle">
-            <h2>登录<br /><small>请直接使用萌百账号登录</small></h2>
-
-            <form method="post" class="am-form">
-            <label for="username">用户名:</label>
-            <input type="email" name="" id="username" value="">
-            <br>
-            <label for="password">密码:</label>
-            <input type="password" name="" id="password" value="">
-            <br>
-            <label for="remember-me">
-              <input id="remember-me" type="checkbox">
-              自动登录
-            </label>
-            <br />
-            <div class="am-cf">
-              <input type="button" name="" onclick="$('#login-model').modal('open');login();" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
-              <a href="http://zh.moegirl.org/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&type=signup"><input type="button" name="" value="没有账号 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr"></a>
-            </div>
-          </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><?php endif; ?>
 
   </div>
   </div>
@@ -349,6 +295,7 @@ function on_stu_btn_click(){
 	<div class="am-container">
 	
 <title><?php echo $topic['name'];?> - 话题 - 萌娘问答</title>
+<script src="/Public/js/topic.js"></script>
 
 <div class="am-g">
 	<div class="am-u-md-9">
@@ -361,72 +308,8 @@ function on_stu_btn_click(){
 		  <li class="<?php echo $mode == 'all' ? 'am-active' : '';?>"><a href="<?php echo U('Home/Topic/'.$topic['id'].'/all');?>">全部问题</a></li>
 		</ul>
 		<hr />
-		<?php if($mode == 'near'): if(is_array($content)): foreach($content as $i=>$vo): if(!empty($vo['answer_content']['id'])): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
-				  <button id="agree-answer-btn-<?php echo $vo['answer_content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_content']['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['answer_content']['id'],1);?>"><br /></button>
-				  <center id="answer-agree-numb-<?php echo $vo['answer_content']['id'];?>"><?php echo $vo['answer_content']['agree'];?></center>
-				  <button id="unagree-answer-btn-<?php echo $vo['answer_content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_content']['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['answer_content']['id'],2);?>"></button>
-				</div>
-			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
-				  <div>
-				    <header>
-				      <!--<h3 class="am-comment-title">评论标题</h3>-->
-				      <div class="am-comment-meta qustion-title-content">
-				        <a target="_blank" href="<?php echo U('/Home/People/'.$vo['answer_content']['username']);?>" class="am-comment-author"><?php echo $vo['answer_content']['username'];?></a>
-				        发布于 <time><?php echo $vo['answer_content']['time'];?></time>
-				      </div>
-				    </header>
-				    <div class="am-comment-bd">
-				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>/Answer/<?php echo $vo['answer_content']['id'];?>"><h2><?php echo $vo['title'];?></h2></a>
-				      <?php echo sub_question_content($vo['answer_content']['content']);?>
-				    </div>
-				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['answer_content']['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
-				  </div>
-				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['answer_content']['id'];?>">
-					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['answer_content']['id'];?>">
-					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
-					    </div>
-					</div>
-				  <hr />
-			</article><?php endif; endforeach; endif; ?>
-		<?php elseif($mode == 'hot'): ?>
-			<?php if(is_array($content)): foreach($content as $i=>$vo): if(!empty($vo['id'])): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
-				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
-				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
-				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
-				</div>
-			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
-			  
-				  <div>
-				    <header>
-				      <!--<h3 class="am-comment-title">评论标题</h3>-->
-				      <div class="am-comment-meta qustion-title-content">
-				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
-				        发布于 <time><?php echo $vo['time'];?></time>
-				      </div>
-				    </header>
-				    <div class="am-comment-bd">
-				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
-				      <?php echo sub_question_content($vo['content']);?>
-
-				    </div>
-				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
-				  </div>
-				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
-					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
-					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
-					    </div>
-					</div>
-				  <hr />
-			</article><?php endif; endforeach; endif; ?>
-		<?php else: ?>
-			<?php if(is_array($content)): foreach($content as $i=>$vo): ?><small><div class="am-link-muted">
-				    <?php echo $vo['anonymous']?'匿名用户 ':'<a href="#link-to-user">'.$vo['username'].' </a>';?>
-					提交于 <time><?php echo $vo['time'];?></time>
-				</div></small>
-				<a target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>"><h2><?php echo $vo['title'];?></h2></a>
-				<hr /><?php endforeach; endif; endif; ?>
+		<div id="load-div"><button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button></div>
+		<script type="text/javascript">get_content(<?php echo $tid;?>,'<?php echo $mode;?>',1);</script>
 	</div><!--am-9-->
 	<div class="am-u-md-3">
 		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>)" class="am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-active':'');?>" data-am-button><?php echo ($topic['is_follow']?'已关注':'关注话题');?></button>

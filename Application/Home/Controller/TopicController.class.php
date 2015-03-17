@@ -10,7 +10,7 @@ class TopicController extends Controller {
 	}
 
 	public function topic($tid,$mode='near',$page=1){
-		$page_content = D('Topic')->search_question($tid,$page,$mode);
+		
 		//print_r($page_content);
 		$topic_content = M('Topic')->where("id=%d",$tid)->find();
 		$topic_content['is_follow'] = M('TopicFollow')->where('username="%s" AND topic_id=%d',cookie('username'),$tid)->count();
@@ -19,8 +19,8 @@ class TopicController extends Controller {
 
 
 		//print_r($page_content);
+		$this->assign('tid',$tid);
 		$this->assign('mode',$mode);
-		$this->assign('content',$page_content);
 		$this->assign('topic',$topic_content);
 		$this->display();
 	}
@@ -28,6 +28,15 @@ class TopicController extends Controller {
 	public function tlist(){
 		$topic_list = M('Topic')->order('id')->select();
 		$this->assign('topic',$topic_list);
+		$this->display();
+	}
+
+	public function getcontent($tid,$mode='near',$page=1){
+		$page_content = D('Topic')->search_question($tid,$page,$mode);
+		$this->assign('tid',$tid);
+		$this->assign('mode',$mode);
+		$this->assign('content',$page_content);
+		$this->assign('next_page',$page + 1);
 		$this->display();
 	}
 

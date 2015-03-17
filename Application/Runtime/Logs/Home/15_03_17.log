@@ -10068,3 +10068,785 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
 
+[ 2015-03-17T21:21:19+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.036081s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.032091s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.014477s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('Testc') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.049585s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000628s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000975s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.049547s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000346s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 38
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 3
+            [status] => 1
+            [pushtime] => 2015-03-17 17:49:02
+            [content] => Array
+                (
+                    [id] => 3
+                    [username] => Testc
+                    [anonymous] => 0
+                    [title] => 提问测试
+                    [content] =>  
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-17 17:49:02
+                    [topic1] => 2
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 8
+            [username] => Testc
+            [mode] => 1
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-03-12 13:43:27
+            [content] => Array
+                (
+                    [id] => 1
+                    [username] => SmileC
+                    [anonymous] => 0
+                    [title] => index的push测试
+                    [content] => 
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-03-12 12:15:31
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [username] => Testc
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-03-12 12:15:55
+            [content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                    [question_title] => index的push测试
+                )
+
+            [us_array] => Array
+                (
+                    [0] => Testc
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.027619s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-03-17T21:23:47+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=near&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.024459s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000220s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.038749s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1424006627 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.011336s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021254s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=3 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.040751s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [username] => Testc
+            [anonymous] => 0
+            [title] => 提问测试
+            [content] =>  
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-17 17:49:02
+            [topic1] => 2
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => 
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined variable: mode D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\a7152aa617c594c35956b18b50f9de28.php 第 1 行.
+NOTIC: [8] Undefined variable: mode D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\a7152aa617c594c35956b18b50f9de28.php 第 29 行.
+NOTIC: [8] Undefined variable: mode D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\a7152aa617c594c35956b18b50f9de28.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2015-03-17T21:25:10+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=near&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.025116s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000260s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.026256s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1424006710 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.059784s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=3 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000390s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [username] => Testc
+            [anonymous] => 0
+            [title] => 提问测试
+            [content] =>  
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-17 17:49:02
+            [topic1] => 2
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => 
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2015-03-17T21:25:19+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=near&page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.050329s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000425s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.026742s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1424006719 < unix_timestamp(time) ) ORDER BY id LIMIT 20,20   [ RunTime:0.000425s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TopicModel.class.php 第 21 行.
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-03-17T21:25:22+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=near&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020014s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000307s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.048733s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1424006722 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.026088s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=3 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000400s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [username] => Testc
+            [anonymous] => 0
+            [title] => 提问测试
+            [content] =>  
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-17 17:49:02
+            [topic1] => 2
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => 
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2015-03-17T21:26:47+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=hot&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.019166s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000280s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.026286s ]
+SQL: SELECT `id` FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) ORDER BY id desc  [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021693s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE `question_id` IN ('3') ORDER BY agree - unagree desc LIMIT 0,20   [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2015-03-17T21:26:48+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=all&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002015s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.033479s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000341s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.025489s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2015-03-17T21:26:51+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=near&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020291s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000401s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.023501s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) AND ( 1424006811 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.013678s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=3 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000328s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [username] => Testc
+            [anonymous] => 0
+            [title] => 提问测试
+            [content] =>  
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-17 17:49:02
+            [topic1] => 2
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => 
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002235s ]
+
+[ 2015-03-17T21:26:55+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=2&mode=all&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.024448s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=2 )  [ RunTime:0.000254s ]
+DEBUG: Array
+(
+    [0] => 3
+    [1] => 2
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.031197s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('3','2') OR `topic2` IN ('3','2') OR `topic3` IN ('3','2') ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002167s ]
+
+[ 2015-03-17T21:27:07+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=near&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.021566s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000230s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.027348s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) AND ( 1424006827 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021299s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=1 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000438s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=2 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000390s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [username] => SmileC
+            [anonymous] => 0
+            [title] => index的push测试
+            [content] => 
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-12 12:15:31
+            [topic1] => 1
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [username] => SmileC
+            [anonymous] => 0
+            [title] => 123
+            [content] => 123
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-16 00:31:57
+            [topic1] => 1
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.010378s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2015-03-17T21:27:11+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=near&page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.019282s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000317s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.020992s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) AND ( 1424006831 < unix_timestamp(time) ) ORDER BY id LIMIT 20,20   [ RunTime:0.000410s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TopicModel.class.php 第 21 行.
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2015-03-17T21:27:16+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=hot&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.021407s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000322s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.054768s ]
+SQL: SELECT `id` FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) ORDER BY id desc  [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016850s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE `question_id` IN ('2','1') ORDER BY agree - unagree desc LIMIT 0,20   [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.013893s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=2 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=2 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2015-03-17T21:27:18+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=all&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.034550s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000232s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.021782s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001814s ]
+
+[ 2015-03-17T21:27:21+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=hot&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.032228s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000231s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.032225s ]
+SQL: SELECT `id` FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) ORDER BY id desc  [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.019557s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE `question_id` IN ('2','1') ORDER BY agree - unagree desc LIMIT 0,20   [ RunTime:0.000393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.018957s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000547s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=2 AND username="SmileC" ) LIMIT 1   [ RunTime:0.001022s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=2 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000448s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000426s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2015-03-17T21:27:22+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=near&page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001714s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.035848s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000421s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.023478s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) AND ( 1424006842 < unix_timestamp(time) ) ORDER BY id LIMIT 0,20   [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017935s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=1 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000431s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( question_id=2 ) ORDER BY agree - unagree desc LIMIT 1   [ RunTime:0.000357s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [username] => SmileC
+            [anonymous] => 0
+            [title] => index的push测试
+            [content] => 
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-12 12:15:31
+            [topic1] => 1
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => Array
+                (
+                    [id] => 1
+                    [question_id] => 1
+                    [username] => Testc
+                    [content] => 回答测试
+                    [agree] => 1
+                    [unagree] => 0
+                    [time] => 2015-03-12 12:15:55
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [username] => SmileC
+            [anonymous] => 0
+            [title] => 123
+            [content] => 123
+            [answer] => 0
+            [follow] => 0
+            [status] => 0
+            [time] => 2015-03-16 00:31:57
+            [topic1] => 1
+            [topic2] => 
+            [topic3] => 
+            [answer_content] => Array
+                (
+                    [id] => 3
+                    [question_id] => 2
+                    [username] => SmileC
+                    [content] => 12322222
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-03-16 00:32:03
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.031414s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.001238s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=1 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=3 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2015-03-17T21:27:24+08:00 ] 127.0.0.1 /index.php/Home/Topic/getcontent.html?tid=1&mode=near&page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002093s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.025519s ]
+SQL: SELECT `id` FROM `mgqa_topic` WHERE ( father_topic=1 )  [ RunTime:0.000284s ]
+DEBUG: Array
+(
+    [0] => 1
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.025989s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( `topic1` IN ('1') OR `topic2` IN ('1') OR `topic3` IN ('1') ) AND ( 1424006844 < unix_timestamp(time) ) ORDER BY id LIMIT 20,20   [ RunTime:0.000746s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TopicModel.class.php 第 21 行.
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
