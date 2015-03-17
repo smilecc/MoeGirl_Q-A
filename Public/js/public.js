@@ -218,27 +218,27 @@ function get_info(){
     $('#info_agree').load('/index.php/Home/index/get_agree.html');
 }
 
-function load_info_badge(){
-    if(info_sum == 0){
+function load_info_badge(sum,question,follow,agree){
+    if(sum == 0){
       $('#info-question-badge').addClass('info-nodisplay-badge');
       $('#info-follow-badge').addClass('info-nodisplay-badge');
       $('#info-agree-badge').addClass('info-nodisplay-badge');
       $('#info-badge').addClass('info-nodisplay-badge');
     }else{
       $('#info-badge').removeClass('info-nodisplay-badge');
-      $('#info-badge').text(info_sum);
+      $('#info-badge').text(sum);
 
-      if(info_question) {
+      if(question) {
         $('#info-question-badge').removeClass('info-nodisplay-badge');
-        $('#info-question-badge').text(info_question);
+        $('#info-question-badge').text(question);
       }
-      if(info_follow) {
+      if(follow) {
         $('#info-follow-badge').removeClass('info-nodisplay-badge');
-        $('#info-follow-badge').text(info_follow);
+        $('#info-follow-badge').text(follow);
       }
-      if(info_agree) {
+      if(agree) {
         $('#info-agree-badge').removeClass('info-nodisplay-badge');
-        $('#info-agree-badge').text(info_agree);
+        $('#info-agree-badge').text(agree);
       }
     }
   }
