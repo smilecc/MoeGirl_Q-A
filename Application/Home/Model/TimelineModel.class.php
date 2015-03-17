@@ -109,9 +109,8 @@ Class TimelineModel extends Model{
 		else{
 			$new_search_data['_complex'] = $search_data;
 			$get_arr = M('TimelineQuestion')->where($new_search_data)->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
+			if(count($get_arr) == 0) $get_arr = array();
 		}
-
-		trace($search_time);
 
 		// 过滤、分类重复
 		$arr_count = count($get_arr);
@@ -185,8 +184,10 @@ Class TimelineModel extends Model{
 	public function get_agree($search_time = NULL){
 		$get_arr = array();
 		if($search_time == NULL) $get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->order('id desc')->limit(200)->select();
-		else $get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
-
+		else {
+			$get_arr = M('TimelineAgree')->where('tousername="%s"',cookie('username'))->where('%d < unix_timestamp(time)',$search_time)->order('id desc')->select();
+			if(count($get_arr) == 0) $get_arr = array();
+		}
 		// 过滤、分类重复
 		$arr_count = count($get_arr);
 		for($i = 0; $i < $arr_count; $i++){
