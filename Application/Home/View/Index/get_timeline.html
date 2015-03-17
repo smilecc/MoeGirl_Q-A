@@ -13,7 +13,7 @@
 					      <small><div class="am-link-muted"><span class="am-fr"><time>{:$vo['pushtime']}</time></span></div></small>
 					      <div class="am-comment-meta qustion-title-content">
 					      <IF condition="count($vo['us_array']) eq 1">
-					      	<a target="_blank" href="{:U('/Home/People/'.$vo['content']['username'])}" class="am-comment-author">{:$vo['username']}</a>
+					      	<a target="_blank" href="{:get_user_page($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
 					      <else />
 					      	<volist name="vo['us_array']" id="usname" key="j" offset="0" length='3'>
 					      		<a target="_blank" href="{:get_user_page($usname)}" class="am-comment-author">{:$usname}</a>
@@ -26,7 +26,7 @@
 					    </header>
 					    <div class="am-comment-bd">
 					    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/{:$vo['content']['question_id']}/Answer/{:$vo['content']['id']}"><h2>{:$vo['content']['question_title']}</h2></a>
-					    <IF condition="$vo['status'] neq 1">{:$vo['content']['username']}<br /></IF>
+					    <IF condition="$vo['status'] neq 1"><a target="_blank" href="{:get_user_page($vo['content']['username'])}" class="am-comment-author">{:$vo['content']['username']}</a><br /></IF>
 					      {:sub_question_content($vo['content']['content'])}
 					    </div>
 					    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['content']['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
@@ -40,7 +40,7 @@
 				</article>
 			<else />
 				<small><div class="am-link-muted">
-				    <a href="#link-to-user">{:$vo['username']}</a>
+				    <a href="{:get_user_page($vo['username'])}">{:$vo['username']}</a>
 					<IF condition="$vo['status'] eq 1">提了一个问题<elseif condition="$vo['status'] eq 2" />关注了问题<else />推送了问题</IF> <span class="am-fr"><time>{:$vo['pushtime']}</time></span>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/{:$vo['content']['id']}"><h2>{:$vo['content']['title']}</h2></a>
