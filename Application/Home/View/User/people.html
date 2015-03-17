@@ -93,7 +93,7 @@ function send_msg(){
   <div class="am-panel-bd">
   <table class="am-table"><thead><tr><th>标题</th></tr></thead><tbody>
   <foreach name="question" item="vo" >
-    <tr><td><a class="am-text-break" target="_blank" href="{:U('/Home/Question/'.$vo['question_id'].'/Answer/'.$vo['id'])}">{:$vo['title']}</a><br /></td></tr>
+    <tr><td><a class="am-text-break" target="_blank" href="{:U('/Home/Question/'.$vo['id'])}">{:$vo['title']}</a><br /></td></tr>
     </foreach>
     </tbody></table>
   </div>

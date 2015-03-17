@@ -56,7 +56,7 @@
 		<hr />
 		<IF condition="$page['my_answer']['id']">
 			<div class="am-alert am-alert-success" data-am-alert>
-			  <p>你已经提交过答案了，同一个问题只能回答一次。<a href="/index.php/Home/Question/{:$page['id']}/answer/{:$page[my_answer]['id']}">点击这儿查看你的答案</a></p>
+			  <p>你已经提交过答案了，同一个问题只能回答一次。<a href="/index.php/Home/Question/{:$page['id']}/answer/{:$page['my_answer']['id']}">点击这儿查看你的答案</a></p>
 			</div>
 		<else />
 			<form action="/index.php/Home/Question/put_answer.html" method="post">
