@@ -48,26 +48,59 @@
 </script>
 </head>
 <body>
- <script type="text/javascript" src="/Public/js/sender.js"></script>
+ 
 <div id="space_height">
 	<!-- 头部 -->
 	
 
-  <script type="text/javascript">
-    // 展示推送的信息
+<script type="text/javascript">
+function load_info_badge(sum,question,follow,agree){
+    if(sum == 0){
+      $('#info-question-badge').addClass('info-nodisplay-badge');
+      $('#info-follow-badge').addClass('info-nodisplay-badge');
+      $('#info-agree-badge').addClass('info-nodisplay-badge');
+      $('#info-badge').addClass('info-nodisplay-badge');
+    }else{
+      $('#info-badge').removeClass('info-nodisplay-badge');
+      $('#info-badge').text(sum);
+
+      if(question) {
+        $('#info-question-badge').removeClass('info-nodisplay-badge');
+        $('#info-question-badge').text(question);
+      }
+      if(follow) {
+        $('#info-follow-badge').removeClass('info-nodisplay-badge');
+        $('#info-follow-badge').text(follow);
+      }
+      if(agree) {
+        $('#info-agree-badge').removeClass('info-nodisplay-badge');
+        $('#info-agree-badge').text(agree);
+      }
+    }
+  }
+  // 展示推送的信息
      var usname = "<?php echo cookie('username')?cookie('username'):'guest';?>";
     function show_msg(data) {
       if(data['type'] == "new-msg"){
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      if(data['type'] == "new-info"){
+        $.ajax({
+            type:"GET",
+            dataType:"json",
+            url:"/index.php/Home/index/getinfo",
+            complete:function(re){
+              load_info_badge(re.responseJSON.sum,re.responseJSON.question,re.responseJSON.follow,re.responseJSON.agree);
+            }
+        });
     }
-
+}
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
-  </script>
-
+</script>
+<script type="text/javascript" src="/Public/js/sender.js"></script>
 
 <header class="am-topbar">
 <div class="am-container">
@@ -82,28 +115,39 @@
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
-<li id="topbar-info" data-am-dropdown>
-<a href="javascript:;" class="am-dropdown-toggle">消息</a>
+<li id="topbar-info" onclick="get_info()" data-am-dropdown>
+<?php $unread_arr = get_unread(); ?>
+<a href="javascript:;" class="am-dropdown-toggle">消息 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-badge"><?php echo $unread_arr['sum'];?></span></a>
 
 <!--消息页面-->
 <div data-am-widget="tabs" class="am-tabs am-tabs-d2 am-dropdown-content info" data-am-tabs-noswipe="1">
   <ul class="am-tabs-nav am-cf">
     <li class="am-active">
-      <a href="[data-tab-panel-0]"><i class="am-icon-th-list"></i> 问答</a>
+      <a href="[data-tab-panel-0]"><i class="am-icon-th-list"></i> 问答 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-question-badge"><?php echo $unread_arr['question'];?></span></a>
     </li>
     <li class="">
-      <a href="[data-tab-panel-1]"><i class="am-icon-users"></i> 用户</a>
+      <a href="[data-tab-panel-1]"><i class="am-icon-users"></i> 用户 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-follow-badge"><?php echo $unread_arr['follow'];?></span></a>
     </li>
     <li class="">
-      <a href="[data-tab-panel-2]"><i class="am-icon-heart"></i> 赞同</a>
+      <a href="[data-tab-panel-2]"><i class="am-icon-heart"></i> 赞同 <span class="am-badge am-badge-danger am-round info-nodisplay-badge" id="info-agree-badge"><?php echo $unread_arr['agree'];?></span></a>
     </li>
   </ul>
+  <script type="text/javascript">
+    load_info_badge(<?php echo $unread_arr['sum'];?>,<?php echo $unread_arr['question'];?>,<?php echo $unread_arr['follow'];?>,<?php echo $unread_arr['agree'];?>);
+  </script>
   <div class="am-tabs-bd">
-    <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab">【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。</div>
+    <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab" id="info_question">
+    <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+    <hr />
+    </div>
     <div
-    data-tab-panel-1 class="am-tab-panel am-scrollable-vertical info-tab">【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。</div>
+    data-tab-panel-1 class="am-tab-panel am-scrollable-vertical info-tab" id="info_follow">
+    <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+    </div>
   <div
-  data-tab-panel-2 class="am-tab-panel am-scrollable-vertical info-tab">【歌唱】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。</div>
+  data-tab-panel-2 class="am-tab-panel am-scrollable-vertical info-tab" id="info_agree">
+  <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+  </div>
 </div>
 </div>
 

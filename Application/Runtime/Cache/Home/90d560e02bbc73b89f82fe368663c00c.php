@@ -48,13 +48,37 @@
 </script>
 </head>
 <body>
- <script type="text/javascript" src="/Public/js/sender.js"></script>
+ 
 <div id="space_height">
 	<!-- 头部 -->
 	
 
-  <script type="text/javascript">
-    // 展示推送的信息
+<script type="text/javascript">
+function load_info_badge(sum,question,follow,agree){
+    if(sum == 0){
+      $('#info-question-badge').addClass('info-nodisplay-badge');
+      $('#info-follow-badge').addClass('info-nodisplay-badge');
+      $('#info-agree-badge').addClass('info-nodisplay-badge');
+      $('#info-badge').addClass('info-nodisplay-badge');
+    }else{
+      $('#info-badge').removeClass('info-nodisplay-badge');
+      $('#info-badge').text(sum);
+
+      if(question) {
+        $('#info-question-badge').removeClass('info-nodisplay-badge');
+        $('#info-question-badge').text(question);
+      }
+      if(follow) {
+        $('#info-follow-badge').removeClass('info-nodisplay-badge');
+        $('#info-follow-badge').text(follow);
+      }
+      if(agree) {
+        $('#info-agree-badge').removeClass('info-nodisplay-badge');
+        $('#info-agree-badge').text(agree);
+      }
+    }
+  }
+  // 展示推送的信息
      var usname = "<?php echo cookie('username')?cookie('username'):'guest';?>";
     function show_msg(data) {
       if(data['type'] == "new-msg"){
@@ -62,20 +86,21 @@
         $('.msg-badge').css("display",""); 
       }
       if(data['type'] == "new-info"){
-        if(data['sum']){
-          info_sum = data['sum'];
-          info_question = data['question'];
-          info_follow = data['follow'];
-          info_agree = data['agree'];
-          load_info_badge();
-        }
+        $.ajax({
+            type:"GET",
+            dataType:"json",
+            url:"/index.php/Home/index/getinfo",
+            complete:function(re){
+              load_info_badge(re.responseJSON.sum,re.responseJSON.question,re.responseJSON.follow,re.responseJSON.agree);
+            }
+        });
     }
-
+}
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
-  </script>
-
+</script>
+<script type="text/javascript" src="/Public/js/sender.js"></script>
 
 <header class="am-topbar">
 <div class="am-container">
@@ -108,11 +133,7 @@
     </li>
   </ul>
   <script type="text/javascript">
-    var info_sum = <?php echo $unread_arr['sum'];?>;
-    var info_question = <?php echo $unread_arr['question'];?>;
-    var info_follow = <?php echo $unread_arr['follow'];?>;
-    var info_agree = <?php echo $unread_arr['agree'];?>;
-    load_info_badge();
+    load_info_badge(<?php echo $unread_arr['sum'];?>,<?php echo $unread_arr['question'];?>,<?php echo $unread_arr['follow'];?>,<?php echo $unread_arr['agree'];?>);
   </script>
   <div class="am-tabs-bd">
     <div data-tab-panel-0 class="am-tab-panel am-active am-scrollable-vertical info-tab" id="info_question">

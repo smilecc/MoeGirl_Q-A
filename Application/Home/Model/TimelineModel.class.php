@@ -98,7 +98,8 @@ Class TimelineModel extends Model{
 	public function get_question($search_time = NULL){
 		$follow_question_array = M('QuestionUserStatus')->where('username="%s" AND follow=1',cookie('username'))->getField('question_id',true);
 		// 防止空查
-		array_push($follow_question_array, 0);
+		$follow_question_array['null'] = 0;
+		trace($follow_question_array);
 		// 两种情况：关注的问题、推送到用户名
 		$search_data['question_id&type'] = array(array('in',$follow_question_array),TIMELINE_QUESTION_ADD_ANSWER,'_multi'=>true);
 		$search_data['tousername'] = cookie('username');
@@ -133,6 +134,7 @@ Class TimelineModel extends Model{
 				}else break;
 			}
 		}
+		if(count($get_arr) == 0) $get_arr = array();
 		// 重新整理序号 并返回
 		return array_merge($get_arr);
 	}
@@ -209,6 +211,7 @@ Class TimelineModel extends Model{
 				}else break;
 			}
 		}
+		if(count($get_arr) == 0) $get_arr = array();
 		// 重新整理序号 并返回
 		return array_merge($get_arr);
 	}
