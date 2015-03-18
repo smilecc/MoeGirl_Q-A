@@ -340,6 +340,7 @@ function send_msg(){
 	<div class="am-u-md-9">
 		<div class="am-panel am-panel-default">
 		  <div class="am-panel-bd">
+      <?php if(!empty($user['weibo'])): ?><span class="am-fr"><a target="_blank" href="<?php echo $user['weibo'];?>" class="am-icon-btn am-icon-weibo"></a></span><?php endif; ?>
 		    <strong><?php echo $user['username'];?></strong>，<?php echo $user['introduce_short'];?>
 		    <hr />
 		    <p><?php echo $user['introduce_long']?nl2br($user['introduce_long']):"这货有点懒，什么都没写";?></p>
