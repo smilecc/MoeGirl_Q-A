@@ -21,6 +21,26 @@ class UserController extends Controller {
         $this->display();
     }
 
+    public function setting(){
+        if(IS_POST){
+            if(!test_user()){
+                echo json_encode(array('result' => '登录失效'));
+                return;
+            }
+            $data = array(
+                'introduce_short' => I('i_short'),
+                'introduce_long'  => I('i_long'),
+                'weibo'           => I('weibo')
+                );
+            $result_arr = array();
+            if(M('User')->where('username="%s"',cookie('username'))->save($data)) echo json_encode(array('result' => '已保存'));
+            else echo json_encode(array('result' => '保存失败'));
+        }else{
+            $this->assign('user',M('User')->where('username="%s"',cookie('username'))->find());
+            $this->display();
+        }
+    }
+
     public function follow($toname){
     	$result_temp = D('Follow')->follow($toname);
     	$result = array();

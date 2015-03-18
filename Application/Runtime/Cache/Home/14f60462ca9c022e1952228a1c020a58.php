@@ -294,78 +294,66 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<title>收件箱 - 萌娘百科</title>
-
 <script type="text/javascript">
-function postmsg(){
-  console.log($("#toname").val());
-    $.ajax({
+  function save(){
+      $.ajax({
             type:"POST",
-            url:"<?php echo U('/Home/Inbox');?>",
+            url:"/index.php/Home/User/setting.html",
+            dataType:'json',
             data:{
-                  type:'send',
-                  toname:$("#toname").val(),
-                  content:$("#comenttext").val()
+                  weibo:$("#user-weibo").val(),
+                  i_short:$("#user-i-short").val(),
+                  i_long:$("#user-i-long").val()
                   },
-            cache:false, //不缓存此页面   
             success:function(re){
-        alert(re);
-         if(re=="发送成功")  location.replace(location);
+              $('#result-div').text(re.result);
             }
-        });
-
-
+      });
   }
 </script>
+      <div class="am-u-sm-12 am-u-md-8">
+        <form class="am-form am-form-horizontal">
+          <div class="am-form-group">
+            <label for="user-name" class="am-u-sm-3 am-form-label">用户名 / Name</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-name" placeholder="姓名 / Name" value="<?php echo cookie('username');?>" disabled>
+              <small>你的萌百用户名将作为你的萌问用户名</small>
+            </div>
+          </div>
 
+          <div class="am-form-group">
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter" value="<?php echo $user['weibo'];?>">
+              <small>请直接填写网址，也可以填写个人站点</small>
+            </div>
+          </div>
 
+          <div class="am-form-group">
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">一句话介绍 / Intro_short</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-i-short" name="i_short" placeholder="一句话介绍 / Intro_short" value="<?php echo $user['introduce_short'];?>">
+              <small>32个字说完噢~</small>
+            </div>
+          </div>
 
-<div class="am-modal am-modal-no-btn" tabindex="-1" id="new-msg-modal">
-  <div class="am-modal-dialog">
-    <div class="am-modal-hd">发送私信
-      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
-    </div>
-    <div class="am-modal-bd am-form">
-      <input type="text" class="form-control" id="toname" placeholder="请输入要私信的用户名 只能输一个哦( • ̀ω•́ )✧..." /><hr>
-      <div class="am-alert am-alert-info">长度限1000字</div>
-      <textarea name="content" onKeyDown='if (this.value.length>=1000){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="7" id="comenttext"></textarea>
-      <hr>
-      <span class="am-fr">
-        <button type="button" class="am-btn am-btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="am-btn am-btn-primary" onclick="postmsg()" data-dismiss="modal">提交</button>
-      </span>
-    </div>
-  </div>
-</div>
+          <div class="am-form-group">
+            <label for="user-intro" class="am-u-sm-3 am-form-label">简介 / Intro</label>
+            <div class="am-u-sm-9">
+              <textarea class="" rows="5" id="user-i-long" name="i_long" placeholder="输入个人简介"><?php echo $user['introduce_long'];?></textarea>
+              <small>250字以内写出你的一生...</small>
+            </div>
+          </div>
 
-<div class="am-g">
-
-<div class="am-u-md-8">
-<div class="page-header">
-  <h2>我的私信 <small><button class="am-btn am-btn-success" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 450}">写私信</button></small></h2>
-</div>
-<hr />
-<?php if(is_array($inbox_index)): $i = 0; $__LIST__ = $inbox_index;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?>我发送给<a href="<?php echo get_user_page($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <a href="<?php echo get_user_page($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
-
-  <?php else: ?>
-
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="<?php echo get_user_page($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  我发送给<a href="<?php echo get_user_page($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; endif; ?>
-  ：<?php echo getInboxcontent($vo['inbox_id']);?>... <br />
-  <span><?php echo ($vo['time']); ?></span><span style="float:right"><a href="/Home/Inboxpage/<?php echo ($vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']); ?>" target="_BLANK">共<?php echo ($vo['numb']); ?>条对话</a></span></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
-
-
+          <div class="am-form-group">
+            <div class="am-u-sm-9 am-u-sm-push-3">
+              <button type="button" onclick="save()" class="am-btn am-btn-primary">保存修改</button>
+              <span id="result-div"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      
 	</div>
 	<!-- /主体 -->
 

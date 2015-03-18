@@ -1,0 +1,62 @@
+<extend name="Base/common"/>
+<block name="body">
+<script type="text/javascript">
+  function save(){
+      $.ajax({
+            type:"POST",
+            url:"__SELF__",
+            dataType:'json',
+            data:{
+                  weibo:$("#user-weibo").val(),
+                  i_short:$("#user-i-short").val(),
+                  i_long:$("#user-i-long").val()
+                  },
+            success:function(re){
+              $('#result-div').text(re.result);
+            }
+      });
+  }
+</script>
+      <div class="am-u-sm-12 am-u-md-8">
+        <form class="am-form am-form-horizontal">
+          <div class="am-form-group">
+            <label for="user-name" class="am-u-sm-3 am-form-label">用户名 / Name</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-name" placeholder="姓名 / Name" value="{:cookie('username')}" disabled>
+              <small>你的萌百用户名将作为你的萌问用户名</small>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter" value="{:$user['weibo']}">
+              <small>请直接填写网址，也可以填写个人站点</small>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">一句话介绍 / Intro_short</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-i-short" name="i_short" placeholder="一句话介绍 / Intro_short" value="{:$user['introduce_short']}">
+              <small>32个字说完噢~</small>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-intro" class="am-u-sm-3 am-form-label">简介 / Intro</label>
+            <div class="am-u-sm-9">
+              <textarea class="" rows="5" id="user-i-long" name="i_long" placeholder="输入个人简介">{:$user['introduce_long']}</textarea>
+              <small>250字以内写出你的一生...</small>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <div class="am-u-sm-9 am-u-sm-push-3">
+              <button type="button" onclick="save()" class="am-btn am-btn-primary">保存修改</button>
+              <span id="result-div"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      </block>
