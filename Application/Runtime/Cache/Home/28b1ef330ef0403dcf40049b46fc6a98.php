@@ -20,7 +20,7 @@
 					    </header>
 					    <div class="am-comment-bd">
 					    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['content']['question_id'];?>/Answer/<?php echo $vo['content']['id'];?>"><h2><?php echo $vo['content']['question_title'];?></h2></a>
-					    <?php if($vo['status'] != 1): ?><a target="_blank" href="<?php echo get_user_page($vo['content']['username']);?>" ><?php echo $vo['content']['username'];?></a>，<strong><?php echo get_user_intro($vo['content']['username']);?></strong><br /><?php endif; ?>
+					    <?php if($vo['status'] != 1): ?><a target="_blank" href="<?php echo get_user_page($vo['content']['username']);?>" class="am-comment-author"><?php echo $vo['content']['username'];?></a>，<strong><?php echo get_user_intro($vo['content']['username']);?></strong><br /><?php endif; ?>
 					      <?php echo sub_question_content($vo['content']['content']);?>
 					    </div>
 					    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['content']['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>

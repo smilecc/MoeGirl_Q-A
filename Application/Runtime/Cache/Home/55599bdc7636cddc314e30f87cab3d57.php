@@ -187,7 +187,7 @@ function load_info_badge(sum,question,follow,agree){
              <!--话题框-->
              <label for="doc-ta-1">话题： </label>
             <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
-            <?php $topic_list = M("Topic")->select(); ?>
+            <?php $topic_list = M("Topic")->order('id')->select(); ?>
             <?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
             <hr />
@@ -261,7 +261,7 @@ function load_info_badge(sum,question,follow,agree){
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
-          <li><a href="#">设置</a></li>
+          <li><a href="<?php echo U('/Home/User/setting');?>">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -313,7 +313,8 @@ function on_stu_btn_click(){
 	</div><!--am-9-->
 	<div class="am-u-md-3">
 		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>)" class="am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-active':'');?>" data-am-button><?php echo ($topic['is_follow']?'已关注':'关注话题');?></button>
-		<p><?php echo $topic['follow_count'];?> 人关注了这个话题</p>
+		<p>话题创建人：<a target="_blank" href="<?php echo get_user_page($topic["creater"]);?>"><?php echo $topic["creater"];?></a></p>
+		<hr /><p><?php echo $topic['follow_count'];?> 人关注了这个话题</p>
 		<p>该话题下共有 <?php echo $topic['question_count'];?> 个问题<br />(不包含子话题)</p>
 		<?php if($topic['father_topic']): ?><hr /><p>父话题：<a href="<?php echo U('/Home/Topic/'.$topic['father_topic']);?>" class="am-btn am-btn-primary am-round"><?php echo getTopicname($topic['father_topic']);?></a></p><?php endif; ?>
 	</div><!--am-3-->

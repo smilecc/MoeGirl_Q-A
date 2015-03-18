@@ -187,7 +187,7 @@ function load_info_badge(sum,question,follow,agree){
              <!--话题框-->
              <label for="doc-ta-1">话题： </label>
             <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
-            <?php $topic_list = M("Topic")->select(); ?>
+            <?php $topic_list = M("Topic")->order('id')->select(); ?>
             <?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
             <hr />
@@ -261,7 +261,7 @@ function load_info_badge(sum,question,follow,agree){
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
-          <li><a href="#">设置</a></li>
+          <li><a href="<?php echo U('/Home/User/setting');?>">设置</a></li>
           <li class="am-divider"></li>
           <li><a href="javascript:;" onclick="logout()">登出</a></li>
         </ul>
@@ -295,8 +295,51 @@ function on_stu_btn_click(){
 	<div class="am-container">
 	
 <title>话题广场 - 萌娘问答</title>
+
+<script type="text/javascript">
+function create(){
+	  $.ajax({
+            type:"POST",
+            url:"<?php echo U('/Home/Topic/tcreate');?>",
+            data:{
+                  name:$("#topic_name").val(),
+                  introduce:$("#topic_intro").val(),
+                  father_topic:$("#father_topic").val()
+                  },
+            success:function(re){
+            	window.location.href='/Home/Topic/'+re;
+                }
+  });
+}
+</script>
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="create-modal">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">创建话题
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd am-form">
+		话题名称<input type="text" id="topic_name" class="form-control"/>
+		<br />
+		话题介绍<input type="text" id="topic_intro" class="form-control"/>
+		<br />
+		父话题（选填）<select data-am-selected="{searchBox: 1, btnSize: 'sm', btnStyle: 'secondary'}" id="father_topic">
+		<?php $topic_list = M("Topic")->order('id')->select(); ?>
+		<?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+		</select>
+      <hr>
+      <span class="am-fr">
+        <button type="button" class="am-btn am-btn-default" data-dismiss="modal" data-am-modal-close>取消</button>
+        <button type="button" class="am-btn am-btn-primary" onclick="create()" data-dismiss="modal">提交</button>
+      </span>
+    </div>
+  </div>
+</div>
+
+
 <div class="am-g">
-<h1 class="am-article-title">话题广场（初版简单Demo）</h1>
+<h1 class="am-article-title">话题广场（初版简单Demo）
+<button class="am-fr am-btn am-btn-success" data-am-modal="{target: '#create-modal', closeViaDimmer: 0, width: 400, height: 360}">创建话题</button></h1>
 		<hr />
 	<div class="am-u-md-8">
 		<?php if(is_array($topic)): foreach($topic as $key=>$vo): ?><p><a href="<?php echo U('/Home/Topic/'.$vo['id']);?>" target="_blank"><?php echo $vo['name'];?></a>

@@ -41,7 +41,10 @@ class TopicController extends Controller {
 	}
 
 	public function set_follow_topic($topic_id){
-		if(!test_user()) echo '用户登录失效，请检查';
+		if(!test_user()){
+			echo '用户登录失效，请检查';
+			return;
+		}
 
 		$db = M('TopicFollow');
 		$db_count = $db->where('username="%s" AND topic_id=%d',cookie('username'),$topic_id)->count();
@@ -55,6 +58,10 @@ class TopicController extends Controller {
 			$db->data($data);
 			$db->add();
 		}
+	}
 
+	public function tcreate($name,$introduce,$father_topic = 0){
+		$id = D('Topic')->tcreate($name,$introduce,$father_topic);
+		echo $id;
 	}
 }
