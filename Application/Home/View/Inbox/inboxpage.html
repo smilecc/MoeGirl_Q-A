@@ -41,13 +41,13 @@ function send(){
   <if condition="($vo['usname1'] eq cookie('username'))">
   <b>我</b>
   <else />
-  <a href="/Home/User/people/{$vo.usname1}">{:$vo['usname1']}</a>
+  <a href="{:get_user_page($vo['usname1'])}">{:$vo['usname1']}</a>
   </if>
 
   <else />
 
   <if condition="($vo['usname1'] eq cookie('username'))">
-  <a href="/Home/User/people/{$vo.usname2}">{:$vo['usname2']}</a>
+  <a href="{:get_user_page($vo['usname2'])}">{:$vo['usname2']}</a>
   <else />
   <b>我</b>
   </if>

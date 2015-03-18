@@ -325,7 +325,7 @@ function on_stu_btn_click(){
 				    <header class="am-comment-hd">
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta">
-				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
 				        发布于 <time datetime="2013-07-27T04:54:29-07:00"><?php echo $vo['time'];?></time>
 				      </div>
 				    </header>
@@ -361,7 +361,7 @@ function on_stu_btn_click(){
 		<button type="button" id="follow_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,0)" class="am-btn am-btn-primary am-radius <?php echo ($page_user_status['follow']?'am-active':'');?>" data-am-button><?php echo ($page_user_status['follow']?'已关注':'关注问题');?></button>
 		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,1)" class="am-btn am-btn-default am-radius <?php echo ($page_user_status['anonymous']?'am-active':'');?>" style="display: none;" data-am-button><?php echo ($page_user_status['anonymous']?'已匿名':'使用匿名身份');?></button>
 		<hr />
-		<p>问题提交者： <?php echo $page['anonymous']?'匿名用户':'<a href="'.'get_user_page($page["username"])'.'">'.$page["username"].'</a>';?></p>
+		<p>问题提交者： <?php echo $page['anonymous']?'匿名用户':'<a target="_blank" href="'.get_user_page($page["username"]).'">'.$page["username"].'</a>';?></p>
 	</div>
 </div>
 
