@@ -167,15 +167,15 @@ Class QuestionController extends Controller{
 		}else{
 			$db->add();
 		}
-		D('Timeline')->push(TIMELINE_QUESTION,$question_id,TIMELINE_QUESTION_FOLLOW);
+		D('Timeline')->push(1,$question_id,2);
 	}
 
 	// 推送给关注我的人
 	public function push2timeline($mode,$project_id){
 		if($mode == 1){
-			D('Timeline')->push(TIMELINE_QUESTION,$project_id,TIMELINE_QUESTION_PUSH);
+			D('Timeline')->push(1,$project_id,3);
 		}else{
-			D('Timeline')->push(TIMELINE_ANSWER,$project_id,TIMELINE_ANSWER_PUSH);
+			D('Timeline')->push(2,$project_id,3);
 		}
 	}
 }

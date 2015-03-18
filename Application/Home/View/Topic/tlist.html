@@ -29,7 +29,7 @@ function create(){
 		<br />
 		话题介绍<input type="text" id="topic_intro" class="form-control"/>
 		<br />
-		父话题（选填）<select data-am-selected="{searchBox: 1, btnSize: 'sm', btnStyle: 'secondary'}" id="father_topic">
+		父话题（选填）<select data-am-selected="{maxHeight: 100,searchBox: 1, btnSize: 'sm', btnStyle: 'secondary'}" id="father_topic">
 		<php>$topic_list = M("Topic")->order('id')->select();</php>
 		<foreach name="topic_list" item="vo" >
 		<option value="{$vo.id}">{$vo.name}</option>

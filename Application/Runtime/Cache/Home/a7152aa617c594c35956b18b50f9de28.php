@@ -59,7 +59,7 @@
 			</article><?php endif; endforeach; endif; ?>
 		<?php else: ?>
 			<?php if(is_array($content)): foreach($content as $i=>$vo): ?><small><div class="am-link-muted">
-				    <?php echo $vo['anonymous']?'匿名用户 ':'<a href="#link-to-user">'.$vo['username'].' </a>';?>
+				    <?php echo $vo['anonymous']?'匿名用户 ':'<a href="'.get_user_page($vo['username']).'">'.$vo['username'].' </a>';?>
 					提交于 <time><?php echo $vo['time'];?></time>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>"><h2><?php echo $vo['title'];?></h2></a>

@@ -133,7 +133,7 @@ function load_info_badge(sum,question,follow,agree){
             <hr />
              <!--话题框-->
              <label for="doc-ta-1">话题： </label>
-            <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
+            <select multiple data-am-selected="{maxHeight: 100,searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
             <php>$topic_list = M("Topic")->order('id')->select();</php>
             <foreach name="topic_list" item="vo" >
                 <option value="{$vo.id}">{$vo.name}</option>

@@ -46,7 +46,7 @@ Class TimelineModel extends Model{
 			if(!array_key_exists($i,$timeline_array)) continue;
 			$timeline_array[$i]['us_array'] = array($timeline_array[$i]['username']);
 			// 如果是提交就跳过当前循环，因为Answer的提交和Question的提交常量是相同的
-			if($timeline_array[$i]['status'] == TIMELINE_ANSWER_SUBMIT) continue;
+			if($timeline_array[$i]['status'] == 1) continue;
 			for($j = $i + 1; $j < $arr_count; $j++){
 				if(!array_key_exists($j,$timeline_array)) continue;
 				// 判断状态、模式是否一致
@@ -73,7 +73,7 @@ Class TimelineModel extends Model{
 			'fromusername'	=>	cookie('username'),
 			'question_id'	=>	$question_id,
 			'answer_id'		=>	$answer_id,
-			'type'			=>	TIMELINE_QUESTION_ADD_ANSWER
+			'type'			=>	1
 			);
 		$db = M('TimelineQuestion');
 		$db->create($data);
@@ -89,7 +89,7 @@ Class TimelineModel extends Model{
 			'tousername'	=>	$tousername,
 			'question_id'	=>	$question_id,
 			'answer_id'		=>	$answer_id,
-			'type'			=>	TIMELINE_QUESTION_ADD_COMMENT
+			'type'			=>	2
 			);
 		$db = M('TimelineQuestion');
 		$db->create($data);
@@ -102,7 +102,7 @@ Class TimelineModel extends Model{
 		$follow_question_array['null'] = 0;
 		trace($follow_question_array);
 		// 两种情况：关注的问题、推送到用户名
-		$search_data['question_id&type'] = array(array('in',$follow_question_array),TIMELINE_QUESTION_ADD_ANSWER,'_multi'=>true);
+		$search_data['question_id&type'] = array(array('in',$follow_question_array),1,'_multi'=>true);
 		$search_data['tousername'] = cookie('username');
 		$search_data['_logic'] = 'or';
 

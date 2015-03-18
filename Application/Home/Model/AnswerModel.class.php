@@ -20,7 +20,7 @@ Class AnswerModel extends Model{
 
 		$this->create($data);
 		$result_id = $this->add();
-		if($result_id) D('Timeline')->push(TIMELINE_ANSWER,$result_id,TIMELINE_ANSWER_SUBMIT);
+		if($result_id) D('Timeline')->push(2,$result_id,1);
 		return($result_id);
 	}
 
@@ -88,7 +88,7 @@ Class AnswerModel extends Model{
 		// 保存数据
 		if(M('User')->where('username="%s"',$answer_username)->save($data_user)){
 			// 推送到timeline
-			if($agree == 1) D('Timeline')->push(TIMELINE_ANSWER,$answer_id,TIMELINE_ANSWER_AGREE);
+			if($agree == 1) D('Timeline')->push(2,$answer_id,2);
 		}
 		return $this->where('id=%d',$answer_id)->getField('agree');
 	}
