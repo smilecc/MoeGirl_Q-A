@@ -24,7 +24,7 @@ Class QuestionModel extends Model{
 
 		$this->create($data);
 		$result_id = $this->add();
-		if($result_id) D('Timeline')->push(TIMELINE_QUESTION,$result_id,TIMELINE_QUESTION_SUBMIT);
+		if($result_id && $get_data['anonymous'] == 0) D('Timeline')->push(TIMELINE_QUESTION,$result_id,TIMELINE_QUESTION_SUBMIT);
 		return($result_id);
 	}
 }
