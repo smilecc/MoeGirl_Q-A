@@ -26,7 +26,7 @@
 					    </header>
 					    <div class="am-comment-bd">
 					    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/{:$vo['content']['question_id']}/Answer/{:$vo['content']['id']}"><h2>{:$vo['content']['question_title']}</h2></a>
-					    <IF condition="$vo['status'] neq 1"><a target="_blank" href="{:get_user_page($vo['content']['username'])}" class="am-comment-author">{:$vo['content']['username']}</a><br /></IF>
+					    <IF condition="$vo['status'] neq 1"><a target="_blank" href="{:get_user_page($vo['content']['username'])}" class="am-comment-author">{:$vo['content']['username']}</a>，<strong>{:get_user_intro($vo['content']['username'])}</strong><br /></IF>
 					      {:sub_question_content($vo['content']['content'])}
 					    </div>
 					    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['content']['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>

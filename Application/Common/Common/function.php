@@ -31,6 +31,10 @@ function get_user_page($username){
     return U('/Home/People/'.$username);
 }
 
+function get_user_intro($username){
+    return M('User')->where('username="%s"',$username)->getField('introduce_short');
+}
+
 // 测试用户是否真实
 function test_user(){
     $cookie_username_token = login_en_code(M('User')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
