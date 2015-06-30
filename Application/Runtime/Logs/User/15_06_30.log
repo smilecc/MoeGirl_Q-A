@@ -1,0 +1,408 @@
+[ 2015-06-30T13:38:40+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2015-06-30T13:39:30+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.017426s ]
+NOTIC: [8] Undefined variable: hits D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 24 行.
+
+[ 2015-06-30T13:39:55+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013405s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test ) LIMIT 1   [ RunTime:0.000221s ]
+ERR: 1054:Unknown column 'test' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test ) LIMIT 1  
+
+[ 2015-06-30T13:42:09+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016363s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test ) LIMIT 1   [ RunTime:0.000217s ]
+ERR: 1054:Unknown column 'test' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test ) LIMIT 1  
+
+[ 2015-06-30T13:43:43+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013210s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000156s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:43:59+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014336s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000228s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:44:01+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014537s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000190s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:44:02+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012307s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000191s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:44:14+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.017579s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000217s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:44:34+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013018s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000251s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:44:34+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010075s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000246s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:44:35+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013747s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000223s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+
+[ 2015-06-30T13:45:16+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013780s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000242s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001389s ]
+
+[ 2015-06-30T13:46:08+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025792s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000275s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001964s ]
+
+[ 2015-06-30T13:46:10+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013620s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1   [ RunTime:0.000257s ]
+ERR: 1054:Unknown column 'test22' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mgqa_user` WHERE ( username=test22 ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2015-06-30T13:47:46+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2015-06-30T13:48:30+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+
+[ 2015-06-30T13:51:53+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2015-06-30T14:42:43+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002159s ]
+
+[ 2015-06-30T14:43:13+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001909s ]
+
+[ 2015-06-30T14:44:02+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001862s ]
+
+[ 2015-06-30T14:44:21+08:00 ] 127.0.0.1 /index.php/User/Operation/register.html?username=test22&password=test&email=test@test.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016562s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: INSERT INTO `mgqa_user` (`username`,`password`,`email`) VALUES ('test22','fb469d7ef430b0baf0cab6c436e70375','test@test.com') [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002041s ]
+
+[ 2015-06-30T14:46:04+08:00 ] 127.0.0.1 /index.php/User/Operation/index.html?user=test22&pass=test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+
+[ 2015-06-30T14:47:47+08:00 ] 127.0.0.1 /index.php/User/Operation/index.html?user=test22&pass=test&remember_me=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+
+[ 2015-06-30T14:47:55+08:00 ] 127.0.0.1 /index.php/User/Operation/index.html?user=test22&pass=test&remember_me=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000987s ]
+
+[ 2015-06-30T14:48:55+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html?user=test22&pass=test&remember_me=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012847s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2015-06-30T14:49:09+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html?user=test22&pass=test&remember_me=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013323s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001597s ]
+
+[ 2015-06-30T14:50:40+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html?user=test22&pass=test&remember_me=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-06-30T14:51:28+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html?user=test22&pass=test&remember_me=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.015352s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.001036s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000480s ]
+DEBUG: test:10
+SQL: UPDATE `mgqa_user` SET `random`=559 WHERE ( username="test22" ) [ RunTime:0.000705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002053s ]
+
+[ 2015-06-30T14:52:33+08:00 ] 127.0.0.1 /index.php/User/Operation/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+
+[ 2015-06-30T14:52:33+08:00 ] 127.0.0.1 /User/Login?from=/index.php/Home/People/test22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2015-06-30T14:52:42+08:00 ] 127.0.0.1 /index.php/User/Operation/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.021789s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000263s ]
+DEBUG: test:10
+SQL: UPDATE `mgqa_user` SET `random`=32162 WHERE ( username="test22" ) [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002787s ]
+
+[ 2015-06-30T14:52:49+08:00 ] 127.0.0.1 /User/Login?from=/index.php/Home/People/test22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+

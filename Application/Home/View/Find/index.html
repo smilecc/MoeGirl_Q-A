@@ -27,7 +27,7 @@
 		    <div class="am-tab-panel am-active" id="tab24h">
 		    <foreach name="find_24" item="vo">
 		    	<article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
 				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
 				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>
@@ -62,7 +62,7 @@
 		    <div class="am-tab-panel" id="tab30d">
 		    <foreach name="find_30" item="vo">
 		    	<article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
 				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
 				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>

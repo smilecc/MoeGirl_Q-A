@@ -1,7 +1,7 @@
 	<foreach name="timeline" item="vo" key="i">
 			<IF condition="$vo['mode'] eq 2">
 					<article class="am-comment">
-				  	<div class="am-btn-group-stacked am-comment-avatar">
+				  	<div class="am-comment-avatar">
 					  <button id="agree-answer-btn-{:$vo['content']['id']}" type="button" onclick="agree_answer({:$vo['content']['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['content']['id'],1)}"><br /></button>
 					  <center id="answer-agree-numb-{:$vo['content']['id']}">{:$vo['content']['agree']}</center>
 					  <button id="unagree-answer-btn-{:$vo['content']['id']}" type="button" onclick="agree_answer({:$vo['content']['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['content']['id'],2)}"></button>

@@ -46,6 +46,26 @@ function login(from){
   });
 }
 
+function register(){
+  $.ajax({
+            type:"POST",
+            url:"/index.php/User/Operation/register.html",
+            data:{
+                  username:$("#username").val(),
+                  password:$("#password").val(),
+                  email:$("#email").val(),
+                  },
+            success:function(re){
+              $('#login-model').modal('close');
+                if(re=="Success"){
+                  window.location.href='/';
+                }else{
+                  alert(re);
+                }
+            }
+  });
+}
+
 function upload(mode){
 if(mode == "question") $('#put-question-upload').modal('close');
 $('#put-question-uploading').modal('open');

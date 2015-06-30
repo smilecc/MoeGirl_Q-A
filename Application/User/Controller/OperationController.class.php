@@ -36,13 +36,14 @@ Class OperationController extends Controller{
 		if($cookie == '')return $resultArray;
 		else return $xml;
  	}
-
+	
  	public function login($user, $pass, $remember_me){
- 		if(IS_POST)
+ 		if(true)
  		{
-			$resultArray = $this->cUrlLogin($user,$pass);
-			$resultXML = $this->cUrlLogin($user,$pass,$resultArray['token'],$resultArray['cookie']);
+			//$resultArray = $this->cUrlLogin($user,$pass);
+			//$resultXML = $this->cUrlLogin($user,$pass,$resultArray['token'],$resultArray['cookie']);
 			//print_r($resultXML);
+			/*
 			if('Success' == (string)$resultXML->login['result'])
 			{
 				// Set cookie value
@@ -58,6 +59,33 @@ Class OperationController extends Controller{
 				session('user_status',1);
 			}
 			echo $resultXML->login['result'];
+			*/
+
+			// 后改：自行注册
+			$resultArr = D('User')->Login($user, $pass);
+			if($resultArr['status'])
+			{
+				// Set cookie value
+				if($remember_me == 'on') cookie('token',login_en_code(D('User')->login_random($user).$user));
+				cookie('username',$user);
+
+				// Set session
+				/// user_status 是用户登录的标识
+				/// 0 is no Login
+				/// 1 is password Login
+				/// 2 is cookies Login
+				session('user_status',1);
+			}
+			echo json_encode($resultArr['json']);
+		}
+	}
+
+	public function register($username,$password,$email)
+	{
+		if(true)
+		{
+			echo json_encode(D('User')->CreateUser($username,$password,$email));
+
 		}
 	}
 

@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?>	<?php if(is_array($timeline)): foreach($timeline as $i=>$vo): if($vo['mode'] == 2): ?><article class="am-comment">
-				  	<div class="am-btn-group-stacked am-comment-avatar">
+				  	<div class="am-comment-avatar">
 					  <button id="agree-answer-btn-<?php echo $vo['content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['content']['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['content']['id'],1);?>"><br /></button>
 					  <center id="answer-agree-numb-<?php echo $vo['content']['id'];?>"><?php echo $vo['content']['agree'];?></center>
 					  <button id="unagree-answer-btn-<?php echo $vo['content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['content']['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['content']['id'],2);?>"></button>

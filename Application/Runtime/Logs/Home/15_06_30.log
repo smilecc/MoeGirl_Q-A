@@ -1,0 +1,261 @@
+[ 2015-06-30T14:51:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012188s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009693s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.012584s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.015143s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.011318s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="test22" AND follow=1 )  [ RunTime:0.000290s ]
+DEBUG: Array
+(
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.013839s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE ( (`question_id` IN (0)) AND (`type` = 1) ) OR `tousername` = 'test22' ORDER BY id desc LIMIT 200   [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.011713s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="test22" ) ORDER BY id desc LIMIT 30   [ RunTime:0.000267s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.010403s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="test22" ) ORDER BY id desc LIMIT 200   [ RunTime:0.000253s ]
+DEBUG: 
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.014382s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.009541s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.220541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002198s ]
+
+[ 2015-06-30T14:51:35+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.016342s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.014388s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="test22" OR us2="test22" )  [ RunTime:0.000235s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\FollowModel.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.015309s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN () ORDER BY id desc LIMIT 0,30   [ RunTime:0.000158s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY id desc LIMIT 0,30' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_timeline` WHERE `username` IN () ORDER BY id desc LIMIT 0,30  
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 32 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, boolean given D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 46 行.
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 67 行.
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2015-06-30T14:51:52+08:00 ] 127.0.0.1 /index.php/Home/User/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014664s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000355s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009387s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.009245s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.014577s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.010869s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="test22" AND follow=1 )  [ RunTime:0.000257s ]
+DEBUG: Array
+(
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.013080s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE ( (`question_id` IN (0)) AND (`type` = 1) ) OR `tousername` = 'test22' ORDER BY id desc LIMIT 200   [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.013697s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="test22" ) ORDER BY id desc LIMIT 30   [ RunTime:0.000261s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.010036s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="test22" ) ORDER BY id desc LIMIT 200   [ RunTime:0.000285s ]
+DEBUG: 
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.014751s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.010131s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000561s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.167063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001970s ]
+
+[ 2015-06-30T14:51:55+08:00 ] 127.0.0.1 /index.php/Home/People/test22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014040s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.012195s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1 = "test22" AND us2="test22" ) LIMIT 1   [ RunTime:0.000309s ]
+DEBUG: Array
+(
+    [username] => test22
+    [password] => fb469d7ef430b0baf0cab6c436e70375
+    [email] => test@test.com
+    [random] => 559
+    [introduce_short] => 
+    [introduce_long] => 
+    [weibo] => 
+    [agree] => 0
+    [follow] => 0
+    [fans] => 0
+    [is_follow] => 
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.021079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016969s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( username="test22" ) ORDER BY id desc LIMIT 3   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="test22" ) ORDER BY id desc LIMIT 3   [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016929s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.014095s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.016042s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.014008s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="test22" AND follow=1 )  [ RunTime:0.000237s ]
+DEBUG: Array
+(
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.013626s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE ( (`question_id` IN (0)) AND (`type` = 1) ) OR `tousername` = 'test22' ORDER BY id desc LIMIT 200   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.014076s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="test22" ) ORDER BY id desc LIMIT 30   [ RunTime:0.000237s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.009105s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="test22" ) ORDER BY id desc LIMIT 200   [ RunTime:0.000286s ]
+DEBUG: 
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.014358s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.009724s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="test22" ) LIMIT 1   [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.223826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001910s ]
+
+[ 2015-06-30T14:52:33+08:00 ] 127.0.0.1 /index.php/Home/People/test22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010697s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.015153s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1 = "test22" AND us2="" ) LIMIT 1   [ RunTime:0.000271s ]
+DEBUG: Array
+(
+    [username] => test22
+    [password] => fb469d7ef430b0baf0cab6c436e70375
+    [email] => test@test.com
+    [random] => 559
+    [introduce_short] => 
+    [introduce_long] => 
+    [weibo] => 
+    [agree] => 0
+    [follow] => 0
+    [fans] => 0
+    [is_follow] => 
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.022804s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016721s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( username="test22" ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( username="test22" ) ORDER BY id desc LIMIT 3   [ RunTime:0.000172s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( username="test22" ) ORDER BY id desc LIMIT 3   [ RunTime:0.000161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010016s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000283s ]
+

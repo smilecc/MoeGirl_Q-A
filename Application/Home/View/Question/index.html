@@ -21,7 +21,7 @@
 		<ul class="am-comments-list">
 		  <foreach name="answer" item="vo" >
 			<article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar" width="48" height="48">
+			  	<div class="am-comment-avatar" width="48" height="48">
 				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
 				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
 				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>

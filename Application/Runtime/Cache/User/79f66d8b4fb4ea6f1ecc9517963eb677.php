@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html>
 <head lang="en">
   <meta charset="UTF-8">
@@ -45,10 +45,12 @@
     </div>
 <div class="am-g">
   <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-  <center><h2>暂时不能使用萌娘百科账号登录</h2></center>
     <form method="post" class="am-form">
       <label for="username">用户名:</label>
       <input type="text" name="" id="username" value="">
+      <br>
+      <label for="email">邮箱:</label>
+      <input type="text" name="" id="email" value="">
       <br>
       <label for="password">密码:</label>
       <input type="password" name="" id="password" value="">

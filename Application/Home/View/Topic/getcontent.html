@@ -2,7 +2,7 @@
 			<foreach name="content" item="vo" key="i">
 			<notempty name="vo['answer_content']['id']">
 			<article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-{:$vo['answer_content']['id']}" type="button" onclick="agree_answer({:$vo['answer_content']['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['answer_content']['id'],1)}"><br /></button>
 				  <center id="answer-agree-numb-{:$vo['answer_content']['id']}">{:$vo['answer_content']['agree']}</center>
 				  <button id="unagree-answer-btn-{:$vo['answer_content']['id']}" type="button" onclick="agree_answer({:$vo['answer_content']['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['answer_content']['id'],2)}"></button>
@@ -35,7 +35,7 @@
 			<foreach name="content" item="vo" key="i">
 			<notempty name="vo['id']">
 			<article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
 				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
 				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>

@@ -316,7 +316,7 @@ function on_stu_btn_click(){
 		  <div class="am-tabs-bd">
 		    <div class="am-tab-panel am-active" id="tab24h">
 		    <?php if(is_array($find_24)): foreach($find_24 as $key=>$vo): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
 				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
 				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
@@ -331,7 +331,7 @@ function on_stu_btn_click(){
 				      </div>
 				    </header>
 				    <div class="am-comment-bd">
-				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
+				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
 				      <?php echo sub_question_content($vo['content']);?>
 
 				    </div>
@@ -349,7 +349,7 @@ function on_stu_btn_click(){
 
 		    <div class="am-tab-panel" id="tab30d">
 		    <?php if(is_array($find_30)): foreach($find_30 as $key=>$vo): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
 				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
 				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
