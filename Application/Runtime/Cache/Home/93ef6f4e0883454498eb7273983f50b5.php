@@ -31,14 +31,18 @@
   <meta name="msapplication-TileImage" content="/Public/assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
+  <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
+  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
-
   <link rel="stylesheet" href="/Public/css/public.css">
 
   <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/assets/js/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
+  <script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/js/pnotify.custom.min.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -314,7 +318,7 @@ function on_stu_btn_click(){
 		<hr />
 		<ul class="am-comments-list">
 		  <?php if(is_array($answer)): foreach($answer as $key=>$vo): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar" width="48" height="48">
+			  	<div class="am-comment-avatar" width="48" height="48">
 				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
 				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
 				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
@@ -332,13 +336,14 @@ function on_stu_btn_click(){
 				    </header>
 
 				    <div class="am-comment-bd">
-				      <?php echo img_replace(nl2br($vo['content']));?>
+				      <?php echo ParseMd($vo['content']);?>
 
 				      <p class="am-text-right">
 				      <a href="javascript:;" class="am-article-meta" onclick="push2timeline(2,<?php echo $vo['id'];?>,this)"><i class="am-icon-reply"></i> 推送给关注我的人 </a>
 				      <a class="am-link-muted am-article-meta" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				    </div>
-				    <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
+				    <div style="display: none;" id="comment-<?php echo $vo['id'];?>">
+				    <hr/>
 					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
 					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
 					    </div>
@@ -359,7 +364,7 @@ function on_stu_btn_click(){
 	        </form><?php endif; ?>
 	</div>
 	<div class="am-u-sm-3">
-		<button type="button" id="follow_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,0)" class="am-btn am-btn-primary am-radius <?php echo ($page_user_status['follow']?'am-active':'');?>" data-am-button><?php echo ($page_user_status['follow']?'已关注':'关注问题');?></button>
+		<button type="button" id="follow_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,0)" class="am-btn am-btn-primary am-radius <?php echo ($page_user_status['follow']?'am-btn-success':'');?>"><?php echo ($page_user_status['follow']?'取消关注':'关注问题');?></button>
 		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,1)" class="am-btn am-btn-default am-radius <?php echo ($page_user_status['anonymous']?'am-active':'');?>" style="display: none;" data-am-button><?php echo ($page_user_status['anonymous']?'已匿名':'使用匿名身份');?></button>
 		<hr />
 		<p>问题提交者： <?php echo $page['anonymous']?'匿名用户':'<a target="_blank" href="'.get_user_page($page["username"]).'">'.$page["username"].'</a>';?></p>

@@ -1,3 +1,18 @@
+$(".js-follow").click(function(){
+  if($(this).text()=='取消关注')
+  {
+    $(this).text('关注话题');
+    $(this).removeClass('am-btn-success');
+    $(this).addClass('am-btn-default');
+  }
+  else
+  {
+    $(this).text('取消关注');
+    $(this).removeClass('am-btn-default');
+    $(this).addClass('am-btn-success');
+  }
+});
+
 function load_form_conf(){
   $("#put-question-form").submit(function(e){
     e.preventDefault();
@@ -24,8 +39,71 @@ function load_form_conf(){
   });
 }
 
+function notifyMode(ico,clss,tl)
+{
+  this.icon = ico;
+  this.cls = clss;
+  this.tit = tl;
+}
+
+const LEFT = 0;
+const RIGHT = 1;
+const LOADING = new notifyMode('am-icon-spinner am-icon-spin','am-alert-success','Loading');
+const SUCCESS = new notifyMode('am-icon-info-circle','am-alert-success','Success');
+const ERROR = new notifyMode('am-icon-warning','am-alert-danger','Error');
+const INFO = new notifyMode('am-icon-info-circle','am-alert-secondary','Infomation');
+
+function notify(content,mode,isright)
+{
+  new PNotify({
+        title: mode.tit,
+        text: content,
+        icon: mode.icon,
+        addclass: (isright?'':'stack-topleft ')+mode.cls,
+        buttons: {
+            closer: false,
+            sticker: false
+        }
+    });
+}
+
+// notify别名函数
+function loading_notify()
+{
+  notify('正在提交...',LOADING,LEFT);
+}
+
+function success_notify(content)
+{
+  notify(content,SUCCESS,LEFT);
+}
+
+function info_notify(content)
+{
+  notify(content,INFO,LEFT);
+}
+
+function error_notify(content)
+{
+  notify(content,ERROR,LEFT);
+}
+
+function success_notify_right(content)
+{
+  notify(content,SUCCESS,RIGHT);
+}
+
+function info_notify_right(content)
+{
+  notify(content,INFO,RIGHT);
+}
+
+function error_notify_right(content)
+{
+  notify(content,ERROR,RIGHT);
+}
+
 function login(from){
-  //$('#login-model').modal('open');
   $.ajax({
             type:"POST",
             url:"/index.php/User/Operation/login.html",
@@ -35,18 +113,20 @@ function login(from){
                   remember_me:$("#remember-me").val()
                   },
             success:function(re){
-            	$('#login-model').modal('close');
-                if(re=="Success"){
+                var jsonObject = JSON.parse(re);
+                if(jsonObject['info']=="Success"){
+                  success_notify("登录成功，正在跳转");
                   if(from == 'NULL') window.location.href='/';
                   else window.location.href=from;
                 }else{
-                  alert(re);
+                  console.log(re);
+                  error_notify(jsonObject['error']);
                 }
             }
   });
 }
 
-function register(){
+function register(from){
   $.ajax({
             type:"POST",
             url:"/index.php/User/Operation/register.html",
@@ -56,13 +136,16 @@ function register(){
                   email:$("#email").val(),
                   },
             success:function(re){
-              $('#login-model').modal('close');
-                if(re=="Success"){
-                  window.location.href='/';
+              var jsonObject = JSON.parse(re);
+                if(jsonObject['info']=="Success"){
+                  success_notify("注册成功，自动登录完毕，正在跳转");
+                  if(from == 'NULL') window.location.href='/';
+                  else window.location.href=from;
                 }else{
-                  alert(re);
-                }
+                  console.log(re);
+                  error_notify(jsonObject['error']);
             }
+          }
   });
 }
 
@@ -84,16 +167,16 @@ $('#put-question-uploading').modal('open');
       }
       else{
         if(mode == "question"){
-            $("#put-question-content").val($("#put-question-content").val() + "{:" + data + "!}");
+            $("#put-question-content").val($("#put-question-content").val() + "![img](/Public/Uploads/" + data + ")");
             $('#put-question-popup').modal('open');
         }else if(mode == "answer"){
-            $("#put-answer-content").val($("#put-answer-content").val() + "{:" + data + "!}");
+            $("#put-answer-content").val($("#put-answer-content").val() + "![img](/Public/Uploads/" + data + ")");
             $('#put-question-upload').modal('close');
         }
       }
     },
     error: function (data, status, e){
-      alert(e);
+      error_notify(e);
     },
   });
     
@@ -120,7 +203,7 @@ function put_comment(project_id,mode){
                 if(re=="1"){
                   $("#div-comment-" + project_id).load('/index.php/Home/Question/get_comment.html?id='+project_id+'&mode='+mode);
                 }else{
-                  alert('评论失败');
+                  error_notify('评论失败');
                 }
             }
   });
@@ -132,9 +215,9 @@ function agree_answer(answer_id,agree){
             url:"/index.php/Home/Question/agree?answer_id=" + answer_id + "&agree=" + agree,
             success:function(re){
                 if(re == "-1"){
-                    alert('失败，发生错误');
+                    error_notify('失败，发生错误');
                 }else if(re == "-2"){
-                    alert('不要赞自己噢~');
+                    error_notify('不要赞自己噢~');
                 }else{
                     $("#answer-agree-numb-" + answer_id).text(re);
                     var btn_id = "";
@@ -156,12 +239,20 @@ function agree_answer(answer_id,agree){
             }
   });
 }
-function on_follow_topic_btn_click(tid){
+function on_follow_topic_btn_click(tid,tname){
   $.ajax({
             type:"GET",
             url:"/index.php/Home/Topic/set_follow_topic.html?topic_id=" + tid,
             success:function(re){
-               if(re) alert(re);
+              var jsonObject = JSON.parse(re);
+              if(jsonObject['status'])
+              {
+                success_notify_right('<strong>'+tname + '</strong> '+jsonObject['info']);
+              }
+             else
+             {
+              error_notify_right(jsonObject['error']);
+             }
             }
   });
 }
@@ -188,7 +279,7 @@ function follow_user(from_name,to_user){
                   },
             success:function(re){
                 console.log(re);
-                if(re.error) alert(re.error);
+                if(re.error) error_notify(re.error);
                 else{
                   if(re.relation == 0){
                     $('.follow-btn-' + to_user).addClass('am-btn-success');

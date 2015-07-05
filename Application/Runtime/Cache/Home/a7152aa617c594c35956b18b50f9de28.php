@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?>		<?php if($mode == 'near'): if(is_array($content)): foreach($content as $i=>$vo): if(!empty($vo['answer_content']['id'])): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-<?php echo $vo['answer_content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_content']['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['answer_content']['id'],1);?>"><br /></button>
 				  <center id="answer-agree-numb-<?php echo $vo['answer_content']['id'];?>"><?php echo $vo['answer_content']['agree'];?></center>
 				  <button id="unagree-answer-btn-<?php echo $vo['answer_content']['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_content']['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['answer_content']['id'],2);?>"></button>
@@ -28,7 +28,7 @@
 			</article><?php endif; endforeach; endif; ?>
 		<?php elseif($mode == 'hot'): ?>
 			<?php if(is_array($content)): foreach($content as $i=>$vo): if(!empty($vo['id'])): ?><article class="am-comment">
-			  	<div class="am-btn-group-stacked am-comment-avatar">
+			  	<div class="am-comment-avatar">
 				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
 				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
 				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
@@ -39,7 +39,7 @@
 				    <header>
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta qustion-title-content">
-				        <a href="#link-to-user" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
 				        发布于 <time><?php echo $vo['time'];?></time>
 				      </div>
 				    </header>

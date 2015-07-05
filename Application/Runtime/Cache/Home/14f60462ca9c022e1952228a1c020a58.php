@@ -31,14 +31,18 @@
   <meta name="msapplication-TileImage" content="/Public/assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
+  <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
+  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
-
   <link rel="stylesheet" href="/Public/css/public.css">
 
   <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/assets/js/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
+  <script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/js/pnotify.custom.min.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -308,17 +312,41 @@ function on_stu_btn_click(){
                   },
             success:function(re){
               $('#result-div').text(re.result);
+              if(re['status'])
+                success_notify(re.result);
+              else
+                error_notify(re.result);
             }
       });
   }
 </script>
+
+
+<div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+  <ul class="am-tabs-nav am-nav am-nav-tabs">
+    <li class="am-active"><a href="javascript: void(0)">个人</a></li>
+    <li><a href="javascript: void(0)">密码</a></li>
+  </ul>
+
+  <div class="am-tabs-bd am-tabs-noborder">
+    <div class="am-tab-panel am-active">
+
+    <!--个人-->
       <div class="am-u-sm-12 am-u-md-8">
         <form class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label for="user-name" class="am-u-sm-3 am-form-label">用户名 / Name</label>
             <div class="am-u-sm-9">
               <input type="text" id="user-name" placeholder="姓名 / Name" value="<?php echo cookie('username');?>" disabled>
-              <small>你的萌百用户名将作为你的萌问用户名</small>
+              <small>此为你的注册用户名，萌百账户请另行绑定</small>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">萌娘百科 / MoeGirl.Wiki</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-weibo" placeholder="输入你的萌娘百科账号 / MoeGirl.Wiki" value="<?php echo $user['moegirl_wiki'];?>">
+              <small><?php if($user['moegirl_wiki_ischeck'] == 0): ?><span style="color:red">账号未验证</span>,<a href="javascript:;">点击验证账号</a><?php else: ?>账号已通过验证<?php endif; ?></small>
             </div>
           </div>
 
@@ -326,7 +354,7 @@ function on_stu_btn_click(){
             <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
             <div class="am-u-sm-9">
               <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter" value="<?php echo $user['weibo'];?>">
-              <small>请直接填写网址，也可以填写个人站点</small>
+              <small>请直接填写网址，也可以填写个人站点，记得要加http://</small>
             </div>
           </div>
 
@@ -354,6 +382,16 @@ function on_stu_btn_click(){
           </div>
         </form>
       </div>
+
+    </div>
+
+     <!--密码-->
+    <div class="am-tab-panel">
+      ..3.
+    </div>
+  </div>
+</div>
+
       
 	</div>
 	<!-- /主体 -->

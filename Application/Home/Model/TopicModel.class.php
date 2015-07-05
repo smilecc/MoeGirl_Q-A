@@ -40,8 +40,8 @@ Class TopicModel extends Model{
 		if($this->where('name="%s"',$name)->count()) return false;
 		$data = array(
 			'creater'		=>	cookie('username'),
-			'name'			=>	$name,
-			'introduce'		=>	$introduce,
+			'name'			=>	htmlspecialchars($name),
+			'introduce'		=>	htmlspecialchars($introduce),
 			'father_topic'	=>	$father_topic
 			);
 		$this->create($data);

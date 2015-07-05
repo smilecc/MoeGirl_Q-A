@@ -13,7 +13,18 @@ function create(){
                   father_topic:$("#father_topic").val()
                   },
             success:function(re){
-            	window.location.href='/Home/Topic/'+re;
+              var jsonObject = JSON.parse(re);
+              if(jsonObject['status'])
+              {
+                notify('创建成功，正在跳转',SUCCESS,RIGHT);
+                window.location.href='/Home/Topic/'+jsonObject['topic_id'];
+              }
+              else
+              {
+                console.log(re);
+                notify(jsonObject['error'],ERROR,RIGHT);
+              }
+            	
                 }
   });
 }
@@ -53,7 +64,7 @@ function create(){
 		<foreach name="topic" item="vo">
 			<p><a href="{:U('/Home/Topic/'.$vo['id'])}" target="_blank">{:$vo['name']}</a>
 			<php>$is_follow = getIsfollowtopic($vo['id']);</php>
-			<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click({:$vo['id']})" class="am-btn am-fr am-btn-success am-radius {:($is_follow?'am-active':'')}" data-am-button>{:($is_follow?'已关注':'关注话题')}</button><br />
+			<button type="button" onclick="on_follow_topic_btn_click({:$vo['id']},'{:$vo['name']}')" class="js-follow am-btn am-fr am-radius {:($is_follow?'am-btn-success':'am-btn-default')}">{:($is_follow?'取消关注':'关注话题')}</button><br />
 			<small>{:$vo['introduce']}</small></p>
 			<hr />
 		</foreach>

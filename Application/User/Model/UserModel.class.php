@@ -3,6 +3,8 @@ namespace User\Model;
 use Think\Model;
 
 Class UserModel extends Model{
+
+
 	// 创建或更新用户登录随机数
 	public function login_random($username){
 		$userinfo = $this->where('username="%s"',$username)->find();
@@ -22,6 +24,14 @@ Class UserModel extends Model{
 
 	public function Login($username,$password)
 	{
+		if($username == '' || $password == '')
+		{
+			$resultArr = array(
+			'status' => false,
+			'json'	 => array('error'=>'存在未填项')
+			);
+			return $resultArr;
+		}
 		$userinfo = $this->where('username="%s"',$username)->find();
 		$resultArr = array(
 			'status' => false,
@@ -42,13 +52,36 @@ Class UserModel extends Model{
 		}
 		else
 		{
-			$resultArr['json']['info'] = 'PasswordWrong';
+			$resultArr['json']['error'] = 'PasswordWrong:密码错误';
 		}
 		return $resultArr;
 	}
 
 	public function CreateUser($username,$password,$email)
 	{
+
+		if($username == '' || $password == '' || $email == '')
+		{
+			$jsonResult = array('error' => '存在未填项' );
+			return $jsonResult;
+		}
+
+		// 一系列验证
+		if(!preg_match('/^[a-zA-Zxa0-xff_][0-9a-zA-Zxa0-xff_]{2,16}$/',$username))
+		{
+			return $jsonResult = array('error' => '用户名不符合条件<br/>请输入字母、数字、下划线、中文汉字<br/>2-16个字符' );
+		}
+
+		if(!preg_match('/[\w]{6,128}/',$password))
+		{
+			return $jsonResult = array('error' => '密码不符合条件<br/>请输入6-128位密码' );
+		}
+		
+		if(!preg_match('/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/',$email))
+		{
+			return $jsonResult = array('error' => 'Email不符合条件<br/>请输入正确的邮箱' );
+		}
+
 		// 检测用户存在情况
 		$userinfo = $this->where('username="%s"',$username)->find();
 		if(count($userinfo) > 0)
@@ -69,7 +102,7 @@ Class UserModel extends Model{
 		// 返回数据
 		$jsonResult = array('info' => '');
 		if($result) $jsonResult['info'] = 'Success';
-		else $jsonResult['info'] = 'SystemError';
+		else $jsonResult['error'] = 'SystemError';
 		return $jsonResult;
 	}
 }

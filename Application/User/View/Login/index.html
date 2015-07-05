@@ -9,10 +9,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="stylesheet" href="__PUBLIC__/css/pnotify.custom.min.css"/>
+  <link href="__PUBLIC__/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="__PUBLIC__/assets/css/amazeui.min.css"/>
+
   <script src="/Public/assets/js/jquery.min.js"></script>
   <script src="/Public/assets/js/amazeui.min.js"></script>
   <script src="/Public/js/public.js"></script>
+  <script src="/Public/js/pnotify.custom.min.js"></script>
   <style>
     .header {
       text-align: center;
@@ -59,8 +63,8 @@
       </label>
       <br />
       <div class="am-cf">
-        <input type="button" onclick="$('#login-model').modal('open');login('{:$from}');" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
-        <a target="_blank" href="http://zh.moegirl.org/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&type=signup"><input type="button" name="" value="没有账号 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr"></a>
+        <input type="button" onclick="loading_notify();login('{:$from}');" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+        <a type="button" class="am-btn am-btn-default am-btn-sm am-fr" href="/User/Login/register.html?from={$from}">没有账号 ^_^?</a>
       </div>
     </form>
     <hr>

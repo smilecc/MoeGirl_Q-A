@@ -31,14 +31,18 @@
   <meta name="msapplication-TileImage" content="/Public/assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
+  <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
+  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
-
   <link rel="stylesheet" href="/Public/css/public.css">
 
   <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/assets/js/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
+  <script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/js/pnotify.custom.min.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -312,7 +316,7 @@ function on_stu_btn_click(){
 		<script type="text/javascript">get_content(<?php echo $tid;?>,'<?php echo $mode;?>',1);</script>
 	</div><!--am-9-->
 	<div class="am-u-md-3">
-		<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>)" class="am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-active':'');?>" data-am-button><?php echo ($topic['is_follow']?'已关注':'关注话题');?></button>
+		<button type="button" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>,'<?php echo $topic['name'];?>')" class="js-follow am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-btn-success':'am-btn-default');?>" ><?php echo ($topic['is_follow']?'取消关注':'关注话题');?></button>
 		<p>话题创建人：<a target="_blank" href="<?php echo get_user_page($topic["creater"]);?>"><?php echo $topic["creater"];?></a></p>
 		<hr /><p><?php echo $topic['follow_count'];?> 人关注了这个话题</p>
 		<p>该话题下共有 <?php echo $topic['question_count'];?> 个问题<br />(不包含子话题)</p>

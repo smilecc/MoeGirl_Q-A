@@ -31,14 +31,18 @@
   <meta name="msapplication-TileImage" content="/Public/assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
+  <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
+  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
-
   <link rel="stylesheet" href="/Public/css/public.css">
 
   <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/assets/js/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
+  <script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/js/pnotify.custom.min.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -305,7 +309,7 @@ function on_stu_btn_click(){
 	<div class="am-u-md-8">
 		<?php if(is_array($topic)): foreach($topic as $key=>$vo): $topic_info = getTopicinfo($vo['topic_id']); ?>
 			<p><a href="<?php echo U('/Home/Topic/'.$topic_info['id']);?>" target="_blank"><?php echo $topic_info['name'];?></a>
-			<button class="am-btn am-fr am-btn-success" onclick="on_follow_topic_btn_click(<?php echo $topic_info['id'];?>)" data-am-button>取消关注</button><br />
+			<button class="am-btn am-fr am-btn-success js-follow" onclick="on_follow_topic_btn_click(<?php echo $topic_info['id'];?>,'<?php echo $topic_info['name'];?>')">取消关注</button><br />
 			<small><?php echo $topic_info['introduce'];?></small></p>
 			<hr /><?php endforeach; endif; ?>
 	</div>

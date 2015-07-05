@@ -29,3 +29,7 @@ footer {
 .info-nodisplay-badge{
 	display: none;
 }
+
+.am-tabs-noborder{
+	border:0px;
+}

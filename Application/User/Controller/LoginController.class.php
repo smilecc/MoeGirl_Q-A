@@ -7,8 +7,9 @@ class LoginController extends Controller {
         $this->display();
     }
 
-    public function register()
+    public function register($from = 'NULL')
     {
+    	$this->assign('from',$from);
     	$this->display();
     }
 }

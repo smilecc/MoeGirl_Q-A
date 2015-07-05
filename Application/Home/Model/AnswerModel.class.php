@@ -13,7 +13,7 @@ Class AnswerModel extends Model{
 
 		$data = array(
 			'username' 	=> cookie('username'),
-			'content'	=> $get_data['content'],
+			'content'	=> htmlspecialchars($get_data['content']),
 			'question_id' => $get_data['question_id'],
 			);
 

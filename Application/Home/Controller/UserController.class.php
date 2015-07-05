@@ -33,8 +33,8 @@ class UserController extends Controller {
                 'weibo'           => I('weibo')
                 );
             $result_arr = array();
-            if(M('User')->where('username="%s"',cookie('username'))->save($data)) echo json_encode(array('result' => '已保存'));
-            else echo json_encode(array('result' => '保存失败'));
+            if(M('User')->where('username="%s"',cookie('username'))->save($data)) echo json_encode(array('status'=>1,'result' => '已保存'));
+            else echo json_encode(array('status'=>0,'result' => '保存失败，原因可能是未改动或系统错误'));
         }else{
             $this->assign('user',M('User')->where('username="%s"',cookie('username'))->find());
             $this->display();

@@ -41,8 +41,11 @@ class TopicController extends Controller {
 	}
 
 	public function set_follow_topic($topic_id){
+		$resultJson = array();
 		if(!test_user()){
-			echo '用户登录失效，请检查';
+			$resultJson['error'] = '用户登录失效，请检查';
+			$resultJson['status'] = 0;
+			echo json_encode($resultJson);
 			return;
 		}
 
@@ -50,6 +53,7 @@ class TopicController extends Controller {
 		$db_count = $db->where('username="%s" AND topic_id=%d',cookie('username'),$topic_id)->count();
 		if($db_count){
 			$db->where('username="%s" AND topic_id=%d',cookie('username'),$topic_id)->delete();
+			$resultJson['info'] = '取消关注成功';
 		}else{
 			$data = array(
 				'username' 	=> cookie('username'),
@@ -57,11 +61,18 @@ class TopicController extends Controller {
 			);
 			$db->data($data);
 			$db->add();
+			$resultJson['info'] = '关注成功';
 		}
+		$resultJson['status'] = 1;
+		echo json_encode($resultJson);
 	}
 
 	public function tcreate($name,$introduce,$father_topic = 0){
+		if($name=='' || $introduce=='')
+		{
+			exit(json_encode(array('status'=>0,'error'=>'数据不完整')));
+		}
 		$id = D('Topic')->tcreate($name,$introduce,$father_topic);
-		echo $id;
+		echo(json_encode(array('status'=>($id?1:0),'topic_id'=>$id,'error'=>($id?'NULL':'存在重名或系统错误'))));
 	}
 }

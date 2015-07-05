@@ -13,8 +13,8 @@ Class QuestionModel extends Model{
 
 		$data = array(
 			'username' 	=> cookie('username'),
-			'title'		=> $get_data['title'],
-			'content'	=> $get_data['content'],
+			'title'		=> htmlspecialchars($get_data['title']),
+			'content'	=> htmlspecialchars($get_data['content']),
 			'anonymous' => $get_data['anonymous'],
 			);
 		

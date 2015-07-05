@@ -23,7 +23,7 @@
 		    <li><a href="#tab30d">30天</a></li>
 		  </ul>
 
-		  <div class="am-tabs-bd">
+		  <div class="am-tabs-bd am-tabs-noborder">
 		    <div class="am-tab-panel am-active" id="tab24h">
 		    <foreach name="find_24" item="vo">
 		    	<article class="am-comment">
@@ -56,6 +56,11 @@
 				  <hr />
 			</article>
 		    </foreach>
+		    <empty name="find_24">
+			    <div class="am-alert am-alert-success" data-am-alert>
+				  <p class="am-text-center">没有更多的内容了</p>
+				</div>
+		    </empty>
 		    </div>
 
 
@@ -92,6 +97,11 @@
 				  <hr />
 			</article>
 		    </foreach>
+			    <empty name="find_30">
+				    <div class="am-alert am-alert-success" data-am-alert>
+					  <p class="am-text-center">没有更多的内容了</p>
+					</div>
+			    </empty>
 		    </div>
 		  </div>
 		</div>

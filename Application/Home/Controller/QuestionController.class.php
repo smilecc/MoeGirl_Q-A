@@ -35,7 +35,7 @@ Class QuestionController extends Controller{
 	// 获取问题内容
 	public function get_question_content($qid){
 		$page_content = M('Question')->where('id=%d',$qid)->getField('content');
-		$page_content = img_replace(nl2br($page_content));
+		$page_content = ParseMd($page_content);
 		echo $page_content;
 	}
 
@@ -47,7 +47,7 @@ Class QuestionController extends Controller{
 		$data = array(
 			'username'	=> cookie('username'),
 			'project_id'=> $id,
-			'content'	=> $content,
+			'content'	=> htmlspecialchars($content),
 			'mode'		=> (($mode == 'question')? 0 : 1),
 			'tousername'=> $touser
 			);

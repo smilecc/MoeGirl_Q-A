@@ -38,7 +38,7 @@ Class OperationController extends Controller{
  	}
 	
  	public function login($user, $pass, $remember_me){
- 		if(true)
+ 		if(IS_POST)
  		{
 			//$resultArray = $this->cUrlLogin($user,$pass);
 			//$resultXML = $this->cUrlLogin($user,$pass,$resultArray['token'],$resultArray['cookie']);
@@ -82,10 +82,18 @@ Class OperationController extends Controller{
 
 	public function register($username,$password,$email)
 	{
-		if(true)
+		if(IS_POST)
 		{
-			echo json_encode(D('User')->CreateUser($username,$password,$email));
-
+			$resArr = D('User')->CreateUser($username,$password,$email);
+			
+			// 注册后立即登录
+			if($resArr['info'] == 'Success')
+			{
+				cookie('token',login_en_code(D('User')->login_random($username).$username));
+				cookie('username',$username);
+				session('user_status',1);
+			}
+			echo json_encode($resArr);
 		}
 	}
 

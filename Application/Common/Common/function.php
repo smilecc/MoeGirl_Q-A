@@ -1,4 +1,7 @@
 <?php
+// markdown解析器
+include("Parsedown.php");
+
 // 检测输入的验证码是否正确，$code为用户输入的验证码字符串
 function check_verify($code, $id = ''){
     $verify = new \Think\Verify();
@@ -18,11 +21,11 @@ function is_login(){
 
 //  用于正则替换{:!}的图片标签
 function img_replace($string){
-    return preg_replace('/\{\:(.+)\!\}/U','<img src="/Public/Uploads/\1" />',$string);
+    return preg_replace('/\{\:(.+)\!\}/U','![Alt text](\1)"',$string);
 }
 
 function sub_question_content($string){
-    $string = preg_replace('/\{\:(.+)\!\}/U','[图片]',$string);
+    $string = preg_replace('/!\[(.+)\)/U','[图片]',$string);
     return mb_strcut($string,0,200,'utf8');
 }
 
@@ -131,5 +134,21 @@ function curl_redir_exec($ch,$debug="")
         return $debbbb; 
     }
 } 
+
+function ParseMd($text)
+{
+   return Parsedown::instance()
+    ->setBreaksEnabled(true)
+    ->setMarkupEscaped(true) # escapes markup (HTML)
+    ->text($text);
+}
+
+function ParseMdLine($text)
+{
+   return Parsedown::instance()
+    ->setBreaksEnabled(true)
+    ->setMarkupEscaped(true) # escapes markup (HTML)
+    ->line($text);
+}
 
 ?>

@@ -25,7 +25,7 @@ class InboxModel extends Model{
 				'usname1'	=> $usname1,
 				'usname2'   => $usname2,
 				'from'  	=> $from,
-				'content'	=> $content
+				'content'	=> htmlspecialchars($content)
 				);
 		if($this->create($data)){
 			$inbox_id = $this->add();

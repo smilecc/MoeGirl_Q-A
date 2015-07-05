@@ -39,13 +39,14 @@
 				    </header>
 
 				    <div class="am-comment-bd">
-				      {:img_replace(nl2br($vo['content']))}
+				      {:ParseMd($vo['content'])}
 
 				      <p class="am-text-right">
 				      <a href="javascript:;" class="am-article-meta" onclick="push2timeline(2,{:$vo['id']},this)"><i class="am-icon-reply"></i> 推送给关注我的人 </a>
 				      <a class="am-link-muted am-article-meta" href="javascript:;" value="{:$vo['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				    </div>
-				    <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['id']}">
+				    <div style="display: none;" id="comment-{:$vo['id']}">
+				    <hr/>
 					    <div class="am-panel-bd" id="div-comment-{:$vo['id']}">
 					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
 					    </div>
@@ -69,7 +70,7 @@
         </IF>
 	</div>
 	<div class="am-u-sm-3">
-		<button type="button" id="follow_btn" onclick="on_user_status_btn_click({:$page['id']},0)" class="am-btn am-btn-primary am-radius {:($page_user_status['follow']?'am-active':'')}" data-am-button>{:($page_user_status['follow']?'已关注':'关注问题')}</button>
+		<button type="button" id="follow_btn" onclick="on_user_status_btn_click({:$page['id']},0)" class="am-btn am-btn-primary am-radius {:($page_user_status['follow']?'am-btn-success':'')}">{:($page_user_status['follow']?'取消关注':'关注问题')}</button>
 		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click({:$page['id']},1)" class="am-btn am-btn-default am-radius {:($page_user_status['anonymous']?'am-active':'')}" style="display: none;" data-am-button>{:($page_user_status['anonymous']?'已匿名':'使用匿名身份')}</button>
 		<hr />
 		<p>问题提交者： {:$page['anonymous']?'匿名用户':'<a target="_blank" href="'.get_user_page($page["username"]).'">'.$page["username"].'</a>'}</p>

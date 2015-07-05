@@ -31,14 +31,18 @@
   <meta name="msapplication-TileImage" content="/Public/assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
+  <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
+  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
-
   <link rel="stylesheet" href="/Public/css/public.css">
 
   <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/assets/js/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
+  <script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/js/pnotify.custom.min.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -186,7 +190,7 @@ function load_info_badge(sum,question,follow,agree){
             <hr />
              <!--话题框-->
              <label for="doc-ta-1">话题： </label>
-            <select multiple data-am-selected="{searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
+            <select multiple data-am-selected="{maxHeight: 100,searchBox: 1, btnWidth: 300, btnSize: 'sm', btnStyle: 'secondary'}" minchecked="1" maxchecked="3" name="topic[]">
             <?php $topic_list = M("Topic")->order('id')->select(); ?>
             <?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
@@ -307,7 +311,18 @@ function create(){
                   father_topic:$("#father_topic").val()
                   },
             success:function(re){
-            	window.location.href='/Home/Topic/'+re;
+              var jsonObject = JSON.parse(re);
+              if(jsonObject['status'])
+              {
+                notify('创建成功，正在跳转',SUCCESS,RIGHT);
+                window.location.href='/Home/Topic/'+jsonObject['topic_id'];
+              }
+              else
+              {
+                console.log(re);
+                notify(jsonObject['error'],ERROR,RIGHT);
+              }
+            	
                 }
   });
 }
@@ -323,7 +338,7 @@ function create(){
 		<br />
 		话题介绍<input type="text" id="topic_intro" class="form-control"/>
 		<br />
-		父话题（选填）<select data-am-selected="{searchBox: 1, btnSize: 'sm', btnStyle: 'secondary'}" id="father_topic">
+		父话题（选填）<select data-am-selected="{maxHeight: 100,searchBox: 1, btnSize: 'sm', btnStyle: 'secondary'}" id="father_topic">
 		<?php $topic_list = M("Topic")->order('id')->select(); ?>
 		<?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
 		</select>
@@ -344,7 +359,7 @@ function create(){
 	<div class="am-u-md-8">
 		<?php if(is_array($topic)): foreach($topic as $key=>$vo): ?><p><a href="<?php echo U('/Home/Topic/'.$vo['id']);?>" target="_blank"><?php echo $vo['name'];?></a>
 			<?php $is_follow = getIsfollowtopic($vo['id']); ?>
-			<button type="button" id="follow_btn" onclick="on_follow_topic_btn_click(<?php echo $vo['id'];?>)" class="am-btn am-fr am-btn-success am-radius <?php echo ($is_follow?'am-active':'');?>" data-am-button><?php echo ($is_follow?'已关注':'关注话题');?></button><br />
+			<button type="button" onclick="on_follow_topic_btn_click(<?php echo $vo['id'];?>,'<?php echo $vo['name'];?>')" class="js-follow am-btn am-fr am-radius <?php echo ($is_follow?'am-btn-success':'am-btn-default');?>"><?php echo ($is_follow?'取消关注':'关注话题');?></button><br />
 			<small><?php echo $vo['introduce'];?></small></p>
 			<hr /><?php endforeach; endif; ?>
 	</div>
