@@ -1,0 +1,105 @@
+<extend name="Base/common"/>
+<block name="body">
+
+  <!-- content start -->
+  <div class="admin-content">
+
+    <div class="am-cf am-padding">
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">发现</strong> / <small>Find</small></div>
+    </div>
+
+<div class="am-modal am-modal-prompt" tabindex="-1" id="find-add-prompt">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">增加条目</div>
+    <div class="am-modal-bd am-form-set am-form">
+      <input type="text" id="input-find-add-answerid" placeholder="AnswerID">
+      <input type="text" id="input-find-add-order" placeholder="优先级">
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+
+<div class="am-modal am-modal-prompt" tabindex="-1" id="find-edit-prompt">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">修改条目</div>
+    <div class="am-modal-bd am-form-set am-form">
+      <input type="text" id="input-find-edit-answerid" placeholder="AnswerID">
+      <input type="text" id="input-find-edit-order" placeholder="优先级">
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+
+    <div class="am-g">
+      <div class="am-u-sm-12 am-u-md-6">
+        <div class="am-btn-toolbar">
+          <div class="am-btn-group am-btn-group-xs">
+            <button type="button" class="am-btn am-btn-default" id="btn-add-find"><span class="am-icon-plus"></span> 新增</button>
+            <!--<button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="am-g">
+      <div class="am-u-sm-12">
+          <table class="am-table am-table-striped am-table-hover table-main">
+            <thead>
+              <tr>
+                <th class="table-check">
+                  <input type="checkbox" />
+                </th>
+                <th class="table-id">AnswerID</th>
+                <th class="table-title">标题</th>
+                <th class="table-type">优先级</th>
+                <th class="table-author am-hide-sm-only">作者</th>
+                <!--<th class="table-date am-hide-sm-only">修改日期</th>-->
+                <th class="table-set">操作</th>
+              </tr>
+          </thead>
+          <tbody>
+
+          <volist name="findList" id="vo" empty="暂时没有数据">
+            <tr id="find-list-tr-{:$vo['id']}">
+              <td><input type="checkbox" /></td>
+              <td id="find-list-answerid-{:$vo['id']}">{:$vo['answer_id']}</td>
+              <td>
+              <a href="javascript:;" data-am-collapse="{target: '#find-answer-<php>echo $vo['id']</php>'}">{:get_question_title($vo['answer_question_id'])}</a>
+                <div id="find-answer-{:$vo['id']}" class="am-collapse">
+                  {:$vo['answer_sub']}..
+                  <br/><a target="_blank" href="{:U('/Home/Question/'.$vo['answer_question_id'].'/Answer/'.$vo['answer_id'])}">查看全部</a>
+                </div>
+              </td>
+              <td id="find-list-order-{:$vo['id']}">{:$vo['orderNumber']}</td>
+              <td class="am-hide-sm-only">{:$vo['answer_author']}</td>
+              <!--<td class="am-hide-sm-only">2014年9月4日 7:28:47</td>-->
+              <td>
+                <div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+                    <button class="am-btn am-btn-default am-btn-xs am-text-secondary" onclick="EditFindBtnClick({:$vo['id']})"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" onClick="DeleteFindBtnClick({:$vo['id']})"><span class="am-icon-trash-o"></span> 删除</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </volist>
+
+          </tbody>
+        </table>
+          <div class="am-cf">共 {$findCount} 条记录</div>
+          <hr />
+          <p>注：增加或修改以后需要手动刷新一下....</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- content end -->
+</div>
+
+</block>

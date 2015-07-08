@@ -72,7 +72,7 @@ Class UserModel extends Model{
 			return $jsonResult = array('error' => '用户名不符合条件<br/>请输入字母、数字、下划线、中文汉字<br/>2-16个字符' );
 		}
 
-		if(!preg_match('/[\w]{6,128}/',$password))
+		if(!preg_match('/[\S]{6,128}/',$password))
 		{
 			return $jsonResult = array('error' => '密码不符合条件<br/>请输入6-128位密码' );
 		}

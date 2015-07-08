@@ -10,13 +10,13 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
   <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
-  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css"/>
 
   <script src="/Public/assets/js/jquery.min.js"></script>
   <script src="/Public/assets/js/amazeui.min.js"></script>
+  <script src="/Public/js/notify.js"></script>
   <script src="/Public/js/public.js"></script>
-  <script src="/Public/js/pnotify.custom.min.js"></script>
+
   <style>
     .header {
       text-align: center;

@@ -2,9 +2,10 @@
 <php>
 	$auto_login = new \User\Api\UserApi;
     $auto_login->autologin();
-    if(!test_user()) {
-    header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]);
-    exit;
+    if(!CheckAdmin())
+    {
+    	echo "Pemission Error,You cannot view this page.<br /><a href='/'>Click here goto Index</a>";
+    	exit;
     }
 </php>
 <html class="no-js">
@@ -13,23 +14,18 @@
 </head>
 <body>
  
-<div id="space_height">
 	<!-- 头部 -->
 	<include file="Public/header"/>
 	<!-- /头部 -->
 
 	<!-- 主体 -->
-	<div class="am-container">
+
 	<include file="Public/body"/>
-	</div>
+
 	<!-- /主体 -->
 
 	<!-- 底部 -->
 	<include file="Public/footer"/>
 	<!-- /底部 -->
-</div>
-<script src="/Public/js/ajaxfileupload.js"></script>
-<script src="/Public/js/notify.js"></script>
-<script src="/Public/js/public.js"></script>
 </body>
 </html>

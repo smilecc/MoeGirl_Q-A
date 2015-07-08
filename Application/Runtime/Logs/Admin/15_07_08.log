@@ -1,0 +1,3115 @@
+[ 2015-07-08T10:04:29+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.028566s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.016010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018839s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012728s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.064686s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011085s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001392s ]
+
+[ 2015-07-08T10:04:41+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001868s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.034797s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.026733s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.023455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.021499s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.035785s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.049060s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001931s ]
+
+[ 2015-07-08T10:05:03+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002805s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.060706s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.027447s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.031610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.036929s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.060927s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014340s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2015-07-08T10:12:17+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.028924s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016366s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.013374s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009566s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2015-07-08T10:12:20+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.026712s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016705s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014480s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014145s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.018341s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2015-07-08T10:12:22+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.032329s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.015955s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.015154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013998s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.013612s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011126s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2015-07-08T10:12:24+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.042623s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.017066s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010612s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2015-07-08T10:13:27+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003198s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.033384s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.017690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014792s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018049s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016477s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2015-07-08T10:13:29+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.030568s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.022089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.015910s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.018643s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.011641s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014906s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2015-07-08T10:13:32+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.048136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017542s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.015523s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014927s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013069s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2015-07-08T10:13:40+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.055070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.013748s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.015124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.017433s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016049s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2015-07-08T10:13:43+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.040969s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.015843s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.017948s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014312s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011411s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2015-07-08T10:13:45+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.030618s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.022293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.020378s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018287s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011543s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2015-07-08T10:13:49+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.036927s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.018166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014632s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.017792s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-07-08T10:13:51+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.030244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.019886s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.015392s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009805s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2015-07-08T10:14:06+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.029174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018599s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.015220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014686s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014597s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.009432s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2015-07-08T10:14:08+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.035322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.017164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.016038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.017678s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.011355s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2015-07-08T10:14:11+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.040412s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.036556s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.019216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013999s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.013437s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.010076s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2015-07-08T10:14:12+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.036345s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021645s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.023008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.017757s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.019196s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.013893s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-07-08T10:29:26+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003613s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.085085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.065008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.035077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.022064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.022808s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.050042s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.001907s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2015-07-08T10:29:58+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003423s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.049844s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.033785s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.029510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.035034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.020885s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.017427s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2015-07-08T10:30:08+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004670s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.065373s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.043638s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.042021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.031654s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.034512s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.024750s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2015-07-08T10:42:24+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.065953s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_question` LIMIT 1   [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.060432s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.040245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_topic` LIMIT 1   [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.034001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_user` LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.083932s ]
+SQL: SELECT * FROM `mgqa_admin`  [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.030522s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003116s ]
+
+[ 2015-07-08T10:42:48+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+
+[ 2015-07-08T10:43:45+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+
+[ 2015-07-08T10:44:22+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-07-08T10:45:55+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+
+[ 2015-07-08T10:46:35+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000326s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+
+[ 2015-07-08T10:47:42+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003192s ]
+
+[ 2015-07-08T10:47:50+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001257s ]
+
+[ 2015-07-08T10:48:24+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2015-07-08T10:48:51+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+
+[ 2015-07-08T10:49:34+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010244s ]
+
+[ 2015-07-08T10:50:14+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+
+[ 2015-07-08T10:50:24+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+
+[ 2015-07-08T10:50:30+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+
+[ 2015-07-08T10:51:09+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+
+[ 2015-07-08T10:51:25+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2015-07-08T10:51:39+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-07-08T10:53:57+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-07-08T10:55:14+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2015-07-08T10:55:26+08:00 ] 127.0.0.1 /index.php/Admin/Help.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002252s ]
+
+[ 2015-07-08T10:58:09+08:00 ] 127.0.0.1 /index.php/Admin/admin-form.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+ERR: 无法加载控制器:Admin-form
+
+[ 2015-07-08T10:58:15+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+
+[ 2015-07-08T11:00:09+08:00 ] 127.0.0.1 /index.php/Admin/admin-form.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+ERR: 无法加载控制器:Admin-form
+
+[ 2015-07-08T11:05:25+08:00 ] 127.0.0.1 /index.php/Admin/admin-form.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载控制器:Admin-form
+
+[ 2015-07-08T11:05:29+08:00 ] 127.0.0.1 /index.php/Admin/admin-table.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载控制器:Admin-table
+
+[ 2015-07-08T11:46:49+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-07-08T11:49:21+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2015-07-08T11:49:23+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+ERR: 无法加载控制器:Setting
+
+[ 2015-07-08T11:50:11+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2015-07-08T11:52:47+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2015-07-08T11:52:49+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-07-08T11:52:49+08:00 ] 127.0.0.1 /index.php/Admin/assets/css/amazeui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+ERR: 无法加载控制器:Assets
+
+[ 2015-07-08T11:52:49+08:00 ] 127.0.0.1 /index.php/Admin/assets/css/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+ERR: 无法加载控制器:Assets
+
+[ 2015-07-08T11:52:49+08:00 ] 127.0.0.1 /index.php/Admin/assets/js/app.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+ERR: 无法加载控制器:Assets
+
+[ 2015-07-08T11:52:49+08:00 ] 127.0.0.1 /index.php/Admin/assets/js/amazeui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+ERR: 无法加载控制器:Assets
+
+[ 2015-07-08T11:52:49+08:00 ] 127.0.0.1 /index.php/Admin/assets/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+ERR: 无法加载控制器:Assets
+
+[ 2015-07-08T11:53:21+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2015-07-08T11:53:27+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+
+[ 2015-07-08T11:53:28+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+
+[ 2015-07-08T11:53:32+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+
+[ 2015-07-08T11:53:33+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+
+[ 2015-07-08T11:53:35+08:00 ] 127.0.0.1 /index.php/Admin/Help.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2015-07-08T11:53:37+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-07-08T11:53:47+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-07-08T11:53:49+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2015-07-08T11:53:52+08:00 ] 127.0.0.1 /index.php/Admin/Help.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2015-07-08T11:53:53+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-07-08T11:59:14+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-07-08T12:04:26+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002299s ]
+
+[ 2015-07-08T12:05:16+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+
+[ 2015-07-08T12:05:18+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-07-08T12:05:20+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-07-08T12:05:21+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+
+[ 2015-07-08T12:05:23+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+
+[ 2015-07-08T12:05:58+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2015-07-08T12:06:09+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+
+[ 2015-07-08T12:23:19+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+
+[ 2015-07-08T12:42:39+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-07-08T12:43:07+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+
+[ 2015-07-08T12:46:18+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-07-08T12:46:44+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+
+[ 2015-07-08T12:48:09+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2015-07-08T12:48:42+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+[ 2015-07-08T12:49:43+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002236s ]
+
+[ 2015-07-08T12:49:45+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+
+[ 2015-07-08T12:49:46+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-07-08T12:49:47+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2015-07-08T12:50:34+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+
+[ 2015-07-08T12:50:36+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-07-08T12:50:37+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-07-08T12:50:37+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+
+[ 2015-07-08T12:50:58+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+
+[ 2015-07-08T12:51:00+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+
+[ 2015-07-08T12:51:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-07-08T12:51:02+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001394s ]
+
+[ 2015-07-08T12:51:42+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-07-08T12:51:44+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-07-08T12:51:44+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2015-07-08T12:51:45+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-07-08T12:51:46+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2015-07-08T12:52:05+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-07-08T12:52:06+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-07-08T12:52:07+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-07-08T12:52:08+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+
+[ 2015-07-08T12:52:16+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2015-07-08T12:52:17+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+
+[ 2015-07-08T12:52:18+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+
+[ 2015-07-08T12:52:19+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2015-07-08T12:52:20+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+
+[ 2015-07-08T12:52:21+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001662s ]
+
+[ 2015-07-08T12:52:42+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-07-08T12:52:44+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+
+[ 2015-07-08T12:52:45+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-07-08T12:52:46+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002252s ]
+
+[ 2015-07-08T12:53:13+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-07-08T12:53:15+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+
+[ 2015-07-08T12:53:15+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+
+[ 2015-07-08T12:53:16+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-07-08T12:53:26+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-07-08T12:53:29+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2015-07-08T12:53:39+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-07-08T12:53:40+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-07-08T12:53:41+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-07-08T12:54:38+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2015-07-08T12:54:40+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-07-08T12:54:41+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2015-07-08T12:54:42+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+
+[ 2015-07-08T12:54:55+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-07-08T12:54:57+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2015-07-08T12:54:58+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-07-08T12:54:59+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2015-07-08T12:55:19+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-07-08T12:55:21+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-07-08T12:55:22+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-07-08T12:55:36+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2015-07-08T12:55:39+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-07-08T12:55:41+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-07-08T12:55:53+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-07-08T12:55:54+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+
+[ 2015-07-08T12:55:55+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-07-08T12:55:56+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+
+[ 2015-07-08T12:56:12+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2015-07-08T12:56:14+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-07-08T12:56:15+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+
+[ 2015-07-08T12:56:16+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2015-07-08T12:56:22+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2015-07-08T12:56:23+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-07-08T12:56:24+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-07-08T12:56:31+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+
+[ 2015-07-08T12:56:32+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-07-08T12:56:33+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+
+[ 2015-07-08T12:56:33+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2015-07-08T12:56:58+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-07-08T12:57:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-07-08T13:00:28+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-07-08T13:00:30+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-07-08T13:00:31+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-07-08T13:00:32+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-07-08T13:01:03+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2015-07-08T13:01:59+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-07-08T13:02:32+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003070s ]
+
+[ 2015-07-08T13:02:58+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+
+[ 2015-07-08T13:03:27+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2015-07-08T13:03:38+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+
+[ 2015-07-08T13:03:59+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2015-07-08T13:04:13+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2015-07-08T13:04:47+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+
+[ 2015-07-08T13:05:27+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000376s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001907s ]
+
+[ 2015-07-08T13:05:43+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+
+[ 2015-07-08T13:06:06+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-07-08T13:06:14+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+
+[ 2015-07-08T13:07:20+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001865s ]
+
+[ 2015-07-08T13:08:52+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-07-08T13:10:27+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+
+[ 2015-07-08T13:10:38+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-07-08T13:17:29+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+
+[ 2015-07-08T13:28:20+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001561s ]
+
+[ 2015-07-08T13:28:31+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2015-07-08T13:29:52+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2015-07-08T13:30:45+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-07-08T13:31:07+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2015-07-08T13:33:07+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2015-07-08T13:33:42+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2015-07-08T13:34:18+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-07-08T13:34:47+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+
+[ 2015-07-08T13:35:11+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2015-07-08T13:36:07+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-07-08T13:40:37+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2015-07-08T13:41:40+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+
+[ 2015-07-08T13:49:35+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-07-08T13:50:09+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+
+[ 2015-07-08T13:50:37+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+
+[ 2015-07-08T13:50:56+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+
+[ 2015-07-08T13:52:25+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-07-08T13:53:39+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-07-08T13:54:22+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003404s ]
+
+[ 2015-07-08T13:55:21+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+
+[ 2015-07-08T13:55:48+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+
+[ 2015-07-08T13:57:14+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+
+[ 2015-07-08T14:28:42+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem?answer_id=5&order=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002273s ]
+
+[ 2015-07-08T14:28:53+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem?answer_id=5&order=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+
+[ 2015-07-08T14:31:22+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+
+[ 2015-07-08T14:31:35+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002576s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.039664s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.029417s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2015-07-08T14:32:20+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.080922s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.047308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2015-07-08T14:32:45+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001680s ]
+
+[ 2015-07-08T14:32:49+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002145s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.057921s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.030054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001720s ]
+
+[ 2015-07-08T14:33:03+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.026135s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.047132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002253s ]
+
+[ 2015-07-08T14:33:06+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.046820s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002150s ]
+
+[ 2015-07-08T14:33:12+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.038171s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.059089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`order`) VALUES (4,1) [ RunTime:0.023542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+
+[ 2015-07-08T14:38:05+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014401s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.041336s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.032035s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`order`,`answer_sub`) VALUES (4,1,'#title\r\n测试内容\r\n测试2') [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001883s ]
+
+[ 2015-07-08T14:38:22+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007667s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.033629s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.024489s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`order`,`answer_sub`) VALUES (5,1,'    code test\r\n    codetest2\r\n![moegirl-') [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-07-08T14:39:18+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.055285s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.055966s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000611s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2015-07-08T14:39:24+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005527s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.075777s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.024998s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001878s ]
+
+[ 2015-07-08T14:44:29+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000626s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.024995s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.023606s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002040s ]
+
+[ 2015-07-08T14:44:33+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.128944s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.031046s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`order`,`answer_sub`,`answer_author`) VALUES (5,1,'    code test\r\n    codetest2\r\n![moegirl-','SmileC') [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2015-07-08T14:48:12+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+
+[ 2015-07-08T14:48:39+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-07-08T14:49:31+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2015-07-08T14:49:41+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002497s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.049784s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.033624s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2015-07-08T14:50:24+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+
+[ 2015-07-08T14:51:20+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+
+[ 2015-07-08T14:54:53+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.080076s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.047589s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (5,1,'    code test\r\n    codetest2\r\n![moegirl-','SmileC',1) [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2015-07-08T14:55:28+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2015-07-08T14:56:04+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-07-08T14:57:09+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002216s ]
+
+[ 2015-07-08T14:57:14+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.032451s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020247s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000449s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (5,0,'    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n','SmileC',1) [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2015-07-08T14:57:18+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-07-08T14:58:27+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.027287s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020460s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (4,1,'#title\r\n测试内容\r\n测试2','test',1) [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2015-07-08T14:58:28+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-07-08T14:58:36+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003014s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.059936s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.025322s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (5,2,'    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n','SmileC',1) [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2015-07-08T14:58:38+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2015-07-08T15:00:00+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010772s ]
+
+[ 2015-07-08T15:00:59+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+
+[ 2015-07-08T15:02:13+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-07-08T15:04:46+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003631s ]
+
+[ 2015-07-08T15:05:22+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+
+[ 2015-07-08T15:05:47+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003018s ]
+
+[ 2015-07-08T15:05:59+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+
+[ 2015-07-08T15:07:27+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2015-07-08T15:07:39+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2015-07-08T15:07:54+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-07-08T15:07:56+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+
+[ 2015-07-08T15:08:15+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-07-08T15:19:38+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004248s ]
+
+[ 2015-07-08T15:20:43+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+
+[ 2015-07-08T15:21:08+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+
+[ 2015-07-08T15:21:36+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+
+[ 2015-07-08T15:33:00+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+
+[ 2015-07-08T15:40:56+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001880s ]
+
+[ 2015-07-08T15:41:54+08:00 ] 127.0.0.1 /Admin/Find/AddItem/answer_id=4&orer=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 参数错误或者未定义:answer_id
+
+[ 2015-07-08T15:42:01+08:00 ] 127.0.0.1 /Admin/Find/AddItem/answerID=4&orer=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+ERR: 参数错误或者未定义:answer_id
+
+[ 2015-07-08T15:42:30+08:00 ] 127.0.0.1 /Admin/Find/AddItem/answer_id=4&orer=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+ERR: 参数错误或者未定义:answer_id
+
+[ 2015-07-08T15:43:07+08:00 ] 127.0.0.1 /Admin/Find/AddItem?answer_id=4&orer=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 参数错误或者未定义:order
+
+[ 2015-07-08T15:43:13+08:00 ] 127.0.0.1 /Admin/Find/AddItem?answer_id=4&order=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-07-08T15:49:53+08:00 ] 127.0.0.1 /Admin/Find/DeleteItem?id=%271=1%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+
+[ 2015-07-08T15:50:09+08:00 ] 127.0.0.1 /Admin/Find/DeleteItem?id=1%20or%201=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+
+[ 2015-07-08T15:54:51+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+
+[ 2015-07-08T15:54:55+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.088259s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.048462s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014728s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018078s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001301s ]
+
+[ 2015-07-08T15:57:07+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002523s ]
+
+[ 2015-07-08T15:57:26+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-07-08T15:57:49+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.032046s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014936s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.014815s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=8 ) [ RunTime:0.035982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2015-07-08T15:57:54+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+
+[ 2015-07-08T15:58:23+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.029801s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025314s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.030576s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=9 ) [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2015-07-08T15:58:27+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-07-08T16:00:05+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: XML标签语法错误 : name="findList" id="vo" empty='<div class="am-alert"
+
+[ 2015-07-08T16:00:26+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+ERR: XML标签语法错误 : name="findList" id="vo" empty="<div class='am-alert'
+
+[ 2015-07-08T16:01:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005169s ]
+ERR: XML标签语法错误 : name="findList" id="vo" empty="\<div class\='am-alert'
+
+[ 2015-07-08T16:01:14+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-07-08T16:02:27+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003878s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.035227s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.023298s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.031021s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.042406s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000618s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (4,0,'#title\r\n测试内容\r\n测试2','test',1) [ RunTime:0.038074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2015-07-08T16:02:29+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+
+[ 2015-07-08T16:03:13+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-07-08T16:05:31+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002993s ]
+
+[ 2015-07-08T16:05:54+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002754s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.028575s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.021335s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.020744s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001473s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=10 ) [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2015-07-08T16:06:26+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.031755s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.015963s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.026804s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.032830s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2015-07-08T16:06:30+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.102575s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.079480s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.055554s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.065171s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (4,0,'#title\r\n测试内容\r\n测试2','test',1) [ RunTime:0.001112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2015-07-08T16:06:47+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+
+[ 2015-07-08T16:07:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+
+[ 2015-07-08T16:07:45+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+
+[ 2015-07-08T16:07:59+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+
+[ 2015-07-08T16:08:04+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003242s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.068850s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.081034s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.030762s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000706s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=11 ) [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001443s ]
+
+[ 2015-07-08T16:08:12+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001463s ]
+
+[ 2015-07-08T16:08:22+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.049434s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.020207s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.027223s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.027343s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (4,0,'#title\r\n测试内容\r\n测试2','test',1) [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2015-07-08T16:08:24+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+
+[ 2015-07-08T16:09:15+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001767s ]
+
+[ 2015-07-08T16:09:24+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.038488s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.029867s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.032051s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.002917s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=12 ) [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2015-07-08T16:09:24+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.096448s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.023290s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001824s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.058457s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=12 ) [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2015-07-08T16:09:25+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.128120s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.266707s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.150597s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=12 ) [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2015-07-08T16:09:25+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002012s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.092611s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.073624s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.176849s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.005061s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=12 ) [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001918s ]
+
+[ 2015-07-08T16:09:26+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026564s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.106167s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.042404s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.189978s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000694s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=12 ) [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001889s ]
+
+[ 2015-07-08T16:09:31+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004328s ]
+
+[ 2015-07-08T16:09:35+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002468s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.094536s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.060267s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001732s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.051617s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.098231s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000739s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (4,0,'#title\r\n测试内容\r\n测试2','test',1) [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001520s ]
+
+[ 2015-07-08T16:09:37+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003923s ]
+
+[ 2015-07-08T16:11:00+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+
+[ 2015-07-08T16:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-07-08T16:11:35+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.027267s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.029007s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.037665s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=13 ) [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001874s ]
+
+[ 2015-07-08T16:11:35+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004048s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.031469s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.022702s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.022480s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=13 ) [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001518s ]
+
+[ 2015-07-08T16:11:41+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002554s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.106459s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.019643s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.015614s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.028625s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (4,0,'#title\r\n测试内容\r\n测试2','test',1) [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002497s ]
+
+[ 2015-07-08T16:11:43+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+
+[ 2015-07-08T16:11:56+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.047862s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.039089s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.032344s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.032327s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.001118s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (5,0,'    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n','SmileC',1) [ RunTime:0.016853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003791s ]
+
+[ 2015-07-08T16:11:58+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+
+[ 2015-07-08T16:14:02+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+
+[ 2015-07-08T16:14:14+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+
+[ 2015-07-08T16:18:04+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+
+[ 2015-07-08T16:18:12+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+
+[ 2015-07-08T16:18:23+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+
+[ 2015-07-08T16:18:25+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002841s ]
+
+[ 2015-07-08T16:19:11+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2015-07-08T16:19:16+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.032347s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.015473s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018569s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=14 ) [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2015-07-08T16:19:20+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+
+[ 2015-07-08T16:19:32+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004800s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.033885s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.020199s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.020282s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=15 ) [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2015-07-08T16:19:37+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.058491s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.032785s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.048238s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.040480s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (5,0,'    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n','SmileC',1) [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2015-07-08T16:19:41+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-07-08T16:20:25+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002734s ]
+
+[ 2015-07-08T16:21:24+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2015-07-08T16:21:46+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001607s ]
+
+[ 2015-07-08T16:25:20+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-07-08T16:31:56+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+
+[ 2015-07-08T16:32:06+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+
+[ 2015-07-08T16:32:38+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2015-07-08T16:34:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004914s ]
+
+[ 2015-07-08T16:42:56+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+
+[ 2015-07-08T16:43:02+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.033757s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025388s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.035709s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.033658s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001703s ]
+
+[ 2015-07-08T16:43:10+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+
+[ 2015-07-08T16:43:16+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.128308s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.047401s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.089342s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.032065s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2015-07-08T16:43:56+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.044962s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.041971s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.036193s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.023963s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2015-07-08T16:44:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+
+[ 2015-07-08T16:44:05+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.110787s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.051378s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.015761s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.024834s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2015-07-08T16:44:41+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001496s ]
+
+[ 2015-07-08T16:44:44+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001880s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.074487s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.107797s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.087832s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.072209s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2015-07-08T16:45:01+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2015-07-08T16:45:04+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.098862s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.047884s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.030961s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.051087s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.001380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003321s ]
+
+[ 2015-07-08T16:45:07+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.047516s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.021505s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.002821s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.049027s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.041562s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2015-07-08T16:45:24+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.039245s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.021066s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001604s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.016797s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.030012s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2015-07-08T16:45:52+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2015-07-08T16:45:55+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.095960s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.054877s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.050301s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.087955s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2015-07-08T16:53:46+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.051043s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.033722s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001786s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.027049s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.029372s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 AND id!=16 ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=5,`orderNumber`=0,`answer_sub`='    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n',`answer_author`='SmileC',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2015-07-08T16:53:59+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.027905s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.012523s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018315s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.019251s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 AND id!=16 ) LIMIT 1   [ RunTime:0.000696s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=5,`orderNumber`=2,`answer_sub`='    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n',`answer_author`='SmileC',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.001642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003364s ]
+
+[ 2015-07-08T16:55:02+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001977s ]
+
+[ 2015-07-08T16:55:05+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.023925s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.027101s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.028791s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.029165s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 AND id!=16 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=5,`orderNumber`=2,`answer_sub`='    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n',`answer_author`='SmileC',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2015-07-08T16:55:08+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.097280s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.036140s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.028041s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.020136s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 AND id!=16 ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=5,`orderNumber`=1,`answer_sub`='    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n',`answer_author`='SmileC',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2015-07-08T16:55:11+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+
+[ 2015-07-08T16:55:20+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.081523s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016242s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018172s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.021963s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000592s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 AND id!=16 ) LIMIT 1   [ RunTime:0.000621s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=4,`orderNumber`=1,`answer_sub`='#title\r\n测试内容\r\n测试2',`answer_author`='test',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2015-07-08T16:55:22+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+
+[ 2015-07-08T16:55:26+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005811s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.068853s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.028514s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018869s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018471s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=4 AND id!=16 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=4,`orderNumber`=1,`answer_sub`='#title\r\n测试内容\r\n测试2',`answer_author`='test',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2015-07-08T16:55:31+08:00 ] 127.0.0.1 /index.php/Admin/Find/EditItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003551s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.147900s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.084291s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.011426s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.067245s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.075943s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000744s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 AND id!=16 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: UPDATE `mgqa_find` SET `answer_id`=5,`orderNumber`=0,`answer_sub`='    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n',`answer_author`='SmileC',`answer_question_id`=1 WHERE `id` = 16 [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2015-07-08T16:55:33+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+
+[ 2015-07-08T16:56:54+08:00 ] 127.0.0.1 /index.php/Admin/Find/DeleteItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.049230s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.030257s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.018219s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: DELETE FROM `mgqa_find` WHERE ( id=16 ) [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2015-07-08T16:56:57+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002529s ]
+
+[ 2015-07-08T16:57:19+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-07-08T16:57:37+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+
+[ 2015-07-08T16:58:05+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002598s ]
+
+[ 2015-07-08T17:00:11+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+
+[ 2015-07-08T17:00:13+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002141s ]
+

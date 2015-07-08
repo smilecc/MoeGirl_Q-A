@@ -2,6 +2,44 @@
 // markdown解析器
 include("Parsedown.php");
 
+// 权限编码到权限名称
+function PemissionToName($id)
+{
+    switch ($id) {
+        case 1:
+            return '创始人';
+            break;
+        case 2:
+            return '管理员';
+        default:
+            return '未知';
+            break;
+    }
+}
+
+function CheckAdmin()
+{
+    if(!test_user()) {
+        return false;
+    }
+    $res = M('Admin')->where('username="%s"',cookie('username'))->find();
+    if(count($res)) 
+    {
+        return $res['pemission'];
+    }
+    else return false;
+}
+
+// 数据模型操作时对权限的效验
+function ModelOperationCheckAdmin()
+{
+    if(!CheckAdmin())
+    {
+        echo json_encode(array('status'=>false,'error'=>'非法闯入'));
+        exit;
+    }
+}
+
 // 检测输入的验证码是否正确，$code为用户输入的验证码字符串
 function check_verify($code, $id = ''){
     $verify = new \Think\Verify();

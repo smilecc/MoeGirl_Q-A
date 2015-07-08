@@ -116,7 +116,7 @@ function load_info_badge(sum,question,follow,agree){
 
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="" id="topbar-index"><a href="/">首页</a></li>
+      <li class="" id="topbar-index"><a href="/">时间线</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
 <li id="topbar-info" onclick="get_info()" data-am-dropdown>
@@ -208,8 +208,8 @@ function load_info_badge(sum,question,follow,agree){
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
             <hr />
-            <small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
-            </small>
+            <!--<small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
+            </small>-->
            </div>
         </form>
       </div>

@@ -116,7 +116,7 @@ function load_info_badge(sum,question,follow,agree){
 
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="" id="topbar-index"><a href="/">首页</a></li>
+      <li class="" id="topbar-index"><a href="/">时间线</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
 <li id="topbar-info" onclick="get_info()" data-am-dropdown>

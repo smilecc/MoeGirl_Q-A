@@ -32,7 +32,6 @@
   <meta name="msapplication-TileColor" content="#0e90d2">
 
   <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
-  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
@@ -42,11 +41,18 @@
   <script src="/Public/assets/js/jquery.min.js"></script>
   <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
   <script src="/Public/assets/js/amazeui.min.js"></script>
-  <script src="/Public/js/pnotify.custom.min.js"></script>
+  <script src="/Public/js/notify.js"></script>
 <!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!--[if IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，不能达到完整的浏览体验。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
 <![endif]-->
+<!--[if lte IE 8]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，萌娘问答 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
 <script type="text/javascript">
   var upload_mode = 'answer';
 </script>
@@ -116,7 +122,7 @@ function load_info_badge(sum,question,follow,agree){
 
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="" id="topbar-index"><a href="/">首页</a></li>
+      <li class="" id="topbar-index"><a href="/">时间线</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Find');?>">发现</a></li>
       <li id="topbar-topic"><a href="<?php echo U('/Home/Topic');?>">话题</a></li>
 <li id="topbar-info" onclick="get_info()" data-am-dropdown>
@@ -208,8 +214,8 @@ function load_info_badge(sum,question,follow,agree){
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
             <hr />
-            <small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
-            </small>
+            <!--<small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
+            </small>-->
            </div>
         </form>
       </div>
@@ -263,6 +269,8 @@ function load_info_badge(sum,question,follow,agree){
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <?php if(CheckAdmin()): ?><li class="am-dropdown-header">站点管理</li>
+            <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
           <li><a href="<?php echo U('/Home/User/setting');?>">设置</a></li>
@@ -329,6 +337,7 @@ function on_stu_btn_click(){
 	<!-- /底部 -->
 </div>
 <script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/notify.js"></script>
 <script src="/Public/js/public.js"></script>
 </body>
 </html>
