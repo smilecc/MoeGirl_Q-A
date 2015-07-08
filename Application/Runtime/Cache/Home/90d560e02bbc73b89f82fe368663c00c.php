@@ -115,7 +115,7 @@ function load_info_badge(sum,question,follow,agree){
 <header class="am-topbar">
 <div class="am-container">
   <h1 class="am-topbar-brand">
-    <a href="/">萌娘问答</a>
+    <a href="/"><?php echo C('SITE_TITLE');?></a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -308,95 +308,52 @@ function on_stu_btn_click(){
 	
 <script type="text/javascript">
 	$("#topbar-find").addClass("am-active");
-
-	var arr_24 = new Array();
-	var arr_30 = new Array();
-
-	<?php if(is_array($find_24)): foreach($find_24 as $key=>$vo): ?>arr_24[<?php echo $vo['id'];?>] = false;<?php endforeach; endif; ?>
-	<?php if(is_array($find_30)): foreach($find_30 as $key=>$vo): ?>arr_30[<?php echo $vo['id'];?>] = false;<?php endforeach; endif; ?>
 </script>
-<title>发现 - 萌娘问答</title>
+<title>发现 - <?php echo C('SITE_TITLE');?></title>
 
 <div class="am-g">
 	<div class="am-u-md-9">
 		<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
-		  <ul class="am-tabs-nav am-nav am-nav-tabs">
-		    <li class="am-active"><a href="#tab24h">24小时</a></li>
-		    <li><a href="#tab30d">30天</a></li>
-		  </ul>
-
+		<ul class="am-nav am-nav-pills">
+		  <li class="am-active"><a href="<?php echo U('Home/Find/index');?>">推荐</a></li>
+		  <li><a href="<?php echo U('Home/Find/day');?>">24小时</a></li>
+		  <li><a href="<?php echo U('Home/Find/month');?>">30天</a></li>
+		</ul>
+		<hr />
 		  <div class="am-tabs-bd am-tabs-noborder">
-		    <div class="am-tab-panel am-active" id="tab24h">
-		    <?php if(is_array($find_24)): foreach($find_24 as $key=>$vo): ?><article class="am-comment">
+
+		    <div class="am-tab-panel am-active" id="tabfind">
+		    <?php if(is_array($find_table)): foreach($find_table as $key=>$vo): ?><article class="am-comment">
 			  	<div class="am-comment-avatar">
-				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
-				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
-				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
+				  <button id="agree-answer-btn-<?php echo $vo['answer_id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['answer_id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['answer_id'];?>"><?php echo $vo['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['answer_id'];?>" type="button" onclick="agree_answer(<?php echo $vo['answer_id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['answer_id'],2);?>"></button>
 				</div>
 			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
 			  
 				  <div>
 				    <header>
 				      <div class="am-comment-meta qustion-title-content">
-				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['answer_author'];?></a>
 				        发布于 <time><?php echo $vo['time'];?></time>
 				      </div>
 				    </header>
 				    <div class="am-comment-bd">
-				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
-				      <?php echo sub_question_content($vo['content']);?>
+				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['answer_id'];?>"><h2><?php echo get_question_title($vo['answer_question_id']);?></h2></a>
+				      <?php echo sub_question_content($vo['answer_sub']);?>
 
 				    </div>
-				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['answer_id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				  </div>
-				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
-					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['answer_id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['answer_id'];?>">
 					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
 					    </div>
 					</div>
 				  <hr />
 			</article><?php endforeach; endif; ?>
-		    <?php if(empty($find_24)): ?><div class="am-alert am-alert-success" data-am-alert>
-				  <p class="am-text-center">没有更多的内容了</p>
-				</div><?php endif; ?>
 		    </div>
 
-
-		    <div class="am-tab-panel" id="tab30d">
-		    <?php if(is_array($find_30)): foreach($find_30 as $key=>$vo): ?><article class="am-comment">
-			  	<div class="am-comment-avatar">
-				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
-				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
-				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
-				</div>
-			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
-			  
-				  <div>
-				    <header>
-				      <!--<h3 class="am-comment-title">评论标题</h3>-->
-				      <div class="am-comment-meta qustion-title-content">
-				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
-				        发布于 <time><?php echo $vo['time'];?></time>
-				      </div>
-				    </header>
-				    <div class="am-comment-bd">
-				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
-				      <?php echo sub_question_content($vo['content']);?>
-
-				    </div>
-				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
-				  </div>
-				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
-					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
-					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
-					    </div>
-					</div>
-				  <hr />
-			</article><?php endforeach; endif; ?>
-			    <?php if(empty($find_30)): ?><div class="am-alert am-alert-success" data-am-alert>
-					  <p class="am-text-center">没有更多的内容了</p>
-					</div><?php endif; ?>
-		    </div>
 		  </div>
 		</div>
 	</div>

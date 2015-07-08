@@ -3113,3 +3113,53 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
 INFO: [ app_init ] --END-- [ RunTime:0.002141s ]
 
+[ 2015-07-08T17:03:21+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-07-08T17:06:19+08:00 ] 127.0.0.1 /index.php/Admin/Setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-07-08T17:09:13+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-07-08T17:09:38+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000450s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018620s ]
+
+[ 2015-07-08T17:28:26+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+
+[ 2015-07-08T17:33:35+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-07-08T17:33:43+08:00 ] 127.0.0.1 /index.php/Admin/Find/AddItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006711s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.045164s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014603s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.015575s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.018370s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mgqa_find` WHERE ( answer_id=5 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: INSERT INTO `mgqa_find` (`answer_id`,`orderNumber`,`answer_sub`,`answer_author`,`answer_question_id`) VALUES (5,0,'    code test\r\n    codetest2\r\n![moegirl-Q&amp;A](http://static.mengniang.org/logo/zh2015_moegirlpedia_logo.png)\r\n','SmileC',1) [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+

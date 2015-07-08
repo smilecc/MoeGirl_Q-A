@@ -115,7 +115,7 @@ function load_info_badge(sum,question,follow,agree){
 <header class="am-topbar">
 <div class="am-container">
   <h1 class="am-topbar-brand">
-    <a href="/">萌娘问答</a>
+    <a href="/"><?php echo C('SITE_TITLE');?></a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -309,7 +309,7 @@ function on_stu_btn_click(){
 <script type="text/javascript">
 	$("#topbar-index").addClass("am-active");
 </script>
-<title>首页 - 萌娘问答</title>
+<title>首页 - <?php echo C('SITE_TITLE');?></title>
 <script src="/Public/js/index.js"></script>
 
 <div class="am-g">

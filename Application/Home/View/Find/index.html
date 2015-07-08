@@ -2,107 +2,54 @@
 <block name="body">
 <script type="text/javascript">
 	$("#topbar-find").addClass("am-active");
-
-	var arr_24 = new Array();
-	var arr_30 = new Array();
-
-	<foreach name="find_24" item="vo">
-		arr_24[{:$vo['id']}] = false;
-	</foreach>
-	<foreach name="find_30" item="vo">
-		arr_30[{:$vo['id']}] = false;
-	</foreach>
 </script>
-<title>发现 - 萌娘问答</title>
+<title>发现 - {:C('SITE_TITLE')}</title>
 
 <div class="am-g">
 	<div class="am-u-md-9">
 		<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
-		  <ul class="am-tabs-nav am-nav am-nav-tabs">
-		    <li class="am-active"><a href="#tab24h">24小时</a></li>
-		    <li><a href="#tab30d">30天</a></li>
-		  </ul>
-
+		<ul class="am-nav am-nav-pills">
+		  <li class="am-active"><a href="{:U('Home/Find/index')}">推荐</a></li>
+		  <li><a href="{:U('Home/Find/day')}">24小时</a></li>
+		  <li><a href="{:U('Home/Find/month')}">30天</a></li>
+		</ul>
+		<hr />
 		  <div class="am-tabs-bd am-tabs-noborder">
-		    <div class="am-tab-panel am-active" id="tab24h">
-		    <foreach name="find_24" item="vo">
+
+		    <div class="am-tab-panel am-active" id="tabfind">
+		    <foreach name="find_table" item="vo">
 		    	<article class="am-comment">
 			  	<div class="am-comment-avatar">
-				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
-				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
-				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>
+				  <button id="agree-answer-btn-{:$vo['answer_id']}" type="button" onclick="agree_answer({:$vo['answer_id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['answer_id'],1)}"><br /></button>
+				  <center id="answer-agree-numb-{:$vo['answer_id']}">{:$vo['agree']}</center>
+				  <button id="unagree-answer-btn-{:$vo['answer_id']}" type="button" onclick="agree_answer({:$vo['answer_id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['answer_id'],2)}"></button>
 				</div>
 			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
 			  
 				  <div>
 				    <header>
 				      <div class="am-comment-meta qustion-title-content">
-				        <a href="{:get_user_page($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
+				        <a href="{:get_user_page($vo['username'])}" class="am-comment-author">{:$vo['answer_author']}</a>
 				        发布于 <time>{:$vo['time']}</time>
 				      </div>
 				    </header>
 				    <div class="am-comment-bd">
-				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['id']}"><h2>{:get_question_title($vo['question_id'])}</h2></a>
-				      {:sub_question_content($vo['content'])}
+				    <a class="qustion-title-content am-text-truncate" target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['answer_id']}"><h2>{:get_question_title($vo['answer_question_id'])}</h2></a>
+				      {:sub_question_content($vo['answer_sub'])}
 
 				    </div>
-				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['answer_id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				  </div>
-				  <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['id']}">
-					    <div class="am-panel-bd" id="div-comment-{:$vo['id']}">
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['answer_id']}">
+					    <div class="am-panel-bd" id="div-comment-{:$vo['answer_id']}">
 					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
 					    </div>
 					</div>
 				  <hr />
 			</article>
 		    </foreach>
-		    <empty name="find_24">
-			    <div class="am-alert am-alert-success" data-am-alert>
-				  <p class="am-text-center">没有更多的内容了</p>
-				</div>
-		    </empty>
 		    </div>
 
-
-		    <div class="am-tab-panel" id="tab30d">
-		    <foreach name="find_30" item="vo">
-		    	<article class="am-comment">
-			  	<div class="am-comment-avatar">
-				  <button id="agree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},1)" class="am-btn am-icon-angle-up {:getAnsweraction($vo['id'],1)}"><br /></button>
-				  <center id="answer-agree-numb-{:$vo['id']}">{:$vo['agree']}</center>
-				  <button id="unagree-answer-btn-{:$vo['id']}" type="button" onclick="agree_answer({:$vo['id']},2)" class="am-btn am-icon-angle-down {:getAnsweraction($vo['id'],2)}"></button>
-				</div>
-			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
-			  
-				  <div>
-				    <header>
-				      <!--<h3 class="am-comment-title">评论标题</h3>-->
-				      <div class="am-comment-meta qustion-title-content">
-				        <a href="{:get_user_page($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
-				        发布于 <time>{:$vo['time']}</time>
-				      </div>
-				    </header>
-				    <div class="am-comment-bd">
-				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['id']}"><h2>{:get_question_title($vo['question_id'])}</h2></a>
-				      {:sub_question_content($vo['content'])}
-
-				    </div>
-				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="{:$vo['id']}" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
-				  </div>
-				  <div class="am-panel am-panel-default" style="display: none;" id="comment-{:$vo['id']}">
-					    <div class="am-panel-bd" id="div-comment-{:$vo['id']}">
-					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
-					    </div>
-					</div>
-				  <hr />
-			</article>
-		    </foreach>
-			    <empty name="find_30">
-				    <div class="am-alert am-alert-success" data-am-alert>
-					  <p class="am-text-center">没有更多的内容了</p>
-					</div>
-			    </empty>
-		    </div>
 		  </div>
 		</div>
 	</div>

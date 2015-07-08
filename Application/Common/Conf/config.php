@@ -23,4 +23,5 @@ return array(
 	//'配置项'=>'配置值'
 	//'SHOW_PAGE_TRACE' =>true,
 	'URL_MODEL' => 1,
+	'SITE_TITLE' => '萌娘问答'
 );

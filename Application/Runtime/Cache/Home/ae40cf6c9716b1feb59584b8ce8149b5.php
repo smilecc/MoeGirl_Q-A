@@ -306,76 +306,61 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<title>收件箱 - <?php echo C('SITE_TITLE');?></title>
-
 <script type="text/javascript">
-function postmsg(){
-  console.log($("#toname").val());
-    $.ajax({
-            type:"POST",
-            url:"<?php echo U('/Home/Inbox');?>",
-            data:{
-                  type:'send',
-                  toname:$("#toname").val(),
-                  content:$("#comenttext").val()
-                  },
-            cache:false, //不缓存此页面   
-            success:function(re){
-        alert(re);
-         if(re=="发送成功")  location.replace(location);
-            }
-        });
-
-
-  }
+	$("#topbar-find").addClass("am-active");
 </script>
-
-
-
-<div class="am-modal am-modal-no-btn" tabindex="-1" id="new-msg-modal">
-  <div class="am-modal-dialog">
-    <div class="am-modal-hd">发送私信
-      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
-    </div>
-    <div class="am-modal-bd am-form">
-      <input type="text" class="form-control" id="toname" placeholder="请输入要私信的用户名 只能输一个哦( • ̀ω•́ )✧..." /><hr>
-      <div class="am-alert am-alert-info">长度限1000字</div>
-      <textarea name="content" onKeyDown='if (this.value.length>=1000){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="7" id="comenttext"></textarea>
-      <hr>
-      <span class="am-fr">
-        <button type="button" class="am-btn am-btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="am-btn am-btn-primary" onclick="postmsg()" data-dismiss="modal">提交</button>
-      </span>
-    </div>
-  </div>
-</div>
+<title>发现 - <?php echo C('SITE_TITLE');?></title>
 
 <div class="am-g">
+	<div class="am-u-md-9">
+		<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
+		<ul class="am-nav am-nav-pills">
+		  <li><a href="<?php echo U('Home/Find/index');?>">推荐</a></li>
+		  <li><a href="<?php echo U('Home/Find/day');?>">24小时</a></li>
+		  <li class="am-active"><a href="<?php echo U('Home/Find/month');?>">30天</a></li>
+		</ul>
+		<hr />
+		  <div class="am-tabs-bd am-tabs-noborder">
 
-<div class="am-u-md-8">
-<div class="page-header">
-  <h2>我的私信 <small><button class="am-btn am-btn-success" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 450}">写私信</button></small></h2>
+		    <div class="am-tab-panel" id="tab30d">
+		    <?php if(is_array($find_30)): foreach($find_30 as $key=>$vo): ?><article class="am-comment">
+			  	<div class="am-comment-avatar">
+				  <button id="agree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,1)" class="am-btn am-icon-angle-up <?php echo getAnsweraction($vo['id'],1);?>"><br /></button>
+				  <center id="answer-agree-numb-<?php echo $vo['id'];?>"><?php echo $vo['agree'];?></center>
+				  <button id="unagree-answer-btn-<?php echo $vo['id'];?>" type="button" onclick="agree_answer(<?php echo $vo['id'];?>,2)" class="am-btn am-icon-angle-down <?php echo getAnsweraction($vo['id'],2);?>"></button>
+				</div>
+			    <!--<img src="" alt="" class="am-comment-avatar" width="48" height="48"/>-->
+			  
+				  <div>
+				    <header>
+				      <!--<h3 class="am-comment-title">评论标题</h3>-->
+				      <div class="am-comment-meta qustion-title-content">
+				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        发布于 <time><?php echo $vo['time'];?></time>
+				      </div>
+				    </header>
+				    <div class="am-comment-bd">
+				    <a class="qustion-title-content" target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['id'];?>"><h2><?php echo get_question_title($vo['question_id']);?></h2></a>
+				      <?php echo sub_question_content($vo['content']);?>
+
+				    </div>
+				    <p class="am-text-right"><a class="am-link-muted" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				  </div>
+				  <div class="am-panel am-panel-default" style="display: none;" id="comment-<?php echo $vo['id'];?>">
+					    <div class="am-panel-bd" id="div-comment-<?php echo $vo['id'];?>">
+					    	<i class="am-icon-spinner am-icon-spin"></i>正在加载评论
+					    </div>
+					</div>
+				  <hr />
+			</article><?php endforeach; endif; ?>
+			    <?php if(empty($find_30)): ?><div class="am-alert am-alert-success" data-am-alert>
+					  <p class="am-text-center">没有更多的内容了</p>
+					</div><?php endif; ?>
+		    </div>
+		  </div>
+		</div>
+	</div>
 </div>
-<hr />
-<?php if(is_array($inbox_index)): $i = 0; $__LIST__ = $inbox_index;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?>我发送给<a href="<?php echo get_user_page($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  <a href="<?php echo get_user_page($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
-
-  <?php else: ?>
-
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="<?php echo get_user_page($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
-  <?php else: ?>
-  我发送给<a href="<?php echo get_user_page($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; endif; ?>
-  ：<?php echo getInboxcontent($vo['inbox_id']);?>... <br />
-  <span><?php echo ($vo['time']); ?></span><span style="float:right"><a href="/Home/Inboxpage/<?php echo ($vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']); ?>" target="_BLANK">共<?php echo ($vo['numb']); ?>条对话</a></span></p>
-  <hr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-</div><!--col-md-8-->
-
-<div class="am-u-sm-4"></div>
-
-</div><!--container-->
 
 
 	</div>
