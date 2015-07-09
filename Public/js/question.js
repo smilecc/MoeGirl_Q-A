@@ -7,6 +7,8 @@ function on_question_content_click(qid){
 	  $('#question-content-div').animate({ opacity: '1'}, 500);
 }
 function on_user_status_btn_click(qid,btn){
+   $('#follow_btn').text('');
+   $("#follow_btn").append('<i class="am-icon-spinner am-icon-spin"></i>');
 	if(btn == 0){
 		var follow = $("#follow_btn").hasClass("am-btn-success")?0:1;
 		var anonymous = 0;//$("#anonymous_btn").hasClass("am-active")?1:0;

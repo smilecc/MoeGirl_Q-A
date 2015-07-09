@@ -151,6 +151,7 @@ function put_comment(project_id,mode){
 
 function agree_answer(answer_id,agree){
   //if(getCookie('mgqa_username') == "")
+  agree_numb = $("#answer-agree-numb-" + answer_id).text();
   $("#answer-agree-numb-" + answer_id).text('');
   $("#answer-agree-numb-" + answer_id).append('<i class="am-icon-spinner am-icon-spin"></i>');
   $.ajax({
@@ -159,8 +160,10 @@ function agree_answer(answer_id,agree){
             success:function(re){
                 if(re == "-1"){
                     error_notify('失败，发生错误');
+                    $("#answer-agree-numb-" + answer_id).text(agree_numb);
                 }else if(re == "-2"){
                     error_notify('不要赞自己噢~');
+                    $("#answer-agree-numb-" + answer_id).text(agree_numb);
                 }else{
                     $("#answer-agree-numb-" + answer_id).text(re);
                     var btn_id = "";
