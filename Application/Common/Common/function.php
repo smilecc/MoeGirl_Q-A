@@ -106,7 +106,7 @@ function tcp_new_msg($usname,$numb){
 // use tcp send to user brower
 function tcp_new_info($us_arr){
     $redis = new Redis();
-    $redis->connect("localhost","6379");
+    $redis->connect("127.0.0.1","6379");
     // 查询可用锁
     $unlock = 0;
     for ($unlock=0;; $unlock++) { 
