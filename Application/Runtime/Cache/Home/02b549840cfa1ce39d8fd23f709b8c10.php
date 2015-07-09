@@ -268,7 +268,7 @@ function load_info_badge(sum,question,follow,agree){
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
-          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <li><a href="<?php echo GetUserPage(cookie('username'));?>">个人主页</a></li>
           <?php if(CheckAdmin()): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
@@ -357,15 +357,15 @@ function postmsg(){
   <h2>我的私信 <small><button class="am-btn am-btn-success" data-am-modal="{target: '#new-msg-modal', closeViaDimmer: 0, width: 500, height: 450}">写私信</button></small></h2>
 </div>
 <hr />
-<?php if(is_array($inbox_index)): $i = 0; $__LIST__ = $inbox_index;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?>我发送给<a href="<?php echo get_user_page($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
+<?php if(is_array($inbox_index)): $i = 0; $__LIST__ = $inbox_index;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><?php if(($vo['from'] == 1)): if(($vo['usname1'] == cookie('username'))): ?>我发送给<a href="<?php echo GetUserPage($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
   <?php else: ?>
-  <a href="<?php echo get_user_page($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
+  <a href="<?php echo GetUserPage($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; ?>
 
   <?php else: ?>
 
-  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="<?php echo get_user_page($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
+  <?php if(($vo['usname1'] == cookie('username'))): ?><a href="<?php echo GetUserPage($vo['usname2']);?>"><?php echo $vo['usname2'];?></a>
   <?php else: ?>
-  我发送给<a href="<?php echo get_user_page($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; endif; ?>
+  我发送给<a href="<?php echo GetUserPage($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; endif; ?>
   ：<?php echo getInboxcontent($vo['inbox_id']);?>... <br />
   <span><?php echo ($vo['time']); ?></span><span style="float:right"><a href="/Home/Inboxpage/<?php echo ($vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']); ?>" target="_BLANK">共<?php echo ($vo['numb']); ?>条对话</a></span></p>
   <hr><?php endforeach; endif; else: echo "" ;endif; ?>

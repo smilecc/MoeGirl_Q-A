@@ -56,7 +56,7 @@ function send_msg(){
         </div>
 		  </div>
 		  <div class="am-panel-hd am-avg-md-6 am-avg-sm-3">
-		  	<li><a href="{:U('/Home/People/'.cookie('username'))}"><span class="am-icon-home am-icon-md"></span></a></li>
+		  	<li><a href="{:GetUserPage(cookie('username'))}"><span class="am-icon-home am-icon-md"></span></a></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-question-circle"></span> 问题 {:$user['question']}</span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-edit"></span> 回答 {:$user['answer']}</span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-thumbs-up"> 获得赞 {:$user['agree']}</span></span></li>

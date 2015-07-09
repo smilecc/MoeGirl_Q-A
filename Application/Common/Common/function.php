@@ -40,6 +40,12 @@ function ModelOperationCheckAdmin()
     }
 }
 
+// 获得用户index
+function GetUserPage($username)
+{
+    return U('/Home/People/'.M('User')->where('username="%s"',$username)->getField('page'));
+}
+
 // 检测输入的验证码是否正确，$code为用户输入的验证码字符串
 function check_verify($code, $id = ''){
     $verify = new \Think\Verify();
@@ -67,10 +73,11 @@ function sub_question_content($string){
     return mb_strcut($string,0,200,'utf8');
 }
 
-// 获取用户名的地址
-function get_user_page($username){
-    return U('/Home/People/'.$username);
-}
+// // 获取用户名的地址
+// function GetUserPage
+// GetUserPage($username){
+//     return U('/Home/People/'.$username);
+// }
 
 function get_user_intro($username){
     return M('User')->where('username="%s"',$username)->getField('introduce_short');

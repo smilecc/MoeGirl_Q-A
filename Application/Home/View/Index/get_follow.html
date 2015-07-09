@@ -1,7 +1,7 @@
 这些用户最近关注了你<hr />
 <foreach name="timeline" item="user" key="i">
 <div><button type="button" class="follow-btn-{:$user['fromusername']} am-btn {:$user['is_follow']?'':'am-btn-success'} am-radius {:$user['is_follow'] == 3?'am-icon-retweet':''}" onclick="follow_user('{:cookie('username')}','{:$user['fromusername']}')">{:$user['is_follow'] == 3?' ':''}{:$user['is_follow']?'取消关注':'关注TA'}</button>
-<a target="_blank" href="{:U('/Home/People/'.$user['fromusername'])}">{:$user['fromusername']}</a>
+<a target="_blank" href="{:GetUserPage($user['fromusername'])}">{:$user['fromusername']}</a>
 <hr />
 </foreach>
 	

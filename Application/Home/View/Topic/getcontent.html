@@ -12,7 +12,7 @@
 				    <header>
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta qustion-title-content">
-				        <a target="_blank" href="{:U('/Home/People/'.$vo['answer_content']['username'])}" class="am-comment-author">{:$vo['answer_content']['username']}</a>
+				        <a target="_blank" href="{:GetUserPage($vo['answer_content']['username'])}" class="am-comment-author">{:$vo['answer_content']['username']}</a>
 				        发布于 <time>{:$vo['answer_content']['time']}</time>
 				      </div>
 				    </header>
@@ -46,7 +46,7 @@
 				    <header>
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta qustion-title-content">
-				        <a href="{:get_user_page($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
+				        <a href="{:GetUserPage($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
 				        发布于 <time>{:$vo['time']}</time>
 				      </div>
 				    </header>
@@ -69,7 +69,7 @@
 		<else />
 			<foreach name="content" item="vo" key="i">
 				<small><div class="am-link-muted">
-				    {:$vo['anonymous']?'匿名用户 ':'<a href="'.get_user_page($vo['username']).'">'.$vo['username'].' </a>'}
+				    {:$vo['anonymous']?'匿名用户 ':'<a href="'.GetUserPage($vo['username']).'">'.$vo['username'].' </a>'}
 					提交于 <time>{:$vo['time']}</time>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/{:$vo['id']}"><h2>{:$vo['title']}</h2></a>

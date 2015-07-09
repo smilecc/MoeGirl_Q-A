@@ -271,7 +271,7 @@ function load_info_badge(sum,question,follow,agree){
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
-          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <li><a href="<?php echo GetUserPage(cookie('username'));?>">个人主页</a></li>
           <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>

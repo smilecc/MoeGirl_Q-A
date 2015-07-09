@@ -55,17 +55,17 @@ function postmsg(){
   <p><if condition="($vo['from'] eq 1)">
 
   <if condition="($vo['usname1'] eq cookie('username'))">
-  我发送给<a href="{:get_user_page($vo['usname2'])}">{:$vo['usname2']}</a>
+  我发送给<a href="{:GetUserPage($vo['usname2'])}">{:$vo['usname2']}</a>
   <else />
-  <a href="{:get_user_page($vo['usname1'])}">{:$vo['usname1']}</a>
+  <a href="{:GetUserPage($vo['usname1'])}">{:$vo['usname1']}</a>
   </if>
 
   <else />
 
   <if condition="($vo['usname1'] eq cookie('username'))">
-  <a href="{:get_user_page($vo['usname2'])}">{:$vo['usname2']}</a>
+  <a href="{:GetUserPage($vo['usname2'])}">{:$vo['usname2']}</a>
   <else />
-  我发送给<a href="{:get_user_page($vo['usname1'])}">{:$vo['usname1']}</a>
+  我发送给<a href="{:GetUserPage($vo['usname1'])}">{:$vo['usname1']}</a>
   </if>
   
   </if>

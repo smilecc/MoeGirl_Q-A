@@ -32,7 +32,7 @@
 				    <header class="am-comment-hd">
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta">
-				        <a href="{:get_user_page($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
+				        <a href="{:GetUserPage($vo['username'])}" class="am-comment-author">{:$vo['username']}</a>
 				        ，<strong>{:get_user_intro($vo['username'])} - </strong>
 				        发布于 <time datetime="2013-07-27T04:54:29-07:00">{:$vo['time']}</time>
 				      </div>
@@ -76,7 +76,7 @@
 		<button type="button" id="follow_btn" onclick="on_user_status_btn_click({:$page['id']},0)" class="am-btn am-btn-primary am-radius {:($page_user_status['follow']?'am-btn-success':'')}">{:($page_user_status['follow']?'取消关注':'关注问题')}</button>
 		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click({:$page['id']},1)" class="am-btn am-btn-default am-radius {:($page_user_status['anonymous']?'am-active':'')}" style="display: none;" data-am-button>{:($page_user_status['anonymous']?'已匿名':'使用匿名身份')}</button>
 		<hr />
-		<p>问题提交者： {:$page['anonymous']?'匿名用户':'<a target="_blank" href="'.get_user_page($page["username"]).'">'.$page["username"].'</a>'}</p>
+		<p>问题提交者： {:$page['anonymous']?'匿名用户':'<a target="_blank" href="'.GetUserPage($page["username"]).'">'.$page["username"].'</a>'}</p>
 	</div>
 </div>
 

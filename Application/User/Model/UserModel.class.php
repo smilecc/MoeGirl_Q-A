@@ -9,6 +9,7 @@ Class UserModel extends Model{
 	public function login_random($username){
 		$userinfo = $this->where('username="%s"',$username)->find();
 		$data['random'] = rand();
+		//$data['index'] = md5($username);
 		trace(count($userinfo),'test');
 		if(count($userinfo) == 0)
 		{
@@ -67,10 +68,11 @@ Class UserModel extends Model{
 		}
 
 		// 一系列验证
-		if(!preg_match('/^[a-zA-Zxa0-xff_][0-9a-zA-Zxa0-xff_]{2,16}$/',$username))
+		if(!preg_match('/^[0-9a-zA-Z_\x{4e00}-\x{9fa5}]{2,16}$/u',$username))
 		{
 			return $jsonResult = array('error' => '用户名不符合条件<br/>请输入字母、数字、下划线、中文汉字<br/>2-16个字符' );
 		}
+
 
 		if(!preg_match('/[\S]{6,128}/',$password))
 		{
@@ -83,17 +85,20 @@ Class UserModel extends Model{
 		}
 
 		// 检测用户存在情况
-		$userinfo = $this->where('username="%s"',$username)->find();
+		$userinfo = $this->where('username="%s" OR email="%s"',$username,$email)->find();
 		if(count($userinfo) > 0)
 		{
-			$jsonResult = array('error' => '用户已存在' );
+			if($userinfo['username'] == $username) $jsonResult = array('error' => '用户已存在' );
+			else $jsonResult = array('error' => 'Email已存在' );
+
 			return $jsonResult;
 		}
 		// 入库
 		$insertArray = array(
 			'username'	=> $username,
 			'password'	=> login_en_code($password),
-			'email'		=> $email
+			'email'		=> $email,
+			'page'		=> md5($username)
 		);
 		
 		$this->create($insertArray);

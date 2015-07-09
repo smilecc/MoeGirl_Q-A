@@ -1,5 +1,5 @@
 <foreach name="comment" item="vo" key="i">
-<p><a target="_blank" href="{:get_user_page($vo['username'])}">{:$vo['username']}</a><span class="am-fr">{:$vo['time']}</span><br />{:ParseMdLine($vo['content'])}<hr /></p>
+<p><a target="_blank" href="{:GetUserPage($vo['username'])}">{:$vo['username']}</a><span class="am-fr">{:$vo['time']}</span><br />{:ParseMdLine($vo['content'])}<hr /></p>
 </foreach>
 <IF condition="count($comment) eq 0">
 	<div class="am-alert">

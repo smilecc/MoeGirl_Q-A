@@ -82,7 +82,7 @@ Class OperationController extends Controller{
 
 	public function register($username,$password,$email)
 	{
-		if(IS_POST)
+		if(true)
 		{
 			$resArr = D('User')->CreateUser($username,$password,$email);
 			

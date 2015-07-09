@@ -173,7 +173,7 @@ function load_info_badge(sum,question,follow,agree){
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
       </div>
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
@@ -214,6 +214,9 @@ function load_info_badge(sum,question,follow,agree){
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
             <hr />
+            <small>
+            你可以使用Markdown语法，不了解？<a target="_blank" href="http://www.appinn.com/markdown/"><strong>点击这儿学习</strong></a>
+            </small>
             <!--<small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
             </small>-->
            </div>
@@ -268,7 +271,7 @@ function load_info_badge(sum,question,follow,agree){
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
-          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <li><a href="<?php echo GetUserPage(cookie('username'));?>">个人主页</a></li>
           <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
@@ -298,8 +301,6 @@ function on_stu_btn_click(){
     window.open('/index.php/Home/Question/stu.html?imgurl=http://<?php echo $_SERVER['HTTP_HOST'];?>/Public/Uploads/' + result_content[1]);
 }
 </script>
-
-
 
 	<!-- /头部 -->
 
@@ -338,6 +339,17 @@ function on_stu_btn_click(){
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
     <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?6751f8c150b62574e5cff5ec3a8dad22";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度统计-->
   </div>
 </footer>
 	<!-- /底部 -->

@@ -173,7 +173,7 @@ function load_info_badge(sum,question,follow,agree){
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
       </div>
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
@@ -271,7 +271,7 @@ function load_info_badge(sum,question,follow,agree){
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
-          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <li><a href="<?php echo GetUserPage(cookie('username'));?>">个人主页</a></li>
           <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
@@ -302,8 +302,6 @@ function on_stu_btn_click(){
 }
 </script>
 
-
-
 	<!-- /头部 -->
 
 	<!-- 主体 -->
@@ -328,7 +326,7 @@ function on_stu_btn_click(){
 	</div><!--am-9-->
 	<div class="am-u-md-3">
 		<button type="button" onclick="on_follow_topic_btn_click(<?php echo $topic['id'];?>,'<?php echo $topic['name'];?>')" class="js-follow am-btn am-btn-primary am-radius <?php echo ($topic['is_follow']?'am-btn-success':'am-btn-default');?>" ><?php echo ($topic['is_follow']?'取消关注':'关注话题');?></button>
-		<p>话题创建人：<a target="_blank" href="<?php echo get_user_page($topic["creater"]);?>"><?php echo $topic["creater"];?></a></p>
+		<p>话题创建人：<a target="_blank" href="<?php echo GetUserPage($topic["creater"]);?>"><?php echo $topic["creater"];?></a></p>
 		<hr /><p><?php echo $topic['follow_count'];?> 人关注了这个话题</p>
 		<p>该话题下共有 <?php echo $topic['question_count'];?> 个问题<br />(不包含子话题)</p>
 		<?php if($topic['father_topic']): ?><hr /><p>父话题：<a href="<?php echo U('/Home/Topic/'.$topic['father_topic']);?>" class="am-btn am-btn-primary am-round"><?php echo getTopicname($topic['father_topic']);?></a></p><?php endif; ?>
@@ -348,6 +346,17 @@ function on_stu_btn_click(){
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
     <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?6751f8c150b62574e5cff5ec3a8dad22";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度统计-->
   </div>
 </footer>
 	<!-- /底部 -->

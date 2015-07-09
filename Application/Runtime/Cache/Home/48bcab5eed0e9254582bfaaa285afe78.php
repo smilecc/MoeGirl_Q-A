@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?>	<?php if(is_array($timeline)): foreach($timeline as $i=>$vo): if(count($vo['us_array']) == 1): ?><a target="_blank" href="<?php echo U('/Home/People/'.$vo['fromusername']);?>" class="am-comment-author"><?php echo $vo['fromusername'];?></a>
       <?php else: ?>
-      	<?php if(is_array($vo['us_array'])): $j = 0; $__LIST__ = array_slice($vo['us_array'],0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$usname): $mod = ($j % 2 );++$j;?><a target="_blank" href="<?php echo get_user_page($usname);?>" class="am-comment-author"><?php echo $usname;?></a>
+      	<?php if(is_array($vo['us_array'])): $j = 0; $__LIST__ = array_slice($vo['us_array'],0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$usname): $mod = ($j % 2 );++$j;?><a target="_blank" href="<?php echo GetUserPage($usname);?>" class="am-comment-author"><?php echo $usname;?></a>
                   <?php if($j < count($vo['us_array'])): ?>、<?php endif; ?>
                   <?php if($j == 3): ?>等<?php echo count($vo['us_array']);?>人<?php endif; endforeach; endif; else: echo "" ;endif; endif; ?>
       <span> 赞同了你在问题 </span>

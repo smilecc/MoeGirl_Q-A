@@ -9,7 +9,7 @@
 				    <header>
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta qustion-title-content">
-				        <a target="_blank" href="<?php echo U('/Home/People/'.$vo['answer_content']['username']);?>" class="am-comment-author"><?php echo $vo['answer_content']['username'];?></a>
+				        <a target="_blank" href="<?php echo GetUserPage($vo['answer_content']['username']);?>" class="am-comment-author"><?php echo $vo['answer_content']['username'];?></a>
 				        发布于 <time><?php echo $vo['answer_content']['time'];?></time>
 				      </div>
 				    </header>
@@ -39,7 +39,7 @@
 				    <header>
 				      <!--<h3 class="am-comment-title">评论标题</h3>-->
 				      <div class="am-comment-meta qustion-title-content">
-				        <a href="<?php echo get_user_page($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
+				        <a href="<?php echo GetUserPage($vo['username']);?>" class="am-comment-author"><?php echo $vo['username'];?></a>
 				        发布于 <time><?php echo $vo['time'];?></time>
 				      </div>
 				    </header>
@@ -59,7 +59,7 @@
 			</article><?php endif; endforeach; endif; ?>
 		<?php else: ?>
 			<?php if(is_array($content)): foreach($content as $i=>$vo): ?><small><div class="am-link-muted">
-				    <?php echo $vo['anonymous']?'匿名用户 ':'<a href="'.get_user_page($vo['username']).'">'.$vo['username'].' </a>';?>
+				    <?php echo $vo['anonymous']?'匿名用户 ':'<a href="'.GetUserPage($vo['username']).'">'.$vo['username'].' </a>';?>
 					提交于 <time><?php echo $vo['time'];?></time>
 				</div></small>
 				<a target="_blank" href="/index.php/Home/Question/<?php echo $vo['id'];?>"><h2><?php echo $vo['title'];?></h2></a>

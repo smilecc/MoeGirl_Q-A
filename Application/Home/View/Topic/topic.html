@@ -19,7 +19,7 @@
 	</div><!--am-9-->
 	<div class="am-u-md-3">
 		<button type="button" onclick="on_follow_topic_btn_click({:$topic['id']},'{:$topic['name']}')" class="js-follow am-btn am-btn-primary am-radius {:($topic['is_follow']?'am-btn-success':'am-btn-default')}" >{:($topic['is_follow']?'取消关注':'关注话题')}</button>
-		<p>话题创建人：<a target="_blank" href="{:get_user_page($topic["creater"])}">{:$topic["creater"]}</a></p>
+		<p>话题创建人：<a target="_blank" href="{:GetUserPage($topic["creater"])}">{:$topic["creater"]}</a></p>
 		<hr /><p>{:$topic['follow_count']} 人关注了这个话题</p>
 		<p>该话题下共有 {:$topic['question_count']} 个问题<br />(不包含子话题)</p>
 		<IF condition="$topic['father_topic']"><hr /><p>父话题：<a href="{:U('/Home/Topic/'.$topic['father_topic'])}" class="am-btn am-btn-primary am-round">{:getTopicname($topic['father_topic'])}</a></p></IF>

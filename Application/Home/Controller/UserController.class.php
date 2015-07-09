@@ -3,9 +3,10 @@ namespace Home\Controller;
 use Think\Controller;
 
 class UserController extends Controller {
-    public function people($usname){
+    public function people($page){
+        $user_info = M('User')->where('page="%s"',$page)->find();
+        $usname = $user_info['username'];
     	// 获取用户信息
-    	$user_info = M('User')->where('username="%s"',$usname)->find();
     	$user_info['is_follow'] = is_follow(cookie('username'),$usname);
         trace($user_info);
     	// 计数

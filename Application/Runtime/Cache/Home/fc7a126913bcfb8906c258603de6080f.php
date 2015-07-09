@@ -271,7 +271,7 @@ function load_info_badge(sum,question,follow,agree){
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
-          <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <li><a href="<?php echo GetUserPage(cookie('username'));?>">个人主页</a></li>
           <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
@@ -363,7 +363,7 @@ function send_msg(){
         </div>
 		  </div>
 		  <div class="am-panel-hd am-avg-md-6 am-avg-sm-3">
-		  	<li><a href="<?php echo U('/Home/People/'.cookie('username'));?>"><span class="am-icon-home am-icon-md"></span></a></li>
+		  	<li><a href="<?php echo GetUserPage(cookie('username'));?>"><span class="am-icon-home am-icon-md"></span></a></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-question-circle"></span> 问题 <?php echo $user['question'];?></span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-edit"></span> 回答 <?php echo $user['answer'];?></span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-thumbs-up"> 获得赞 <?php echo $user['agree'];?></span></span></li>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); if(is_array($comment)): foreach($comment as $i=>$vo): ?><p><a target="_blank" href="<?php echo get_user_page($vo['username']);?>"><?php echo $vo['username'];?></a><span class="am-fr"><?php echo $vo['time'];?></span><br /><?php echo ParseMdLine($vo['content']);?><hr /></p><?php endforeach; endif; ?>
+<?php if (!defined('THINK_PATH')) exit(); if(is_array($comment)): foreach($comment as $i=>$vo): ?><p><a target="_blank" href="<?php echo GetUserPage($vo['username']);?>"><?php echo $vo['username'];?></a><span class="am-fr"><?php echo $vo['time'];?></span><br /><?php echo ParseMdLine($vo['content']);?><hr /></p><?php endforeach; endif; ?>
 <?php if(count($comment) == 0): ?><div class="am-alert">
 	  一条评论也木有
 	</div><?php endif; ?>

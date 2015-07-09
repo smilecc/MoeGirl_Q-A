@@ -210,7 +210,7 @@ function load_info_badge(sum,question,follow,agree){
         </a>
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
-          <li><a href="{:U('/Home/People/'.cookie('username'))}">个人主页</a></li>
+          <li><a href="{:GetUserPage(cookie('username'))}">个人主页</a></li>
           <IF condition="$isAdmin">
             <li class="am-dropdown-header">站点管理</li>
             <li><a href="{:U('/Admin')}">管理中心</a></li>
