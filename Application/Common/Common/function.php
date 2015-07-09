@@ -99,7 +99,7 @@ function get_inbox_alert(){
 // use tcp send to user brower
 function tcp_new_msg($usname,$numb){
     $client = stream_socket_client('tcp://127.0.0.1:7273');
-    if(!$client)exit("can not connect");
+    if(!$client) exit("can not connect");
     fwrite($client, '{"type":"new-msg","tousname":"'.$usname.'","numb":"'.$numb.'"}'."\n");
 }
 

@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'SHOW_PAGE_TRACE' =>true,
+	//'SHOW_PAGE_TRACE' =>true,
 	'URL_ROUTER_ON'   => true,
 	'URL_ROUTE_RULES'=>array(
 		'Question/:qid\d$' 				=> 'Question/index',
