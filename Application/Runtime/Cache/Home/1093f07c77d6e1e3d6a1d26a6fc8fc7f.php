@@ -95,6 +95,7 @@ function load_info_badge(sum,question,follow,agree){
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      //console.log(data);
       if(data['type'] == "new-info"){
         $.ajax({
             type:"GET",
@@ -318,7 +319,7 @@ function on_stu_btn_click(){
 	<div class="am-u-md-8">
 		<?php if(is_array($topic)): foreach($topic as $key=>$vo): $topic_info = getTopicinfo($vo['topic_id']); ?>
 			<p><a href="<?php echo U('/Home/Topic/'.$topic_info['id']);?>" target="_blank"><?php echo $topic_info['name'];?></a>
-			<button class="am-btn am-fr am-btn-success js-follow" onclick="on_follow_topic_btn_click(<?php echo $topic_info['id'];?>,'<?php echo $topic_info['name'];?>')">取消关注</button><br />
+			<button class="am-btn am-fr am-btn-success js-follow" onclick="on_follow_topic_btn_click(<?php echo $topic_info['id'];?>,'<?php echo $topic_info['name'];?>',this)">取消关注</button><br />
 			<small><?php echo $topic_info['introduce'];?></small></p>
 			<hr /><?php endforeach; endif; ?>
 	</div>

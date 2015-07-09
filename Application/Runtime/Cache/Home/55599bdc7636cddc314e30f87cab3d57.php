@@ -95,6 +95,7 @@ function load_info_badge(sum,question,follow,agree){
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      //console.log(data);
       if(data['type'] == "new-info"){
         $.ajax({
             type:"GET",

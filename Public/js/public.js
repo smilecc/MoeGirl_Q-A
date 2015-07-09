@@ -147,8 +147,12 @@ function put_comment(project_id,mode){
             }
   });
 }
+
+
 function agree_answer(answer_id,agree){
-  if(getCookie('mgqa_username') == "")
+  //if(getCookie('mgqa_username') == "")
+  $("#answer-agree-numb-" + answer_id).text('');
+  $("#answer-agree-numb-" + answer_id).append('<i class="am-icon-spinner am-icon-spin"></i>');
   $.ajax({
             type:"GET",
             url:"/index.php/Home/Question/agree?answer_id=" + answer_id + "&agree=" + agree,
@@ -178,7 +182,7 @@ function agree_answer(answer_id,agree){
             }
   });
 }
-function on_follow_topic_btn_click(tid,tname){
+function on_follow_topic_btn_click(tid,tname,btn){
   $.ajax({
             type:"GET",
             url:"/index.php/Home/Topic/set_follow_topic.html?topic_id=" + tid,

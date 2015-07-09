@@ -12,7 +12,7 @@
 		<foreach name="topic" item="vo">
 			<PHP>$topic_info = getTopicinfo($vo['topic_id']);</PHP>
 			<p><a href="{:U('/Home/Topic/'.$topic_info['id'])}" target="_blank">{:$topic_info['name']}</a>
-			<button class="am-btn am-fr am-btn-success js-follow" onclick="on_follow_topic_btn_click({:$topic_info['id']},'{:$topic_info['name']}')">取消关注</button><br />
+			<button class="am-btn am-fr am-btn-success js-follow" onclick="on_follow_topic_btn_click({:$topic_info['id']},'{:$topic_info['name']}',this)">取消关注</button><br />
 			<small>{:$topic_info['introduce']}</small></p>
 			<hr />
 		</foreach>
