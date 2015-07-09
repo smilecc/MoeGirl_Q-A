@@ -105,4 +105,43 @@ Class UserModel extends Model{
 		else $jsonResult['error'] = 'SystemError';
 		return $jsonResult;
 	}
+
+	public function ChangePassword($old,$new)
+	{
+		$resultArr = array(
+			'status' => false
+		 );
+		if(!test_user())
+		{
+			$resultArr['error'] = '登录已失效';
+			return $resultArr;
+		}
+		$userinfo = $this->where('username="%s"',cookie('username'))->find();
+
+		if($userinfo['password'] != login_en_code($old))
+		{
+			$resultArr['error'] = '旧密码不对啦~';
+			return $resultArr;
+		}
+
+		if(!preg_match('/[\S]{6,128}/',$new))
+		{
+			return $jsonResult = array('status' => false,'error' => '密码不符合条件<br/>请输入6-128位密码' );
+		}
+
+		$data = array(
+			'username' 		=> cookie('username'),
+			'password' 	=> login_en_code($new)
+			);
+		if($this->save($data))
+		{
+			$resultArr['status'] = true;
+			$resultArr['info']	= '修改密码成功';
+		}
+		else
+		{
+			$resultArr['error']	= '修改密码失败，密码未变动或系统错误';
+		}
+		return $resultArr;
+	}
 }

@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } $isAdmin = CheckAdmin(); ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -32,7 +32,6 @@
   <meta name="msapplication-TileColor" content="#0e90d2">
 
   <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
-  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
@@ -42,11 +41,18 @@
   <script src="/Public/assets/js/jquery.min.js"></script>
   <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
   <script src="/Public/assets/js/amazeui.min.js"></script>
-  <script src="/Public/js/pnotify.custom.min.js"></script>
+  <script src="/Public/js/notify.js"></script>
 <!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!--[if IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，不能达到完整的浏览体验。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
 <![endif]-->
+<!--[if lte IE 8]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，萌娘问答 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
 <script type="text/javascript">
   var upload_mode = 'answer';
 </script>
@@ -109,7 +115,7 @@ function load_info_badge(sum,question,follow,agree){
 <header class="am-topbar">
 <div class="am-container">
   <h1 class="am-topbar-brand">
-    <a href="/">萌娘问答</a>
+    <a href="/"><?php echo C('SITE_TITLE');?></a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -167,7 +173,8 @@ function load_info_badge(sum,question,follow,agree){
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=15207883372245637765' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+        <!-- <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索"> -->
       </div>
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
@@ -208,8 +215,11 @@ function load_info_badge(sum,question,follow,agree){
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
             <hr />
-            <small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
+            <small>
+            你可以使用Markdown语法，不了解？<a target="_blank" href="http://www.appinn.com/markdown/"><strong>点击这儿学习</strong></a>
             </small>
+            <!--<small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
+            </small>-->
            </div>
         </form>
       </div>
@@ -263,6 +273,8 @@ function load_info_badge(sum,question,follow,agree){
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
+            <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
           <li><a href="<?php echo U('/Home/User/setting');?>">设置</a></li>
@@ -291,6 +303,8 @@ function on_stu_btn_click(){
 }
 </script>
 
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=10179914782280741050' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+
 
 
 	<!-- /头部 -->
@@ -298,9 +312,10 @@ function on_stu_btn_click(){
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<title>话题广场 - 萌娘问答</title>
+<title>话题广场 - <?php echo C('SITE_TITLE');?></title>
 
 <script type="text/javascript">
+$("#topbar-topic").addClass("am-active");
 function create(){
 	  $.ajax({
             type:"POST",
@@ -308,7 +323,8 @@ function create(){
             data:{
                   name:$("#topic_name").val(),
                   introduce:$("#topic_intro").val(),
-                  father_topic:$("#father_topic").val()
+                  father_topic:$("#father_topic").val(),
+                  node:$("#topic_node").val()
                   },
             success:function(re){
               var jsonObject = JSON.parse(re);
@@ -322,8 +338,7 @@ function create(){
                 console.log(re);
                 notify(jsonObject['error'],ERROR,RIGHT);
               }
-            	
-                }
+            }
   });
 }
 </script>
@@ -334,14 +349,18 @@ function create(){
       <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
     </div>
     <div class="am-modal-bd am-form">
-		话题名称<input type="text" id="topic_name" class="form-control"/>
+      <input type="text" id="topic_name" placeholder="话题名称">
+      <input type="text" id="topic_intro" placeholder="话题介绍">
 		<br />
-		话题介绍<input type="text" id="topic_intro" class="form-control"/>
-		<br />
+    节点 <select data-am-selected="{btnSize: 'sm', btnStyle: 'secondary'}" id="topic_node">
+    <?php if(is_array($node)): foreach($node as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+    </select>
+    <hr/>
 		父话题（选填）<select data-am-selected="{maxHeight: 100,searchBox: 1, btnSize: 'sm', btnStyle: 'secondary'}" id="father_topic">
 		<?php $topic_list = M("Topic")->order('id')->select(); ?>
 		<?php if(is_array($topic_list)): foreach($topic_list as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
 		</select>
+
       <hr>
       <span class="am-fr">
         <button type="button" class="am-btn am-btn-default" data-dismiss="modal" data-am-modal-close>取消</button>
@@ -353,16 +372,25 @@ function create(){
 
 
 <div class="am-g">
-<h1 class="am-article-title">话题广场（初版简单Demo）
-<button class="am-fr am-btn am-btn-success" data-am-modal="{target: '#create-modal', closeViaDimmer: 0, width: 400, height: 360}">创建话题</button></h1>
+<h1 class="am-article-title">话题广场 <p class="am-article-meta">共有 <?php echo ($count); ?> 个话题</p></h1>
 		<hr />
-	<div class="am-u-md-8">
-		<?php if(is_array($topic)): foreach($topic as $key=>$vo): ?><p><a href="<?php echo U('/Home/Topic/'.$vo['id']);?>" target="_blank"><?php echo $vo['name'];?></a>
+	<div class="am-u-md-10">
+  <?php if(is_array($node)): foreach($node as $key=>$vo): ?><div class="am-panel am-panel-<?php echo ($vo['class']); ?>">
+      <div class="am-panel-hd">
+      <h3 class="am-panel-title"><?php echo ($vo['name']); ?> | <small><?php echo ($vo['intro']); ?></small></h3>
+      </div>
+      <div class="am-panel-bd">
+          <?php if(is_array($vo['value'])): $i = 0; $__LIST__ = $vo['value'];if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$tp): $mod = ($i % 2 );++$i;?><a target="_blank" href="<?php echo U('/Home/Topic/'.$tp['id']);?>" class="am-badge am-badge-<?php echo ($vo['class']); ?> am-round" data-am-popover="{content: '<?php echo htmlspecialchars(mb_strcut($tp['introduce'],0,80,'utf8')); ?>', trigger: 'hover focus'}"><?php echo ($tp['name']); ?></a><span> </span><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>
+      </div>
+    </div><?php endforeach; endif; ?>
+
+		<!--<?php if(is_array($topic)): foreach($topic as $key=>$vo): ?><p><a href="<?php echo U('/Home/Topic/'.$vo['id']);?>" target="_blank"><?php echo $vo['name'];?></a>
 			<?php $is_follow = getIsfollowtopic($vo['id']); ?>
 			<button type="button" onclick="on_follow_topic_btn_click(<?php echo $vo['id'];?>,'<?php echo $vo['name'];?>')" class="js-follow am-btn am-fr am-radius <?php echo ($is_follow?'am-btn-success':'am-btn-default');?>"><?php echo ($is_follow?'取消关注':'关注话题');?></button><br />
 			<small><?php echo $vo['introduce'];?></small></p>
-			<hr /><?php endforeach; endif; ?>
+			<hr /><?php endforeach; endif; ?>-->
 	</div>
+  <div class="am-u-md-2"><button class="am-btn am-btn-success" data-am-modal="{target: '#create-modal', closeViaDimmer: 0, width: 400, height: 360}">创建话题</button></div>
 </div>
 
 
@@ -377,12 +405,22 @@ function create(){
   <div class="am-footer-miscs ">
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
-    <p>CopyRight©2014 AllMoeGirl Inc.</p>
+    <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?6751f8c150b62574e5cff5ec3a8dad22";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
   </div>
 </footer>
 	<!-- /底部 -->
 </div>
 <script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/notify.js"></script>
 <script src="/Public/js/public.js"></script>
 </body>
 </html>

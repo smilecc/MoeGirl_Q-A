@@ -26,8 +26,19 @@ class TopicController extends Controller {
 	}
 
 	public function tlist(){
-		$topic_list = M('Topic')->order('id')->select();
-		$this->assign('topic',$topic_list);
+		//$topic_list = M('Topic')->order('id')->select();
+		$count = M('Topic')->count();
+		$nodeArr = M('Node')->select();
+		
+		$panel_class = array('primary','secondary','success','warning','danger');
+		for($i=0;$i<count($nodeArr);$i++)
+		{
+			$nodeArr[$i]['class'] = $panel_class[$i];
+			$nodeArr[$i]['value'] = M('Topic')->where('node=%d',($i+1))->select();
+		}
+
+		$this->assign('node',$nodeArr);
+		$this->assign('count',$count);
 		$this->display();
 	}
 
@@ -67,12 +78,12 @@ class TopicController extends Controller {
 		echo json_encode($resultJson);
 	}
 
-	public function tcreate($name,$introduce,$father_topic = 0){
+	public function tcreate($name,$introduce,$node,$father_topic = 0){
 		if($name=='' || $introduce=='')
 		{
 			exit(json_encode(array('status'=>0,'error'=>'数据不完整')));
 		}
-		$id = D('Topic')->tcreate($name,$introduce,$father_topic);
+		$id = D('Topic')->tcreate($name,$introduce,$node,$father_topic);
 		echo(json_encode(array('status'=>($id?1:0),'topic_id'=>$id,'error'=>($id?'NULL':'存在重名或系统错误'))));
 	}
 }

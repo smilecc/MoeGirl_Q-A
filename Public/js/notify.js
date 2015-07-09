@@ -1,8 +1,3 @@
-/*
-PNotify 2.0.1 sciactive.com/pnotify/
-(C) 2014 Hunter Perrin
-license GPL/LGPL/MPL
-*/
 (function(c){"function"===typeof define&&define.amd?define("pnotify",["jquery"],c):c(jQuery)})(function(c){var p={dir1:"down",dir2:"left",push:"bottom",spacing1:25,spacing2:25,context:c("body")},f,g,h=c(window),m=function(){g=c("body");PNotify.prototype.options.stack.context=g;h=c(window);h.bind("resize",function(){f&&clearTimeout(f);f=setTimeout(function(){PNotify.positionAll(!0)},10)})};PNotify=function(b){this.parseOptions(b);this.init()};c.extend(PNotify.prototype,{version:"2.0.1",options:{title:!1,
 title_escape:!1,text:!1,text_escape:!1,styling:"bootstrap3",addclass:"",cornerclass:"",auto_display:!0,width:"300px",min_height:"16px",type:"notice",icon:!0,opacity:1,animation:"fade",animate_speed:"slow",position_animate_speed:500,shadow:!0,hide:!0,delay:8E3,mouse_reset:!0,remove:!0,insert_brs:!0,destroy:!0,stack:p},modules:{},runModules:function(b,a){var c,e;for(e in this.modules)if(c="object"===typeof a&&e in a?a[e]:a,"function"===typeof this.modules[e][b])this.modules[e][b](this,"object"===typeof this.options[e]?
 this.options[e]:{},c)},state:"initializing",timer:null,styles:null,elem:null,container:null,title_container:null,text_container:null,animating:!1,timerHide:!1,init:function(){var b=this;this.modules={};c.extend(!0,this.modules,PNotify.prototype.modules);this.styles="object"===typeof this.options.styling?this.options.styling:PNotify.styling[this.options.styling];this.elem=c("<div />",{"class":"ui-pnotify "+this.options.addclass,css:{display:"none"},mouseenter:function(a){if(b.options.mouse_reset&&
@@ -49,12 +44,12 @@ function notifyMode(ico,clss,tl)
   this.tit = tl;
 }
 
-const LEFT = 0;
-const RIGHT = 1;
-const LOADING = new notifyMode('am-icon-spinner am-icon-spin','am-alert-success','Loading');
-const SUCCESS = new notifyMode('am-icon-info-circle','am-alert-success','Success');
-const ERROR = new notifyMode('am-icon-warning','am-alert-danger','Error');
-const INFO = new notifyMode('am-icon-info-circle','am-alert-secondary','Infomation');
+LEFT = 0;
+RIGHT = 1;
+LOADING = new notifyMode('am-icon-spinner am-icon-spin','am-alert-success','Loading');
+SUCCESS = new notifyMode('am-icon-info-circle','am-alert-success','Success');
+ERROR = new notifyMode('am-icon-warning','am-alert-danger','Error');
+INFO = new notifyMode('am-icon-info-circle','am-alert-secondary','Infomation');
 
 function notify(content,mode,isright)
 {

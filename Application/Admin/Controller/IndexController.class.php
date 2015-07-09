@@ -9,7 +9,7 @@ class IndexController extends Controller {
     	$pageContent['answerCount'] = M('Answer')->count();
     	$pageContent['topicCount'] = M('Topic')->count();
 		$pageContent['userCount'] = M('User')->count();
-		$pageContent['adminList'] = M('Admin')->select();
+		$pageContent['adminList'] = M('Admin')->where('pemission!=0')->select();
 		foreach ($pageContent['adminList'] as &$value) {
 			$value['pemission'] = PemissionToName($value['pemission']);
 		}

@@ -7,7 +7,7 @@
 <div class="am-g">
 <h1 class="am-article-title">我关注的话题</h1>
 		<hr />
-	<a class="am-link-muted am-fr am-icon-th-large" href="{:U('/Home/Topic/tlist')}"> 话题广场</a>
+	
 	<div class="am-u-md-8">
 		<foreach name="topic" item="vo">
 			<PHP>$topic_info = getTopicinfo($vo['topic_id']);</PHP>
@@ -17,6 +17,7 @@
 			<hr />
 		</foreach>
 	</div>
+	<div class="am-u-md-4 am-u-end"><a class="am-link-muted am-icon-th-large" href="{:U('/Home/Topic/tlist')}"> 话题广场</a></div>
 </div>
 
 </div>

@@ -1,0 +1,20 @@
+[ 2015-07-09T10:22:10+08:00 ] 127.0.0.1 /index.php/Admin/Find.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-07-09T10:23:45+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-07-09T10:25:05+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+
+[ 2015-07-09T10:27:43+08:00 ] 127.0.0.1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003624s ]
+

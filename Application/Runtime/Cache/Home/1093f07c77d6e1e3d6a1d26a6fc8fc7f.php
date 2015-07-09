@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } $isAdmin = CheckAdmin(); ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -269,7 +269,7 @@ function load_info_badge(sum,question,follow,agree){
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
-          <?php if(CheckAdmin()): ?><li class="am-dropdown-header">站点管理</li>
+          <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
@@ -313,7 +313,7 @@ function on_stu_btn_click(){
 <div class="am-g">
 <h1 class="am-article-title">我关注的话题</h1>
 		<hr />
-	<a class="am-link-muted am-fr am-icon-th-large" href="<?php echo U('/Home/Topic/tlist');?>"> 话题广场</a>
+	
 	<div class="am-u-md-8">
 		<?php if(is_array($topic)): foreach($topic as $key=>$vo): $topic_info = getTopicinfo($vo['topic_id']); ?>
 			<p><a href="<?php echo U('/Home/Topic/'.$topic_info['id']);?>" target="_blank"><?php echo $topic_info['name'];?></a>
@@ -321,6 +321,7 @@ function on_stu_btn_click(){
 			<small><?php echo $topic_info['introduce'];?></small></p>
 			<hr /><?php endforeach; endif; ?>
 	</div>
+	<div class="am-u-md-4 am-u-end"><a class="am-link-muted am-icon-th-large" href="<?php echo U('/Home/Topic/tlist');?>"> 话题广场</a></div>
 </div>
 
 </div>
@@ -336,7 +337,7 @@ function on_stu_btn_click(){
   <div class="am-footer-miscs ">
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
-    <p>CopyRight©2014 AllMoeGirl Inc.</p>
+    <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
   </div>
 </footer>
 	<!-- /底部 -->

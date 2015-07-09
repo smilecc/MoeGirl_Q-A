@@ -14,6 +14,7 @@ $(".js-follow").click(function(){
 });
 
 function load_form_conf(){
+  
   $("#put-question-form").submit(function(e){
     e.preventDefault();
     var reg = /\{\:(.+?)\!\}/;
@@ -21,12 +22,14 @@ function load_form_conf(){
     console.log(result_content);
     var regg = /是哪部作品/;
     var result_title = regg.exec($("#put-question-title").val());
-    if(result_title && result_content) $('#stu-confirm').modal('open');
+    if(false)//result_title && result_content) $('#stu-confirm').modal('open');
+      ;
     else{
       $("#put-question-form").submit(function(e) {event.preventDefault()}).off('submit').submit(function() {console.log("submit unlock")});
       $("#put-question-form").submit();
     }
   });
+
 }
 
   function logout(){
@@ -262,3 +265,31 @@ function get_info(){
     $('#info_agree').load('/index.php/Home/index/get_agree.html');
 }
 
+function pushToFind(a_id)
+{
+  $.ajax({
+  type:"POST",
+  url:"/index.php/Admin/Find/AddItem",
+  data:{
+        answer_id:a_id,
+        order:0
+        },
+  success:function(re){
+     notify_re(re);
+  }
+  });
+}
+
+function notify_re(re)
+{
+  var jsonObject = JSON.parse(re);
+  if(jsonObject['status']){
+    success_notify_right(jsonObject['info']);
+    return true;
+  }
+  else
+  {
+    error_notify_right(jsonObject['error']);
+    return false;
+  }
+}

@@ -6,6 +6,7 @@
     header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]);
     exit;
     }
+    $isAdmin = CheckAdmin();
 </php>
 <html class="no-js">
 <head>

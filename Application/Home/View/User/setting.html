@@ -21,8 +21,29 @@
             }
       });
   }
-</script>
 
+
+$(function() {
+  $('#btn-change-password').on('click', function() {
+    if($('#input-new-password').val() != $('#input-password-again').val())
+    {
+      error_notify_right('两次输入的密码不同');
+      return;
+    }
+          $.ajax({
+            type:"POST",
+            url:"{:U('User/Operation/ChangePassword')}",
+            data:{
+                  oldpw:$("#input-old-password").val(),
+                  newpw:$("#input-new-password").val()
+                  },
+            success:function(re){
+               notify_re(re);
+            }
+          });
+  });
+});
+</script>
 
 <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
   <ul class="am-tabs-nav am-nav am-nav-tabs">
@@ -53,9 +74,9 @@
           </div>
 
           <div class="am-form-group">
-            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Weibo</label>
             <div class="am-u-sm-9">
-              <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter" value="{:$user['weibo']}">
+              <input type="text" id="user-weibo" placeholder="输入你的微博 / Weibo" value="{:$user['weibo']}">
               <small>请直接填写网址，也可以填写个人站点，记得要加http://</small>
             </div>
           </div>
@@ -89,7 +110,16 @@
 
      <!--密码-->
     <div class="am-tab-panel">
-      ..3.
+      <div class="am-g">
+        <div class="am-u-md-8 am-u-sm-centered">
+            <fieldset class="am-form-set am-form">
+              <input type="password" id="input-old-password" placeholder="旧密码">
+              <input type="password" id="input-new-password" placeholder="新密码">
+              <input type="password" id="input-password-again" placeholder="重复密码">
+            </fieldset>
+            <button id="btn-change-password" class="am-btn am-btn-primary am-btn-block">改密码~</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } $isAdmin = CheckAdmin(); ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -115,7 +115,7 @@ function load_info_badge(sum,question,follow,agree){
 <header class="am-topbar">
 <div class="am-container">
   <h1 class="am-topbar-brand">
-    <a href="/">萌娘问答</a>
+    <a href="/"><?php echo C('SITE_TITLE');?></a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -173,7 +173,7 @@ function load_info_badge(sum,question,follow,agree){
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
       </div>
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
@@ -214,6 +214,9 @@ function load_info_badge(sum,question,follow,agree){
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
             <hr />
+            <small>
+            你可以使用Markdown语法，不了解？<a target="_blank" href="http://www.appinn.com/markdown/"><strong>点击这儿学习</strong></a>
+            </small>
             <!--<small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
             </small>-->
            </div>
@@ -269,7 +272,7 @@ function load_info_badge(sum,question,follow,agree){
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
-          <?php if(CheckAdmin()): ?><li class="am-dropdown-header">站点管理</li>
+          <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
@@ -299,14 +302,12 @@ function on_stu_btn_click(){
 }
 </script>
 
-
-
 	<!-- /头部 -->
 
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<title>个人设置 - 萌娘问答</title>
+<title>个人设置 - <?php echo C('SITE_TITLE');?></title>
 <script type="text/javascript">
   function save(){
       $.ajax({
@@ -327,8 +328,29 @@ function on_stu_btn_click(){
             }
       });
   }
-</script>
 
+
+$(function() {
+  $('#btn-change-password').on('click', function() {
+    if($('#input-new-password').val() != $('#input-password-again').val())
+    {
+      error_notify_right('两次输入的密码不同');
+      return;
+    }
+          $.ajax({
+            type:"POST",
+            url:"<?php echo U('User/Operation/ChangePassword');?>",
+            data:{
+                  oldpw:$("#input-old-password").val(),
+                  newpw:$("#input-new-password").val()
+                  },
+            success:function(re){
+               notify_re(re);
+            }
+          });
+  });
+});
+</script>
 
 <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
   <ul class="am-tabs-nav am-nav am-nav-tabs">
@@ -359,9 +381,9 @@ function on_stu_btn_click(){
           </div>
 
           <div class="am-form-group">
-            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
+            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Weibo</label>
             <div class="am-u-sm-9">
-              <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter" value="<?php echo $user['weibo'];?>">
+              <input type="text" id="user-weibo" placeholder="输入你的微博 / Weibo" value="<?php echo $user['weibo'];?>">
               <small>请直接填写网址，也可以填写个人站点，记得要加http://</small>
             </div>
           </div>
@@ -395,7 +417,16 @@ function on_stu_btn_click(){
 
      <!--密码-->
     <div class="am-tab-panel">
-      ..3.
+      <div class="am-g">
+        <div class="am-u-md-8 am-u-sm-centered">
+            <fieldset class="am-form-set am-form">
+              <input type="password" id="input-old-password" placeholder="旧密码">
+              <input type="password" id="input-new-password" placeholder="新密码">
+              <input type="password" id="input-password-again" placeholder="重复密码">
+            </fieldset>
+            <button id="btn-change-password" class="am-btn am-btn-primary am-btn-block">改密码~</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -412,7 +443,18 @@ function on_stu_btn_click(){
   <div class="am-footer-miscs ">
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
-    <p>CopyRight©2014 AllMoeGirl Inc.</p>
+    <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?6751f8c150b62574e5cff5ec3a8dad22";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度统计-->
   </div>
 </footer>
 	<!-- /底部 -->

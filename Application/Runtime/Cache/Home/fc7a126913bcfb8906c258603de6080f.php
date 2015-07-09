@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } $isAdmin = CheckAdmin(); ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -32,7 +32,6 @@
   <meta name="msapplication-TileColor" content="#0e90d2">
 
   <link rel="stylesheet" href="/Public/css/pnotify.custom.min.css"/>
-  <link href="/Public/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <!--<link href="/Public/bootstrap/css/bootstrap.css" id="bootstrap-css" rel="stylesheet" type="text/css"/>-->
   <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="/Public/assets/css/app.css">
@@ -42,11 +41,18 @@
   <script src="/Public/assets/js/jquery.min.js"></script>
   <!--<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>-->
   <script src="/Public/assets/js/amazeui.min.js"></script>
-  <script src="/Public/js/pnotify.custom.min.js"></script>
+  <script src="/Public/js/notify.js"></script>
 <!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!--[if IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，不能达到完整的浏览体验。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
 <![endif]-->
+<!--[if lte IE 8]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，萌娘问答 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
 <script type="text/javascript">
   var upload_mode = 'answer';
 </script>
@@ -109,7 +115,7 @@ function load_info_badge(sum,question,follow,agree){
 <header class="am-topbar">
 <div class="am-container">
   <h1 class="am-topbar-brand">
-    <a href="/">萌娘问答</a>
+    <a href="/"><?php echo C('SITE_TITLE');?></a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -167,7 +173,7 @@ function load_info_badge(sum,question,follow,agree){
 
     <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
       <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
       </div>
     </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
@@ -208,6 +214,9 @@ function load_info_badge(sum,question,follow,agree){
             </label>
             <button type="submit" class="am-btn am-btn-primary am-fr">提交</button>
             <hr />
+            <small>
+            你可以使用Markdown语法，不了解？<a target="_blank" href="http://www.appinn.com/markdown/"><strong>点击这儿学习</strong></a>
+            </small>
             <!--<small>提示：如果是询问图片所属作品可以在标题中包含“是哪部作品”的关键词，并上传图片，系统会有一定几率自动识别出图片所属的作品。系统会自动识别本答案的第一张图并给出识别答案。<br />例如标题为：请问这幅画是哪部作品中的？<br />
             </small>-->
            </div>
@@ -263,6 +272,8 @@ function load_info_badge(sum,question,follow,agree){
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
+          <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
+            <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
           <li><a href="<?php echo U('/Home/User/setting');?>">设置</a></li>
@@ -291,14 +302,12 @@ function on_stu_btn_click(){
 }
 </script>
 
-
-
 	<!-- /头部 -->
 
 	<!-- 主体 -->
 	<div class="am-container">
 	
-<title><?php echo $user['username'];?> - 萌娘问答</title>
+<title><?php echo $user['username'];?> - <?php echo C('SITE_TITLE');?></title>
 
 <script type="text/javascript">
 function send_msg(){
@@ -415,12 +424,24 @@ function send_msg(){
   <div class="am-footer-miscs ">
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
-    <p>CopyRight©2014 AllMoeGirl Inc.</p>
+    <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?6751f8c150b62574e5cff5ec3a8dad22";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度统计-->
   </div>
 </footer>
 	<!-- /底部 -->
 </div>
 <script src="/Public/js/ajaxfileupload.js"></script>
+<script src="/Public/js/notify.js"></script>
 <script src="/Public/js/public.js"></script>
 </body>
 </html>

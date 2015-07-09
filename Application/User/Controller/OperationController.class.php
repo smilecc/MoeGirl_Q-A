@@ -103,5 +103,11 @@ Class OperationController extends Controller{
 		echo 1;
 	}
 
-
+	public function ChangePassword($oldpw,$newpw)
+    {
+    	if(IS_POST)
+    	{
+    		echo json_encode(D('User')->ChangePassword($oldpw,$newpw));
+    	}
+    }
 }

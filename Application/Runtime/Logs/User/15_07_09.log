@@ -1,0 +1,259 @@
+[ 2015-07-09T11:09:47+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011916s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.028871s ]
+
+[ 2015-07-09T11:09:49+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005506s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.055663s ]
+
+[ 2015-07-09T11:12:21+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005081s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.060114s ]
+
+[ 2015-07-09T11:13:23+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.037553s ]
+
+[ 2015-07-09T11:15:20+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.020114s ]
+
+[ 2015-07-09T11:16:57+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html?oldpw=test&newpw=sxcuic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.019431s ]
+
+[ 2015-07-09T11:17:35+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html?oldpw=test&newpw=sxcuic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.027534s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.018309s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000461s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 119 行.
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: password D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 121 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001985s ]
+
+[ 2015-07-09T11:18:07+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002511s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.060218s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025057s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 119 行.
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000798s ]
+NOTIC: [8] Undefined variable: password D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 121 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2015-07-09T11:18:25+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.026780s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.020198s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000936s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 119 行.
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000620s ]
+NOTIC: [8] Undefined variable: password D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 121 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2015-07-09T11:18:57+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.051551s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.033606s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000450s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 119 行.
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2015-07-09T11:19:06+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.026450s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.019491s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 119 行.
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2015-07-09T11:19:44+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025668s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016539s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000368s ]
+NOTIC: [8] Undefined variable: username D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 119 行.
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001351s ]
+
+[ 2015-07-09T11:21:00+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025617s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.024733s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001799s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000652s ]
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 133 行.
+ERR: 非法数据对象！:[id=>]
+
+[ 2015-07-09T11:21:02+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016414s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016041s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\User\Model\UserModel.class.php 第 133 行.
+ERR: 非法数据对象！:[id=>]
+
+[ 2015-07-09T11:21:11+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html?oldpw=test&newpw=sxcuic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.028069s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.022130s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.001101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2015-07-09T11:22:50+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.048532s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.023681s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2015-07-09T11:24:02+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002292s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.027982s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016539s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: UPDATE `mgqa_user` SET `password`='054687d7b3afbcc15d1c037a200d425b' WHERE `username` = 'SmileC' [ RunTime:0.066102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2015-07-09T11:24:13+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.024345s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.019603s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: UPDATE `mgqa_user` SET `password`='61cc19f8797e76fda50b60f1ddbec315' WHERE `username` = 'SmileC' [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2015-07-09T11:25:25+08:00 ] 127.0.0.1 /index.php/User/Operation/ChangePassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.027540s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.018116s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: UPDATE `mgqa_user` SET `password`='054687d7b3afbcc15d1c037a200d425b' WHERE `username` = 'test' [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001612s ]
+

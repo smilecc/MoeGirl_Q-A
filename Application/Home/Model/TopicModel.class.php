@@ -35,14 +35,15 @@ Class TopicModel extends Model{
 		
 	}
 
-	public function tcreate($name,$introduce,$father_topic){
+	public function tcreate($name,$introduce,$node,$father_topic){
 		if(!test_user()) return false;
 		if($this->where('name="%s"',$name)->count()) return false;
 		$data = array(
 			'creater'		=>	cookie('username'),
 			'name'			=>	htmlspecialchars($name),
 			'introduce'		=>	htmlspecialchars($introduce),
-			'father_topic'	=>	$father_topic
+			'father_topic'	=>	$father_topic,
+			'node'			=>  $node
 			);
 		$this->create($data);
 		return $this->add();

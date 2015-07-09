@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) { header("Location: /User/Login?from=".$_SERVER['PHP_SELF'].$_SERVER["QUERY_STRING"]); exit; } $isAdmin = CheckAdmin(); ?>
 <html class="no-js">
 <head>
 	  <meta charset="utf-8">
@@ -269,7 +269,7 @@ function load_info_badge(sum,question,follow,agree){
         <ul class="am-dropdown-content">
           <li class="am-dropdown-header">我的页面</li>
           <li><a href="<?php echo U('/Home/People/'.cookie('username'));?>">个人主页</a></li>
-          <?php if(CheckAdmin()): ?><li class="am-dropdown-header">站点管理</li>
+          <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
             <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
           <li class="am-dropdown-header">用户操作</li>
           <li><a href="<?php echo U('/Home/Inbox');?>">私信 <span class="am-badge am-badge-danger am-round msg-badge"><?php echo get_inbox_alert();?></span></a></li>
@@ -347,8 +347,9 @@ function on_stu_btn_click(){
 				      <?php echo ParseMd($vo['content']);?>
 
 				      <p class="am-text-right">
-				      <a href="javascript:;" class="am-article-meta" onclick="push2timeline(2,<?php echo $vo['id'];?>,this)"><i class="am-icon-reply"></i> 推送给关注我的人 </a>
-				      <a class="am-link-muted am-article-meta" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
+				      <?php if($isAdmin): ?><a href="javascript:;" class="am-article-meta" onclick="pushToFind(<?php echo $vo['id'];?>)"><i class="am-icon-bookmark"></i> 推送至发现 </a><?php endif; ?>
+				      <a href="javascript:;" class="am-article-meta" onclick="push2timeline(2,<?php echo $vo['id'];?>,this)"><i class="am-icon-share"></i> 推送给关注我的人 </a>
+				      <a class="am-article-meta" href="javascript:;" value="<?php echo $vo['id'];?>" name="123" onClick="javascript:comment_toggle(this,'answer');"><span class="am-icon-comment"> 评论列表</span></a></p>
 				    </div>
 				    <div style="display: none;" id="comment-<?php echo $vo['id'];?>">
 				    <hr/>
@@ -371,7 +372,7 @@ function on_stu_btn_click(){
 		        <p><button type="submit" class="am-btn am-btn-success am-radius am-fr" id="anonymous_btn">发布</button></p>
 	        </form><?php endif; ?>
 	</div>
-	<div class="am-u-sm-3">
+	<div class="am-u-md-3">
 		<button type="button" id="follow_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,0)" class="am-btn am-btn-primary am-radius <?php echo ($page_user_status['follow']?'am-btn-success':'');?>"><?php echo ($page_user_status['follow']?'取消关注':'关注问题');?></button>
 		<button type="button" id="anonymous_btn" onclick="on_user_status_btn_click(<?php echo $page['id'];?>,1)" class="am-btn am-btn-default am-radius <?php echo ($page_user_status['anonymous']?'am-active':'');?>" style="display: none;" data-am-button><?php echo ($page_user_status['anonymous']?'已匿名':'使用匿名身份');?></button>
 		<hr />
@@ -392,7 +393,7 @@ function on_stu_btn_click(){
   <div class="am-footer-miscs ">
     <p>你正在浏览的是
       <a href="http://zh.moegirl.org/" title="萌娘百科" target="_blank" class="">萌娘百科</a> 的子项目 - 萌娘问答</p>
-    <p>CopyRight©2014 AllMoeGirl Inc.</p>
+    <p>CopyRight©2014-2015 MoeGirl.Wiki.</p>
   </div>
 </footer>
 	<!-- /底部 -->

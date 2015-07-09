@@ -115,14 +115,15 @@
           <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">管理员列表<span class="am-icon-chevron-down am-fr" ></span></div>
           <div id="collapse-panel-2" class="am-in">
             <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
-              <tbody>
-              
+            <thead>
               <tr>
                 <th class="am-text-center">#</th>
                 <th>用户名</th>
                 <th>组</th>
               </tr>
-              
+          </thead>
+
+              <tbody>
               <?php if(is_array($page['adminList'])): foreach($page['adminList'] as $k=>$vo): ?><tr>
                 <td class="am-text-center"><?php echo $k;?></td>
                 <td><?php echo $vo['username'];?></td>
