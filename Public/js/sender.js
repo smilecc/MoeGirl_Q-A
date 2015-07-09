@@ -5,7 +5,7 @@ WEB_SOCKET_DEBUG = true;
 WEB_SOCKET_SUPPRESS_CROSS_DOMAIN_SWF_ERROR = true
 window.onload = function()
 {
-    /*
+    
 	// =====================================================
 	ws = new WebSocket("ws://wen.moegirl.org:3232/");
 	ws.onopen = function() {
@@ -25,7 +25,7 @@ window.onload = function()
 	ws.onerror = function() {
 		  console.log("出现错误");
 	};
-    */
+    
 }
 
 

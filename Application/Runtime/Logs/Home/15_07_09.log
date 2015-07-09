@@ -11435,3 +11435,846 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
 
+[ 2015-07-09T14:24:48+08:00 ] 127.0.0.1 /index.php/Home/User/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+
+[ 2015-07-09T14:24:51+08:00 ] 127.0.0.1 /index.php/Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002286s ]
+
+[ 2015-07-09T17:54:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000963s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002770s ]
+
+[ 2015-07-09T17:54:58+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.047945s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.025645s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.026187s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('test') ORDER BY id desc LIMIT 0,30   [ RunTime:0.029514s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.053367s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.022669s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.001490s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000468s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.014534s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000108s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000102s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000103s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 29
+            [username] => test
+            [mode] => 1
+            [project_id] => 2
+            [status] => 2
+            [pushtime] => 2015-07-05 17:13:00
+            [content] => Array
+                (
+                    [id] => 2
+                    [username] => test
+                    [anonymous] => 0
+                    [title] => test
+                    [content] => #Img test
+## img
+![img](/Public/Uploads/2015-07-05/5598ca40614d6.jpg)
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-07-05 14:10:34
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 16
+            [username] => test
+            [mode] => 2
+            [project_id] => 6
+            [status] => 1
+            [pushtime] => 2015-07-05 14:12:22
+            [content] => Array
+                (
+                    [id] => 6
+                    [question_id] => 2
+                    [username] => test
+                    [content] => #测试标题
+正文是这样的
+所以说
+-  1
+-  2
+-  3
+![img](/Public/Uploads/2015-07-05/5598ca9b0a919.jpg)
+&lt;* 1
+&lt;* 2
+&lt;* 3
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-07-05 14:12:22
+                    [question_title] => test
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 15
+            [username] => test
+            [mode] => 1
+            [project_id] => 2
+            [status] => 1
+            [pushtime] => 2015-07-05 14:10:35
+            [content] => Array
+                (
+                    [id] => 2
+                    [username] => test
+                    [anonymous] => 0
+                    [title] => test
+                    [content] => #Img test
+## img
+![img](/Public/Uploads/2015-07-05/5598ca40614d6.jpg)
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-07-05 14:10:34
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [3] => Array
+        (
+            [id] => 12
+            [username] => test
+            [mode] => 2
+            [project_id] => 4
+            [status] => 1
+            [pushtime] => 2015-07-05 12:52:22
+            [content] => Array
+                (
+                    [id] => 4
+                    [question_id] => 1
+                    [username] => test
+                    [content] => #title
+测试内容
+测试2
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-07-05 12:52:22
+                    [question_title] => 是哪部作品
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [4] => Array
+        (
+            [id] => 11
+            [username] => test
+            [mode] => 2
+            [project_id] => 3
+            [status] => 1
+            [pushtime] => 2015-07-05 12:44:04
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [5] => Array
+        (
+            [id] => 10
+            [username] => test
+            [mode] => 2
+            [project_id] => 2
+            [status] => 1
+            [pushtime] => 2015-07-05 11:48:07
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [6] => Array
+        (
+            [id] => 8
+            [username] => test
+            [mode] => 2
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-07-05 11:00:44
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 3
+            [username] => test
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-07-05 10:43:57
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.025119s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.029783s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=6 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=6 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.001670s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000169s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000310s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000657s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.001537s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000353s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000392s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000202s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000175s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 23 行.
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 23 行.
+NOTIC: [8] Undefined index: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 23 行.
+SQL: SELECT `introduce_short` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000143s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000235s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2015-07-09T17:55:01+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.028500s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.042878s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.046763s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('test') ORDER BY id desc LIMIT 30,30   [ RunTime:0.000530s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 32 行.
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 67 行.
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2015-07-09T17:55:05+08:00 ] 127.0.0.1 /index.php/Home/Question/get_comment.html?id=6&mode=answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `mgqa_comment` [ RunTime:0.038261s ]
+SQL: SELECT * FROM `mgqa_comment` WHERE ( project_id=6 AND mode=1 ) ORDER BY id  [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.016830s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-07-09T17:55:07+08:00 ] 127.0.0.1 /index.php/Home/Question/2/Answer/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+
+[ 2015-07-09T17:57:33+08:00 ] 127.0.0.1 /index.php/Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+
+[ 2015-07-09T17:57:41+08:00 ] 127.0.0.1 /index.php/Home/Inbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-07-09T18:43:45+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+
+[ 2015-07-09T18:43:46+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002978s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.030834s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.036831s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.025009s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('test') ORDER BY id desc LIMIT 0,30   [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.097146s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer` [ RunTime:0.071217s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000433s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000118s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000096s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `mgqa_answer` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000094s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mgqa_question` WHERE ( id=%d ) LIMIT 1  
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 29
+            [username] => test
+            [mode] => 1
+            [project_id] => 2
+            [status] => 2
+            [pushtime] => 2015-07-05 17:13:00
+            [content] => Array
+                (
+                    [id] => 2
+                    [username] => test
+                    [anonymous] => 0
+                    [title] => test
+                    [content] => #Img test
+## img
+![img](/Public/Uploads/2015-07-05/5598ca40614d6.jpg)
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-07-05 14:10:34
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 16
+            [username] => test
+            [mode] => 2
+            [project_id] => 6
+            [status] => 1
+            [pushtime] => 2015-07-05 14:12:22
+            [content] => Array
+                (
+                    [id] => 6
+                    [question_id] => 2
+                    [username] => test
+                    [content] => #测试标题
+正文是这样的
+所以说
+-  1
+-  2
+-  3
+![img](/Public/Uploads/2015-07-05/5598ca9b0a919.jpg)
+&lt;* 1
+&lt;* 2
+&lt;* 3
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-07-05 14:12:22
+                    [question_title] => test
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 15
+            [username] => test
+            [mode] => 1
+            [project_id] => 2
+            [status] => 1
+            [pushtime] => 2015-07-05 14:10:35
+            [content] => Array
+                (
+                    [id] => 2
+                    [username] => test
+                    [anonymous] => 0
+                    [title] => test
+                    [content] => #Img test
+## img
+![img](/Public/Uploads/2015-07-05/5598ca40614d6.jpg)
+                    [answer] => 0
+                    [follow] => 0
+                    [status] => 0
+                    [time] => 2015-07-05 14:10:34
+                    [topic1] => 1
+                    [topic2] => 
+                    [topic3] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [3] => Array
+        (
+            [id] => 12
+            [username] => test
+            [mode] => 2
+            [project_id] => 4
+            [status] => 1
+            [pushtime] => 2015-07-05 12:52:22
+            [content] => Array
+                (
+                    [id] => 4
+                    [question_id] => 1
+                    [username] => test
+                    [content] => #title
+测试内容
+测试2
+                    [agree] => 0
+                    [unagree] => 0
+                    [time] => 2015-07-05 12:52:22
+                    [question_title] => 是哪部作品
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [4] => Array
+        (
+            [id] => 11
+            [username] => test
+            [mode] => 2
+            [project_id] => 3
+            [status] => 1
+            [pushtime] => 2015-07-05 12:44:04
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [5] => Array
+        (
+            [id] => 10
+            [username] => test
+            [mode] => 2
+            [project_id] => 2
+            [status] => 1
+            [pushtime] => 2015-07-05 11:48:07
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [6] => Array
+        (
+            [id] => 8
+            [username] => test
+            [mode] => 2
+            [project_id] => 1
+            [status] => 3
+            [pushtime] => 2015-07-05 11:00:44
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 3
+            [username] => test
+            [mode] => 2
+            [project_id] => 1
+            [status] => 1
+            [pushtime] => 2015-07-05 10:43:57
+            [content] => Array
+                (
+                    [question_title] => 
+                )
+
+            [us_array] => Array
+                (
+                    [0] => test
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000750s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.014650s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `mgqa_answer_agree` [ RunTime:0.048841s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=6 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=6 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000436s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=4 AND username="SmileC" ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000243s ]
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000788s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000627s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000723s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000196s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000183s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000176s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.001123s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 23 行.
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 23 行.
+NOTIC: [8] Undefined index: username D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 23 行.
+SQL: SELECT `introduce_short` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 3 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000164s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: agree D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 4 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 5 行.
+SQL: SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1   [ RunTime:0.000294s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d AND username="%s" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `is_agree` FROM `mgqa_answer_agree` WHERE ( answer_id=%d AND username="%s" ) LIMIT 1  
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="test" ) LIMIT 1   [ RunTime:0.000435s ]
+NOTIC: [8] Undefined index: question_id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 22 行.
+NOTIC: [8] Undefined index: content D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 24 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 26 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 28 行.
+NOTIC: [8] Undefined index: id D:\php\Code\MoeGirl_Q-A\Application\Runtime\Cache\Home\28b1ef330ef0403dcf40049b46fc6a98.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003351s ]
+
+[ 2015-07-09T18:44:33+08:00 ] 127.0.0.1 /index.php/Home/index/get_timeline.html?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003082s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.104409s ]
+SQL: SHOW COLUMNS FROM `mgqa_follow` [ RunTime:0.053850s ]
+SQL: SELECT * FROM `mgqa_follow` WHERE ( us1="SmileC" OR us2="SmileC" )  [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.046717s ]
+SQL: SELECT * FROM `mgqa_timeline` WHERE `username` IN ('test') ORDER BY id desc LIMIT 30,30   [ RunTime:0.000396s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 32 行.
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array D:\php\Code\MoeGirl_Q-A\Application\Home\Model\TimelineModel.class.php 第 67 行.
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+

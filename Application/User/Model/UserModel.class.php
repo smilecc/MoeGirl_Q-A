@@ -3,8 +3,6 @@ namespace User\Model;
 use Think\Model;
 
 Class UserModel extends Model{
-
-
 	// 创建或更新用户登录随机数
 	public function login_random($username){
 		$userinfo = $this->where('username="%s"',$username)->find();
