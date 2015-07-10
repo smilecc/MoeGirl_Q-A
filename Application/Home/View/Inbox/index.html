@@ -80,7 +80,7 @@ $(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
   
   </if>
   ：{:getInboxcontent($vo['inbox_id'])}... <br />
-  <span>{$vo['time']}</span><span style="float:right"><a href="/Home/Inboxpage/{$vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']}" target="_BLANK">共{$vo['numb']}条对话</a></span></p>
+  <span>{$vo['time']}</span><span style="float:right"><a href="/Home/Inboxpage/{$vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']}" target="_blank">共{$vo['numb']}条对话</a></span></p>
   <hr>
 </volist>
 
