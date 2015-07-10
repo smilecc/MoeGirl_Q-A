@@ -47,6 +47,7 @@ Class UserModel extends Model{
 		if($userinfo['password'] == login_en_code($password))
 		{
 			$resultArr['status'] = true;
+			$resultArr['username'] = $userinfo['username'];
 			$resultArr['json']['info'] = 'Success';
 		}
 		else

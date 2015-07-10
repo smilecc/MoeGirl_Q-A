@@ -12,8 +12,7 @@ function SearchAnswerAdd($answer_id,$question_id,$question_title,$answer_content
 	    'answer' 		=> $answer_content,
 	    'username'		=> $author,
 	    'time' 			=> time(),
-	    'question_id'	=> $question_id,
-	    'answer_id'		=> $answer_id
+	    'question_id'	=> $question_id
 	);
 	 
 	// 创建文档对象

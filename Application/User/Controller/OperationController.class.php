@@ -66,6 +66,7 @@ Class OperationController extends Controller{
 			if($resultArr['status'])
 			{
 				// Set cookie value
+				$user = $resultArr['username'];
 				if($remember_me == 'on') cookie('token',login_en_code(D('User')->login_random($user).$user));
 				cookie('username',$user);
 
