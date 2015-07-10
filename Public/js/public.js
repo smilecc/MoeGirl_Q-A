@@ -216,6 +216,9 @@ function getCookie(cookieName) {
 }
 
 function follow_user(from_name,to_user){
+  btnName = '.follow-btn-' + to_user;
+$(btnName).text('');
+$(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
     $.ajax({
             type:"POST",
             url:"/Home/User/follow.html",

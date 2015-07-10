@@ -10,6 +10,9 @@
 
 <script type="text/javascript">
 function send(){
+btnName = "#btn-msg-send";
+$(btnName).text('');
+$(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
     $.ajax({
             type:"POST",
             url:"{:U('/Home/Inbox')}",
@@ -20,9 +23,18 @@ function send(){
                   },
             cache:false, //不缓存此页面   
             success:function(re){
-        alert(re);
-        if(re=="发送成功") location.replace(location);
+              $(btnName).text('发送');
+            if(re=="发送成功")
+              {
+                success_notify_right(re);
+                location.replace(location);
+              }
+              else
+              {
+                error_notify_right(re);
+              }
             }
+          }
         });
 
 
@@ -31,7 +43,7 @@ function send(){
 
 <div class="am-form">
   <textarea name="content" id="contenttext" onKeyDown='if (this.value.length>=500){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="4" id="comenttext"></textarea><br />
-  <button type="submit" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
+  <button type="submit" id="btn-msg-send" class="am-btn am-btn-primary am-fr" onclick="send()">发送</button><br />
 </div>
 
 <hr>
