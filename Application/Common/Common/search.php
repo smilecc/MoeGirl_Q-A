@@ -1,18 +1,19 @@
 <?
 require_once '/usr/local/xunsearch/sdk/php/lib/XS.php';
 
-function SearchAnswerAdd($answer_id,$question_title,$answer_content,$author,$user_intro)
+function SearchAnswerAdd($answer_id,$question_id,$question_title,$answer_content,$author)
 {
 	$xs = new XS('answer');
 	$index = $xs->index;
 
 	$data = array(
-	    'id' 		=> $answer_id,
-	    'question' 	=> $question_title,
-	    'answer' 	=> $answer_content,
-	    'username'	=> $author,
-	    'user_intro'=> $user_intro,
-	    'time' 		=> time()
+	    'id' 			=> $answer_id,
+	    'question' 		=> $question_title,
+	    'answer' 		=> $answer_content,
+	    'username'		=> $author,
+	    'time' 			=> time(),
+	    'question_id'	=> $question_id,
+	    'answer_id'		=> $answer_id
 	);
 	 
 	// 创建文档对象

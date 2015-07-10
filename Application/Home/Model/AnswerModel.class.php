@@ -24,7 +24,7 @@ Class AnswerModel extends Model{
 		if($result_id)
 			{
 				D('Timeline')->push(2,$result_id,1);
-				SearchAnswerAdd($result_id,get_question_title($get_data['question_id']),$content,cookie('username'),get_user_intro(cookie('username')));
+				SearchAnswerAdd($result_id,$get_data['question_id'],get_question_title($get_data['question_id']),$content,cookie('username'),get_user_intro(cookie('username')));
 			}
 		return($result_id);
 	}
