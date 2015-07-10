@@ -11,16 +11,21 @@ Class AnswerModel extends Model{
 		
 		if($this->where('username="%s" AND question_id=%d',cookie('username'),$get_data['question_id'])->count()) return false;
 
+		$content = htmlspecialchars($get_data['content']);
 		$data = array(
 			'username' 	=> cookie('username'),
-			'content'	=> htmlspecialchars($get_data['content']),
+			'content'	=> $content,
 			'question_id' => $get_data['question_id'],
 			);
 
 
 		$this->create($data);
 		$result_id = $this->add();
-		if($result_id) D('Timeline')->push(2,$result_id,1);
+		if($result_id)
+			{
+				D('Timeline')->push(2,$result_id,1);
+				SearchAnswerAdd($result_id,get_question_title($get_data['question_id']),$content,cookie('username'),get_user_intro(cookie('username')));
+			}
 		return($result_id);
 	}
 

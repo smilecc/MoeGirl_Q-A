@@ -1,6 +1,8 @@
 <?php
 // markdown解析器
 include("Parsedown.php");
+// 搜索索引
+include("search.php");
 
 // 权限编码到权限名称
 function PemissionToName($id)
