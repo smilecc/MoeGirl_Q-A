@@ -14,7 +14,7 @@
       </strong>
       <elseif condition="$vo['type'] eq 2" /><a target="_blank" href="{:GetUserPage($vo['fromusername'])}" class="am-comment-author">{:$vo['fromusername']}</a> 评论了你在问题 <strong>
             <a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['answer_id']}">{:get_question_title($vo['question_id'])}</a>
-            </strong>
+            </strong> 下的回答
       <elseif condition="$vo['type'] eq 3" /> <a target="_blank" href="{:GetUserPage($vo['fromusername'])}">{:$vo['fromusername']} </a>在提问问题 <strong>
             <a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}">{:get_question_title($vo['question_id'])}</a>
             </strong> 的时候召唤了你

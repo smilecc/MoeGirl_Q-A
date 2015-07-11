@@ -268,6 +268,7 @@ function get_info(){
               url:"/index.php/Home/index/update_time.html"
     });
 
+    load_info_badge(0,0,0,0);
     $('#info_question').load('/index.php/Home/index/get_question.html');
     $('#info_follow').load('/index.php/Home/index/get_follow.html');
     $('#info_agree').load('/index.php/Home/index/get_agree.html');

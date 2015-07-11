@@ -44,8 +44,10 @@ function ModelOperationCheckAdmin()
 
 // 获得用户index
 function GetUserPage($username)
-{
-    return U('/Home/People/'.M('User')->where('username="%s"',$username)->getField('page'));
+{   
+    $page = M('User')->where('username="%s"',$username)->getField('page');
+    if($page == null) return false;
+    else return U('/Home/People/'.$page);
 }
 
 // 检测输入的验证码是否正确，$code为用户输入的验证码字符串
@@ -203,8 +205,8 @@ function ParseAtUser($value)
     return $temp_value = preg_replace_callback(
             "/@([\S]+)\s{1}/",
             function ($matches) {
-                //
-                return "[".$matches[0]."](".GetUserPage($matches[1]).")";
+                if($res = GetUserPage($matches[1]))
+                    return "[".$matches[0]."](".$res.")";
             },
             $value
         );
@@ -215,9 +217,9 @@ function PushAtUser($value,$mode,$data)
     preg_match_all("/@([\S]+)\s{1}/", $value, $macthArr);
 
     foreach ($macthArr[1] as $value) {
-        D('Timeline')->AtUser($value,$mode,$data);
+        if(GetUserPage($value))
+            D('Timeline')->AtUser($value,$mode,$data);
     }
-    trace($data);
     
     return $temp_value;
 }
