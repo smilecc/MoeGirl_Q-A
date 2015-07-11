@@ -23,10 +23,16 @@ Class TimelineModel extends Model{
 	}
 
 	// 获取首页的timeline内容
-	public function get_index($page = 1){
-		$follow_array = D('Follow')->get_follow();
-
+	public function get_index($page = 1,$username=false){
+		if($username == false)
+		{
+			$follow_array = D('Follow')->get_follow();
+		}else{
+			$follow_array = array($username);
+		}
 		$search_data['username'] = array('in',$follow_array);
+		trace($search_data);
+
 		$timeline_array = M('Timeline')->where($search_data)->order('id desc')->page($page,30)->select();
 		
 		foreach ($timeline_array as &$value) {

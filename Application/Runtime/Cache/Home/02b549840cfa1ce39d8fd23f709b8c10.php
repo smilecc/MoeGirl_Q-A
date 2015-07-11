@@ -95,6 +95,7 @@ function load_info_badge(sum,question,follow,agree){
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      //console.log(data);
       if(data['type'] == "new-info"){
         $.ajax({
             type:"GET",
@@ -109,6 +110,15 @@ function load_info_badge(sum,question,follow,agree){
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
+
+    $(function(){
+        $('#input-search').bind('keypress',function(event){
+            if(event.keyCode == "13")    
+            {
+                window.open("http://search.wen.moegirl.org/answer/?q="+$('#input-search').val());
+            }
+        });
+    });
 </script>
 <script type="text/javascript" src="/Public/js/sender.js"></script>
 
@@ -171,11 +181,9 @@ function load_info_badge(sum,question,follow,agree){
     </ul>
 
 
-    <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
-      <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
+      <div class="am-topbar-form am-topbar-left am-form-inline">
+        <input type="text" class="am-form-field am-input-sm"  id="input-search" placeholder="搜索">
       </div>
-    </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
 
@@ -311,7 +319,9 @@ function on_stu_btn_click(){
 
 <script type="text/javascript">
 function postmsg(){
-  console.log($("#toname").val());
+  btnName = "#btn-msg-send";
+$(btnName).text('');
+$(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
     $.ajax({
             type:"POST",
             url:"<?php echo U('/Home/Inbox');?>",
@@ -322,8 +332,16 @@ function postmsg(){
                   },
             cache:false, //不缓存此页面   
             success:function(re){
-        alert(re);
-         if(re=="发送成功")  location.replace(location);
+              $(btnName).text('发送');
+            if(re=="发送成功")
+              {
+                success_notify_right(re);
+                location.replace(location);
+              }
+              else
+              {
+                error_notify_right(re);
+              }
             }
         });
 
@@ -344,8 +362,8 @@ function postmsg(){
       <textarea name="content" onKeyDown='if (this.value.length>=1000){if(event.keyCode != 8)event.returnValue=false;}' class="form-control" rows="7" id="comenttext"></textarea>
       <hr>
       <span class="am-fr">
-        <button type="button" class="am-btn am-btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="am-btn am-btn-primary" onclick="postmsg()" data-dismiss="modal">提交</button>
+        <button type="button" class="am-btn am-btn-default" data-dismiss="modal" data-am-modal-close>取消</button>
+        <button type="button" id="btn-msg-send" class="am-btn am-btn-primary" onclick="postmsg()" data-dismiss="modal">提交</button>
       </span>
     </div>
   </div>
@@ -368,7 +386,7 @@ function postmsg(){
   <?php else: ?>
   我发送给<a href="<?php echo GetUserPage($vo['usname1']);?>"><?php echo $vo['usname1'];?></a><?php endif; endif; ?>
   ：<?php echo getInboxcontent($vo['inbox_id']);?>... <br />
-  <span><?php echo ($vo['time']); ?></span><span style="float:right"><a href="/Home/Inboxpage/<?php echo ($vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']); ?>" target="_BLANK">共<?php echo ($vo['numb']); ?>条对话</a></span></p>
+  <span><?php echo ($vo['time']); ?></span><span style="float:right"><a href="/Home/Inboxpage/<?php echo ($vo['usname1'] == cookie('username')?$vo['usname2']:$vo['usname1']); ?>" target="_blank">共<?php echo ($vo['numb']); ?>条对话</a></span></p>
   <hr><?php endforeach; endif; else: echo "" ;endif; ?>
 
 

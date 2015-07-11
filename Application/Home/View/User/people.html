@@ -27,7 +27,7 @@ $(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
         });
   }
 </script>
-
+<script src="__PUBLIC__/js/index.js"></script>
 <div class="am-modal am-modal-no-btn" tabindex="-1" id="new-msg-modal">
   <div class="am-modal-dialog">
     <div class="am-modal-hd">发送私信给：<strong>{:$user['username']}</strong>
@@ -60,7 +60,7 @@ $(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
         </div>
 		  </div>
 		  <div class="am-panel-hd am-avg-md-6 am-avg-sm-3">
-		  	<li><a href="{:GetUserPage(cookie('username'))}"><span class="am-icon-home am-icon-md"></span></a></li>
+		  	<li><a href="{:GetUserPage($user['username'])}"><span class="am-icon-home am-icon-md"></span></a></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-question-circle"></span> 问题 {:$user['question']}</span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-edit"></span> 回答 {:$user['answer']}</span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-thumbs-up"> 获得赞 {:$user['agree']}</span></span></li>
@@ -104,6 +104,12 @@ $(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
   </div>
 </section>
 </notempty>
+<h2>Ta的动态</h2>
+<hr />
+  <div id="index_load">
+    <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+    <script type="text/javascript">get_timeline(1,"{:$user['username']}");</script>
+  </div>
 
 	</div><!--md-9-->
 <div class="am-u-md-3">

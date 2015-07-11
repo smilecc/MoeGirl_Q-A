@@ -95,6 +95,7 @@ function load_info_badge(sum,question,follow,agree){
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      //console.log(data);
       if(data['type'] == "new-info"){
         $.ajax({
             type:"GET",
@@ -109,6 +110,15 @@ function load_info_badge(sum,question,follow,agree){
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
+
+    $(function(){
+        $('#input-search').bind('keypress',function(event){
+            if(event.keyCode == "13")    
+            {
+                window.open("http://search.wen.moegirl.org/answer/?q="+$('#input-search').val());
+            }
+        });
+    });
 </script>
 <script type="text/javascript" src="/Public/js/sender.js"></script>
 
@@ -171,11 +181,9 @@ function load_info_badge(sum,question,follow,agree){
     </ul>
 
 
-    <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
-      <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
+      <div class="am-topbar-form am-topbar-left am-form-inline">
+        <input type="text" class="am-form-field am-input-sm"  id="input-search" placeholder="搜索">
       </div>
-    </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
 
@@ -375,7 +383,7 @@ $(function() {
           <div class="am-form-group">
             <label for="user-weibo" class="am-u-sm-3 am-form-label">萌娘百科 / MoeGirl.Wiki</label>
             <div class="am-u-sm-9">
-              <input type="text" id="user-weibo" placeholder="输入你的萌娘百科账号 / MoeGirl.Wiki" value="<?php echo $user['moegirl_wiki'];?>">
+              <input type="text" id="user-mgwiki" placeholder="输入你的萌娘百科账号 / MoeGirl.Wiki" value="<?php echo $user['moegirl_wiki'];?>">
               <small><?php if($user['moegirl_wiki_ischeck'] == 0): ?><span style="color:red">账号未验证</span>,<a href="javascript:;">点击验证账号</a><?php else: ?>账号已通过验证<?php endif; ?></small>
             </div>
           </div>

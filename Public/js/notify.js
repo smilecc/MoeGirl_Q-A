@@ -57,7 +57,7 @@ function notify(content,mode,isright)
         title: mode.tit,
         text: content,
         icon: mode.icon,
-        addclass: (isright?'':'stack-topleft ')+mode.cls,
+        addclass:(isright?'':'stack-topleft ')+mode.cls,
         buttons: {
             closer: false,
             sticker: false

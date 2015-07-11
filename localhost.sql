@@ -51,7 +51,7 @@ CREATE TABLE `mgqa_answer_agree` (
   `username` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `is_agree` int(11) NOT NULL COMMENT '1表示赞同 2反对',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_comment
@@ -66,7 +66,7 @@ CREATE TABLE `mgqa_comment` (
   `mode` int(2) NOT NULL,
   `project_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_find
@@ -92,7 +92,7 @@ CREATE TABLE `mgqa_follow` (
   `us2` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `relation` int(2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_inbox
@@ -106,7 +106,7 @@ CREATE TABLE `mgqa_inbox` (
   `content` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_inbox_alert
@@ -117,7 +117,7 @@ CREATE TABLE `mgqa_inbox_alert` (
   `numb` int(11) NOT NULL,
   PRIMARY KEY (`usname`),
   UNIQUE KEY `uid` (`usname`)
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_inbox_index
@@ -132,7 +132,7 @@ CREATE TABLE `mgqa_inbox_index` (
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `numb` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_node
@@ -164,7 +164,7 @@ CREATE TABLE `mgqa_question` (
   `topic3` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `username` (`username`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_question_user_status
@@ -179,7 +179,7 @@ CREATE TABLE `mgqa_question_user_status` (
   PRIMARY KEY (`id`),
   KEY `username` (`username`),
   KEY `question_id` (`question_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_system
@@ -204,7 +204,7 @@ CREATE TABLE `mgqa_timeline` (
   `status` int(11) NOT NULL COMMENT 'Question: 1 提交问题 2 关注问题 3 推送问题 Answer: 1 提交回答 2 赞同回答 3 推送回答',
   `pushtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_timeline_agree
@@ -273,7 +273,7 @@ CREATE TABLE `mgqa_topic` (
   `node` int(2) NOT NULL,
   PRIMARY KEY (`id`,`node`),
   KEY `name` (`name`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_topic_follow
@@ -285,7 +285,7 @@ CREATE TABLE `mgqa_topic_follow` (
   `topic_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `username` (`username`)
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mgqa_user
@@ -306,4 +306,4 @@ CREATE TABLE `mgqa_user` (
   `moegirl_wiki` varchar(255) NOT NULL,
   `moegirl_wiki_ischeck` int(1) unsigned zerofill NOT NULL,
   PRIMARY KEY (`username`,`page`)
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

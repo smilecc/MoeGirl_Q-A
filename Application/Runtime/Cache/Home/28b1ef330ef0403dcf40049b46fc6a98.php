@@ -41,7 +41,7 @@
 				<hr /><?php endif; endforeach; endif; ?>
 		
 		<?php if(empty($timeline)): ?><div class="am-alert am-alert-success" data-am-alert>
-			  <p class="am-text-center">没有更多的内容了</p>
+			  <p class="am-text-center">没有更多的动态了</p>
 			</div>
 		<?php else: ?>
 			<div id="index_load_more"><button type="button" id="load_more_btn" class="am-btn am-btn-default am-btn-block btn-loading" onclick="get_timeline(<?php echo $next_page;?>)">加载更多</button></div><?php endif; ?>

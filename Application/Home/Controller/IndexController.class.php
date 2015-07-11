@@ -7,8 +7,8 @@ class IndexController extends Controller {
         $this->display();
     }
 
-    public function get_timeline($page = 1){
-    	$test = D('Timeline')->get_index($page);
+    public function get_timeline($page = 1,$username = false){
+    	$test = D('Timeline')->get_index($page, $username);
     	trace($test);
     	$this->assign('next_page',$page + 1);
     	$this->assign('timeline',$test);

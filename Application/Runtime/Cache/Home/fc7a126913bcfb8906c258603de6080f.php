@@ -95,6 +95,7 @@ function load_info_badge(sum,question,follow,agree){
         $('.msg-badge').text(data['numb']);
         $('.msg-badge').css("display",""); 
       }
+      //console.log(data);
       if(data['type'] == "new-info"){
         $.ajax({
             type:"GET",
@@ -109,6 +110,15 @@ function load_info_badge(sum,question,follow,agree){
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
+
+    $(function(){
+        $('#input-search').bind('keypress',function(event){
+            if(event.keyCode == "13")    
+            {
+                window.open("http://search.wen.moegirl.org/answer/?q="+$('#input-search').val());
+            }
+        });
+    });
 </script>
 <script type="text/javascript" src="/Public/js/sender.js"></script>
 
@@ -171,11 +181,9 @@ function load_info_badge(sum,question,follow,agree){
     </ul>
 
 
-    <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
-      <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
+      <div class="am-topbar-form am-topbar-left am-form-inline">
+        <input type="text" class="am-form-field am-input-sm"  id="input-search" placeholder="搜索">
       </div>
-    </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
 
@@ -311,6 +319,9 @@ function on_stu_btn_click(){
 
 <script type="text/javascript">
 function send_msg(){
+btnName = "#btn-msg-send";
+$(btnName).text('');
+$(btnName).append('<i class="am-icon-spinner am-icon-spin"></i>');
     $.ajax({
             type:"POST",
             url:"<?php echo U('/Home/Inbox');?>",
@@ -321,16 +332,17 @@ function send_msg(){
                   },
             cache:false, //不缓存此页面   
             success:function(re){
-              alert(re);
+              $(btnName).text('发送');
                if(re=="发送成功") {
+                success_notify_right(re);
                 $('#new-msg-modal').modal('close');
                 $("#comenttext").val('');
-               }
+               }else error_notify_right(re);
             }
         });
   }
 </script>
-
+<script src="/Public/js/index.js"></script>
 <div class="am-modal am-modal-no-btn" tabindex="-1" id="new-msg-modal">
   <div class="am-modal-dialog">
     <div class="am-modal-hd">发送私信给：<strong><?php echo $user['username'];?></strong>
@@ -343,7 +355,7 @@ function send_msg(){
       <hr>
       <span class="am-fr">
         <button type="button" class="am-btn am-btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="am-btn am-btn-primary" onclick="send_msg()" data-dismiss="modal">提交</button>
+        <button type="button" id="btn-msg-send" class="am-btn am-btn-primary" onclick="send_msg()" data-dismiss="modal">发送</button>
       </span>
     </div>
   </div>
@@ -363,7 +375,7 @@ function send_msg(){
         </div>
 		  </div>
 		  <div class="am-panel-hd am-avg-md-6 am-avg-sm-3">
-		  	<li><a href="<?php echo GetUserPage(cookie('username'));?>"><span class="am-icon-home am-icon-md"></span></a></li>
+		  	<li><a href="<?php echo GetUserPage($user['username']);?>"><span class="am-icon-home am-icon-md"></span></a></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-question-circle"></span> 问题 <?php echo $user['question'];?></span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-edit"></span> 回答 <?php echo $user['answer'];?></span></li>
 		  		<li><span class="am-text-middle"><span class="am-icon-thumbs-up"> 获得赞 <?php echo $user['agree'];?></span></span></li>
@@ -399,6 +411,12 @@ function send_msg(){
     </tbody></table>
   </div>
 </section><?php endif; ?>
+<h2>Ta的动态</h2>
+<hr />
+  <div id="index_load">
+    <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+    <script type="text/javascript">get_timeline(1,"<?php echo $user['username'];?>");</script>
+  </div>
 
 	</div><!--md-9-->
 <div class="am-u-md-3">

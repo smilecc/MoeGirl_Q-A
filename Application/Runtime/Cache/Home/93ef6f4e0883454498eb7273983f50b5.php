@@ -110,6 +110,15 @@ function load_info_badge(sum,question,follow,agree){
     function msg_login(){
       ws.send(JSON.stringify({"type":"login","name":usname}));
     }
+
+    $(function(){
+        $('#input-search').bind('keypress',function(event){
+            if(event.keyCode == "13")    
+            {
+                window.open("http://search.wen.moegirl.org/answer/?q="+$('#input-search').val());
+            }
+        });
+    });
 </script>
 <script type="text/javascript" src="/Public/js/sender.js"></script>
 
@@ -172,11 +181,9 @@ function load_info_badge(sum,question,follow,agree){
     </ul>
 
 
-    <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
-      <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm"  id="bdcsMain" placeholder="搜索">
+      <div class="am-topbar-form am-topbar-left am-form-inline">
+        <input type="text" class="am-form-field am-input-sm"  id="input-search" placeholder="搜索">
       </div>
-    </form>
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="load_form_conf()" data-am-modal="{target: '#put-question-popup',width: 400, height: 225}">提问</button>
 
 
