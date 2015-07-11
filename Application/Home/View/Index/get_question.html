@@ -9,7 +9,7 @@
             	</volist>
             </IF>
       <IF condition="$vo['type'] eq 1"> 回答了问题 <elseif condition="$vo['type'] eq 2" /> 评论了你在问题 </IF>
-      <strong><a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/<if condition="count($vo['answer_array']) eq 1">{:$vo['answer_id']}<else /><foreach name="$vo['answer_array']" item="vo">{:$vo}|</foreach></if>">{:get_question_title($vo['question_id'])}</a></strong><IF condition="$vo['type'] eq 2"> 下的回答</IF>
+      <strong><a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/<if condition="count($vo['answer_array']) eq 1">{:$vo['answer_id']}<else /><foreach name="vo['answer_array']" item="ansvo">{:$ansvo}|</foreach></if>">{:get_question_title($vo['question_id'])}</a></strong><IF condition="$vo['type'] eq 2"> 下的回答</IF>
       <hr />
 	</foreach>
 		
