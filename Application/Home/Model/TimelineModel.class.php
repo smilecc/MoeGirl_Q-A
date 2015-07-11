@@ -125,6 +125,7 @@ Class TimelineModel extends Model{
 		for($i = 0; $i < $arr_count; $i++){
 			if(!array_key_exists($i,$get_arr)) continue;
 			$get_arr[$i]['us_array'] = array($get_arr[$i]['fromusername']);
+			$get_arr[$i]['answer_array'] = array($get_arr[$i]['answer_id']);
 			// 如果是提交就跳过当前循环，因为Answer的提交和Question的提交常量是相同的
 			for($j = $i + 1; $j < $arr_count; $j++){
 				if(!array_key_exists($j,$get_arr)) continue;
@@ -139,6 +140,7 @@ Class TimelineModel extends Model{
 						continue;
 					}
 					array_push($get_arr[$i]['us_array'],$get_arr[$j]['fromusername']);
+					array_push($get_arr[$i]['answer_array'],$get_arr[$j]['answer_id']);
 					unset($get_arr[$j]);
 				}else {
 					//trace($get_arr[$i]['question_id'] ."-". $get_arr[$j]['question_id'] ."-". $get_arr[$i]['type'] ."-". $get_arr[$j]['type']);

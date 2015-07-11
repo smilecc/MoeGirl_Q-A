@@ -21,7 +21,19 @@ Class QuestionController extends Controller{
 		if($aid == 0){
 			$page_answer = M('Answer')->where('question_id=%d',$qid)->order('agree - unagree desc')->select();
 		}else{
-			$page_answer[0] = M('Answer')->where('id=%d',$aid)->find();
+			// 指定多答案模式
+			if(strstr($aid, "|"))
+			{
+				$aidArr = explode("|",$aid);
+				$search_data['id'] = array('in',$aidArr);
+				$page_answer = M('Answer')->where($search_data)->select();
+
+			}
+			else
+			{
+				// 单答案模式
+				$page_answer[0] = M('Answer')->where('id=%d',$aid)->find();
+			}
 		}
 
 		//print_r($page_answer);

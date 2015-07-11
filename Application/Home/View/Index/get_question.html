@@ -5,11 +5,11 @@
             	<volist name="vo['us_array']" id="usname" key="j" offset="0" length='3'>
             		<a target="_blank" href="{:GetUserPage($usname)}" class="am-comment-author">{:$usname}</a>
                         <if condition="$j lt count($vo['us_array'])">、</if>
-            		<if condition="$j eq 3">等{:count($vo['us_array'])}人</if>
+            		<if condition="$j eq 3"><php>print_r()</php>等{:count($vo['us_array'])}人</if>
             	</volist>
             </IF>
       <IF condition="$vo['type'] eq 1"> 回答了问题 <elseif condition="$vo['type'] eq 2" /> 评论了你在问题 </IF>
-      <strong><a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/{:$vo['answer_id']}">{:get_question_title($vo['question_id'])}</a></strong><IF condition="$vo['type'] eq 2"> 下的回答</IF>
+      <strong><a target="_blank" href="/index.php/Home/Question/{:$vo['question_id']}/Answer/<if condition="count($vo['answer_array']) eq 1">{:$vo['answer_id']}<else /><foreach name="$vo['answer_array']" item="vo">{:$vo}|</foreach></if>">{:get_question_title($vo['question_id'])}</a></strong><IF condition="$vo['type'] eq 2"> 下的回答</IF>
       <hr />
 	</foreach>
 		
