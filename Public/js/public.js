@@ -302,3 +302,8 @@ function notify_re(re)
     return false;
   }
 }
+
+function CommemtAddAtuser(commentId,userId)
+{
+  $('#put-comment-content-'+commentId).val($('#put-comment-content-'+commentId).val() + "@" + $(userId).attr('user') + " ");
+}

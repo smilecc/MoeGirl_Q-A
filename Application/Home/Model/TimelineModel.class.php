@@ -103,7 +103,7 @@ Class TimelineModel extends Model{
 			tcp_new_info(array($tousername));
 	}
 
-	// @用户
+	// @用户的入库
 	public function AtUser($touser,$mode,$argData)
 	{
 		trace($argData);
@@ -137,6 +137,7 @@ Class TimelineModel extends Model{
 			tcp_new_info(array($touser));
 	}
 
+	// 获取Question相关的内容
 	public function get_question($search_time = NULL){
 		$follow_question_array = M('QuestionUserStatus')->where('username="%s" AND follow=1',cookie('username'))->getField('question_id',true);
 		// 防止空查

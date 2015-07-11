@@ -184,6 +184,7 @@ function curl_redir_exec($ch,$debug="")
     }
 } 
 
+// 解析Markdown文本
 function ParseMd($text)
 {
    return Parsedown::instance()
@@ -191,7 +192,7 @@ function ParseMd($text)
     ->setMarkupEscaped(true) # escapes markup (HTML)
     ->text($text);
 }
-
+// 解析Markdown文本 - 行模式
 function ParseMdLine($text)
 {
    return Parsedown::instance()
@@ -202,11 +203,15 @@ function ParseMdLine($text)
 
 function ParseAtUser($value)
 {
+    // 进行链接替换
     return $temp_value = preg_replace_callback(
             "/@([\S]+)\s{1}/",
             function ($matches) {
+                // 查询用户是否存在
                 if($res = GetUserPage($matches[1]))
                     return "[".$matches[0]."](".$res.")";
+                // 不存在不替换内容
+                else return $matches[0];
             },
             $value
         );
@@ -217,6 +222,7 @@ function PushAtUser($value,$mode,$data)
     preg_match_all("/@([\S]+)\s{1}/", $value, $macthArr);
 
     foreach ($macthArr[1] as $value) {
+        // 查询用户是否存在
         if(GetUserPage($value))
             D('Timeline')->AtUser($value,$mode,$data);
     }
