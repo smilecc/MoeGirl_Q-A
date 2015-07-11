@@ -139,10 +139,8 @@ function put_comment(project_id,mode){
                   mode:mode
                   },
             success:function(re){
-                if(re=="1"){
+                if(notify_re(re)){
                   $("#div-comment-" + project_id).load('/index.php/Home/Question/get_comment.html?id='+project_id+'&mode='+mode);
-                }else{
-                  error_notify('评论失败');
                 }
             }
   });

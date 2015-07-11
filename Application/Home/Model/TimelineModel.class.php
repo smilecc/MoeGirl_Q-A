@@ -99,7 +99,42 @@ Class TimelineModel extends Model{
 			);
 		$db = M('TimelineQuestion');
 		$db->create($data);
-		$db->add();
+		if($db->add())
+			tcp_new_info(array($tousername));
+	}
+
+	// @用户
+	public function AtUser($touser,$mode,$argData)
+	{
+		trace($argData);
+		$data = array(
+			'fromusername'	=>	cookie('username'),
+			'tousername'	=>	$touser,
+			'question_id' 	=>  $argData['question_id']
+		);
+
+		switch ($mode) {
+			case 'question':
+				$data['answer_id'] = 0;
+				$data['type'] = 3;
+				break;
+			case 'answer':
+				$data['answer_id'] = $argData['answer_id'];
+				$data['type'] = 4;
+				break;
+			case 'comment':
+				$data['answer_id'] = $argData['answer_id'];
+				$data['type'] = 5;
+				break;
+			default:
+				return false;
+				break;
+		}
+
+		$db = M('TimelineQuestion');
+		$db->create($data);
+		if($db->add())
+			tcp_new_info(array($touser));
 	}
 
 	public function get_question($search_time = NULL){
@@ -131,6 +166,7 @@ Class TimelineModel extends Model{
 				if(!array_key_exists($j,$get_arr)) continue;
 				// 判断状态、模式是否一致
 				//trace($get_arr[$i]['question_id'] ."-". $get_arr[$j]['question_id'] ."-". $get_arr[$i]['type'] ."-". $get_arr[$j]['type']);
+				if($get_arr[$j]['type'] == 3 || $get_arr[$j]['type'] == 4 || $get_arr[$j]['type'] == 5) continue;
 				if($get_arr[$i]['question_id'] == $get_arr[$j]['question_id'] && $get_arr[$i]['type'] == $get_arr[$j]['type'])
 				{
 					// 过滤同一时间段重复push

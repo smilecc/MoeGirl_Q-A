@@ -53,23 +53,36 @@ Class QuestionController extends Controller{
 
 	// 提交评论
 	public function put_comment($id,$content,$mode,$touser = ''){
-		if(!test_user()) {echo '用户登录失效，请检查';return false;}
-		if(!IS_POST) {echo '非法提交方式';return false;}
+		if(!test_user()) {echo json_encode(array('status'=>false,'error'=>'系统错误'));return false;}
+		if(!IS_POST) {echo json_encode(array('status'=>false,'error'=>'非法提交方式'));return false;}
 
 		$data = array(
 			'username'	=> cookie('username'),
 			'project_id'=> $id,
-			'content'	=> htmlspecialchars($content),
+			'content'	=> htmlspecialchars(ParseAtUser($content)),
 			'mode'		=> (($mode == 'question')? 0 : 1),
 			'tousername'=> $touser
 			);
 		$Comment_db = M('Comment');
 		$Comment_db->create($data);
-		if($Comment_db->add()) {
-			echo 1;
-			//if($mode != 'question' AND ) D('Timeline')->agree($answer_id);
+		if($re_id = $Comment_db->add()) {
+			echo json_encode(array('status'=>true,'info'=>'评论发布成功'));
+
+		PushAtUser($content,'comment',
+					array(
+						'question_id' 	=> M('Answer')->where('id=%d',$id)->getField('question_id'),
+						'answer_id'		=> $id, // 目前认为只有评论答案的这一种模式
+						)
+					);
+				
+			if($data['mode'])
+			{
+				$answer_info = M('Answer')->where('id=%d',$id)->find();
+				D('Timeline')->question_add_comment($answer_info['question_id'],$id,$answer_info['username']);
+			}
+			
 		}
-		else echo 0;
+		else echo json_decode(array('status'=>false,'error'=>'系统错误'));
 	}
 
 	// 获取评论
@@ -88,12 +101,18 @@ Class QuestionController extends Controller{
 			//return;
 			$data = array(
 				'title' 	=> $title,
-				'content' 	=> $content,
+				'content' 	=> ParseAtUser($content),
 				'topic'		=> $topic,
 				'anonymous' => ($anonymous=='off') ? 0 : 1,
 				);
 			$result_id = D('Question')->add_question($data);
 			if($result_id){
+				PushAtUser($content,'question',
+						array(
+								'question_id' => $result_id,
+								'answer_id'	  => 0
+							)
+					);
 				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$result_id);
 			}else{
 				$this->error('发布失败，请退出后重新登录');	
@@ -108,10 +127,17 @@ Class QuestionController extends Controller{
 			//return;
 			$data = array(
 				'question_id' 	=> $question_id,
-				'content' 	=> $content,
+				'content' 	=> ParseAtUser($content),
 				);
 			$result_id = D('Answer')->add_answer($data);
 			if($result_id){
+				PushAtUser($content,'answer',
+						array(
+								'question_id' => $question_id,
+								'answer_id'	  => $result_id
+							)
+					);
+
 				D('Timeline')->question_add_answer($question_id,$result_id);
 				header('Location: http://'.$_SERVER['HTTP_HOST'].'/index.php/Home/Question/'.$question_id.'/answer/'.$result_id);
 			}else{

@@ -198,4 +198,28 @@ function ParseMdLine($text)
     ->line($text);
 }
 
+function ParseAtUser($value)
+{
+    return $temp_value = preg_replace_callback(
+            "/@([\S]+)\s{1}/",
+            function ($matches) {
+                //
+                return "[".$matches[0]."](".GetUserPage($matches[1]).")";
+            },
+            $value
+        );
+}
+
+function PushAtUser($value,$mode,$data)
+{
+    preg_match_all("/@([\S]+)\s{1}/", $value, $macthArr);
+
+    foreach ($macthArr[1] as $value) {
+        D('Timeline')->AtUser($value,$mode,$data);
+    }
+    trace($data);
+    
+    return $temp_value;
+}
+
 ?>
