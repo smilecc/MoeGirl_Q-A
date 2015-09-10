@@ -2,6 +2,7 @@
 return array(
 	//'配置项'=>'配置值'
 	//'SHOW_PAGE_TRACE' =>true,
+	'DEFAULT_CONTROLLER'    =>  'Find',
 	'URL_ROUTER_ON'   => true,
 	'URL_ROUTE_RULES'=>array(
 		'Question/:qid\d$' 				=> 'Question/index',

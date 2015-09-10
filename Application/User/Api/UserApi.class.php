@@ -19,7 +19,7 @@ class UserApi{
             session('user_status',0);
             if(cookie('token') != NULL){
                 $userinfo = M('User')->where('username="%s"',cookie('username'))->find();
-                if(cookie('token') == login_en_code($userinfo['random'].$userinfo['username'])){
+                if(cookie('token') == DoubleMd5($userinfo['random'].$userinfo['username'])){
                     session('user_status',2);
                 }
             }

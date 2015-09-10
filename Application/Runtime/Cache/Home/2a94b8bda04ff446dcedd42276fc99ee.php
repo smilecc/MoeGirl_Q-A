@@ -173,12 +173,7 @@ function load_info_badge(sum,question,follow,agree){
 
 
 </li>
-
-      
-      
-
-
-    </ul>
+</ul>
 
 
       <div class="am-topbar-form am-topbar-left am-form-inline">

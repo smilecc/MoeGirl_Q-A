@@ -67,7 +67,7 @@ Class OperationController extends Controller{
 			{
 				// Set cookie value
 				$user = $resultArr['username'];
-				if($remember_me == 'on') cookie('token',login_en_code(D('User')->login_random($user).$user));
+				if($remember_me == 'on') cookie('token',DoubleMd5(D('User')->login_random($user).$user));
 				cookie('username',$user);
 
 				// Set session
@@ -90,7 +90,7 @@ Class OperationController extends Controller{
 			// 注册后立即登录
 			if($resArr['info'] == 'Success')
 			{
-				cookie('token',login_en_code(D('User')->login_random($username).$username));
+				cookie('token',DoubleMd5(D('User')->login_random($username).$username));
 				cookie('username',$username);
 				session('user_status',1);
 			}

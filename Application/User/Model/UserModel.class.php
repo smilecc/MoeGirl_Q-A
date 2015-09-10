@@ -44,7 +44,7 @@ Class UserModel extends Model{
 		}
 
 		// 校对密码
-		if($userinfo['password'] == login_en_code($password))
+		if($userinfo['password'] == login_en_code($password,$username))
 		{
 			$resultArr['status'] = true;
 			$resultArr['username'] = $userinfo['username'];
@@ -95,7 +95,7 @@ Class UserModel extends Model{
 		// 入库
 		$insertArray = array(
 			'username'	=> $username,
-			'password'	=> login_en_code($password),
+			'password'	=> login_en_code($password,$username),
 			'email'		=> $email,
 			'page'		=> md5($username)
 		);

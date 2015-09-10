@@ -8,14 +8,14 @@
       </strong>
       <?php elseif($vo['type'] == 2): ?><a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>" class="am-comment-author"><?php echo $vo['fromusername'];?></a> 评论了你在问题 <strong>
             <a target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['answer_id'];?>"><?php echo get_question_title($vo['question_id']);?></a>
-            </strong>
-      <?php elseif($vo['type'] == 3): ?> <a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>"><?php echo $vo['fromusername'];?></a>在提问问题 <strong>
+            </strong> 下的回答
+      <?php elseif($vo['type'] == 3): ?> <a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>"><?php echo $vo['fromusername'];?> </a>在提问问题 <strong>
             <a target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>"><?php echo get_question_title($vo['question_id']);?></a>
             </strong> 的时候召唤了你
-      <?php elseif($vo['type'] == 4): ?> <a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>"><?php echo $vo['fromusername'];?></a>在回答问题 <strong>
+      <?php elseif($vo['type'] == 4): ?> <a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>"><?php echo $vo['fromusername'];?> </a>在回答问题 <strong>
             <a target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['answer_id'];?>"><?php echo get_question_title($vo['question_id']);?></a>
             </strong> 的时候召唤了你
-      <?php elseif($vo['type'] == 5): ?> <a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>"><?php echo $vo['fromusername'];?></a>在评论问题 <strong>
+      <?php elseif($vo['type'] == 5): ?> <a target="_blank" href="<?php echo GetUserPage($vo['fromusername']);?>"><?php echo $vo['fromusername'];?> </a>在评论问题 <strong>
             <a target="_blank" href="/index.php/Home/Question/<?php echo $vo['question_id'];?>/Answer/<?php echo $vo['answer_id'];?>"><?php echo get_question_title($vo['question_id']);?></a>
             </strong> 中的某一回答的时候召唤了你<?php endif; ?>
       <hr /><?php endforeach; endif; ?>

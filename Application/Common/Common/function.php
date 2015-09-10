@@ -57,8 +57,22 @@ function check_verify($code, $id = ''){
 }
 
 // 用于加密内容
-function login_en_code($string){
-	return md5(md5($string));
+function login_en_code($password,$username=null){
+    $redis = new Redis();
+    $redis->connect("127.0.0.1","6379");
+
+    if($username == null) $username = cookie('username');
+
+    $salt = $redis->get($username.'_Salt');
+
+    if($salt == false)
+    {
+        // Redis中无salt
+        $salt = rand();
+        $redis->set($username.'_Salt',$salt);
+    }
+
+	return md5(md5($string.$salt));
 }
 
 // 用户是否登录 用于html - view中
@@ -89,9 +103,14 @@ function get_user_intro($username){
 
 // 测试用户是否真实
 function test_user(){
-    $cookie_username_token = login_en_code(M('User')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
+    $cookie_username_token = DoubleMd5(M('User')->where('username="%s"',cookie('username'))->getField('random').cookie('username'));
     if(session('user_status') != 1 && cookie('token') != $cookie_username_token) return false;
     else return true;
+}
+
+function DoubleMd5($string)
+{
+    return md5(md5($string));
 }
 
 function get_inbox_alert(){

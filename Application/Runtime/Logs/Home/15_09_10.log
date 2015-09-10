@@ -1,0 +1,1061 @@
+[ 2015-09-10T20:27:31+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.012407s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.022467s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001564s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.001037s ]
+
+[ 2015-09-10T21:18:08+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.002843s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.001275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001546s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000702s ]
+
+[ 2015-09-10T21:23:08+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.002351s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001131s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.001613s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.022989s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.000897s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001450s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.002145s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.005919s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.001326s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ) AND ( 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.002863s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.011948s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.001422s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000859s ]
+DEBUG: Array
+(
+)
+
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.001820s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.004627s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.003043s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.001487s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000997s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000851s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003530s ]
+
+[ 2015-09-10T21:23:11+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001625s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.001755s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.002520s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.002810s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.001150s ]
+
+[ 2015-09-10T21:23:19+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.000633s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.002496s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.003443s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000725s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.000968s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001462s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.002012s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.001594s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.001265s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.002007s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ) AND ( 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.001327s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000629s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.001072s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000559s ]
+DEBUG: Array
+(
+)
+
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.001765s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.002414s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2015-09-10T21:23:23+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.001501s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.002326s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001716s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="%s" ) LIMIT 1   [ RunTime:0.000826s ]
+
+[ 2015-09-10T21:31:32+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.000767s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001275s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.001314s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001808s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.002117s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.001676s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.001490s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.002354s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ) AND ( 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.001680s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.001351s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000926s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.001396s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.001089s ]
+DEBUG: Array
+(
+)
+
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.001782s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.001049s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000704s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000759s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2015-09-10T21:31:36+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.001917s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.003428s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001747s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000712s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.002329s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001499s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.000953s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.000474s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.000857s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ) AND ( 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.000895s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000480s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.000959s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" AND 1437837756 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000465s ]
+DEBUG: Array
+(
+)
+
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.001424s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.002012s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.002805s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000643s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000657s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002055s ]
+
+[ 2015-09-10T21:31:44+08:00 ] ::1 /index.php/Home/index/get_question.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001875s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.001273s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.001106s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.002736s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ORDER BY id desc LIMIT 200   [ RunTime:0.001377s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 28
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:53:57
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 27
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:50:33
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 26
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:26:33
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [3] => Array
+        (
+            [id] => 14
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 2
+            [fromusername] => SmileC
+            [time] => 2015-07-11 14:45:52
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                    [1] => TestUser
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                    [1] => 9
+                )
+
+        )
+
+    [4] => Array
+        (
+            [id] => 8
+            [tousername] => 
+            [question_id] => 5
+            [answer_id] => 10
+            [type] => 1
+            [fromusername] => TestUser
+            [time] => 2015-07-11 11:43:04
+            [us_array] => Array
+                (
+                    [0] => TestUser
+                    [1] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 10
+                    [1] => 9
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001894s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.001428s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.021096s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000831s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.001276s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001078s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.001107s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000972s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000866s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="TestUser" ) LIMIT 1   [ RunTime:0.000848s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000821s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000504s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-09-10T21:31:44+08:00 ] ::1 /index.php/Home/index/get_follow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.002837s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" ) ORDER BY id desc LIMIT 30   [ RunTime:0.002579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2015-09-10T21:31:44+08:00 ] ::1 /index.php/Home/index/update_time.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004794s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001243s ]
+SQL: SELECT `id` FROM `mgqa_timeline_time` WHERE `username` = 'Smilec' LIMIT 1   [ RunTime:0.003663s ]
+SQL: UPDATE `mgqa_timeline_time` SET `username`='Smilec',`temp`=temp+1 WHERE `id` = 5 [ RunTime:0.001053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2015-09-10T21:31:44+08:00 ] ::1 /index.php/Home/index/get_agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003123s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001390s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.001552s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" ) ORDER BY id desc LIMIT 200   [ RunTime:0.000700s ]
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000641s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2015-09-10T21:31:47+08:00 ] ::1 /index.php/Home/index/update_time.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002203s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001593s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.002086s ]
+SQL: SELECT `id` FROM `mgqa_timeline_time` WHERE `username` = 'Smilec' LIMIT 1   [ RunTime:0.000677s ]
+SQL: UPDATE `mgqa_timeline_time` SET `username`='Smilec',`temp`=temp+1 WHERE `id` = 5 [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2015-09-10T21:31:47+08:00 ] ::1 /index.php/Home/index/get_question.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.003162s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.000623s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.001727s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ORDER BY id desc LIMIT 200   [ RunTime:0.001221s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 28
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:53:57
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 27
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:50:33
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 26
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:26:33
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [3] => Array
+        (
+            [id] => 14
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 2
+            [fromusername] => SmileC
+            [time] => 2015-07-11 14:45:52
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                    [1] => TestUser
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                    [1] => 9
+                )
+
+        )
+
+    [4] => Array
+        (
+            [id] => 8
+            [tousername] => 
+            [question_id] => 5
+            [answer_id] => 10
+            [type] => 1
+            [fromusername] => TestUser
+            [time] => 2015-07-11 11:43:04
+            [us_array] => Array
+                (
+                    [0] => TestUser
+                    [1] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 10
+                    [1] => 9
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.002058s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.001901s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.001054s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000738s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000550s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000898s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001394s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.001908s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="TestUser" ) LIMIT 1   [ RunTime:0.000956s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000863s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000870s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2015-09-10T21:31:47+08:00 ] ::1 /index.php/Home/index/get_follow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.005095s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" ) ORDER BY id desc LIMIT 30   [ RunTime:0.001428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2015-09-10T21:31:47+08:00 ] ::1 /index.php/Home/index/get_agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001985s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.001092s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" ) ORDER BY id desc LIMIT 200   [ RunTime:0.000231s ]
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2015-09-10T21:31:48+08:00 ] ::1 /index.php/Home/index/update_time.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001286s ]
+SQL: SELECT `id` FROM `mgqa_timeline_time` WHERE `username` = 'Smilec' LIMIT 1   [ RunTime:0.000549s ]
+SQL: UPDATE `mgqa_timeline_time` SET `username`='Smilec',`temp`=temp+1 WHERE `id` = 5 [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2015-09-10T21:31:48+08:00 ] ::1 /index.php/Home/index/get_agree.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.001122s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.004643s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" ) ORDER BY id desc LIMIT 200   [ RunTime:0.000374s ]
+DEBUG: 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-09-10T21:31:49+08:00 ] ::1 /index.php/Home/index/get_question.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.000861s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.000340s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.000576s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ORDER BY id desc LIMIT 200   [ RunTime:0.000479s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 28
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:53:57
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 27
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:50:33
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 26
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 5
+            [fromusername] => SmileC
+            [time] => 2015-07-11 15:26:33
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                )
+
+        )
+
+    [3] => Array
+        (
+            [id] => 14
+            [tousername] => SmileC
+            [question_id] => 5
+            [answer_id] => 9
+            [type] => 2
+            [fromusername] => SmileC
+            [time] => 2015-07-11 14:45:52
+            [us_array] => Array
+                (
+                    [0] => SmileC
+                    [1] => TestUser
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 9
+                    [1] => 9
+                )
+
+        )
+
+    [4] => Array
+        (
+            [id] => 8
+            [tousername] => 
+            [question_id] => 5
+            [answer_id] => 10
+            [type] => 1
+            [fromusername] => TestUser
+            [time] => 2015-07-11 11:43:04
+            [us_array] => Array
+                (
+                    [0] => TestUser
+                    [1] => SmileC
+                )
+
+            [answer_array] => Array
+                (
+                    [0] => 10
+                    [1] => 9
+                )
+
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.001196s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `mgqa_question` [ RunTime:0.001054s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.001738s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.001442s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.001383s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000701s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000620s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="TestUser" ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="SmileC" ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT * FROM `mgqa_question` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000573s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2015-09-10T21:31:49+08:00 ] ::1 /index.php/Home/index/get_follow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.000918s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" ) ORDER BY id desc LIMIT 30   [ RunTime:0.001110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001703s ]
+
+[ 2015-09-10T21:36:21+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `mgqa_find` [ RunTime:0.001084s ]
+SQL: SELECT * FROM `mgqa_find` ORDER BY orderNumber  [ RunTime:0.000772s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.002681s ]
+SQL: SHOW COLUMNS FROM `mgqa_user` [ RunTime:0.003169s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT `random` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `mgqa_admin` [ RunTime:0.001103s ]
+SQL: SELECT * FROM `mgqa_admin` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_time` [ RunTime:0.001244s ]
+SQL: SELECT unix_timestamp(time) FROM `mgqa_timeline_time` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline` [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `mgqa_question_user_status` [ RunTime:0.001680s ]
+SQL: SELECT `question_id` FROM `mgqa_question_user_status` WHERE ( username="Smilec" AND follow=1 )  [ RunTime:0.000733s ]
+DEBUG: Array
+(
+    [0] => 4
+    [1] => 5
+    [null] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_timeline_question` [ RunTime:0.000610s ]
+SQL: SELECT * FROM `mgqa_timeline_question` WHERE (  ( (`question_id` IN ('4','5',0)) AND (`type` = 1) ) OR `tousername` = 'Smilec' ) AND ( 1441891908 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `mgqa_timeline_follow` [ RunTime:0.000923s ]
+SQL: SELECT * FROM `mgqa_timeline_follow` WHERE ( tousername="Smilec" AND 1441891908 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000248s ]
+DEBUG: debug
+SQL: SHOW COLUMNS FROM `mgqa_timeline_agree` [ RunTime:0.000682s ]
+SQL: SELECT * FROM `mgqa_timeline_agree` WHERE ( tousername="Smilec" AND 1441891908 < unix_timestamp(time) ) ORDER BY id desc  [ RunTime:0.000662s ]
+DEBUG: Array
+(
+)
+
+DEBUG: Array
+(
+    [question] => 0
+    [follow] => 0
+    [agree] => 0
+    [sum] => 0
+)
+
+SQL: SHOW COLUMNS FROM `mgqa_topic` [ RunTime:0.000974s ]
+SQL: SELECT * FROM `mgqa_topic` ORDER BY id  [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `mgqa_inbox_alert` [ RunTime:0.000408s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT `page` FROM `mgqa_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT * FROM `mgqa_inbox_alert` WHERE ( usname="Smilec" ) LIMIT 1   [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
